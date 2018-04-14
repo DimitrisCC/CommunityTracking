@@ -1,11 +1,11 @@
-# Tracking the Evolution of Communities in Dynamic Social Networks
+# Tracking Communities in Dynamic Graphs with Applications to Social Networks
 
 This repository is a fork of the code developed around the MSc Thesis:
 
 > Ilias Sarantopoulos, “Tracking the Evolution of Communities in Dynamic Social Networks” MSc Thesis, Athens University of Economics
 and Business, 2017  
 
-The code is updated to work with Python 3.
+and updated to work with Python 3 in a Windows environment. More experiments and optimizations are going to be done.
 
 ## Getting Started
 
