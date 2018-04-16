@@ -12,7 +12,7 @@ class SyntheticDataConverter:
         :return:
         """
         if not filePath.endswith("/"):
-            self.filePath = filePath+"/"
+            self.filePath = filePath + "/"
         else:
             self.filePath = filePath
         files = os.listdir(filePath)
@@ -50,7 +50,7 @@ class SyntheticDataConverter:
         edge_time = {}
         for i, e_file in enumerate(self.edges_files):
             edge_time[i] = []
-            with open(self.filePath+e_file, 'r') as fp:
+            with open(self.filePath + e_file, 'r') as fp:
                 for line in fp:
                     n1 = int(line.split()[0])
                     n2 = int(line.split()[1])
@@ -78,7 +78,7 @@ class SyntheticDataConverter:
         all_nodes = {i: set() for i in range(self.timeFrames)}
         com_time = {}
         for timeFrame, c_file in enumerate(self.comm_files):
-            with open(self.filePath+c_file, 'r') as fp:
+            with open(self.filePath + c_file, 'r') as fp:
                 comms = {}
                 for j, line in enumerate(fp):
                     comms[int(j)] = []
@@ -91,7 +91,7 @@ class SyntheticDataConverter:
     def get_events(self):
         events = {}
         for i, e_file in enumerate(self.event_file):
-            with open(self.filePath+e_file, 'r') as fp:
+            with open(self.filePath + e_file, 'r') as fp:
                 for line in fp:
                     event = {}
                     e = line.strip().split(',')
@@ -111,14 +111,14 @@ class SyntheticDataConverter:
         """
         dyn_communities = {}
         for i, _file in enumerate(self.timeline_file):
-            with open(self.filePath+_file, 'r') as fp:
+            with open(self.filePath + _file, 'r') as fp:
                 for line in fp:
                     timeline = {}
-                    #comm = int(line.split(":")[0].translate(None, "M"))-1
-                    comm = int(line.split(":")[0].translate(str.maketrans('', '', "M")))-1
+                    # comm = int(line.split(":")[0].translate(None, "M"))-1
+                    comm = int(line.split(":")[0].translate(str.maketrans('', '', "M"))) - 1
                     time_list = line.split(":")[1].strip().strip(",").split(",")
                     for value in time_list:
-                        timeline[int(value.split("=")[0])-1] = int(value.split("=")[1])-1
+                        timeline[int(value.split("=")[0]) - 1] = int(value.split("=")[1]) - 1
                     dyn_communities[comm] = timeline
         return dyn_communities
 

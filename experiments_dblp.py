@@ -16,7 +16,6 @@ import datetime
 import pprint
 
 
-
 class Data(object):
     def __init__(self, comms, graphs, timeFrames, number_of_dynamic_communities, dynamic_truth=[]):
         self.comms = comms
@@ -32,7 +31,7 @@ def object_decoder(obj, num):
         graphs = {}
         for i, edges in edges.items():
             graphs[i] = nx.Graph(edges)
-        comms = {int(tf): {int(id): com for id, com in coms.items()} for tf, coms in obj[num]['comms'].items() }
+        comms = {int(tf): {int(id): com for id, com in coms.items()} for tf, coms in obj[num]['comms'].items()}
         dynamic_coms = {int(id): [str(node) for node in com] for id, com in obj[num]['dynamic_truth'].items()}
         return Data(comms, graphs, len(graphs), len(dynamic_coms), list(dynamic_coms))
     return obj
@@ -126,8 +125,8 @@ def run_experiments(data, ground_truth, network_num):
     graphs = preprocessing.getGraphs(ged_data.fileName)
     tracker = Tracker.Tracker(graphs)
     tracker.compare_communities()
-    #outfile = 'tmpfiles/ged_results.csv'
-    outfile = './results/GED-events-handdrawn-'+str(network_num)+'.csv'
+    # outfile = 'tmpfiles/ged_results.csv'
+    outfile = './results/GED-events-handdrawn-' + str(network_num) + '.csv'
     with open(outfile, 'w')as f:
         for hypergraph in tracker.hypergraphs:
             hypergraph.calculateEvents(f)
@@ -137,12 +136,14 @@ def run_experiments(data, ground_truth, network_num):
     with open(results_file, 'a') as f:
         f.write("GED\n")
         pprint.pprint(ged.dynamic_coms, stream=f, width=150)
-    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="dynamic", duration=ged_time))
-    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="sets", duration=ged_time))
+    all_res.append(
+        evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="dynamic", duration=ged_time))
+    all_res.append(
+        evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="sets", duration=ged_time))
     f = open(results_file, 'a')
     f.write(tabulate(all_res, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
     f.close()
-    #all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="per_tf"))
+    # all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="per_tf"))
     # # Run muturank - One connection
     # mutu1 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='one',
     #                      clusters=len(ground_truth), default_q=False)
@@ -223,11 +224,12 @@ def run_experiments(data, ground_truth, network_num):
 
 if __name__ == "__main__":
     from os.path import expanduser
+
     home = expanduser("~")
-    path_full = home+"/Dropbox/Msc/thesis/data/dblp/1"
-    results_file = "results_dblp_"+path_full.split("/")[-1]+".txt"
+    path_full = home + "/Dropbox/Msc/thesis/data/dblp/1"
+    results_file = "results_dblp_" + path_full.split("/")[-1] + ".txt"
     print(results_file)
-    dblp = dblp_loader(path_full+"/my_dblp_data.json", conf_file=path_full+"/confs.txt", start_year=2006,
+    dblp = dblp_loader(path_full + "/my_dblp_data.json", conf_file=path_full + "/confs.txt", start_year=2006,
                        end_year=2010, coms='comp')
     f = open(results_file, 'a')
     for item in dblp.conf_list:
@@ -241,21 +243,24 @@ if __name__ == "__main__":
     #     print nx.number_of_nodes(nx.Graph(new_edges))
     # print(len(set(item for sublist in [g.nodes() for _, g in dblp.graphs.items()] for item in sublist)))
     for tf, year in enumerate(dblp.communities.keys()):
-        print(len(dblp.all_nodes[tf]), len(set([node for _, com in dblp.communities[year].items() for node in com])), nx.number_of_nodes(dblp.graphs[tf]))
+        print(len(dblp.all_nodes[tf]), len(set([node for _, com in dblp.communities[year].items() for node in com])),
+              nx.number_of_nodes(dblp.graphs[tf]))
         # print(len([node for _,com in dblp.communities[dblp.communities.keys()[t]].items() for node in com])),
         # new_edges = []
         # for conf, graph in dblp.conf_graphs[dblp.conf_graphs.keys()[t]].items():
         #     new_edges.extend(graph.edges())
         # print nx.number_of_nodes(nx.Graph(new_edges))
-    print("Total",)
-    print(len([node for t in dblp.graphs.keys() for _, com in dblp.communities[dblp.communities.keys()[t]].items() for node in com])),
+    print("Total", )
+    print(len(
+        [node for t in dblp.graphs.keys() for _, com in dblp.communities[dblp.communities.keys()[t]].items() for node in
+         com])),
     print(len(set(item for sublist in [g.nodes() for _, g in dblp.graphs.items()] for item in sublist)))
     print("# of dynamic communities", len(dblp.dynamic_coms))
     number_of_dynamic_communities = len(dblp.dynamic_coms)
     data = Data(dblp.communities, dblp.graphs, len(dblp.graphs), len(dblp.dynamic_coms), dblp.dynamic_coms)
     pprint.pprint(data.graphs.keys())
-    #from plot import PlotGraphs
-    #PlotGraphs(data.graphs, len(data.graphs), 'expand-contract', 100)
+    # from plot import PlotGraphs
+    # PlotGraphs(data.graphs, len(data.graphs), 'expand-contract', 100)
     all_res = run_experiments(data, data.dynamic_truth, 'dblp')
     results = OrderedDict()
     results["Method"] = []
@@ -270,8 +275,9 @@ if __name__ == "__main__":
         for k, v in res.items():
             results[k].extend(v)
     f = open(results_file, 'a')
-    f.write(tabulate(results, headers="keys", tablefmt="fancy_grid").encode('utf8')+"\n")
+    f.write(tabulate(results, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
     import pandas as pd
+
     df = pd.DataFrame.from_dict(results)
     del df["Duration"]
     f.write("\\begin{table}[h!] \n\centering \n\\begin{tabular}{ |p{4cm}||p{2cm}|p{3cm}|p{2cm}|p{2cm}|p{2cm}|} "
@@ -284,8 +290,7 @@ if __name__ == "__main__":
             f.write(str(row[0]))
             for item in row[1:]:
                 f.write(" & " + str(item))
-            f.write(str("\\\\")+"\n")
+            f.write(str("\\\\") + "\n")
     f.write("\hline\n\end{tabular}\n\caption{Comparison of DBLP experiment } }"
             "\n\label{table:results-network}\n\end{table}\n")
     f.close()
-

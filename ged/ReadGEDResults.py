@@ -1,10 +1,12 @@
 from ged import GedLoad
 from collections_ import OrderedDict
 
+
 class ReadGEDResults:
     """
     Convert results from GED output to universal format
     """
+
     def __init__(self, file_coms, file_output='../data/dblp_ged_results.csv'):
         self.coms = GedLoad(file_coms).comms
         self.dynamic_coms, self.cont = self.read_output(file_output)
@@ -25,10 +27,10 @@ class ReadGEDResults:
 
         def dynamic_com(tf, com, new_com):
             if cont[tf, com]:
-                    tf2, com2 = cont[tf, com]
-                    for node in self.coms[tf2][com2]:
-                        new_com.append(str(node)+'-t'+str(tf2))
-                    cont[tf, com] = False
+                tf2, com2 = cont[tf, com]
+                for node in self.coms[tf2][com2]:
+                    new_com.append(str(node) + '-t' + str(tf2))
+                cont[tf, com] = False
             return new_com
 
         for key, value in cont.iteritems():
@@ -37,9 +39,9 @@ class ReadGEDResults:
                 tf2, com2 = value
                 new_com = []
                 for node in self.coms[tf1][com1]:
-                    new_com.append(str(node)+'-t'+str(tf1))
+                    new_com.append(str(node) + '-t' + str(tf1))
                 for node in self.coms[tf2][com2]:
-                    new_com.append(str(node)+'-t'+str(tf2))
+                    new_com.append(str(node) + '-t' + str(tf2))
                 new_com = dynamic_com(tf2, com2, new_com)
 
                 dynamic_coms_list.append(new_com)
@@ -51,11 +53,10 @@ class ReadGEDResults:
                 else:
                     new_com = []
                     for node in c:
-                        new_com.append(str(node)+'-t'+str(tf))
+                        new_com.append(str(node) + '-t' + str(tf))
                     dynamic_coms_list.append(new_com)
         dynamic_coms = {i: com for i, com in enumerate(dynamic_coms_list)}
         return dynamic_coms, cont
-
 
 
 class Data(object):
@@ -66,8 +67,9 @@ class Data(object):
         self.number_of_dynamic_communities = number_of_dynamic_communities
         self.dynamic_truth = dynamic_truth
 
+
 if __name__ == '__main__':
-    #ged = ReadGEDResults("/home/lias/PycharmProjects/GED/test_input_community_edges.json")
+    # ged = ReadGEDResults("/home/lias/PycharmProjects/GED/test_input_community_edges.json")
     # edges = {
     #     0: [(1, 2), (1, 3), (1, 4), (3, 4), (5, 6), (6, 7), (5, 7)],
     #     1: [(11, 12), (11, 13), (12, 13)],
@@ -84,21 +86,23 @@ if __name__ == '__main__':
     # number_of_dynamic_communities = 3
     # data = Data(my_coms, graphs, len(graphs), number_of_dynamic_communities)
     import sys
+
     sys.path.insert(0, '../../GED/')
     import preprocessing, Tracker
+
     # from ged import GedWrite, ReadGEDResults
     # #ged_data = GedWrite(data)
     fileName = '../data/temp_ged_communities.json'
     # graphs = preprocessing.getGraphs(fileName)
     # tracker = Tracker.Tracker(graphs)
     # tracker.compare_communities()
-    #outfile = 'tmpfiles/ged_results.csv'
-    #outfile = '/home/lias/PycharmProjects/GED/dblp_ged_results.csv'
+    # outfile = 'tmpfiles/ged_results.csv'
+    # outfile = '/home/lias/PycharmProjects/GED/dblp_ged_results.csv'
     outfile = '/home/lias/PycharmProjects/community-tracking/results/GED-events-handdrawn-9.csv'
     # with open(outfile, 'w')as f:
     #     for hypergraph in tracker.hypergraphs:
     #         hypergraph.calculateEvents(f)
     ged = ReadGEDResults(file_coms=fileName, file_output=outfile)
-    #print data.dynamic_truth
+    # print data.dynamic_truth
     print(ged.dynamic_coms)
     print(ged.cont)

@@ -10,5 +10,5 @@ class PlotGraphs:
         for i in range(timeframes):
             plt.figure()
             nx.draw(graphs[i], node_size=node_size, with_labels=True)
-            plt.suptitle(type+"_Timeframe "+str(i), fontsize=14, fontweight='bold')
-            plt.savefig("images/"+type+"_Timeframe_"+str(i)+".png")
+            plt.suptitle(type + "_Timeframe " + str(i), fontsize=14, fontweight='bold')
+            plt.savefig("images/" + type + "_Timeframe_" + str(i) + ".png")

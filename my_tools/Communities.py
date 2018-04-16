@@ -7,6 +7,7 @@ class Communities:
     Used to run a community detection algorithm on each timeframe.
     K Clique and the Louvain method are implemented.
     """
+
     def __init__(self, graphs, type="louvain"):
         self.graphs = graphs
         self.communities = {i: {} for i in graphs.keys()}
@@ -37,8 +38,6 @@ class Communities:
                 del com_dict[c]
         new_com_dict = {i: com for i, (c, com) in enumerate(com_dict.iteritems())}
         return new_com_dict
-
-
 
 
 if __name__ == "__main__":

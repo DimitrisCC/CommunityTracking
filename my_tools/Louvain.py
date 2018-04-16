@@ -9,6 +9,7 @@ class Louvain:
     Run the louvain method to detect communities in each timeframe.
     The output can be used as input for a dynamic community finding method e.g. GED.
     """
+
     def __init__(self, graphs):
         self.graphs = graphs
         self.communities = {i: {} for i in graphs.keys()}
@@ -27,9 +28,10 @@ class Louvain:
             try:
                 com_dict[c].append(node)
             except KeyError:
-                com_dict[c]=[node]
+                com_dict[c] = [node]
         print(com_dict)
         return com_dict
+
 
 if __name__ == "__main__":
     edges = {
@@ -39,4 +41,4 @@ if __name__ == "__main__":
     }
     graphs = {i: nx.Graph(edges) for i, edges in edges.iteritems()}
     louvain = Louvain(graphs)
-    #print list(list(nx.k_clique_communities(graphs[0], 2))[0])
+    # print list(list(nx.k_clique_communities(graphs[0], 2))[0])

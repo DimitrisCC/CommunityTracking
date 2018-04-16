@@ -31,7 +31,7 @@ def object_decoder(obj, num):
         graphs = {}
         for i, edges in edges.items():
             graphs[i] = nx.Graph(edges)
-        comms = {int(tf): {int(id): com for id, com in coms.items()} for tf, coms in obj[num]['comms'].items() }
+        comms = {int(tf): {int(id): com for id, com in coms.items()} for tf, coms in obj[num]['comms'].items()}
         dynamic_coms = {int(id): [str(node) for node in com] for id, com in obj[num]['dynamic_truth'].items()}
         return Data(comms, graphs, len(graphs), len(dynamic_coms), dynamic_coms)
     return obj
@@ -80,7 +80,7 @@ def run_experiments(data, ground_truth, network_num):
                                                                           "q", mutu5.tfs,
                                         eval="per_tf", duration=mutu5.duration))
     f = open(results_file, 'a')
-    f.write(tabulate(all_res, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
+    f.write(tabulate(all_res, headers="keys", tablefmt="grid") + "\n")
     f.close()
     # Timerank with next connection - default q
     mutu6 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='next',
@@ -92,7 +92,7 @@ def run_experiments(data, ground_truth, network_num):
     all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank with next connection - default q",
                                         mutu6.tfs, eval="per_tf", duration=mutu6.duration))
     f = open(results_file, 'a')
-    f.write(tabulate(all_res, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
+    f.write(tabulate(all_res, headers="keys", tablefmt="grid") + "\n")
     f.close()
     # NNTF
     fact = TensorFact(data.graphs, num_of_coms=len(ground_truth), threshold=1e-4, seeds=10, overlap=False)
@@ -104,7 +104,7 @@ def run_experiments(data, ground_truth, network_num):
                                         duration=fact.duration))
     with open(results_file, 'a') as f:
         f.write("NNTF\n")
-        f.write("Error: " + str(fact.error) + "Seed: " + str(fact.best_seed)+"\n")
+        f.write("Error: " + str(fact.error) + "Seed: " + str(fact.best_seed) + "\n")
         f.write("A\n")
         pprint.pprint(fact.A, stream=f, width=150)
         f.write("B\n")
@@ -113,7 +113,7 @@ def run_experiments(data, ground_truth, network_num):
         pprint.pprint(fact.C, stream=f, width=150)
         pprint.pprint(fact.dynamic_coms, stream=f, width=150)
     f = open(results_file, 'a')
-    f.write(tabulate(all_res, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
+    f.write(tabulate(all_res, headers="keys", tablefmt="grid") + "\n")
     f.close()
     # GED
     # import sys
@@ -141,7 +141,7 @@ def run_experiments(data, ground_truth, network_num):
     # f = open(results_file, 'a')
     # f.write(tabulate(all_res, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
     # f.close()
-    #all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="per_tf"))
+    # all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="per_tf"))
     # Run Timerank - One connection
     # mutu1 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='one',
     #                      clusters=len(ground_truth), default_q=False)
@@ -228,17 +228,18 @@ if __name__ == "__main__":
     else:
         folder = "birth_death_data"
     from os.path import expanduser
-    #home = expanduser("~")
+    # home = expanduser("~")
     import os
+
     path_full = os.path.dirname(os.path.abspath(__file__))
     path_full = os.path.join(path_full, "data", "synthetic_greene", folder)
-    results_file = "results_synthetic_"+folder+".txt"
+    results_file = "results_synthetic_" + folder + ".txt"
     sd = SyntheticDataConverter(path_full, remove_redundant_nodes=True)
     # nodes = sd.graphs[0].nodes()
     # # edges_1 = random.sample(list(combinations_with_replacement(nodes, 2)), 50)
     # # edges_2 = random.sample(list(combinations_with_replacement(nodes, 2)), 207)
     #  ---------------------------------
-    #Dynamic Network Generator data (50 nodes/3 tfs)
+    # Dynamic Network Generator data (50 nodes/3 tfs)
     number_of_dynamic_communities = len(sd.graphs[0])
     data = Data(comms=sd.comms, graphs=sd.graphs, timeFrames=len(sd.graphs), number_of_dynamic_communities=len(
         sd.dynamic_truth), dynamic_truth=sd.dynamic_truth)
@@ -276,5 +277,5 @@ if __name__ == "__main__":
         for k, v in res.items():
             results[k].extend(v)
     f = open(results_file, 'a')
-    f.write(tabulate(results, headers="keys", tablefmt="fancy_grid").encode('utf8')+"\n")
+    f.write(tabulate(results, headers="keys", tablefmt="grid") + "\n")
     f.close()

@@ -6,21 +6,22 @@ class GedWrite:
     """
     write data in GED compatible format
     """
+
     def __init__(self, data, fileName='./data/temp_ged_communities.json'):
         self.fileName = fileName
-        self.graphs= data.graphs
+        self.graphs = data.graphs
         self.comms = data.comms
         # self.timeLine = data.timeLine
         if isinstance(data.timeFrames, list):
             self.timeFrames = data.timeFrames
         else:
             self.timeFrames = range(data.timeFrames)
-        #self.type = data.type
+        # self.type = data.type
         self.write_data()
 
     def write_data(self):
         output = {"windows": []}
-        #output["windows"] = []
+        # output["windows"] = []
         for tf in self.timeFrames:
             communities = []
             print("Now processing time frame ", tf)

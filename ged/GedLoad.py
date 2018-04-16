@@ -7,6 +7,7 @@ class GedLoad:
     """
     Load data written from GED
     """
+
     def __init__(self, filename="/home/lias/PycharmProjects/GED/test_input_community_edges.json"):
         self.data = self.openFile(filename)
         self.graphs, self.comms = self.getGraphs()
@@ -20,7 +21,6 @@ class GedLoad:
             exit(1)
         return data
 
-
     def getGraphs(self):
         graphs = {}
         com_time = {}
@@ -33,9 +33,7 @@ class GedLoad:
                     edges.append((e[0], e[1]))
                     comms[com_index].extend(e)
                 comms[com_index] = list(set(comms[com_index]))
-                #comms[com_index] = list(set([node for edge in community for node in edge]))
+                # comms[com_index] = list(set([node for edge in community for node in edge]))
             graphs[timeIdx] = nx.Graph(edges)
             com_time[timeIdx] = comms
         return graphs, com_time
-
-

@@ -16,7 +16,6 @@ import datetime
 import pprint
 
 
-
 class Data(object):
     def __init__(self, comms, graphs, timeFrames, number_of_dynamic_communities, dynamic_truth=[]):
         self.comms = comms
@@ -32,7 +31,7 @@ def object_decoder(obj, num):
         graphs = {}
         for i, edges in edges.items():
             graphs[i] = nx.Graph(edges)
-        comms = {int(tf): {int(id): com for id, com in coms.items()} for tf, coms in obj[num]['comms'].items() }
+        comms = {int(tf): {int(id): com for id, com in coms.items()} for tf, coms in obj[num]['comms'].items()}
         dynamic_coms = {int(id): [str(node) for node in com] for id, com in obj[num]['dynamic_truth'].items()}
         return Data(comms, graphs, len(graphs), len(dynamic_coms), dynamic_coms)
     return obj
@@ -108,7 +107,7 @@ def run_experiments(data, ground_truth, network_num):
     f.close()
     with open(results_file, 'a') as f:
         f.write("NNTF\n")
-        f.write("Error: " + str(fact.error) + "Seed: " + str(fact.best_seed)+"\n")
+        f.write("Error: " + str(fact.error) + "Seed: " + str(fact.best_seed) + "\n")
         f.write("A\n")
         pprint.pprint(fact.A, stream=f, width=150)
         f.write("B\n")
@@ -126,8 +125,8 @@ def run_experiments(data, ground_truth, network_num):
     graphs = preprocessing.getGraphs(ged_data.fileName)
     tracker = Tracker.Tracker(graphs)
     tracker.compare_communities()
-    #outfile = 'tmpfiles/ged_results.csv'
-    outfile = './results/GED-events-handdrawn-'+str(network_num)+'.csv'
+    # outfile = 'tmpfiles/ged_results.csv'
+    outfile = './results/GED-events-handdrawn-' + str(network_num) + '.csv'
     with open(outfile, 'w')as f:
         for hypergraph in tracker.hypergraphs:
             hypergraph.calculateEvents(f)
@@ -137,12 +136,14 @@ def run_experiments(data, ground_truth, network_num):
     with open(results_file, 'a') as f:
         f.write("GED\n")
         pprint.pprint(ged.dynamic_coms, stream=f, width=150)
-    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="dynamic", duration=ged_time))
-    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="sets", duration=ged_time))
+    all_res.append(
+        evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="dynamic", duration=ged_time))
+    all_res.append(
+        evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="sets", duration=ged_time))
     f = open(results_file, 'a')
     f.write(tabulate(all_res, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
     f.close()
-    #all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="per_tf"))
+    # all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED", mutu6.tfs, eval="per_tf"))
     # Run Timerank - One connection
     mutu1 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='one',
                          clusters=len(ground_truth), default_q=False)
@@ -221,28 +222,29 @@ def run_experiments(data, ground_truth, network_num):
     return all_res
 
 
-
-if __name__=="__main__":
+if __name__ == "__main__":
     import sys
-    if len(sys.argv)> 1:
+
+    if len(sys.argv) > 1:
         folder = sys.argv[1]
     else:
         folder = "expand_contract_data"
     from os.path import expanduser
+
     home = expanduser("~")
-    path_full = home+"/Dropbox/Msc/thesis/data/synthetic_generator/data/"+folder
-    results_file = "results_synthetic_"+path_full.split("/")[-1]+".txt"
+    path_full = home + "/Dropbox/Msc/thesis/data/synthetic_generator/data/" + folder
+    results_file = "results_synthetic_" + path_full.split("/")[-1] + ".txt"
     sd = SyntheticDataConverter(path_full, remove_redundant_nodes=True)
     # nodes = sd.graphs[0].nodes()
     # # edges_1 = random.sample(list(combinations_with_replacement(nodes, 2)), 50)
     # # edges_2 = random.sample(list(combinations_with_replacement(nodes, 2)), 207)
     #  ---------------------------------
-    #Dynamic Network Generator data (50 nodes/3 tfs)
+    # Dynamic Network Generator data (50 nodes/3 tfs)
     number_of_dynamic_communities = len(sd.graphs[0])
     data = Data(comms=sd.comms, graphs=sd.graphs, timeFrames=len(sd.graphs), number_of_dynamic_communities=len(
         sd.dynamic_truth), dynamic_truth=sd.dynamic_truth)
     #  ---------------------------------
-    #Dynamic Network Generator data (50 nodes/3 tfs) - Same network everywhere except one tf
+    # Dynamic Network Generator data (50 nodes/3 tfs) - Same network everywhere except one tf
     # dict = {
     #     0: sd.graphs[0],
     #     1: sd.graphs[0],
@@ -259,8 +261,8 @@ if __name__=="__main__":
     # data = Data(dblp.communities, dblp.graphs, len(dblp.graphs), len(dblp.dynamic_coms))
     # ground_truth = dblp.dynamic_coms
     # ---------------------------------
-    #from plot import PlotGraphs
-    #PlotGraphs(data.graphs, len(data.graphs), 'expand-contract', 100)
+    # from plot import PlotGraphs
+    # PlotGraphs(data.graphs, len(data.graphs), 'expand-contract', 100)
     all_res = run_experiments(data, data.dynamic_truth, 'expand')
     results = OrderedDict()
     results["Method"] = []
@@ -275,5 +277,5 @@ if __name__=="__main__":
         for k, v in res.items():
             results[k].extend(v)
     f = open(results_file, 'a')
-    f.write(tabulate(results, headers="keys", tablefmt="fancy_grid").encode('utf8')+"\n")
+    f.write(tabulate(results, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
     f.close()

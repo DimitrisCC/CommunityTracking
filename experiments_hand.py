@@ -2,7 +2,7 @@ from __future__ import division
 from muturank import Muturank_new
 from synthetic import SyntheticDataConverter
 from metrics import evaluate
-#from dblp import dblp_loader
+# from dblp import dblp_loader
 import networkx as nx
 from itertools import combinations_with_replacement
 import random
@@ -13,7 +13,6 @@ import time
 import json
 from tabulate import tabulate
 import pprint
-
 
 
 class Data(object):
@@ -31,27 +30,26 @@ def object_decoder(obj, num):
         graphs = {}
         for i, edges in edges.items():
             graphs[i] = nx.Graph(edges)
-        comms = {int(tf): {int(id): com for id, com in coms.items()} for tf, coms in obj[num]['comms'].items() }
+        comms = {int(tf): {int(id): com for id, com in coms.items()} for tf, coms in obj[num]['comms'].items()}
         dynamic_coms = {int(id): [str(node) for node in com] for id, com in obj[num]['dynamic_truth'].items()}
         return Data(comms, graphs, len(graphs), len(dynamic_coms), dynamic_coms)
     return obj
-
 
 
 def run_experiments(data, ground_truth, network_num):
     all_res = []
     # Timerank with one connection - default q
     mutu4 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='one',
-                        clusters=len(ground_truth), default_q=True)
-    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni" , mutu4.tfs,
-                                        eval="dynamic", duration = mutu4.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni" , mutu4.tfs,
-                                        eval="sets", duration = mutu4.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni" , mutu4.tfs,
-                                        eval="per_tf", duration = mutu4.duration))
+                         clusters=len(ground_truth), default_q=True)
+    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni", mutu4.tfs,
+                                        eval="dynamic", duration=mutu4.duration))
+    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni", mutu4.tfs,
+                                        eval="sets", duration=mutu4.duration))
+    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni", mutu4.tfs,
+                                        eval="per_tf", duration=mutu4.duration))
     # Timerank with all connections - default q
     mutu5 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='all',
-                        clusters=len(ground_truth), default_q=True)
+                         clusters=len(ground_truth), default_q=True)
     all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni"
                                         , mutu5.tfs,
                                         eval="dynamic"))
@@ -61,7 +59,7 @@ def run_experiments(data, ground_truth, network_num):
                                         eval="per_tf"))
     # Timerank with next connection - default q
     mutu6 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='next',
-                        clusters=len(ground_truth), default_q=True)
+                         clusters=len(ground_truth), default_q=True)
     all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni"
                                         , mutu6.tfs, eval="dynamic"))
     all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni",
@@ -159,8 +157,10 @@ def run_experiments(data, ground_truth, network_num):
                        original_graphs=data.graphs)
     all_res.append(evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs,
                                         eval="dynamic"))
-    all_res.append(evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs, eval="sets"))
-    all_res.append(evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs, eval="per_tf"))
+    all_res.append(
+        evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs, eval="sets"))
+    all_res.append(
+        evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs, eval="per_tf"))
     with open('results_hand.txt', 'a') as f:
         f.write("NNTF\n")
         f.write("Error: " + str(fact2.error) + "Seed: " + str(fact2.best_seed) + "\n")
@@ -181,8 +181,8 @@ def run_experiments(data, ground_truth, network_num):
     graphs = preprocessing.getGraphs(ged_data.fileName)
     tracker = Tracker.Tracker(graphs)
     tracker.compare_communities()
-    #outfile = 'tmpfiles/ged_results.csv'
-    outfile = './results/GED-events-handdrawn-'+str(network_num)+'.csv'
+    # outfile = 'tmpfiles/ged_results.csv'
+    outfile = './results/GED-events-handdrawn-' + str(network_num) + '.csv'
     with open(outfile, 'w')as f:
         for hypergraph in tracker.hypergraphs:
             hypergraph.calculateEvents(f)
@@ -205,8 +205,8 @@ def run_experiments(data, ground_truth, network_num):
     graphs = preprocessing.getGraphs(ged_data.fileName)
     tracker = Tracker.Tracker(graphs)
     tracker.compare_communities()
-    #outfile = 'tmpfiles/ged_results.csv'
-    outfile = './results/GED-events-handdrawn-'+str(network_num)+'.csv'
+    # outfile = 'tmpfiles/ged_results.csv'
+    outfile = './results/GED-events-handdrawn-' + str(network_num) + '.csv'
     with open(outfile, 'w')as f:
         for hypergraph in tracker.hypergraphs:
             hypergraph.calculateEvents(f)
@@ -217,22 +217,25 @@ def run_experiments(data, ground_truth, network_num):
         pprint.pprint(ged.dynamic_coms, stream=f, width=150)
     all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs,
                                         eval="dynamic"))
-    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs, eval="sets"))
-    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs, eval="per_tf"))
+    all_res.append(
+        evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs, eval="sets"))
+    all_res.append(
+        evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs, eval="per_tf"))
     return all_res
 
 
 def create_ground_truth(communities, number_of_dynamic_communities):
-        ground_truth = {i: [] for i in range(number_of_dynamic_communities)}
-        for tf, coms in communities.items():
-            for i, com in coms.items():
-                for node in com:
-                    ground_truth[i].append(str(node)+"-t"+str(tf))
-        return ground_truth
+    ground_truth = {i: [] for i in range(number_of_dynamic_communities)}
+    for tf, coms in communities.items():
+        for i, com in coms.items():
+            for node in com:
+                ground_truth[i].append(str(node) + "-t" + str(tf))
+    return ground_truth
 
 
 if __name__ == "__main__":
     from os.path import expanduser
+
     home = expanduser("~")
     # ---------------------------------
     # dblp = dblp_loader("data/dblp/my_dblp_data.json", start_year=2000, end_year=2004, coms='comp')
@@ -240,15 +243,15 @@ if __name__ == "__main__":
     # data = Data(dblp.communities, dblp.graphs, len(dblp.graphs), len(dblp.dynamic_coms))
     # ground_truth = dblp.dynamic_coms
     # ---------------------------------
-    with open(home+"/Dropbox/Msc/thesis/data/hand-drawn-data.json", mode='r') as fp:
+    with open(home + "/Dropbox/Msc/thesis/data/hand-drawn-data.json", mode='r') as fp:
         hand_drawn = json.load(fp)
     for i in range(len(hand_drawn)):
-    #for i in [2]:
+        # for i in [2]:
         data = object_decoder(hand_drawn, i)
-        #from plot import PlotGraphs
-        #PlotGraphs(data.graphs, len(data.graphs), 'hand-written'+str(i), 500)
+        # from plot import PlotGraphs
+        # PlotGraphs(data.graphs, len(data.graphs), 'hand-written'+str(i), 500)
         f = open('results_hand.txt', 'a')
-        f.write("\n"+"-"*80 + "NETWORK #"+str(hand_drawn[i]['id'])+"-"*80+"\n")
+        f.write("\n" + "-" * 80 + "NETWORK #" + str(hand_drawn[i]['id']) + "-" * 80 + "\n")
         f.close()
         print(hand_drawn[i]['id'])
         all_res = run_experiments(data, data.dynamic_truth, hand_drawn[i]['id'])
@@ -265,8 +268,9 @@ if __name__ == "__main__":
             for k, v in res.items():
                 results[k].extend(v)
         f = open('results_hand.txt', 'a')
-        f.write(tabulate(results, headers="keys", tablefmt="fancy_grid").encode('utf8')+"\n")
+        f.write(tabulate(results, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
         import pandas as pd
+
         df = pd.DataFrame.from_dict(results)
         del df["Duration"]
         f.write("\\begin{table}[h!] \n\centering \n\\begin{tabular}{ |p{4cm}||p{2cm}|p{3cm}|p{2cm}|p{2cm}|p{2cm}|} "
@@ -279,9 +283,10 @@ if __name__ == "__main__":
                 f.write(str(row[0]))
                 for item in row[1:]:
                     f.write(" & " + str(item))
-                f.write(str("\\\\")+"\n")
+                f.write(str("\\\\") + "\n")
         f.write("\hline\n\end{tabular}\n\caption{Comparison of different frameworks on Hand-drawn Network \\# "
-                ""+str(hand_drawn[i]['id'])+
-                " illustrated in \\ref{fig: network"+str(hand_drawn[i]['id'])+"} }"
-                "\n\label{table:results-network"+str(hand_drawn[i]['id'])+"}\n\end{table}\n")
+                "" + str(hand_drawn[i]['id']) +
+                " illustrated in \\ref{fig: network" + str(hand_drawn[i]['id']) + "} }"
+                                                                                  "\n\label{table:results-network" + str(
+            hand_drawn[i]['id']) + "}\n\end{table}\n")
         f.close()

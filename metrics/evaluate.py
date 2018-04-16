@@ -86,22 +86,23 @@ def get_results(ground_truth, method, name, tfs_len, eval="dynamic", duration=0)
             if all(isinstance(x, str) for x in results[key]):
                 results[key] = [results[key][0]]
             else:
-                results[key] = [sum(results[key])/len(per_tf)]
-        # pprint.pprint(dict(f))
-        # for k, v in res.iteritems():
-        #     print "KEY ", k, " VALUE ", v
+                results[key] = [sum(results[key]) / len(per_tf)]
+                # pprint.pprint(dict(f))
+                # for k, v in res.iteritems():
+                #     print "KEY ", k, " VALUE ", v
     return results
 
+
 if __name__ == "__main__":
-    comms3 = {0: ['1-t0', '2-t0', '3-t0', '4-t0', '1-t1', '2-t1',  '3-t1', '4-t1', '1-t2', '2-t2', '3-t2', '4-t2'],
+    comms3 = {0: ['1-t0', '2-t0', '3-t0', '4-t0', '1-t1', '2-t1', '3-t1', '4-t1', '1-t2', '2-t2', '3-t2', '4-t2'],
               1: ['11-t1', '12-t1', '13-t1'],
               2: ['5-t2', '6-t2', '7-t2', '5-t0', '6-t0', '7-t0']}
-    comms4 = {1: ['1-t0', '2-t0', '3-t0', '4-t0', '1-t1', '2-t1',  '3-t1', '4-t1', '1-t2', '2-t2', '3-t2','4-t2'],
+    comms4 = {1: ['1-t0', '2-t0', '3-t0', '4-t0', '1-t1', '2-t1', '3-t1', '4-t1', '1-t2', '2-t2', '3-t2', '4-t2'],
               2: ['11-t1', '12-t1', '13-t1'],
               3: ['5-t2', '6-t2', '7-t2'],
               4: ['5-t0', '6-t0', '7-t0']}
     comms5 = {5: ['5-t0', '6-t0', '7-t0'],
-              1: ['1-t0', '2-t0', '3-t0', '4-t0', '1-t1', '2-t1',  '3-t1', '4-t1', '1-t2', '2-t2', '3-t2', '4-t2'],
+              1: ['1-t0', '2-t0', '3-t0', '4-t0', '1-t1', '2-t1', '3-t1', '4-t1', '1-t2', '2-t2', '3-t2', '4-t2'],
               2: ['11-t1', '12-t1', '13-t1', '5-t0', '6-t0', '7-t0'],
               3: ['5-t0', '6-t0', '7-t0', '5-t2', '6-t2', '7-t2'],
               4: ['5-t0', '7-t0', '6-t0', ]}
@@ -120,9 +121,9 @@ if __name__ == "__main__":
     results['Duration'] = []
 
     from tabulate import tabulate
+
     for res in all_res:
         for k, v in res.items():
             results[k].extend(v)
-    print(tabulate(results, headers="keys", tablefmt="fancy_grid").encode('utf8')+"\n")
-
-
+    print(results)
+    print(tabulate(dict(results), headers="keys", tablefmt="grid") + "\n")

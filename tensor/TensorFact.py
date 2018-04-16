@@ -34,20 +34,19 @@ class TensorFact:
         self.A, self.B, self.C = self.nnfact_repeat(seeds)
         self.dynamic_coms = self.get_comms(self.A, self.B, self.C)
         self.duration = str(datetime.timedelta(seconds=int(time.time() - start)))
-        self. timeline = self.get_timeline(self.C)
-        print("communities: ",)
+        self.timeline = self.get_timeline(self.C)
+        print("communities: ", )
         pprint.pprint(self.dynamic_coms, indent=2, width=80)
-        print("communities in timeframes: com:[tfi,tfj...]  ",)
+        print("communities in timeframes: com:[tfi,tfj...]  ", )
         pprint.pprint(self.timeline, indent=2, width=80)
         self.get_fact_info(self.A)
-
 
     def add_self_edges(self):
         """
         Add self edges for each node
         :return: 
         """
-        for i, graph in self.graphs.iteritems():
+        for i, graph in self.graphs.items():
             for v in graph.nodes():
                 graph.add_edge(v, v)
 
@@ -83,7 +82,6 @@ class TensorFact:
                 tensor[self.node_pos[v], self.node_pos[u], i] = 1
         return dtensor(tensor)
 
-
     def create_sptensor(self, graphs):
         """
         Create a sparse tensor
@@ -92,11 +90,11 @@ class TensorFact:
         """
         tuples = []
         # triplets = np.array([(u, v, t) for t in range(1, len(graphs)+1) for u, v in graphs[i].edges_iter()] +
-                       # [(v, u, t) for t in range(1, len(graphs)+1) for u, v in graphs[i].edges_iter()])
-        for i, graph in graphs.iteritems():
+        # [(v, u, t) for t in range(1, len(graphs)+1) for u, v in graphs[i].edges_iter()])
+        for i, graph in graphs.items():
             for u, v in graph.edges_iter():
-                tuples.append([self.node_pos[u], self.node_pos[v], i-1])
-                tuples.append([self.node_pos[v], self.node_pos[u], i-1])
+                tuples.append([self.node_pos[u], self.node_pos[v], i - 1])
+                tuples.append([self.node_pos[v], self.node_pos[u], i - 1])
         triplets = np.array([(u, v, t) for u, v, t in tuples])
         T = sptensor(tuple(triplets.T), vals=np.ones(len(triplets)), shape=(len(self.node_ids), len(self.node_ids),
                                                                             len(graphs)))
@@ -108,7 +106,7 @@ class TensorFact:
         :param num_of_seeds: 
         :return: 
         """
-        seed_list = np.random.randint(0, 4294967295, num_of_seeds)
+        seed_list = np.random.randint(0, 4294967295, num_of_seeds, dtype=np.int64)
         min_error = 1
         for seed in seed_list:
             A_r, B_r, C_r, error_r = self.tensor_decomp(seed)
@@ -121,7 +119,7 @@ class TensorFact:
         if error_c > min_error:
             A, B, C, error = A_r, B_r, C_r, error_r
             self.error = error
-            self.best_seed =best_seed
+            self.best_seed = best_seed
             print("Error = ", error, " seed: ", best_seed)
         else:
             A, B, C, error = A_c, B_c, C_c, error_c
@@ -148,7 +146,7 @@ class TensorFact:
         else:
             Finit = self.get_Finit(seed)
 
-        #Finit = [np.random.rand(X.shape[i], r) for i in range(nWay)]
+        # Finit = [np.random.rand(X.shape[i], r) for i in range(nWay)]
         X_approx_ks = ncp.nonnegative_tensor_factorization(self.tensor, self.num_of_coms, method='anls_bpp',
                                                            stop_criterion=2, init=Finit)
         A = X_approx_ks.U[0]
@@ -169,7 +167,7 @@ class TensorFact:
         :param C:
         :return:
         """
-        comms ={}
+        comms = {}
         for u in range(A.shape[0]):
             if self.overlap:
                 for c in range(A.shape[1]):
@@ -183,37 +181,37 @@ class TensorFact:
                 c_b = np.argmax(B[u, :])
                 if c_a == c_b:
                     if A[u, c_a] > self.thres:
-                            try:
-                                comms[c_a].append(self.node_ids[u])
-                            except KeyError:
-                                comms[c_a] = [self.node_ids[u]]
+                        try:
+                            comms[c_a].append(self.node_ids[u])
+                        except KeyError:
+                            comms[c_a] = [self.node_ids[u]]
                 else:
                     if A[u, c_a] > self.thres:
-                            try:
-                                comms[c_a].append(self.node_ids[u])
-                            except KeyError:
-                                comms[c_a] = [self.node_ids[u]]
+                        try:
+                            comms[c_a].append(self.node_ids[u])
+                        except KeyError:
+                            comms[c_a] = [self.node_ids[u]]
                     if B[u, c_b] > self.thres:
-                            try:
-                                comms[c_b].append(self.node_ids[u])
-                            except KeyError:
-                                comms[c_b] = [self.node_ids[u]]
-        dynamic_coms ={}
-        for i, com in comms.iteritems():
-            for tf, G in self.graphs.iteritems():
+                        try:
+                            comms[c_b].append(self.node_ids[u])
+                        except KeyError:
+                            comms[c_b] = [self.node_ids[u]]
+        dynamic_coms = {}
+        for i, com in comms.items():
+            for tf, G in self.graphs.items():
                 for node in com:
                     if self.orig_graphs:
                         if self.orig_graphs[tf].has_node(node):
                             try:
-                                dynamic_coms[i].append(str(node)+"-t"+str(tf))
+                                dynamic_coms[i].append(str(node) + "-t" + str(tf))
                             except KeyError:
-                                dynamic_coms[i] = [str(node)+"-t"+str(tf)]
+                                dynamic_coms[i] = [str(node) + "-t" + str(tf)]
                     else:
                         if G.has_node(node):
                             try:
-                                dynamic_coms[i].append(str(node)+"-t"+str(tf))
+                                dynamic_coms[i].append(str(node) + "-t" + str(tf))
                             except KeyError:
-                                dynamic_coms[i] = [str(node)+"-t"+str(tf)]
+                                dynamic_coms[i] = [str(node) + "-t" + str(tf)]
         return dynamic_coms
 
     def get_timeline(self, C):
@@ -227,9 +225,9 @@ class TensorFact:
             for c in range(C.shape[1]):
                 if C[t, c] > self.thres:
                     try:
-                        timeline[t+1].append(c+1)
+                        timeline[t + 1].append(c + 1)
                     except KeyError:
-                        timeline[t+1] = [c+1]
+                        timeline[t + 1] = [c + 1]
         return timeline
 
     def aggregated_network_matrix(self):
@@ -238,7 +236,7 @@ class TensorFact:
          there exists an edge between them in any timeframe.
         :return: 
         """
-        agg = sparse.eye(len(self.node_ids), dtype=np.float32,format="dok")
+        agg = sparse.eye(len(self.node_ids), dtype=np.float32, format="dok")
         for i in range(len(self.node_ids)):
             for j in range(i):
                 if sum([self.tensor[i, j, t] for t in range(len(self.graphs))]):
@@ -279,9 +277,11 @@ if __name__ == '__main__':
     graphs = {}
     for i, edges in edges.items():
         graphs[i] = nx.Graph(edges)
-    fact = TensorFact(graphs, num_of_coms=3, seeds=1, threshold=1e-4,original_graphs=graphs, overlap=False)
+    fact = TensorFact(graphs, num_of_coms=3, seeds=1, threshold=1e-4, original_graphs=graphs, overlap=False)
     from metrics import Omega
+
     print(Omega(fact.dynamic_coms, fact.dynamic_coms).omega_score)
     from metrics import NMI
+
     print(NMI(fact.dynamic_coms, fact.dynamic_coms).results)
     print(fact.dynamic_coms)

@@ -58,7 +58,7 @@ class CmdTool(cmd.Cmd):
         """
         if not filePath:
             filePath = "/home/lias/Dropbox/Msc/thesis/src/NEW/synthetic-data-generator/src/expand/"
-            #filePath = "data/synthetic/expand"
+            # filePath = "data/synthetic/expand"
         sd = SyntheticDataConverter(filePath)
         self.graphs = sd.graphs
         self.ground_comms = sd.comms
@@ -70,7 +70,7 @@ class CmdTool(cmd.Cmd):
             Evaluation(sd)
         return
 
-    def do_load_dblp(self, filename, start_year=2000, end_year=2004, conf_file ='data/dblp/confs.txt',
+    def do_load_dblp(self, filename, start_year=2000, end_year=2004, conf_file='data/dblp/confs.txt',
                      coms='components'):
         """
         Load dblp dataset between years given
@@ -100,7 +100,7 @@ class CmdTool(cmd.Cmd):
         # set number of factors to the max number of communities in all timeframes
         if not k:
             k = max([len(comms) for tf, comms in self.comms.iteritems()])
-        TensorFact(self.graphs, num_of_coms=int(k), threshold=1e-4, seeds= int(seeds))
+        TensorFact(self.graphs, num_of_coms=int(k), threshold=1e-4, seeds=int(seeds))
         return
 
     def do_create_muturank_tensor(self, connections):
@@ -121,9 +121,9 @@ class CmdTool(cmd.Cmd):
         """
         threshold = 1e-6
         alpha = 0.85
-        beta= 0.85
+        beta = 0.85
         if not k:
-            k=len(self.ground_comms[0])
+            k = len(self.ground_comms[0])
         mutu = Muturank_new(self.graphs, threshold, alpha, beta, connection, clusters=int(k))
         self.comms = mutu.dynamic_com
         return
@@ -133,10 +133,9 @@ class CmdTool(cmd.Cmd):
         for tf, coms in self.ground_comms.iteritems():
             for i, com in coms.iteritems():
                 for node in com:
-                    ground_truth[i].append(str(node)+"-t"+str(tf))
+                    ground_truth[i].append(str(node) + "-t" + str(tf))
         nmi = NMI(ground_truth, self.comms, evaluation_type="dynamic").results
         print(nmi)
-
 
     def do_plot_graphs(self, node_size):
         """

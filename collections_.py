@@ -11,7 +11,7 @@ class Counter_(Counter):
         '''
         if not isinstance(other, Counter):
             return NotImplemented
-        result = Counter()
+        result = Counter_()
         for elem, count in self.items():
             newcount = count + other[elem]
             if all([newcount]) > 0:

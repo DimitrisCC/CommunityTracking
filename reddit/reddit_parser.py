@@ -47,14 +47,13 @@ class RedditParser:
         with open('data/json/' + filename, 'r') as file:
             for l in file:
                 data = json.loads(l)
-                
 
     @staticmethod
     def get_stats_from_json(date):
         year = str(date[0])
-        month = str(date[1]) if date[1] >= 10 else '0'+str(date[1])
+        month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
         filename = 'RC_' + year + '-' + month + '.json'
-        with open('data/json/'+filename, 'r') as file:
+        with open('data/json/' + filename, 'r') as file:
             red, acc, name = set(), set(), set()
             i = 0
             for l in file:
@@ -63,7 +62,7 @@ class RedditParser:
                 red.add(data['subreddit'])
                 acc.add(data['author'])
                 name.add(data['name'])
-            print("\n"+filename)
+            print("\n" + filename)
             print("reddits: ", len(red))
             print("accounts: ", len(acc))
             print("names: ", len(name))

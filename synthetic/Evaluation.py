@@ -6,6 +6,7 @@ class Evaluation:
     Used to evaluate Synthetic Data created with the generator. Information about falsely classified events
     is printed.
     """
+
     def __init__(self, sd):
         self.events = sd.events
         self.comms = sd.communities
@@ -24,18 +25,18 @@ class Evaluation:
             for event in events:
                 for key, value in event.iteritems():
                     total += 1
-                    old = self.comms[tf-1][key]
+                    old = self.comms[tf - 1][key]
                     new = self.comms[tf][key]
-                    change = (len(new)-len(old))/len(old)*100
+                    change = (len(new) - len(old)) / len(old) * 100
                     if value == 'expand' and change < 10:
                         faults += 1
                     if value == 'contract' and change > -10:
                         faults += 1
-                    # print "Comm", key ,"has changed ", change, "% from tf",tf-1," to", tf, "ground truth" \
-                                                                                        # " says" , event
-            # print "tf ", tf-1, " to ", tf,
-        eval =  str(faults/total*100) + "% of events were wrong. Counted "+ str(faults)+ " in a total of "+str(
+                        # print "Comm", key ,"has changed ", change, "% from tf",tf-1," to", tf, "ground truth" \
+                        # " says" , event
+                        # print "tf ", tf-1, " to ", tf,
+        eval = str(faults / total * 100) + "% of events were wrong. Counted " + str(faults) + " in a total of " + str(
             total) + " events"
         print(eval)
-        with open(self.filePath+"evaluation.txt", 'w') as fp:
+        with open(self.filePath + "evaluation.txt", 'w') as fp:
             fp.write(eval)
