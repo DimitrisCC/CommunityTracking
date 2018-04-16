@@ -7,7 +7,7 @@ from itertools import combinations_with_replacement
 import random
 from tensor import TensorFact
 import pickle
-from collections_ import OrderedDict
+from collections import OrderedDict
 import time
 from tabulate import tabulate
 import datetime

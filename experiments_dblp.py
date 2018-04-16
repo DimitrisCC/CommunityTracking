@@ -8,7 +8,7 @@ from itertools import combinations_with_replacement
 import random
 from tensor import TensorFact
 import pickle
-from collections_ import OrderedDict
+from collections import OrderedDict
 import time
 import json
 from tabulate import tabulate

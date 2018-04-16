@@ -8,7 +8,7 @@ from itertools import combinations_with_replacement
 import random
 from tensor import TensorFact
 import pickle
-from collections_ import OrderedDict
+from collections import OrderedDict
 import time
 import json
 from tabulate import tabulate
@@ -81,9 +81,9 @@ def run_experiments(data, ground_truth, network_num):
         muturank_res[node] = [mutu1.p_new[tf * len(mutu1.node_ids) + i] for tf in range(mutu1.tfs)]
     f = open('results_hand.txt', 'a')
     f.write("ONE CONNECTION\n")
-    f.write(tabulate(muturank_res, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
+    f.write(tabulate(muturank_res, headers="keys", tablefmt="grid") + "\n")
     f.write(tabulate(zip(['t' + str(tf) for tf in mutu1.tfs_list], mutu1.q_new), headers="keys",
-                     tablefmt="fancy_grid").encode('utf8') + "\n")
+                     tablefmt="grid") + "\n")
     f.close()
 
     # Timerank with all connections
@@ -101,9 +101,9 @@ def run_experiments(data, ground_truth, network_num):
         muturank_res[node] = [mutu2.p_new[tf * len(mutu2.node_ids) + i] for tf in range(mutu2.tfs)]
     f = open('results_hand.txt', 'a')
     f.write("ALL CONNECTIONS\n")
-    f.write(tabulate(muturank_res, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
+    f.write(tabulate(muturank_res, headers="keys", tablefmt="grid") + "\n")
     f.write(tabulate(zip(['t' + str(tf) for tf in mutu2.tfs_list], mutu2.q_new), headers="keys",
-                     tablefmt="fancy_grid").encode('utf8') + "\n")
+                     tablefmt="grid") + "\n")
     f.close()
 
     # Timerank with next connection
@@ -121,9 +121,9 @@ def run_experiments(data, ground_truth, network_num):
         muturank_res[node] = [mutu3.p_new[tf * len(mutu3.node_ids) + i] for tf in range(mutu3.tfs)]
     f = open('results_hand.txt', 'a')
     f.write("NEXT CONNECTION\n")
-    f.write(tabulate(muturank_res, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
+    f.write(tabulate(muturank_res, headers="keys", tablefmt="grid") + "\n")
     f.write(tabulate(zip(['t' + str(tf) for tf in mutu3.tfs_list], mutu3.q_new), headers="keys",
-                     tablefmt="fancy_grid").encode('utf8') + "\n")
+                     tablefmt="grid") + "\n")
     f.write("GROUND TRUTH\n")
     pprint.pprint(ground_truth, stream=f, width=150)
     f.write("ONE CONNECTION\n")
@@ -268,7 +268,7 @@ if __name__ == "__main__":
             for k, v in res.items():
                 results[k].extend(v)
         f = open('results_hand.txt', 'a')
-        f.write(tabulate(results, headers="keys", tablefmt="fancy_grid").encode('utf8') + "\n")
+        f.write(tabulate(results, headers="keys", tablefmt="grid") + "\n")
         import pandas as pd
 
         df = pd.DataFrame.from_dict(results)
