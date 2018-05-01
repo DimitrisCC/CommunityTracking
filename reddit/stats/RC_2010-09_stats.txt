@@ -1,0 +1,7 @@
+
+
+--- Main Graph ---
+- Component -
+- Component -
+- Component -umber of edges: 4
+Average degree:   2.6667Network density: 1.3333333333333333Network connected?: TrueAverage clustering coeff: 1.0Triadic closure: 1.0Degree Pearson corr coeff: -0.166666666667

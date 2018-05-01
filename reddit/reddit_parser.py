@@ -126,33 +126,118 @@ class RedditParser:
             nx.write_gml(G, os.path.join('data', 'graphs', gf))
 
     @staticmethod
-    def read_graphs(date):
-        year = str(date[0])
-        month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
-        filename = 'RC_' + year + '-' + month + '.gml'
-        G = nx.read_gml(os.path.join('data', 'graphs', filename))
-        print("Read")
+    def read_graphs(dates, sampling_p=None, mean_degree_sampling=False):
+        Gs = []
+        for date in dates:
+            year = str(date[0])
+            month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
+            filename = 'RC_' + year + '-' + month + '.gml'
+            G = nx.read_gml(os.path.join('data', 'graphs', filename))
+            G.name = 'RC_' + year + '-' + month
+            print("Read")
 
-        #
-        mean_degree = sum(G.degree().values()) / float(len(G))
-        G.remove_nodes_from([n for n in G.nodes() if G.degree(n) < mean_degree])
-        ch = list(np.random.choice(G.nodes(), 2000, replace=False))
-        G = G.subgraph(ch)
-        #
+            # sampling
+            if mean_degree_sampling:
+                mean_degree = sum(G.degree().values()) / float(len(G))
+                G.remove_nodes_from([n for n in G.nodes() if G.degree(n) < mean_degree])
+            if sampling_p is not None:
+                ch = list(np.random.choice(G.nodes(), (1 - sampling_p) * nx.number_of_nodes(G), replace=False))
+                G = G.subgraph(ch)
 
-        partition = community.best_partition(G)
+            Gs.append(G)
 
+        if len(Gs) == 1:
+            return Gs[0]
+        else:
+            return Gs
+
+    @staticmethod
+    def graph_stats(G):
+        path = os.path.dirname(os.path.abspath(__file__))
+        with open(os.path.join(path, 'stats', G.name + '_stats.txt'), 'w+') as f:
+            info = "Network info:\n" + nx.info(G)
+            print(info)
+            f.write(info)
+            dens = "Network density: " + str(nx.density(G))
+            print(dens)
+            f.write(dens)
+            con = "Network connected?: " + str(nx.is_connected(G))
+            print(con)
+            f.write(con)
+            # if nx.is_connected(G):
+            #     diam = "Network diameter: " + str(nx.diameter(G))
+            #     print(diam)
+            #     f.write(diam)
+            avg_cl = 'Average clustering coeff: ' + str(nx.average_clustering(G))
+            print(avg_cl)
+            f.write(avg_cl)
+            trans = "Triadic closure: " + str(nx.transitivity(G))
+            print(trans)
+            f.write(trans)
+            pear = 'Degree Pearson corr coeff: ' + str(nx.degree_pearson_correlation_coefficient(G))
+            print(pear)
+            f.write(pear)
+
+    @staticmethod
+    def get_k_largest_components(G, k=30, min_nodes=3):
+        components = list(nx.connected_component_subgraphs(G))
+        path = os.path.dirname(os.path.abspath(__file__))
+        with open(os.path.join(path, 'stats', G.name + '_stats.txt'), 'w+') as f:
+            comp = 'Number of components: ' + str(len(components))
+            print(comp)
+            f.write(comp)
+            maxc = 'Largest component nodes: ' + str(len(max(components, key=len)))
+            print(maxc)
+            f.write(maxc)
+            minc = 'Smallest component nodes: ' + str(len(min(components, key=len)))
+            print(minc)
+            f.write(minc)
+        kk = min(k, len(components))
+        kk_largest = sorted(components, key=len, reverse=True)[:kk]
+        to_return = []
+        for c in kk_largest:
+            if len(c) >= min_nodes:
+                to_return.append(c)
+        return to_return
+
+    @staticmethod
+    def community_detection(G, method='louvain'):
+        if method == 'louvain':
+            communities = community.best_partition(G)
+            nx.set_node_attributes(G, 'modularity', communities)
+        return G
+
+    @staticmethod
+    def centrality_as_attributes(G):
+        deg = nx.degree_centrality(G)
+        nx.set_node_attributes(G, 'degree', deg)
+        bet = nx.betweenness_centrality(G)
+        nx.set_node_attributes(G, 'betweenness', bet)
+        eig = nx.eigenvector_centrality(G)
+        nx.set_node_attributes(G, 'eigenvector', eig)
+        clos = nx.closeness_centrality(G)
+        nx.set_node_attributes(G, 'closeness', clos)
+        harm = nx.harmonic_centrality(G)
+        nx.set_node_attributes(G, 'harmonic', harm)
+        return G
+
+    @staticmethod
+    def draw(G, partition):
         # drawing
         size = float(len(set(partition.values())))
         pos = nx.spring_layout(G)
         values = [partition.get(node) for node in G.nodes()]
 
         # subreddits
+        r = 0
         reds = nx.get_edge_attributes(G, 'subreddit')
         for red in reds:
+            r += 1
             values = [e for e in G.edges(data=True) if G[e[0]][e[1]]['subreddit'] == red]
             nx.draw_spring(G, cmap=plt.get_cmap('jet'), edgelist=values, edge_color=values, node_size=20,
                            with_labels=False)
+            if r == 3:
+                break
 
         # for com in set(partition.values()) :
         #  list_nodes = [nodes for nodes in partition.keys()
@@ -171,8 +256,21 @@ class RedditParser:
         # plt.show()
 
 
-RedditParser.read_graphs((2010, 9))
+G = RedditParser.read_graphs([(2010, 9)])
 
+path = os.path.dirname(os.path.abspath(__file__))
+f = open(os.path.join(path, 'stats', G.name + '_stats.txt'), 'w+')
+
+print('\n\n--- Main Graph ---')
+f.write('\n\n--- Main Graph ---')
+RedditParser.graph_stats(G)
+components = RedditParser.get_k_largest_components(G, 20)
+
+for c in components:
+    print('\n- Component -')
+    f.write('\n- Component -')
+    RedditParser.graph_stats(c)
+f.close()
 
 # rp = RedditParser(from_=(2010, 10), to_=(2010, 10))
 # rp.dump_to_json()
