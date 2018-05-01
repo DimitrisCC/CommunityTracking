@@ -18,13 +18,13 @@ class Louvain:
         self.get_communities()
 
     def get_communities(self):
-        for tf, graph in self.graphs.iteritems():
+        for tf, graph in self.graphs.items():
             self.communities[tf] = self.run_louvain(graph)
 
     def run_louvain(self, G):
         com_dict = {}
         partition = community.best_partition(G)
-        for node, c in partition.iteritems():
+        for node, c in partition.items():
             try:
                 com_dict[c].append(node)
             except KeyError:
@@ -39,6 +39,6 @@ if __name__ == "__main__":
         1: [(11, 12), (11, 13), (12, 13)],
         2: [(1, 2), (1, 3), (1, 4), (3, 4), (5, 6), (6, 7), (5, 7)]
     }
-    graphs = {i: nx.Graph(edges) for i, edges in edges.iteritems()}
+    graphs = {i: nx.Graph(edges) for i, edges in edges.items()}
     louvain = Louvain(graphs)
     # print list(list(nx.k_clique_communities(graphs[0], 2))[0])

@@ -13,6 +13,8 @@ import time
 import json
 from tabulate import tabulate
 import pprint
+from ged_lib import Tracker
+from ged_lib import preprocessing
 
 
 class Data(object):
@@ -174,16 +176,19 @@ def run_experiments(data, ground_truth, network_num):
     # GED
     import sys
     sys.path.insert(0, '../GED/')
-    import preprocessing, Tracker
+    # import preprocessing, Tracker
     start_time = time.time()
-    from ged import GedWrite, ReadGEDResults
+    from ged import GedLoad, GedWrite, ReadGEDResults
     ged_data = GedWrite(data)
     graphs = preprocessing.getGraphs(ged_data.fileName)
     tracker = Tracker.Tracker(graphs)
     tracker.compare_communities()
     # outfile = 'tmpfiles/ged_results.csv'
-    outfile = './results/GED-events-handdrawn-' + str(network_num) + '.csv'
-    with open(outfile, 'w')as f:
+    if not os.path.exists('results'):
+        os.makedirs('results')
+    outfile = os.path.join('results', 'GED-events-handdrawn' + str(network_num) + '.csv')
+    # outfile = './results/GED-events-handdrawn-' + str(network_num) + '.csv'
+    with open(outfile, 'w+') as f:
         for hypergraph in tracker.hypergraphs:
             hypergraph.calculateEvents(f)
     print("--- %s seconds ---" % (time.time() - start_time))
@@ -198,7 +203,7 @@ def run_experiments(data, ground_truth, network_num):
     # GED
     import sys
     sys.path.insert(0, '../GED/')
-    import preprocessing, Tracker
+    # import preprocessing, Tracker
     start_time = time.time()
     from ged import GedWrite, ReadGEDResults
     ged_data = GedWrite(Data(mutu1.comms, data.graphs, len(graphs), len(mutu1.dynamic_coms), mutu1.dynamic_coms))
@@ -234,16 +239,19 @@ def create_ground_truth(communities, number_of_dynamic_communities):
 
 
 if __name__ == "__main__":
-    from os.path import expanduser
 
-    home = expanduser("~")
     # ---------------------------------
     # dblp = dblp_loader("data/dblp/my_dblp_data.json", start_year=2000, end_year=2004, coms='comp')
     # number_of_dynamic_communities = len(dblp.dynamic_coms)
     # data = Data(dblp.communities, dblp.graphs, len(dblp.graphs), len(dblp.dynamic_coms))
     # ground_truth = dblp.dynamic_coms
     # ---------------------------------
-    with open(home + "/Dropbox/Msc/thesis/data/hand-drawn-data.json", mode='r') as fp:
+    import os
+
+    path_full = os.path.dirname(os.path.abspath(__file__))
+    path_full = os.path.join(path_full, "data", "hand-drawn-data.json")
+
+    with open(path_full, mode='r') as fp:
         hand_drawn = json.load(fp)
     for i in range(len(hand_drawn)):
         # for i in [2]:

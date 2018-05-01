@@ -17,18 +17,18 @@ class Communities:
             self.k_clique_communities()
 
     def k_clique_communities(self):
-        for tf, graph in self.graphs.iteritems():
+        for tf, graph in self.graphs.items():
             coms = list(nx.k_clique_communities(graph, 2))
             self.communities[tf] = {i: list(com) for i, com in enumerate(coms)}
 
     def louvain(self):
-        for tf, graph in self.graphs.iteritems():
+        for tf, graph in self.graphs.items():
             self.communities[tf] = self.run_louvain(graph)
 
     def run_louvain(self, G):
         com_dict = {}
         partition = community.best_partition(G)
-        for node, c in partition.iteritems():
+        for node, c in partition.items():
             try:
                 com_dict[c].append(node)
             except KeyError:
@@ -36,7 +36,7 @@ class Communities:
         for c in com_dict.keys():
             if not com_dict[c]:
                 del com_dict[c]
-        new_com_dict = {i: com for i, (c, com) in enumerate(com_dict.iteritems())}
+        new_com_dict = {i: com for i, (c, com) in enumerate(com_dict.items())}
         return new_com_dict
 
 
@@ -46,6 +46,6 @@ if __name__ == "__main__":
         1: [(11, 12), (11, 13), (12, 13)],
         2: [(1, 2), (1, 3), (1, 4), (3, 4), (5, 6), (6, 7), (5, 7)]
     }
-    graphs = {i: nx.Graph(edges) for i, edges in edges.iteritems()}
+    graphs = {i: nx.Graph(edges) for i, edges in edges.items()}
     comz = Communities(graphs)
     print(comz.communities)

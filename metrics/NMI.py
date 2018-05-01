@@ -112,9 +112,13 @@ class NMI:
     def get_results(self, results):
         res = {}
         for line in results:
-            if line.split(":")[1] == "":
+            lr = line.split(':')
+            if lr[1] == "":
                 continue
-            res[line.split(":")[0]] = float(line.split(":")[1].strip())
+            elif lr[1].strip() == '-1.#IND':
+                res[lr[0]] = 0
+            else:
+                res[lr[0]] = float(lr[1].strip())
         return res
 
 

@@ -1,5 +1,5 @@
 from ged import GedLoad
-from collections_ import OrderedDict
+from collections import OrderedDict
 
 
 class ReadGEDResults:
@@ -33,7 +33,7 @@ class ReadGEDResults:
                 cont[tf, com] = False
             return new_com
 
-        for key, value in cont.iteritems():
+        for key, value in cont.items():
             if value:
                 tf1, com1 = key
                 tf2, com2 = value
@@ -46,8 +46,8 @@ class ReadGEDResults:
 
                 dynamic_coms_list.append(new_com)
 
-        for tf, coms in self.coms.iteritems():
-            for i, c in coms.iteritems():
+        for tf, coms in self.coms.items():
+            for i, c in coms.items():
                 if (tf, i) in cont:
                     continue
                 else:
