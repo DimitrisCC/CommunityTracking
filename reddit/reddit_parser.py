@@ -8,20 +8,22 @@ import networkx as nx
 import community
 import matplotlib.pyplot as plt
 import numpy as np
+from collections import defaultdict
 
 
 class RedditParser:
     fields = ['name', 'author', 'subreddit_id', 'subreddit', 'parent_id', 'link_id', 'created_utc', 'score']
     types = {'t1': 'comment', 't2': 'account', 't3': 'link', 't4': 'message', 't5': 'subreddit', 't6': 'award'}
+    path = os.path.dirname(os.path.abspath(__file__))
 
     def __init__(self, from_, to_):
         self.from_year = int(from_[0])
         self.from_month = int(from_[1])
         self.to_year = int(to_[0])
         self.to_month = int(to_[1])
-        path_full = os.path.dirname(os.path.abspath(__file__))
-        self.path = os.path.join(path_full, "data")
-        self.files = os.listdir(self.path)
+        self.path = os.path.dirname(os.path.abspath(__file__))
+        self.datapath = os.path.join(self.path, "data")
+        self.files = os.listdir(self.datapath)
         self.files.remove('json')
 
     def dump_to_json(self):
@@ -31,8 +33,8 @@ class RedditParser:
             f_year = int(sfile[3:7])
             if self.from_year <= f_year <= self.to_year:
                 if self.from_month <= f_month <= self.to_month:
-                    dfile = os.path.join(self.path, file)
-                    jfile = os.path.join(self.path, 'json', sfile[:-3] + 'json')
+                    dfile = os.path.join(self.datapath, file)
+                    jfile = os.path.join(self.datapath, 'json', sfile[:-3] + 'json')
                     with bz2.open(dfile, 'r') as data, open(jfile, 'w+') as jsondump:
                         print(sfile)
                         for line in data:
@@ -69,24 +71,61 @@ class RedditParser:
             print(red.get_group(key), "\n\n")
 
     @staticmethod
-    def get_stats_from_json_(date):
+    def get_week_stats_from_json(date, distribution=False):
         year = str(date[0])
         month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
-        filename = 'RC_' + year + '-' + month + '.json'
-        with open('data/json/' + filename, 'r') as file:
-            red, acc, name = set(), set(), set()
-            i = 0
+        filename = 'RC_' + year + '-' + month
+        distr = '_distr' if distribution is True else ''
+        with open('data/json/' + filename + '.json', 'r') as file, \
+                open(os.path.join(RedditParser.path, 'stats', filename + '_weeks' + distr + '.txt'), 'w+') as fweeks:
+            red = [set(), set(), set(), set()]
+            acc = [set(), set(), set(), set()]
+            name = [set(), set(), set(), set()]
+            subs = [defaultdict(int), defaultdict(int), defaultdict(int), defaultdict(int)]
+            i = [0, 0, 0, 0]
             for l in file:
-                i += 1
                 data = json.loads(l)
-                red.add(data['subreddit'])
-                acc.add(data['author'])
-                name.add(data['name'])
-            print("\n" + filename)
-            print("reddits: ", len(red))
-            print("accounts: ", len(acc))
-            print("names: ", len(name))
-            print('all: ', i)
+                author = data['author']
+                if author != '[deleted]':
+                    day = int(data['created_utc'][-2:])
+                    week = (day - 1) // 7
+                    if week < 4:
+                        acc[week].add(author)
+                        subreddit = data['subreddit']
+                        red[week].add(subreddit)
+                        name[week].add(data['name'])
+                        subs[week][subreddit] += 1
+                        i[week] += 1
+
+            nrmlz = i if distribution else [1, 1, 1, 1]  # normalizers
+            fweeks.write(filename)
+            fweeks.write('\n----------------')
+            for w in range(4):
+                fweeks.write('\nWeek ' + str(w))
+                fweeks.write('\n--------------')
+                fweeks.write("\nreddits: " + str(len(red[w])))
+                fweeks.write("\naccounts: " + str(len(acc[w])))
+                fweeks.write("\nnames: " + str(len(name[w])))
+                fweeks.write('\nall posts: ' + str(i[w]) + '\n')
+                fweeks.write('\nSubreddits: posts +- from previous week\n')
+                sorted_reds = sorted(subs[w].items(), key=lambda k_v: k_v[1], reverse=True)
+                for sr in sorted_reds:
+                    diff = ''
+                    if w > 0:
+                        diff = sr[1] / nrmlz[w] - subs[w - 1][sr[0]] / nrmlz[w - 1]
+                        diff = str(diff) if diff < 0 else '+' + str(diff)
+                    fweeks.write('\t' + sr[0] + ": " + str(sr[1] / nrmlz[w]) + ' ' + diff + '\n')
+            fweeks.write('all: ' + str(sum(i)))
+
+            for w in range(1, 4):
+                new = set(subs[w].keys()) - set(subs[w - 1].keys())
+                dead = set(subs[w - 1].keys()) - set(subs[w].keys())
+                print('NEW ', "Week ", w, "||   Num: ", len(new))
+                print(new)
+                print('----')
+                print('DEAD ', "Weel ", w, "||   Num: ", len(dead))
+                print(dead)
+                print()
 
     @staticmethod
     def create_graph_from_json(date, p=1):
@@ -152,46 +191,42 @@ class RedditParser:
             return Gs
 
     @staticmethod
-    def graph_stats(G):
-        path = os.path.dirname(os.path.abspath(__file__))
-        with open(os.path.join(path, 'stats', G.name + '_stats.txt'), 'w+') as f:
-            info = "Network info:\n" + nx.info(G)
-            print(info)
-            f.write(info)
-            dens = "Network density: " + str(nx.density(G))
-            print(dens)
-            f.write(dens)
-            con = "Network connected?: " + str(nx.is_connected(G))
-            print(con)
-            f.write(con)
-            # if nx.is_connected(G):
-            #     diam = "Network diameter: " + str(nx.diameter(G))
-            #     print(diam)
-            #     f.write(diam)
-            avg_cl = 'Average clustering coeff: ' + str(nx.average_clustering(G))
-            print(avg_cl)
-            f.write(avg_cl)
-            trans = "Triadic closure: " + str(nx.transitivity(G))
-            print(trans)
-            f.write(trans)
-            pear = 'Degree Pearson corr coeff: ' + str(nx.degree_pearson_correlation_coefficient(G))
-            print(pear)
-            f.write(pear)
+    def graph_stats(G, file=None):
+        info = "Network info:\n" + nx.info(G)
+        print(info)
+        file.write(info + '\n')
+        dens = "Network density: " + str(nx.density(G))
+        print(dens)
+        file.write(dens + '\n')
+        con = "Network connected?: " + str(nx.is_connected(G))
+        print(con)
+        file.write(con + '\n')
+        # if nx.is_connected(G):
+        #     diam = "Network diameter: " + str(nx.diameter(G))
+        #     print(diam)
+        #     f.write(diam)
+        avg_cl = 'Average clustering coeff: ' + str(nx.average_clustering(G))
+        print(avg_cl)
+        file.write(avg_cl + '\n')
+        trans = "Triadic closure: " + str(nx.transitivity(G))
+        print(trans)
+        file.write(trans + '\n')
+        pear = 'Degree Pearson corr coeff: ' + str(nx.degree_pearson_correlation_coefficient(G))
+        print(pear)
+        file.write(pear + '\n')
 
     @staticmethod
-    def get_k_largest_components(G, k=30, min_nodes=3):
+    def get_k_largest_components(G, k=30, min_nodes=3, file=None):
         components = list(nx.connected_component_subgraphs(G))
-        path = os.path.dirname(os.path.abspath(__file__))
-        with open(os.path.join(path, 'stats', G.name + '_stats.txt'), 'w+') as f:
-            comp = 'Number of components: ' + str(len(components))
-            print(comp)
-            f.write(comp)
-            maxc = 'Largest component nodes: ' + str(len(max(components, key=len)))
-            print(maxc)
-            f.write(maxc)
-            minc = 'Smallest component nodes: ' + str(len(min(components, key=len)))
-            print(minc)
-            f.write(minc)
+        comp = 'Number of components: ' + str(len(components))
+        print(comp)
+        file.write(comp + '\n')
+        maxc = 'Largest component nodes: ' + str(len(max(components, key=len)))
+        print(maxc)
+        file.write(maxc + '\n')
+        minc = 'Smallest component nodes: ' + str(len(min(components, key=len)))
+        print(minc)
+        file.write(minc + '\n')
         kk = min(k, len(components))
         kk_largest = sorted(components, key=len, reverse=True)[:kk]
         to_return = []
@@ -256,21 +291,42 @@ class RedditParser:
         # plt.show()
 
 
-G = RedditParser.read_graphs([(2010, 9)])
+def write_stats():
+    G = RedditParser.read_graphs([(2010, 9)])
 
-path = os.path.dirname(os.path.abspath(__file__))
-f = open(os.path.join(path, 'stats', G.name + '_stats.txt'), 'w+')
+    f = open(os.path.join(RedditParser.path, 'stats', G.name + '_stats.txt'), 'w+')
 
-print('\n\n--- Main Graph ---')
-f.write('\n\n--- Main Graph ---')
-RedditParser.graph_stats(G)
-components = RedditParser.get_k_largest_components(G, 20)
+    print('\n\n--- Main Graph ---')
+    f.write('\n\n--- Main Graph ---\n')
+    RedditParser.graph_stats(G, f)
+    components = RedditParser.get_k_largest_components(G, 20, file=f)
 
-for c in components:
-    print('\n- Component -')
-    f.write('\n- Component -')
-    RedditParser.graph_stats(c)
-f.close()
+    for c in components:
+        print('\n- Component -')
+        f.write('\n- Component -\n')
+        RedditParser.graph_stats(c, f)
+    f.close()
+
+
+RedditParser.get_week_stats_from_json((2010, 9), distribution=True)
+
+# write_stats()
+# G = RedditParser.read_graphs([(2010, 9)])
+# G = RedditParser.community_detection(G)
+# dic = defaultdict(int)
+# for e in G.edges(data=True):
+#     nodes = G.nodes(data=True)
+#     n1 = G.nodes(data=True)[e[0]]
+#     n2 = G.nodes(data=True)[e[1]]
+#     subreddit1 = n1['subreddit']
+#     subreddit2 = n2['subreddit']
+#     com = e[2]['modularity']
+#     dic[com][subreddit1] += 1
+#     dic[com][subreddit2] += 1
+#
+# print(dic)
+
+
 
 # rp = RedditParser(from_=(2010, 10), to_=(2010, 10))
 # rp.dump_to_json()

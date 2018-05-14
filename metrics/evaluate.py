@@ -46,13 +46,14 @@ def remove_duplicate_coms(communities):
 
 
 def evaluate(ground_truth, method, name, eval, duration):
-    nmi = NMI.NMI(ground_truth, method).results
+    ## TEMPORARILY without NMI
+    # nmi = NMI.NMI(ground_truth, method).results
     omega = Omega.Omega(ground_truth, method)
     bcubed = Bcubed.Bcubed(ground_truth, method)
     results = OrderedDict()
     results["Method"] = [name]
     results["Eval"] = [eval]
-    results['NMI'] = ["{0:.4f}".format(nmi['NMI<Max>'])]
+    results['NMI'] = [0]  # ["{0:.4f}".format(nmi['NMI<Max>'])]
     results['Omega'] = ["{0:.4f}".format(omega.omega_score)]
     results['Bcubed-Precision'] = ["{0:.4f}".format(bcubed.precision)]
     results['Bcubed-Recall'] = ["{0:.4f}".format(bcubed.recall)]
