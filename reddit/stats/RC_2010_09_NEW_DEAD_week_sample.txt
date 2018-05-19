@@ -1,0 +1,21 @@
+RC_2010-09
+----------------
+Sampling: , uniform_p=0.4, min_replies=130, max_replies=16000, max_p=0.08
+----------------
+
+NEW  Week  1 ||   Num:  0
+
+----
+DEAD  Week  1 ||   Num:  2
+reachclan :  3,  RedditCarpool :  2,
+
+NEW  Week  2 ||   Num:  3
+RedditCarpool :  554,  PlacetoStay :  143,  reachclan :  44,
+----
+DEAD  Week  2 ||   Num:  0
+
+
+NEW  Week  3 ||   Num:  1
+playitforward :  294,
+----
+DEAD  Week  3 ||   Num:  0

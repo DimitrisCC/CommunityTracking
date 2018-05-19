@@ -48,6 +48,35 @@ class RedditParser:
                             jsondump.write('\n')
 
     @staticmethod
+    def sampling(data, uniform_p=0.4, min_replies=130, max_replies=16000, max_p=0.08):
+        # general uniform sampling
+        sample = []
+        for tf in data:
+            sample.append(np.random.choice(tf, round(uniform_p * len(tf)), replace=False))
+        reddits_count = defaultdict(int)
+        all = 0
+        reddits_to_remove = set()
+        final_data = []
+        for tf in sample:
+            for d in tf:
+                reddits_count[d['subreddit']] += 1
+                all += 1
+        for reddit, count in reddits_count.items():
+            r_distr = count / all
+            if count < min_replies or count > max_replies or r_distr > max_p:
+                reddits_to_remove.add(reddit)
+        for tf in sample:
+            final_tf = []
+            for d in tf:
+                if d['subreddit'] not in reddits_to_remove:
+                    final_tf.append(d)
+            # else:
+            #         if d['subreddit'] in reddits_count:
+            #             del reddits_count[d['subreddit']]
+            final_data.append(final_tf)
+        return final_data
+
+    @staticmethod
     def get_stats_from_json(date, sample_p_post=0.5, sample_p_com=0.333):
         year = str(date[0])
         month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
@@ -71,34 +100,52 @@ class RedditParser:
             print(red.get_group(key), "\n\n")
 
     @staticmethod
-    def get_week_stats_from_json(date, distribution=False):
+    def get_week_stats_from_json(date, distribution=False,
+                                 uniform_p=0.4, min_replies=130, max_replies=16000, max_p=0.08):
+        sampling = True
+        sampling_str = '_sample'
+        if uniform_p == 1 or min_replies == 1 or max_replies == float('inf') or max_p == 1:
+            sampling = False
+            sampling_str = ''
         year = str(date[0])
         month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
         filename = 'RC_' + year + '-' + month
         distr = '_distr' if distribution is True else ''
         with open('data/json/' + filename + '.json', 'r') as file, \
-                open(os.path.join(RedditParser.path, 'stats', filename + '_weeks' + distr + '.txt'), 'w+') as fweeks:
+                open(os.path.join(RedditParser.path, 'stats',
+                                  '{0}_weeks{1}{2}.txt'.format(filename, distr, sampling_str)), 'w+') as fweeks:
             red = [set(), set(), set(), set()]
             acc = [set(), set(), set(), set()]
             name = [set(), set(), set(), set()]
             subs = [defaultdict(int), defaultdict(int), defaultdict(int), defaultdict(int)]
             i = [0, 0, 0, 0]
+            wdata = [[], [], [], []]
             for l in file:
                 data = json.loads(l)
-                author = data['author']
-                if author != '[deleted]':
+                if data['author'] != '[deleted]':
                     day = int(data['created_utc'][-2:])
                     week = (day - 1) // 7
                     if week < 4:
-                        acc[week].add(author)
-                        subreddit = data['subreddit']
-                        red[week].add(subreddit)
-                        name[week].add(data['name'])
-                        subs[week][subreddit] += 1
-                        i[week] += 1
+                        keep_keys = ['name', 'author', 'subreddit', 'parent_id']
+                        data = dict((k, data[k]) for k in keep_keys if k in data)
+                        wdata[week].append(data)
+                        ########
+            # sampling
+            wdata = RedditParser.sampling(wdata, uniform_p, min_replies, max_replies)
+            for w in range(4):
+                for cur_data in wdata[w]:
+                    acc[w].add(cur_data['author'])
+                    subreddit = cur_data['subreddit']
+                    red[w].add(subreddit)
+                    name[w].add(cur_data['name'])
+                    subs[w][subreddit] += 1
+                i[w] = len(wdata[w])
 
             nrmlz = i if distribution else [1, 1, 1, 1]  # normalizers
             fweeks.write(filename)
+            fweeks.write('\n----------------')
+            fweeks.write('\nSampling: ' + ", uniform_p=" + str(uniform_p) + ", min_replies=" + str(min_replies)
+                         + ", max_replies=" + str(max_replies) + ", max_p=" + str(max_p))
             fweeks.write('\n----------------')
             for w in range(4):
                 fweeks.write('\nWeek ' + str(w))
@@ -111,21 +158,33 @@ class RedditParser:
                 sorted_reds = sorted(subs[w].items(), key=lambda k_v: k_v[1], reverse=True)
                 for sr in sorted_reds:
                     diff = ''
+                    prev = 0
                     if w > 0:
-                        diff = sr[1] / nrmlz[w] - subs[w - 1][sr[0]] / nrmlz[w - 1]
+                        if sr[0] in subs[w - 1]:  # check so that it won't create a new key with 0 value
+                            prev = subs[w - 1][sr[0]] / nrmlz[w - 1]
+                        diff = int(sr[1] - prev) if nrmlz[w] == 1 else sr[1] / nrmlz[w] - prev
                         diff = str(diff) if diff < 0 else '+' + str(diff)
-                    fweeks.write('\t' + sr[0] + ": " + str(sr[1] / nrmlz[w]) + ' ' + diff + '\n')
-            fweeks.write('all: ' + str(sum(i)))
+                    cc = sr[1] if nrmlz[w] == 1 else sr[1] / nrmlz[w]
+                    fweeks.write('\t' + sr[0] + ": " + str(cc) + ' ' + diff + '\n')
 
-            for w in range(1, 4):
-                new = set(subs[w].keys()) - set(subs[w - 1].keys())
-                dead = set(subs[w - 1].keys()) - set(subs[w].keys())
-                print('NEW ', "Week ", w, "||   Num: ", len(new))
-                print(new)
-                print('----')
-                print('DEAD ', "Weel ", w, "||   Num: ", len(dead))
-                print(dead)
-                print()
+                # NEW and DEAD
+                if w > 0:
+                    new = set(subs[w].keys()) - set(subs[w - 1].keys())
+                    dead = set(subs[w - 1].keys()) - set(subs[w].keys())
+                    print('NEW ', "Week ", w, "||   Num: ", len(new))
+                    for k, _ in sorted_reds:
+                        if k in new:
+                            print(k, ": ", subs[w][k], end=',  ')
+                    print()
+                    print('----')
+                    print('DEAD ', "Week ", w, "||   Num: ", len(dead))
+                    for k, _ in prev_sorted_reds:
+                        if k in dead:
+                            print(k, ": ", subs[w - 1][k], end=',  ')
+                    print()
+                    print()
+                prev_sorted_reds = sorted_reds
+            fweeks.write('all: ' + str(sum(i)))
 
     @staticmethod
     def create_graph_from_json(date, p=1):
@@ -140,8 +199,8 @@ class RedditParser:
                     d = json.loads(l)
                     if d['author'] == '[deleted]':
                         continue
-                    data[d['name']] = {'author': d['author'], 'pid': d['parent_id'], 'subreddit': d['subreddit'],
-                                       'time': d['created_utc']}
+                    data[d['name']] = {'author': d['author'], 'pid': d['parent_id'], 'subreddit': d['subreddit']}
+                    # 'time': d['created_utc']}
             print('OKKKKKKKKKKKKKKKKKKKKKKK')
             print("Length: ", len(data))
             edges = []
