@@ -1,0 +1,277 @@
+
+
+--- Main Graph ---
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 17611
+Number of edges: 18383
+Average degree:   2.0877
+Network density: 0.00011855039621969787
+Network connected?: False
+Average clustering coeff: 0.0076111127974568425
+Triadic closure: 0.01055535366216261
+Degree Pearson corr coeff: 0.0203855506321
+Number of components: 1928
+Largest component nodes: 12959
+Smallest component nodes: 1
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 12959
+Number of edges: 15592
+Average degree:   2.4064
+Network density: 0.00018570446946423368
+Network connected?: True
+Average clustering coeff: 0.009525372905009063
+Triadic closure: 0.010496038754604633
+Degree Pearson corr coeff: -0.0483662558333
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 14
+Number of edges: 13
+Average degree:   1.8571
+Network density: 0.14285714285714285
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.361904761905
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 12
+Number of edges: 11
+Average degree:   1.8333
+Network density: 0.16666666666666666
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.384105960265
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 12
+Number of edges: 11
+Average degree:   1.8333
+Network density: 0.16666666666666666
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.232
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 12
+Number of edges: 11
+Average degree:   1.8333
+Network density: 0.16666666666666666
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.525879917184
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 12
+Number of edges: 11
+Average degree:   1.8333
+Network density: 0.16666666666666666
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.222222222222
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 10
+Number of edges: 9
+Average degree:   1.8000
+Network density: 0.2
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.599173553719
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 10
+Number of edges: 9
+Average degree:   1.8000
+Network density: 0.2
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.5
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 10
+Number of edges: 9
+Average degree:   1.8000
+Network density: 0.2
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.739130434783
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 9
+Number of edges: 9
+Average degree:   2.0000
+Network density: 0.25
+Network connected?: True
+Average clustering coeff: 0.15925925925925927
+Triadic closure: 0.1875
+Degree Pearson corr coeff: -0.459459459459
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 8
+Number of edges: 7
+Average degree:   1.7500
+Network density: 0.25
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.586666666667
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 8
+Number of edges: 7
+Average degree:   1.7500
+Network density: 0.25
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.333333333333
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 8
+Number of edges: 7
+Average degree:   1.7500
+Network density: 0.25
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.484848484848
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 8
+Number of edges: 7
+Average degree:   1.7500
+Network density: 0.25
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.666666666667
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 8
+Number of edges: 7
+Average degree:   1.7500
+Network density: 0.25
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: 0.0
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 8
+Number of edges: 7
+Average degree:   1.7500
+Network density: 0.25
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -1.0
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 8
+Number of edges: 7
+Average degree:   1.7500
+Network density: 0.25
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.493333333333
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 8
+Number of edges: 7
+Average degree:   1.7500
+Network density: 0.25
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.586666666667
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 8
+Number of edges: 7
+Average degree:   1.7500
+Network density: 0.25
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.666666666667
+
+- Component -
+Network info:
+Name: RC_2010-09_2
+Type: Graph
+Number of nodes: 7
+Number of edges: 6
+Average degree:   1.7143
+Network density: 0.2857142857142857
+Network connected?: True
+Average clustering coeff: 0.0
+Triadic closure: 0.0
+Degree Pearson corr coeff: -0.333333333333

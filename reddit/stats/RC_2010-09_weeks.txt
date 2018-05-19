@@ -1,0 +1,8850 @@
+RC_2010-09
+----------------
+Week 0
+--------------
+reddits: 2151
+accounts: 94898
+names: 795281
+
+Subreddits:
+	AskReddit: 136254 
+	pics: 69069 
+	reddit.com: 50858 
+	politics: 38033 
+	IAmA: 32061 
+	gaming: 27548 
+	WTF: 26657 
+	atheism: 23758 
+	funny: 22489 
+	trees: 17499 
+	fffffffuuuuuuuuuuuu: 12457 
+	worldnews: 11806 
+	science: 10911 
+	starcraft: 10782 
+	programming: 8409 
+	videos: 7767 
+	technology: 7640 
+	Music: 7547 
+	TwoXChromosomes: 7086 
+	DoesAnybodyElse: 6778 
+	Minecraft: 6110 
+	todayilearned: 5894 
+	Android: 5596 
+	sex: 5248 
+	Fitness: 5229 
+	Economics: 5111 
+	self: 4897 
+	apple: 4644 
+	movies: 4226 
+	offbeat: 4174 
+	blog: 4139 
+	Libertarian: 4066 
+	canada: 4060 
+	gonewild: 3994 
+	comics: 3659 
+	shittyadvice: 3473 
+	relationship_advice: 3200 
+	food: 3181 
+	tf2: 3115 
+	geek: 3060 
+	entertainment: 2996 
+	scifi: 2853 
+	linux: 2777 
+	lgbt: 2684 
+	guns: 2681 
+	news: 2547 
+	books: 2495 
+	sports: 2461 
+	soccer: 2396 
+	photography: 2392 
+	MensRights: 2379 
+	environment: 2231 
+	business: 2156 
+	Anarchism: 2082 
+	Frugal: 2082 
+	australia: 2049 
+	nsfw: 1977 
+	relationships: 1955 
+	bicycling: 1890 
+	MW2: 1732 
+	wow: 1708 
+	ffxiv: 1604 
+	circlejerk: 1603 
+	math: 1503 
+	conspiracy: 1500 
+	Cooking: 1477 
+	Christianity: 1446 
+	motorcycles: 1420 
+	gadgets: 1379 
+	WeAreTheMusicMakers: 1348 
+	seduction: 1316 
+	exmormon: 1209 
+	Guitar: 1200 
+	answers: 1181 
+	buildapc: 1177 
+	web_design: 1167 
+	techsupport: 1167 
+	nfl: 1134 
+	philosophy: 1128 
+	humor: 1126 
+	anime: 1121 
+	Drugs: 1118 
+	fantasyfootball: 1032 
+	iphone: 1031 
+	leagueoflegends: 1023 
+	hardware: 1012 
+	wikipedia: 1010 
+	DIY: 1003 
+	hockey: 966 
+	beer: 953 
+	promos: 948 
+	aww: 930 
+	Marijuana: 929 
+	Metal: 901 
+	space: 875 
+	toronto: 871 
+	Health: 866 
+	listentothis: 849 
+	skeptic: 837 
+	Seattle: 831 
+	itookapicture: 830 
+	MMA: 829 
+	netsec: 819 
+	bestof: 813 
+	unitedkingdom: 812 
+	Homebrewing: 795 
+	Eve: 774 
+	drunk: 766 
+	redditoroftheday: 755 
+	malefashionadvice: 754 
+	dwarffortress: 721 
+	Favors: 714 
+	PS3: 687 
+	rpg: 684 
+	history: 659 
+	travel: 658 
+	nyc: 643 
+	SuicideWatch: 627 
+	askscience: 615 
+	baseball: 604 
+	psychology: 585 
+	Pets: 578 
+	Autos: 566 
+	dubstep: 565 
+	energy: 559 
+	Portland: 542 
+	bubbling: 535 
+	Israel: 516 
+	CFB: 515 
+	Ubuntu: 511 
+	needadvice: 508 
+	Art: 506 
+	magicTCG: 506 
+	writing: 503 
+	digg: 499 
+	Austin: 483 
+	Design: 480 
+	doctorwho: 467 
+	redditguild: 464 
+	badcompany2: 449 
+	cogsci: 443 
+	worldpolitics: 441 
+	woahdude: 440 
+	WebGames: 439 
+	MLS: 429 
+	running: 424 
+	comicbooks: 418 
+	ukpolitics: 409 
+	chicago: 401 
+	boston: 401 
+	tipofmytongue: 399 
+	electronicmusic: 399 
+	vegan: 397 
+	rit: 394 
+	economy: 378 
+	chemistry: 374 
+	islam: 371 
+	Buddhism: 369 
+	formula1: 366 
+	depression: 363 
+	startrek: 347 
+	religion: 346 
+	DebateAChristian: 343 
+	UniversityofReddit: 339 
+	happy: 333 
+	evedreddit: 328 
+	television: 322 
+	collapse: 321 
+	japan: 319 
+	Physics: 314 
+	newzealand: 313 
+	mexico: 300 
+	zombies: 295 
+	Python: 292 
+	meetup: 291 
+	Atlanta: 290 
+	xbox360: 285 
+	law: 285 
+	soapier: 284 
+	philadelphia: 281 
+	TrueReddit: 276 
+	announcements: 276 
+	creepy: 270 
+	india: 268 
+	pokemon: 268 
+	ideasfortheadmins: 267 
+	StarWars: 263 
+	london: 263 
+	climateskeptics: 257 
+	haskell: 252 
+	LosAngeles: 250 
+	transformice: 247 
+	treecomics: 246 
+	starcraft2: 244 
+	PHP: 239 
+	hiphopheads: 235 
+	Bad_Cop_No_Donut: 233 
+	vancouver: 232 
+	poker: 230 
+	socialism: 223 
+	lost: 222 
+	amiugly: 219 
+	halo: 215 
+	compsci: 210 
+	learnprogramming: 209 
+	gardening: 206 
+	NarFFL: 204 
+	til: 203 
+	Documentaries: 202 
+	Equality: 199 
+	transgender: 199 
+	washingtondc: 197 
+	4chan: 194 
+	software: 193 
+	obama: 191 
+	ads: 191 
+	spicy: 184 
+	Boobies: 183 
+	Military: 182 
+	DebateAnAtheist: 182 
+	climbing: 180 
+	HeroesofNewerth: 180 
+	trackers: 180 
+	RUGC_Midwest: 176 
+	mac: 174 
+	IndieGaming: 172 
+	IWantToLearn: 172 
+	ILiveIn: 171 
+	twincitiessocial: 170 
+	linguistics: 169 
+	stopsmoking: 168 
+	engineering: 167 
+	tattoos: 167 
+	architecture: 165 
+	dogs: 163 
+	javascript: 162 
+	BDSMcommunity: 161 
+	DAE: 160 
+	sanfrancisco: 158 
+	loseit: 157 
+	CampingandHiking: 157 
+	gamedev: 157 
+	photocritique: 156 
+	Dallas: 155 
+	montreal: 154 
+	education: 150 
+	Team_Awesome: 150 
+	golf: 147 
+	conspiratard: 146 
+	ireland: 144 
+	women: 142 
+	boardgames: 142 
+	AMA: 140 
+	sandiego: 140 
+	trance: 139 
+	biology: 137 
+	AskWomen: 136 
+	RedditvFCC: 134 
+	r4r: 134 
+	linux4noobs: 132 
+	ECE: 132 
+	somethingimade: 131 
+	madmen: 130 
+	mcprivate: 129 
+	help: 128 
+	nosleep: 127 
+	Jazz: 126 
+	FixedGearBicycle: 126 
+	90daysgoal: 126 
+	feminisms: 125 
+	howto: 124 
+	phish: 124 
+	wallpaper: 124 
+	whatsthisbug: 122 
+	gameswap: 122 
+	GirlGamers: 118 
+	video: 118 
+	Enhancement: 118 
+	DnB: 118 
+	sysadmin: 116 
+	opensource: 114 
+	windowshots: 110 
+	ritfl: 109 
+	webcomics: 108 
+	webdev: 107 
+	StLouis: 104 
+	ottawa: 102 
+	PhilosophyofScience: 102 
+	rutgers: 101 
+	pittsburgh: 101 
+	vim: 100 
+	melbourne: 99 
+	cars: 98 
+	Dexter: 97 
+	catpictures: 96 
+	photoclass: 96 
+	Coffee: 96 
+	prop19: 95 
+	surfing: 95 
+	jobs: 93 
+	UFOs: 93 
+	longboarding: 93 
+	starcraft2_class: 92 
+	cannabis: 92 
+	911truth: 92 
+	google: 92 
+	Mommit: 91 
+	design_critiques: 88 
+	horror: 87 
+	thick: 85 
+	24hoursupport: 85 
+	applehelp: 84 
+	houston: 84 
+	Astronomy: 83 
+	recipes: 82 
+	RPI: 82 
+	apathy: 81 
+	classicalmusic: 81 
+	VolleyballGirls: 80 
+	emacs: 80 
+	Stargate: 79 
+	bjj: 79 
+	worstof: 79 
+	finance: 79 
+	aviation: 79 
+	skateboarding: 78 
+	snowboarding: 78 
+	SelfSufficiency: 78 
+	Tgirls: 77 
+	ipad: 77 
+	Wordpress: 75 
+	fashion: 75 
+	Psychonaut: 75 
+	StarcraftFeedback: 74 
+	punk: 74 
+	GetMotivated: 74 
+	comic_crits: 73 
+	brisbane: 73 
+	Columbus: 73 
+	electronics: 73 
+	furry: 73 
+	OkCupid: 73 
+	voluptuous: 72 
+	Denver: 72 
+	futurama: 72 
+	Boardgame_AI_101: 72 
+	halifax: 71 
+	secretsanta: 71 
+	roguelikes: 70 
+	LegalTeens: 68 
+	bayarea: 66 
+	weddingplanning: 66 
+	civ: 65 
+	___: 65 
+	rac: 65 
+	moviecritic: 64 
+	Punkskahardcore: 64 
+	China: 63 
+	mnc: 63 
+	cheatatmathhomework: 62 
+	BipolarReddit: 62 
+	Scotch: 62 
+	Learnmusic: 62 
+	Khazar_Pride: 61 
+	lisp: 61 
+	nature: 61 
+	snackexchange: 61 
+	P90X: 60 
+	learnmath: 59 
+	Louisville: 59 
+	chess: 59 
+	Conservative: 59 
+	Fishing: 59 
+	905: 59 
+	newreddits: 58 
+	Nootropics: 58 
+	lolcats: 58 
+	Filmmakers: 58 
+	photoshop: 58 
+	MusicEssentials: 57 
+	Bass: 56 
+	Calgary: 56 
+	Bacon: 54 
+	geocaching: 54 
+	linux_gaming: 54 
+	VictoriaBC: 54 
+	java: 53 
+	lookatmygirlfriend: 53 
+	boulder: 53 
+	BritishTV: 53 
+	NSFW_nospam: 53 
+	ginger: 52 
+	exSistersinZion: 52 
+	cycling: 52 
+	Detroit: 52 
+	mashups: 51 
+	texas: 51 
+	FTH: 51 
+	sailing: 51 
+	LearnJapanese: 51 
+	progressive: 51 
+	NetflixBestOf: 50 
+	milf: 50 
+	windows: 50 
+	tennis: 50 
+	torrents: 49 
+	MusicMakersCritique: 49 
+	drums: 49 
+	logo: 49 
+	electrohouse: 49 
+	SomebodyMakeThis: 49 
+	triathlon: 49 
+	wallpapers: 49 
+	berkeley: 48 
+	Sexy: 48 
+	xkcd: 48 
+	ass: 48 
+	Winnipeg: 48 
+	cats: 47 
+	UniversityOfHouston: 47 
+	DJs: 47 
+	arizona: 47 
+	WeAreTheFilmMakers: 47 
+	HuntsvilleAlabama: 47 
+	government: 47 
+	Drawing101: 46 
+	Parenting: 45 
+	Iowa: 45 
+	freebies: 45 
+	Entrepreneur: 45 
+	cincinnati: 44 
+	tampa: 44 
+	ToolBand: 44 
+	Fantasy: 44 
+	wisconsin: 44 
+	Naruto: 43 
+	battlestations: 43 
+	firefly: 43 
+	wii: 43 
+	MachineLearning: 42 
+	kde: 42 
+	UIUC: 42 
+	ReasonableDiscussion: 42 
+	wordcount: 42 
+	Lovecraft: 42 
+	Inception: 42 
+	violentacrez: 41 
+	MakeupAddiction: 41 
+	Torontoevents: 41 
+	madisonwi: 41 
+	orlando: 41 
+	dotnet: 40 
+	ThePriceIsRight: 40 
+	piano: 40 
+	django: 40 
+	worldevents: 40 
+	birdpics: 39 
+	firefox: 39 
+	rugc_greatlakes: 39 
+	RealGirls: 38 
+	Jokes: 38 
+	tf2items: 38 
+	LNC: 38 
+	LSD: 38 
+	SF4: 38 
+	nugs: 38 
+	Gunners: 38 
+	flossdaily: 38 
+	Warhammer: 38 
+	kindle: 37 
+	asheville: 37 
+	gamemusic: 36 
+	whoadude: 36 
+	Arabic101: 36 
+	breakingbad: 36 
+	Logos: 36 
+	WritersGroup: 36 
+	philosophyclub: 36 
+	europe: 35 
+	chrome: 35 
+	freethinkers: 35 
+	networking: 35 
+	NonAustrianEconomics: 35 
+	nonprofit: 35 
+	archlinux: 35 
+	tasker: 35 
+	BarefootRunning: 34 
+	HairyPussy: 34 
+	codbo: 34 
+	discgolf: 34 
+	ColbertRally: 34 
+	SketchComedy: 34 
+	YouShouldKnow: 34 
+	NewToTF2: 34 
+	Filevo: 34 
+	vegas: 33 
+	evolution: 33 
+	grammar: 33 
+	IDAP: 33 
+	complexanalysisclub: 33 
+	Quebec: 33 
+	kansascity: 33 
+	sweden: 33 
+	france: 32 
+	tf2au: 32 
+	canucks: 32 
+	memphis: 32 
+	webdesign: 31 
+	waterloo: 31 
+	Meditation: 31 
+	manlove: 31 
+	malemodels: 31 
+	ronpaul: 31 
+	androiddev: 31 
+	Connecticut: 31 
+	runescape: 30 
+	perl: 30 
+	SaltLakeCity: 30 
+	lego: 30 
+	polyamory: 30 
+	No_Pants_Party: 30 
+	martialarts: 30 
+	mycology: 30 
+	de: 30 
+	bikinis: 30 
+	Philippines: 30 
+	FoodPorn: 30 
+	Cleveland: 30 
+	droid: 30 
+	sydney: 29 
+	stonerrock: 29 
+	Eugene: 29 
+	HIPSTERGURLZ: 29 
+	Cricket: 29 
+	cpp: 29 
+	statistics: 29 
+	BurningMan: 29 
+	Foodforthought: 29 
+	slackerrecipes: 29 
+	Everybody: 29 
+	batman: 29 
+	NaziHunting: 28 
+	coding: 28 
+	chile: 28 
+	Michigan: 28 
+	AlienBlue: 28 
+	NexusOne: 28 
+	Anticonsumption: 28 
+	ar15: 28 
+	StandUpComedy: 28 
+	startups: 27 
+	ZenHabits: 27 
+	BSD: 27 
+	CNGH: 27 
+	bisexual: 27 
+	ReaditMag: 27 
+	astoria: 27 
+	Screenwriting: 27 
+	airsoft: 26 
+	irc: 26 
+	IWantOut: 26 
+	Hunting: 26 
+	WikiLeaks: 26 
+	offmychest: 26 
+	ruby: 26 
+	ReverseEngineering: 26 
+	Techno: 26 
+	uwaterloo: 26 
+	norge: 26 
+	LastNight: 26 
+	alcohol: 25 
+	football: 25 
+	heythatwasin: 25 
+	youtube: 25 
+	movieclub: 25 
+	Forts: 25 
+	guitarlessons: 25 
+	pakistan: 25 
+	penpals: 24 
+	RHL: 24 
+	modhelp: 24 
+	hookah: 24 
+	facebook: 24 
+	Guildwars2: 24 
+	literature: 24 
+	Clojure: 24 
+	oklahoma: 24 
+	bloomington: 24 
+	Colorado: 23 
+	treemusic: 23 
+	glutenfree: 23 
+	animation: 23 
+	sanantonio: 23 
+	scientology: 23 
+	gif: 23 
+	opendirectories: 23 
+	TrueBlood: 23 
+	radiohead: 23 
+	RenewableEnergy: 23 
+	Rabbits: 23 
+	drupal: 23 
+	UofMemphis: 23 
+	computing: 23 
+	athiesm: 23 
+	nsfw2: 22 
+	auto: 22 
+	daddit: 22 
+	Graffiti: 22 
+	swtor: 22 
+	SF_Book_Club: 22 
+	namethemovie: 22 
+	rant: 22 
+	PigJargon: 22 
+	telecaster: 22 
+	trees_IRL: 21 
+	knives: 21 
+	bugs: 21 
+	pokemontrades: 21 
+	whatisthisthing: 21 
+	investing: 21 
+	DebateIt: 21 
+	MeetLGBT: 21 
+	FinancialPlanning: 21 
+	SEC: 21 
+	SexPositive: 21 
+	batteryexpress: 21 
+	OnePiece: 21 
+	shill: 21 
+	AnimalRights: 21 
+	Catholicism: 21 
+	pornvids: 20 
+	warehouse13: 20 
+	Rochester: 20 
+	exjw: 20 
+	fedor: 20 
+	macapps: 20 
+	futurebeats: 20 
+	minecraftau: 20 
+	Kayaking: 20 
+	radioreddit: 20 
+	spotify: 20 
+	redditdev: 19 
+	buildapcsales: 19 
+	Hamilton: 19 
+	49ers: 19 
+	Green: 19 
+	typography: 19 
+	PS3borrow: 19 
+	manga: 19 
+	Pictures: 19 
+	360MW2: 19 
+	SanJoseSharks: 19 
+	minnesota: 19 
+	microsoft: 19 
+	oblivion: 18 
+	Blowjobs: 18 
+	Purdue: 18 
+	fringe: 18 
+	bodymods: 18 
+	WiiHacks: 18 
+	AppEngine: 18 
+	childfree: 18 
+	HomeworkHelp: 18 
+	cumfetish: 18 
+	prowrestling: 18 
+	quotes: 18 
+	metacirclejerk: 18 
+	Survivalist: 18 
+	redditgw: 18 
+	penis: 18 
+	House: 18 
+	EA_NHL: 18 
+	cyberlaws: 18 
+	bookclub: 18 
+	RedDwarf: 18 
+	linux_devices: 18 
+	malkovich: 17 
+	LucidDreaming: 17 
+	Baking: 17 
+	crime: 17 
+	science2: 17 
+	gifs: 17 
+	new_right: 17 
+	overpopulation: 17 
+	ultimate: 17 
+	operabrowser: 17 
+	tldr: 17 
+	argentina: 17 
+	AcademicPhilosophy: 17 
+	baltimore: 17 
+	Anthropology: 17 
+	BSG: 16 
+	cruising: 16 
+	SkyDiving: 16 
+	Twitter: 16 
+	carepackage: 16 
+	FortWorth: 16 
+	water: 16 
+	steamdeals: 16 
+	Morocco: 16 
+	Poetry: 16 
+	nethack: 16 
+	babylon5: 16 
+	nook: 16 
+	wine: 16 
+	HONORSBIOLOGY: 16 
+	knitting: 16 
+	gossip: 16 
+	Galaxy_S: 16 
+	Waaah: 16 
+	racism: 16 
+	redditrequest: 16 
+	Assistance: 16 
+	Celebs: 15 
+	coys: 15 
+	robotics: 15 
+	OpenChristian: 15 
+	inthemorning: 15 
+	ShitBricks: 15 
+	booksuggestions: 15 
+	redheads: 15 
+	Scholar: 15 
+	personsunknown: 15 
+	cuda101: 15 
+	CommonLaw: 15 
+	scooters: 15 
+	PAX: 15 
+	matheducation: 15 
+	Borderlands: 15 
+	rap: 15 
+	ObscureMedia: 15 
+	audioengineering: 15 
+	osugame: 15 
+	ravens: 14 
+	Basketball: 14 
+	Swimming: 14 
+	cute: 14 
+	rape: 14 
+	ForeignMovies: 14 
+	joos: 14 
+	GreaseMonkey: 14 
+	e_lucas: 14 
+	zelda: 14 
+	newhampshire: 14 
+	yugioh: 14 
+	RUGC: 14 
+	DandD: 14 
+	pic: 14 
+	Cryptogon: 13 
+	PlatonicFriends: 13 
+	singapore: 13 
+	ScarlettJohansson: 13 
+	Cheap_Meals: 13 
+	england: 13 
+	selfhelp: 13 
+	hugeboobs: 13 
+	skiing: 13 
+	ask: 13 
+	conan: 13 
+	corgi: 13 
+	TheLastAirbender: 13 
+	morelikethat: 13 
+	shamelessplug: 13 
+	lebowskiisms: 13 
+	Lubbock: 12 
+	OneParagraph: 12 
+	worldbuilding: 12 
+	gamedevquestions: 12 
+	DoesAnyoneKnow: 12 
+	DYR: 12 
+	mcservers: 12 
+	UVA: 12 
+	beertrade: 12 
+	chapelhill: 12 
+	classicfilms: 12 
+	Permaculture: 12 
+	editors: 12 
+	comedy: 12 
+	whitewater: 12 
+	Norway: 12 
+	productivity: 12 
+	NewOrleans: 12 
+	mixcd: 12 
+	veg: 12 
+	GirlswithGlasses: 12 
+	bleach: 12 
+	germany: 12 
+	NYGiants: 12 
+	groovesharkplaylists: 12 
+	hardbodies: 12 
+	RealEstate: 12 
+	SEO: 12 
+	lockpicking: 12 
+	aggies: 11 
+	italy: 11 
+	Dreams: 11 
+	Boise: 11 
+	BikingATX: 11 
+	tedtalks: 11 
+	rapecounseling: 11 
+	dogpictures: 11 
+	LadyGaga: 11 
+	DarwinAward: 11 
+	linuxphoto: 11 
+	French: 11 
+	belgium: 11 
+	l4d2: 11 
+	Jeep: 11 
+	nba: 11 
+	southwales: 11 
+	TopGear: 11 
+	scheme: 11 
+	css: 11 
+	doommetal: 11 
+	CKHPHighlanderTeam: 11 
+	woodworking: 11 
+	dating: 11 
+	Gore: 11 
+	WomenOfColor: 11 
+	PennStateUniversity: 10 
+	bottlesofbeer: 10 
+	alpinism: 10 
+	rainbowbar: 10 
+	arduino: 10 
+	SOS: 10 
+	postrock: 10 
+	media: 10 
+	florida: 10 
+	derp: 10 
+	opiates: 10 
+	VegRecipes: 10 
+	RPGrecordings: 10 
+	christinahendricks: 10 
+	Stepmania: 10 
+	Republican: 10 
+	FittitBuddy: 10 
+	lostgeneration: 10 
+	museum: 10 
+	motorcycle: 10 
+	osx: 10 
+	liberalarts: 10 
+	Redditch: 10 
+	amateurradio: 10 
+	morrissey: 10 
+	modnews: 10 
+	HappyBirthday: 10 
+	ps3bc2: 10 
+	GWYM: 10 
+	arbor: 10 
+	food2: 10 
+	mormon: 10 
+	triangle: 9 
+	vmware: 9 
+	hackintosh: 9 
+	alcoholism: 9 
+	blackberry: 9 
+	autism: 9 
+	judo: 9 
+	Scotland: 9 
+	euguild: 9 
+	NSFW_Wallpapers: 9 
+	TillSverige: 9 
+	Outdoors: 9 
+	Entomology: 9 
+	lists: 9 
+	freeculture: 9 
+	DOTA: 9 
+	boltedontits: 9 
+	KansasUniversity: 9 
+	worms: 9 
+	EmmaWatson: 9 
+	RDDT: 9 
+	Albuquerque: 9 
+	SeaShepherd: 9 
+	bbwbikinis: 9 
+	MetaAnarchism: 9 
+	CaribbeanGirls: 9 
+	Chattanooga: 9 
+	abletonlive: 9 
+	MusicNews: 9 
+	reachclan: 9 
+	Browns: 9 
+	Photoessay: 9 
+	aikido: 9 
+	oaklandraiders: 9 
+	Umphreys: 9 
+	lectures: 9 
+	sbmarking: 9 
+	tonightsdinner: 9 
+	WWTT: 8 
+	geology: 8 
+	simracing: 8 
+	fantasybaseball: 8 
+	Youngluck: 8 
+	f7u12awards: 8 
+	computers: 8 
+	Piracy: 8 
+	es: 8 
+	norfolk: 8 
+	gonewildstories: 8 
+	videography: 8 
+	no: 8 
+	astro: 8 
+	marketing: 8 
+	actuallesbians: 8 
+	iphone4wallpapers: 8 
+	Internet: 8 
+	iastate: 8 
+	test: 8 
+	seoul: 8 
+	csusm: 8 
+	languagelearning: 8 
+	rum: 8 
+	morelikethis: 8 
+	Irrigation: 8 
+	fishtank: 8 
+	socialmedia: 8 
+	netneutrality: 8 
+	mysql: 8 
+	OffGrid: 8 
+	dragoncon: 8 
+	Daleks: 8 
+	ambient: 8 
+	farkle: 8 
+	linuxquestions: 8 
+	gnu: 8 
+	Hardwarenews: 8 
+	computervision: 8 
+	browsers: 8 
+	FL_Studio: 8 
+	iPhoneDev: 8 
+	Portal: 8 
+	indianapolis: 8 
+	ntnu: 8 
+	Bondage: 7 
+	JapaneseFood: 7 
+	energydrinks: 7 
+	meego: 7 
+	MapleLinks: 7 
+	camping: 7 
+	interiorsandliving: 7 
+	Games: 7 
+	androidapps: 7 
+	climate: 7 
+	simpleliving: 7 
+	RacistReddit: 7 
+	imito: 7 
+	rails: 7 
+	freegames: 7 
+	PicsOfDeadKids: 7 
+	Pottery: 7 
+	hardscience: 7 
+	Smokin: 7 
+	southcarolina: 7 
+	steampunk: 7 
+	zen: 7 
+	ThisIsWhatImReading: 7 
+	hiphop: 7 
+	erlang: 7 
+	SciFiScroll: 7 
+	herps: 7 
+	paris: 7 
+	MaleStudies: 7 
+	SAHP: 7 
+	Seattle_bicycling: 7 
+	Braves: 7 
+	MonsterRancher: 7 
+	SDSU: 7 
+	1920s: 7 
+	Custom_Motorcycles: 7 
+	nostalgia: 7 
+	TMBR: 7 
+	usa: 7 
+	CollegeFootball: 7 
+	fuckyea: 7 
+	Magic: 7 
+	treemovies: 7 
+	freelance: 6 
+	WhereToGo: 6 
+	banjo: 6 
+	atheist: 6 
+	joomla: 6 
+	MexicoIAMA: 6 
+	technews: 6 
+	bikesgonewild: 6 
+	UCONN: 6 
+	tvcritic: 6 
+	PoopSandwiches: 6 
+	korea: 6 
+	futureofreddit: 6 
+	blogs: 6 
+	QuakeLive: 6 
+	indonesia: 6 
+	DeepSpaceNine: 6 
+	Iceland: 6 
+	nintendo: 6 
+	Dogtraining: 6 
+	gamestreams: 6 
+	Vegetarianism: 6 
+	Augusta: 6 
+	liquor: 6 
+	twincitiesmusic: 6 
+	30daysit: 6 
+	Zappa: 6 
+	MiddleEasternMusic: 6 
+	wp7dev: 6 
+	bakedart: 6 
+	netflix: 6 
+	indepthstories: 6 
+	gilf: 6 
+	git: 6 
+	delphi: 6 
+	linuxadmin: 6 
+	recumbent: 6 
+	NEU: 6 
+	computergraphics: 6 
+	newbrunswickcanada: 6 
+	HighHeels: 6 
+	xss: 6 
+	oxford: 6 
+	TEFL: 6 
+	Beekeeping: 6 
+	redditores: 6 
+	OttawaSenators: 6 
+	l33t: 6 
+	newjersey: 6 
+	SummerGlau: 6 
+	gratefuldead: 6 
+	wordplay: 6 
+	quantfinance: 6 
+	bookexchange: 6 
+	cwru: 6 
+	Indiana: 6 
+	doc: 6 
+	reddittraveljetblue: 6 
+	RealDolls: 6 
+	radiocontrol: 6 
+	html5: 5 
+	gamereviews: 5 
+	festivals: 5 
+	porn: 5 
+	CompanyOfHeroes: 5 
+	Brazil: 5 
+	OutdoorSports: 5 
+	Tabs: 5 
+	xxfitness: 5 
+	katyperry: 5 
+	general: 5 
+	deutschland: 5 
+	1000words: 5 
+	RedditCarpool: 5 
+	IASIP: 5 
+	haskell_proposals: 5 
+	futuregarage: 5 
+	celebrities: 5 
+	cancer: 5 
+	postpunk: 5 
+	USC: 5 
+	Ornithology: 5 
+	AmericanGovernment: 5 
+	other: 5 
+	lol: 5 
+	sandbox: 5 
+	Oddball: 5 
+	malehairadvice: 5 
+	Upskirt: 5 
+	xboxlive: 5 
+	atheistgems: 5 
+	economics2: 5 
+	Brooklyn: 5 
+	IntroToRBP: 5 
+	dndeez: 5 
+	whedon: 5 
+	fitnesscirclejerk: 5 
+	mises: 5 
+	highresolution: 5 
+	AFL: 5 
+	rally: 5 
+	crypto: 5 
+	UMD: 5 
+	prolog: 5 
+	darkstep: 5 
+	Amateur: 5 
+	goblincamp: 5 
+	birthdaystick: 5 
+	trollcave: 5 
+	StateOfTheUnion: 5 
+	lupus: 5 
+	RATS: 5 
+	garithos: 5 
+	diabetes: 5 
+	fsu: 5 
+	obits: 5 
+	decide: 5 
+	newyork: 5 
+	tea: 5 
+	hookandyarn: 5 
+	c64: 5 
+	wls: 5 
+	parentingthegifted: 5 
+	AlienBlueNews: 5 
+	Judaism: 5 
+	gameconceptart: 5 
+	lfg: 5 
+	dreamcast: 4 
+	baduk: 4 
+	conifers: 4 
+	botany: 4 
+	rush: 4 
+	Athens: 4 
+	podcasts: 4 
+	manchester: 4 
+	bourbon: 4 
+	CollegeBasketball: 4 
+	reasoners: 4 
+	bangalore: 4 
+	flying: 4 
+	Rubicon: 4 
+	Omaha: 4 
+	cactus: 4 
+	africansoccer: 4 
+	hiking: 4 
+	Waco: 4 
+	alien_swarm: 4 
+	MMATalk: 4 
+	iamaf: 4 
+	secretgentlemansclub: 4 
+	DistritoFederal: 4 
+	scientists: 4 
+	NuclearPower: 4 
+	Chargers: 4 
+	japanlife: 4 
+	under18: 4 
+	Compilers: 4 
+	Tacoma: 4 
+	ChineseLanguage: 4 
+	treesgonewild: 4 
+	redstrype: 4 
+	ChemicalEngineering: 4 
+	PrettyGirls: 4 
+	BMW: 4 
+	SuperCombo: 4 
+	chartchess: 4 
+	Cubers: 4 
+	apple2: 4 
+	ucf: 4 
+	Comment_Stalking: 4 
+	JRPG: 4 
+	chicagomusicscene: 4 
+	grandrapids: 4 
+	EDRecovery_public: 4 
+	ReligionInAmerica: 4 
+	gay: 4 
+	Eureka: 4 
+	Gunpla: 4 
+	Hotchickswithtattoos: 4 
+	rva: 4 
+	csshelp: 4 
+	recprogramming: 4 
+	goodreads: 4 
+	Boxing: 4 
+	jewelry: 4 
+	gamedevclass: 4 
+	uicwhatshot: 4 
+	Archery: 4 
+	democrats: 4 
+	boxeyroxey: 4 
+	cosplay: 4 
+	msu: 4 
+	Louisiana: 4 
+	civ5smac: 4 
+	farscape: 4 
+	scuba: 4 
+	Feminism: 4 
+	Freethought: 4 
+	discworld: 4 
+	leafs: 4 
+	Genealogy: 4 
+	Denmark: 4 
+	sales: 4 
+	AllMods: 4 
+	IowaCity: 4 
+	legal: 4 
+	terrace: 4 
+	nanotech: 4 
+	deathclub: 4 
+	jquery: 4 
+	AmericanPolitics: 4 
+	reloading: 4 
+	ffxi: 4 
+	SFstories: 4 
+	Maplestory: 4 
+	Wildlife: 4 
+	oceansize: 4 
+	libredesign: 4 
+	Palm: 4 
+	GoneWildPlus: 4 
+	shittieradvice: 4 
+	djing: 4 
+	Drifting: 4 
+	Sunlight: 4 
+	Anarchist: 4 
+	snooker: 4 
+	80s: 4 
+	confessions: 4 
+	PHX: 4 
+	orangecounty: 4 
+	IndianBabes: 4 
+	frecklefans: 4 
+	CoolDesigns: 4 
+	psytrance: 4 
+	PhotoBlog: 4 
+	FIlm: 4 
+	ThisIsOurMusic: 4 
+	juggling: 4 
+	ebooks: 4 
+	Palestine: 4 
+	weather: 4 
+	GuildWars: 3 
+	webbit: 3 
+	LSAT: 3 
+	mormonsgonewild: 3 
+	tailbait: 3 
+	snobs: 3 
+	appletv: 3 
+	Polska: 3 
+	Costco: 3 
+	hipsters: 3 
+	California: 3 
+	oregon: 3 
+	DepthHub: 3 
+	Gentoo: 3 
+	taminecraft: 3 
+	TheChurch: 3 
+	criticism: 3 
+	agnosticism: 3 
+	fitlog: 3 
+	redditstories: 3 
+	redditisland: 3 
+	datarecover: 3 
+	ted: 3 
+	HTML: 3 
+	reddithax: 3 
+	hentai: 3 
+	HealthProject: 3 
+	bdsm: 3 
+	austinburlesque: 3 
+	APBIOLOGY: 3 
+	WorldMusic: 3 
+	browsermmo: 3 
+	watchthisUK: 3 
+	hip_hop: 3 
+	tax: 3 
+	stencils: 3 
+	Theatre: 3 
+	8bit: 3 
+	locksport: 3 
+	tea_party: 3 
+	warriors: 3 
+	puzzles: 3 
+	experimentalmusic: 3 
+	grime: 3 
+	collegesluts: 3 
+	gps: 3 
+	gaynsfw: 3 
+	opinion: 3 
+	ps3hacks: 3 
+	hon: 3 
+	latin: 3 
+	guessthesubreddit: 3 
+	police: 3 
+	psu: 3 
+	Nsfw_Amateurs: 3 
+	yard: 3 
+	notetoself: 3 
+	Cthulhu: 3 
+	genealogyclass: 3 
+	musictheory: 3 
+	Parkour: 3 
+	TheWire: 3 
+	Liberty: 3 
+	UFO_2012: 3 
+	rickygervais: 3 
+	ocaml: 3 
+	debbie_downer: 3 
+	counter_strike: 3 
+	illinoispolitics: 3 
+	kings: 3 
+	tf2west: 3 
+	xmonad: 3 
+	preggo: 3 
+	chuck: 3 
+	PoliticsPDFs: 3 
+	StJohnsNL: 3 
+	electronic_cigarette: 3 
+	geospatial: 3 
+	Miami: 3 
+	scala: 3 
+	htc: 3 
+	golang: 3 
+	santacruz: 3 
+	iPods: 3 
+	epidemiology: 3 
+	redditroommates: 3 
+	redditcookbook: 3 
+	WhiteNationalism: 3 
+	tvclub: 3 
+	imdrunk: 3 
+	Tcl: 3 
+	Yiddish: 3 
+	writingcontests: 3 
+	anarchocommunism: 3 
+	derrenbrown: 3 
+	karate: 3 
+	Anarcho_Capitalism: 3 
+	occult: 3 
+	IWW: 3 
+	miamidolphins: 3 
+	Themepark: 3 
+	yoga: 3 
+	Neuropsychology: 3 
+	Woerterbuecher: 3 
+	Birmingham: 3 
+	fidget: 3 
+	diaspora: 3 
+	chillwave: 3 
+	factor: 3 
+	magick: 3 
+	amateur_pics: 3 
+	lycraspandex: 3 
+	mixes: 3 
+	dragonage: 3 
+	stocks: 3 
+	thewalkingdead: 3 
+	lebowski: 3 
+	SelenaGomez: 3 
+	WestVirginia: 3 
+	amherst: 3 
+	Rockband: 3 
+	Korean: 3 
+	obituary: 3 
+	drawitblind: 3 
+	linuxmint: 3 
+	Forex: 3 
+	Steam: 3 
+	queer: 3 
+	wasteoftime: 3 
+	tvprogramming: 3 
+	artificial: 3 
+	roundrobin: 3 
+	LANL_Spanish: 3 
+	Animals: 3 
+	AndroidQuestions: 3 
+	Motoracing: 3 
+	BostonBruins: 3 
+	insomnia: 3 
+	BSUFootball: 3 
+	house_music: 3 
+	craft: 3 
+	rescuedogs: 3 
+	CyclePDX: 3 
+	Database: 3 
+	newsreaders: 3 
+	thousandhours: 3 
+	giftgold: 3 
+	centralpa: 3 
+	vinyl: 3 
+	DrugWarNews: 2 
+	russia: 2 
+	CableNews: 2 
+	audiophile: 2 
+	steak: 2 
+	JAX: 2 
+	Knowing: 2 
+	Neotokyo: 2 
+	Inlandnorthwest: 2 
+	engrproject: 2 
+	spirituality: 2 
+	VeganCookingUofR: 2 
+	fr: 2 
+	uchicago: 2 
+	lonely: 2 
+	Wizards: 2 
+	Rateme: 2 
+	haiti: 2 
+	TrollAlert: 2 
+	sigep: 2 
+	LMU: 2 
+	hugenaturals: 2 
+	Paranormal: 2 
+	duke: 2 
+	designthought: 2 
+	Williamsport: 2 
+	animalid: 2 
+	iboughttheshirt: 2 
+	reddeadredemption: 2 
+	beerporn: 2 
+	synthesizers: 2 
+	photobomb: 2 
+	thisisnotaskreddit: 2 
+	complaints: 2 
+	penguins: 2 
+	Sarnia: 2 
+	rct: 2 
+	foreskin: 2 
+	NutritionUpdates: 2 
+	GNV: 2 
+	thestoppagetimes: 2 
+	Virginia: 2 
+	manass: 2 
+	Ohio: 2 
+	christianbashing: 2 
+	farming: 2 
+	Russian101: 2 
+	Poem: 2 
+	igc: 2 
+	AquariumFish: 2 
+	neuro: 2 
+	Slackline: 2 
+	sportsvideo: 2 
+	USNEWS: 2 
+	LearnGerman: 2 
+	pics2: 2 
+	Maine: 2 
+	Fabrics: 2 
+	timetravel: 2 
+	ChileRemix: 2 
+	madscientist: 2 
+	MMJ: 2 
+	Algonquin_College: 2 
+	playitforward: 2 
+	opensourcehardware: 2 
+	DrinkingGames: 2 
+	celebritywire: 2 
+	cocktails: 2 
+	altmed: 2 
+	nanoscience: 2 
+	snes: 2 
+	craftit: 2 
+	DumbShitYouSay: 2 
+	cesky: 2 
+	QUTreddit: 2 
+	diving: 2 
+	alphateam: 2 
+	softscience: 2 
+	COD: 2 
+	kmnrinnovation: 2 
+	DallasMeetups: 2 
+	saddestof: 2 
+	bristol: 2 
+	the13colonies: 2 
+	redditlogos: 2 
+	Infographics: 2 
+	batterystore: 2 
+	matlab: 2 
+	xbmc: 2 
+	trippy: 2 
+	cfs: 2 
+	mspaint: 2 
+	mctradedepot: 2 
+	hangover: 2 
+	scouting: 2 
+	HoMfloor: 2 
+	pointless_whining: 2 
+	bubblepics: 2 
+	celebrity: 2 
+	craigslist: 2 
+	controllablewebcams: 2 
+	israelexposed: 2 
+	Dietandhealth: 2 
+	wp7: 2 
+	technology2: 2 
+	misc: 2 
+	graphic_design: 2 
+	RedditGameJam: 2 
+	flickr: 2 
+	soundtracks: 2 
+	psychopharmacology: 2 
+	amateur_filmmakers: 2 
+	ja: 2 
+	Essays: 2 
+	usability: 2 
+	androidtabs: 2 
+	InteriorDesign: 2 
+	thesims: 2 
+	beards: 2 
+	prius: 2 
+	luddite: 2 
+	hotelreddit: 2 
+	Hypothyroidism: 2 
+	Ska: 2 
+	OpenSimAnt: 2 
+	ASPNET: 2 
+	acting: 2 
+	powerviolence: 2 
+	meta: 2 
+	co_mo: 2 
+	Canning: 2 
+	TrueMetal: 2 
+	PoliticalPhilosophy: 2 
+	friendship: 2 
+	bach: 2 
+	disability: 2 
+	fiction: 2 
+	StockMarket: 2 
+	Pirate: 2 
+	xbox360games: 2 
+	treees: 2 
+	nashville: 2 
+	mechatronics: 2 
+	Drexel: 2 
+	100fm6: 2 
+	filmmaking: 2 
+	BassFishingSource: 2 
+	FacialFun: 2 
+	pokemon_black: 2 
+	wave: 2 
+	ents: 2 
+	Marquette: 2 
+	555555: 2 
+	israelimusic: 2 
+	tumblr: 2 
+	americanindie: 2 
+	homebrew: 2 
+	Thrifty: 2 
+	freebsd: 2 
+	fence: 2 
+	Admin: 2 
+	GameDeals: 2 
+	UKFunky: 2 
+	longisland: 2 
+	geekguys: 2 
+	phpfreelancer: 2 
+	DonovanGendal: 2 
+	SantaBarbara: 2 
+	GoatVideos: 2 
+	ObjectiveC: 2 
+	forhire: 2 
+	IDriveA: 2 
+	Models: 2 
+	reddiquette: 2 
+	LANL_Latin: 2 
+	biblestudy: 2 
+	Fantasy_Football: 2 
+	theology: 2 
+	piratenpartei: 2 
+	columbiamo: 2 
+	Gameboy: 2 
+	glee: 2 
+	ScienceQnA: 2 
+	wedding: 2 
+	FragReddit: 2 
+	hbo: 2 
+	p2p: 2 
+	breakcore: 2 
+	TotalAnnihilation: 2 
+	rugc_karma: 2 
+	hardstyle: 2 
+	raerth: 2 
+	grool: 2 
+	Romania: 2 
+	internetclassics: 2 
+	UCSB: 2 
+	duluth: 2 
+	askagirl: 2 
+	voluntarism: 2 
+	DateRape: 2 
+	privacy: 2 
+	fashionphotography: 2 
+	DearReddit: 2 
+	migas: 2 
+	SinCity: 2 
+	Monterrey: 2 
+	KHGuide: 2 
+	minimal: 2 
+	sysor: 2 
+	ETF2LHighlander: 2 
+	RDU: 2 
+	princeton: 2 
+	hhc: 2 
+	weightlifting: 2 
+	HardRock: 2 
+	userstyles: 2 
+	progmetal: 2 
+	Needafriend: 2 
+	kinky: 2 
+	tech: 2 
+	Amd: 2 
+	motohunt: 2 
+	WorldHistory: 2 
+	Coalmarch: 2 
+	Good_Cop_Free_Donut: 2 
+	AdoptANoob: 2 
+	ideas: 2 
+	trailerparkboys: 2 
+	HPC: 2 
+	ShinyPorn: 2 
+	cannabisconnoisseurs: 2 
+	pregnant: 2 
+	Ebay: 2 
+	NSFW4: 2 
+	MultipleSclerosis: 2 
+	TF2_Trading: 2 
+	Songwriters: 2 
+	exmormonfffuuuu: 2 
+	goodmorning: 1 
+	Sagan: 1 
+	redditeach: 1 
+	100wordstories: 1 
+	Affiliates: 1 
+	socialscience: 1 
+	wildcats: 1 
+	nazi: 1 
+	ukmcnortheast: 1 
+	blues: 1 
+	catsgonewild: 1 
+	KEXP: 1 
+	done: 1 
+	pleinair: 1 
+	logophilia: 1 
+	Keralam: 1 
+	chocolate: 1 
+	Rants: 1 
+	browncoats: 1 
+	aurora: 1 
+	PlacetoStay: 1 
+	galway: 1 
+	Austria: 1 
+	auction: 1 
+	SpringfieldIL: 1 
+	gothsluts: 1 
+	Edmonton: 1 
+	EroticArt: 1 
+	shorthairedhotties: 1 
+	Jeopardy: 1 
+	Stitchy: 1 
+	Pizza: 1 
+	NativeAmerican: 1 
+	shell: 1 
+	uppsala: 1 
+	TheoryOfReddit: 1 
+	Mangos: 1 
+	Liberal: 1 
+	PostgreSQL: 1 
+	product_design: 1 
+	NashvilleTN: 1 
+	directory: 1 
+	Neil_deGrasse_Tyson: 1 
+	roundearth: 1 
+	dfw: 1 
+	Victoria: 1 
+	writers: 1 
+	aquaponics: 1 
+	mayonesafans: 1 
+	Spanking: 1 
+	tacos: 1 
+	billmurray: 1 
+	PhxClassWarCouncil: 1 
+	Mechatroniker: 1 
+	Eattit: 1 
+	CompetitiveBearding: 1 
+	DakotaFanning: 1 
+	musicians: 1 
+	WingChun: 1 
+	DrawingChallenge: 1 
+	wireless: 1 
+	weed: 1 
+	AlternativeHealth: 1 
+	Hawaii: 1 
+	recycle: 1 
+	cheerleaders: 1 
+	tattoo: 1 
+	meth: 1 
+	semanticweb: 1 
+	SonicTheHedgehog: 1 
+	Belegarth: 1 
+	charlie: 1 
+	SocialEngineering: 1 
+	audio: 1 
+	ptkchiepsilonproject: 1 
+	Policy: 1 
+	langsandlambs: 1 
+	cuboulder: 1 
+	howshitreallyworks: 1 
+	Waif: 1 
+	boating: 1 
+	hyderabad: 1 
+	xkcdExplanationClub: 1 
+	Africa: 1 
+	bioinformatics: 1 
+	PhillyBus: 1 
+	postquebec: 1 
+	Bottomless_Vixens: 1 
+	men: 1 
+	college: 1 
+	DelawarePolitics: 1 
+	legs: 1 
+	travelwriting: 1 
+	caving: 1 
+	Socialist: 1 
+	Spearfishing: 1 
+	qwantzparty: 1 
+	jumpgate: 1 
+	winmo: 1 
+	December: 1 
+	moddingguides: 1 
+	FoundArt: 1 
+	auckland: 1 
+	haiku: 1 
+	copywriting: 1 
+	QueerTransmen: 1 
+	Under15: 1 
+	halloween: 1 
+	Wake: 1 
+	autotune: 1 
+	stanford: 1 
+	StrandedWhale: 1 
+	guides: 1 
+	debian: 1 
+	whatwillido: 1 
+	WhiteRights: 1 
+	gamersguide: 1 
+	LAGalaxy: 1 
+	reviewmycode: 1 
+	3dsmax: 1 
+	mungojelly: 1 
+	WhiteMenGoneWild: 1 
+	boracay: 1 
+	incognitosuccess: 1 
+	IntroToMusicTheory: 1 
+	shacknews: 1 
+	augmentedreality: 1 
+	Survival: 1 
+	Standup: 1 
+	cyprustourism: 1 
+	DallasStars: 1 
+	rectanglejerk: 1 
+	vaguequestions: 1 
+	cereal: 1 
+	MinecraftSuccession: 1 
+	dropspaceintertime: 1 
+	NetflixCanada: 1 
+	teamcuil: 1 
+	pissing: 1 
+	Quagmire: 1 
+	mandolin: 1 
+	androidappreviews: 1 
+	forum: 1 
+	uskomaton: 1 
+	fountainpens: 1 
+	MathFinance101: 1 
+	shitmydadsays: 1 
+	afghanistan: 1 
+	babies: 1 
+	VideoEditing: 1 
+	pointers: 1 
+	diablo2: 1 
+	raggajungle: 1 
+	Mushrooms: 1 
+	Fotografie: 1 
+	AskAmericanReddit: 1 
+	O_Faces: 1 
+	UGKrishnamurti: 1 
+	futbolmx: 1 
+	futanari: 1 
+	alaska: 1 
+	umanitoba: 1 
+	airguns: 1 
+	thibit: 1 
+	trolldad: 1 
+	HBD: 1 
+	ienpw: 1 
+	regionalaustralia: 1 
+	BondageGirls: 1 
+	printSF: 1 
+	chomsky: 1 
+	kettlebell: 1 
+	brighton: 1 
+	personals: 1 
+	wichita: 1 
+	omegle: 1 
+	death: 1 
+	NPBC: 1 
+	bing: 1 
+	drone: 1 
+	MiddleEastNews: 1 
+	SuggestALaptop: 1 
+	noobs: 1 
+	heady: 1 
+	Vacation: 1 
+	poetscorner: 1 
+	firespin: 1 
+	prisonreform: 1 
+	idm: 1 
+	TechTV: 1 
+	texasfavors: 1 
+	cookmesomething: 1 
+	copyleft: 1 
+	FREE: 1 
+	coversongs: 1 
+	computebazaar: 1 
+	AegonReligare: 1 
+	statuegropers: 1 
+	webinspiration: 1 
+	kratom: 1 
+	happiness: 1 
+	itpdot: 1 
+	whiskey: 1 
+	vodka: 1 
+	Alabama: 1 
+	bmx: 1 
+	censorship: 1 
+	GameChallenges: 1 
+	facebookquotes: 1 
+	Communications: 1 
+	Genshiken: 1 
+	Switzerland: 1 
+	redditchan: 1 
+	ANDRA: 1 
+	CanP40S3: 1 
+	spaceflight: 1 
+	Waiting: 1 
+	xbla: 1 
+	titfuck: 1 
+	RUG_Leeds: 1 
+	dieselweb: 1 
+	bothersme: 1 
+	futurefunkairlines: 1 
+	wisconsinlaw2013: 1 
+	singing: 1 
+	ChicagoHomebrewers: 1 
+	Cosmetics: 1 
+	mentors: 1 
+	zh: 1 
+	chromiumos: 1 
+	ChristopherHitchens: 1 
+	Relationship: 1 
+	pune: 1 
+	visualization: 1 
+	actuary: 1 
+	p90xlog: 1 
+	phillies: 1 
+	Sacramento: 1 
+	Kiteboarding: 1 
+	HomeMaintenance: 1 
+	Shortfilms: 1 
+	Pantyfetish: 1 
+	country: 1 
+	stoners: 1 
+	Colts: 1 
+	ryerson: 1 
+	Liverpool: 1 
+	culturejamming: 1 
+	reddittown: 1 
+	cilpot: 1 
+	nutrition: 1 
+	homeschool: 1 
+	AndStillAlive: 1 
+	toledo: 1 
+	LANL_German: 1 
+	motivation: 1 
+	Berserk: 1 
+	ceazysun: 1 
+	immigration: 1 
+	IntroToFarsi: 1 
+	shortstories: 1 
+	nottingham: 1 
+	lakers: 1 
+	RedditizeME: 1 
+	Plumpers: 1 
+	Skeet: 1 
+	PipeTobacco: 1 
+	FlowerArranging: 1 
+	IndianCelebrities: 1 
+	chubbyshemale: 1 
+	greece: 1 
+	nin: 1 
+	drumstep: 1 
+	BurnNotice: 1 
+	fengxiangweibing: 1 
+	InnerShow: 1 
+	fantasysports: 1 
+	mobilesoftware: 1 
+	Nerf: 1 
+	FrontPage: 1 
+	Comedycasting: 1 
+	vets: 1 
+	SQL: 1 
+	Temple: 1 
+	management: 1 
+	veracruz: 1 
+	Firefighting: 1 
+	VAFanClub: 1 
+	yardsale: 1 
+	octagonjerk: 1 
+	EmploymentAssistance: 1 
+	hashhouseharriers: 1 
+	vermont: 1 
+	UQreddit: 1 
+	PornVideos43: 1 
+	MvC3: 1 
+	udub: 1 
+	FatAmerican: 1 
+	redsox: 1 
+	indierock: 1 
+	panties: 1 
+	nursing: 1 
+	conlangs: 1 
+	CADCAM: 1 
+	imgur: 1 
+	mississippi: 1 
+	gaygeek: 1 
+	Maxcactus: 1 
+	ragefu: 1 
+	physicsbooks: 1 
+	CasualMath: 1 
+	racquetball: 1 
+	killingfloor: 1 
+	Filmtheoryclass: 1 
+	Objectivism: 1 
+	iran: 1 
+	AdventureRacing: 1 
+	CEH: 1 
+	Diamond: 1 
+	VancouverIsland: 1 
+	cuscotravel5: 1 
+	KTRU: 1 
+	Luxembourg: 1 
+	lemote: 1 
+	nl: 1 
+	CultCinema: 1 
+	thelema: 1 
+	kendo: 1 
+	gape: 1 
+	masseffect: 1 
+	venturebros: 1 
+	artcritical: 1 
+	Shopping: 1 
+	olympia: 1 
+	LaTeX101: 1 
+	russian: 1 
+	isys303: 1 
+	Stomach: 1 
+	cigars: 1 
+	ENOUGHALREADY: 1 
+	shittingadvice: 1 
+	GoogleTV: 1 
+	independent: 1 
+	religiousright: 1 
+	Sonsofanarchy: 1 
+	dvdsetcollection: 1 
+	popping: 1 
+	gender: 1 
+	roguelike: 1 
+	gaybears: 1 
+	cool: 1 
+	Gutschein: 1 
+	EdmontonOilers: 1 
+	learncsharp: 1 
+	theshittiestadvice: 1 
+	Killer_Tofu: 1 
+	stcatharinesON: 1 
+	Tress: 1 
+	kindness: 1 
+	Fedora: 1 
+	Clemson: 1 
+	gunsmithing: 1 
+	insults: 1 
+	Anxiety: 1 
+	reggae: 1 
+	Connnnie: 1 
+	canberra: 1 
+	relationshipadvice: 1 
+	bestsitesever: 1 
+	Redskins: 1 
+	sodypop: 1 
+	awesomechicks: 1 
+	gamming: 1 
+	grouphug: 1 
+	gameprogramming: 1 
+	F2E: 1 
+	bodybuilding: 1 
+	bobdylan: 1 
+	gb1990: 1 
+	FrugalFlicks: 1 
+	socialite: 1 
+	SceneGirls: 1 
+	TinyHouses: 1 
+	activism: 1 
+	OregonStateUniv: 1 
+	happyhardcore: 1 
+	geography: 1 
+	holiday: 1 
+	indie: 1 
+	retrogames: 1 
+	hockeyHOF: 1 
+	ColoradoAvalanche: 1 
+	FFUU: 1 
+	musique: 1 
+	astrology: 1 
+	unix: 1 
+	diablo3: 1 
+	granny: 1 
+	procurement: 1 
+	ParallelKingdom: 1 
+	Chefit: 1 
+	boardsofcanada: 1 
+	love: 1 
+	origami: 1 
+	work: 1 
+	csbooks: 1 
+	fathers4equality: 1 
+	drpbx: 1 
+	REDDITORSINRECOVERY: 1 
+	perth: 1 
+	filk: 1 
+	outerlimits: 1 
+	PeopleStaring: 1 
+	PalinProblem: 1 
+	aerospace: 1 
+	Rockland: 1 
+	Dumbasses: 1 
+	TimAndEric: 1 
+	BastropTX: 1 
+	Birdflu: 1 
+	Interestingstuff: 1 
+	rule34: 1 
+	oilspill: 1 
+	yiff: 1 
+	rand: 1 
+	isleofmisfits: 1 
+	PSP: 1 
+	TeamFortress2: 1 
+	personalfinance: 1 
+	ClassicalMusicClass: 1 
+	MotorsportParts: 1 
+	electro: 1 
+	4talesa: 1 
+	ATEC: 1 
+	morrowindmmo: 1 
+	socialskills: 1 
+	left_handed: 1 
+	Marching_Arts: 1 
+	suggestions: 1 
+	Dislike: 1 
+	milwaukee: 1 
+	spiders: 1 
+	Neal: 1 
+	security: 1 
+	Ostracon: 1 
+	shirts: 1 
+	dealaday: 1 
+	types: 1 
+	pluggit: 1 
+	alcoholexchange: 1 
+	khanacademy: 1 
+	mystartup: 1 
+	ucla: 1 
+	ClassicMetal: 1 
+	babada: 1 
+	heartwarming: 1 
+	lookatmyboyfriend: 1 
+	JustMeJT: 1 
+	Toolmaker: 1 
+	tfc: 1 
+	firstpage: 1 
+	SexyButNotPorn: 1 
+	MINIMALTECH: 1 
+	Nokia: 1 
+	Christian: 1 
+	ru: 1 
+	Markdown: 1 
+	Metalcore: 1 
+	Gays: 1 
+	chooseyouradventure: 1 
+	ferrets: 1 
+	blender: 1 
+	popper: 1 
+	advertising: 1 
+	carmechanics101: 1 
+	Cuckold: 1 
+	getlaid: 1 
+	MINI: 1 
+	weeaboo: 1 
+	resilientcommunities: 1 
+	Celtic: 1 
+	Bellingham: 1 
+	MissingPersons: 1 
+	HaveYouSeenUs: 1 
+	MedalofHonor: 1 
+	BrickHouse: 1 
+	transit: 1 
+	snowpics: 1 
+	excel: 1 
+	pinball: 1 
+	whalebait: 1 
+	EliMotycka: 1 
+	ukiyoe: 1 
+	circlejerkcirclejerk: 1 
+	WEEDS: 1 
+	NoveltyAccounts: 1 
+	microbiology: 1 
+	Tucson: 1 
+	stories: 1 
+	TwinCities: 1 
+	PornReview: 1 
+	migraine: 1 
+	micspam: 1 
+	kzoo: 1 
+	rectalpics: 1 
+	BIKEPOLO: 1 
+	TwinCityProjects: 1 
+	Earthquakes: 1 
+	arresteddevelopment: 1 
+	Archaeology: 1 
+	GoodNewsInBadTimes: 1 
+	opendevelopment: 1 
+	left4dead2: 1 
+	ihope: 1 
+	keto: 1 
+	openstreetmap: 1 
+	GearHead: 1 
+	EveryoneIsAMod: 1 
+	americanpirateparty: 1 
+	selforganization: 1 
+	mormonporn: 1 
+	obscure: 1 
+	Hipster: 1 
+	DetroitRedWings: 1 
+	footballmanagergames: 1 
+	lnb: 1 
+	AlgaeOil: 1 
+	sfdc: 1 
+	VOIP: 1 
+	unsw: 1 
+	thehunt: 1 
+	unity_games: 1 
+	hacking: 1 
+	subreddits: 1 
+	RedditRomania: 1 
+	triplemetacirclejerk: 1 
+	awesomeness: 1 
+	blogger: 1 
+	redditmusicclub: 1 
+	RUGC_West: 1 
+	WorldofTanks: 1 
+	arm: 1 
+	Abarcas: 1 
+	hawks: 1 
+	Predators: 1 
+	chattit: 1 
+
+Week 1
+--------------
+reddits: 2165
+accounts: 98481
+names: 868171
+
+Subreddits:
+	AskReddit: 140075 +3821
+	pics: 81112 +12043
+	reddit.com: 54486 +3628
+	politics: 40089 +2056
+	gaming: 34752 +7204
+	IAmA: 32933 +872
+	WTF: 27575 +918
+	funny: 26192 +3703
+	atheism: 23576 -182
+	trees: 21719 +4220
+	fffffffuuuuuuuuuuuu: 12153 -304
+	starcraft: 11973 +1191
+	programming: 11431 +3022
+	Minecraft: 9917 +3807
+	worldnews: 9554 -2252
+	science: 9515 -1396
+	technology: 9387 +1747
+	videos: 7600 -167
+	TwoXChromosomes: 7323 +237
+	Music: 7236 -311
+	sex: 7034 +1786
+	todayilearned: 6958 +1064
+	DoesAnybodyElse: 6874 +96
+	Fitness: 6012 +783
+	self: 5708 +811
+	blog: 5440 +1301
+	Economics: 5371 +260
+	Android: 5355 -241
+	offbeat: 4919 +745
+	gonewild: 4775 +781
+	relationship_advice: 4614 +1414
+	movies: 4442 +216
+	guns: 4430 +1749
+	canada: 4103 +43
+	nfl: 3850 +2716
+	Libertarian: 3661 -405
+	food: 3403 +222
+	shittyadvice: 3355 -118
+	news: 3322 +775
+	entertainment: 3218 +222
+	geek: 3186 +126
+	comics: 2865 -794
+	linux: 2849 +72
+	apple: 2740 -1904
+	sports: 2736 +275
+	lgbt: 2692 +8
+	Frugal: 2654 +572
+	books: 2649 +154
+	MensRights: 2494 +115
+	business: 2475 +319
+	wow: 2460 +752
+	scifi: 2442 -411
+	conspiracy: 2421 +921
+	soccer: 2414 +18
+	bicycling: 2379 +489
+	leagueoflegends: 2331 +1308
+	tf2: 2267 -848
+	relationships: 2102 +147
+	australia: 1983 -66
+	Anarchism: 1966 -116
+	nsfw: 1950 -27
+	philosophy: 1882 +754
+	Christianity: 1828 +382
+	MW2: 1811 +79
+	buildapc: 1772 +595
+	ColbertRally: 1700 +1666
+	photography: 1698 -694
+	gadgets: 1698 +319
+	Cooking: 1656 +179
+	environment: 1654 -577
+	seduction: 1555 +239
+	toronto: 1496 +625
+	WeAreTheMusicMakers: 1410 +62
+	circlejerk: 1393 -210
+	wikipedia: 1374 +364
+	dwarffortress: 1368 +647
+	hardware: 1347 +335
+	fantasyfootball: 1286 +254
+	aww: 1279 +349
+	promos: 1250 +302
+	techsupport: 1235 +68
+	beer: 1205 +252
+	web_design: 1196 +29
+	Drugs: 1148 +30
+	humor: 1139 +13
+	DIY: 1119 +116
+	nyc: 1119 +476
+	DebateAChristian: 1117 +774
+	Favors: 1101 +387
+	exmormon: 1070 -139
+	hockey: 1039 +73
+	magicTCG: 1024 +518
+	math: 1017 -486
+	Seattle: 1007 +176
+	itookapicture: 999 +169
+	CFB: 990 +475
+	iphone: 970 -61
+	Homebrewing: 935 +140
+	bestof: 931 +118
+	Marijuana: 926 -3
+	answers: 875 -306
+	Health: 853 -13
+	Metal: 853 -48
+	PS3: 850 +163
+	needadvice: 846 +338
+	space: 834 -41
+	rpg: 822 +138
+	motorcycles: 811 -609
+	unitedkingdom: 800 -12
+	dubstep: 786 +221
+	SuicideWatch: 769 +142
+	Guitar: 766 -434
+	askscience: 751 +136
+	redditoroftheday: 721 -34
+	anime: 713 -408
+	listentothis: 707 -142
+	MMA: 706 -123
+	Design: 702 +222
+	doctorwho: 691 +224
+	chicago: 690 +289
+	malefashionadvice: 685 -69
+	baseball: 677 +73
+	ffxiv: 672 -932
+	netsec: 662 -157
+	worldpolitics: 642 +201
+	Autos: 641 +75
+	travel: 632 -26
+	Israel: 630 +114
+	Austin: 629 +146
+	writing: 615 +112
+	Python: 597 +305
+	zombies: 584 +289
+	running: 584 +160
+	cogsci: 581 +138
+	skeptic: 577 -260
+	Art: 555 +49
+	ukpolitics: 552 +143
+	startrek: 540 +193
+	formula1: 533 +167
+	energy: 522 -37
+	islam: 517 +146
+	evedreddit: 516 +188
+	Portland: 514 -28
+	history: 511 -148
+	psychology: 511 -74
+	boston: 510 +109
+	drunk: 507 -259
+	economy: 503 +125
+	MLS: 488 +59
+	Ubuntu: 487 -24
+	halo: 487 +272
+	Pets: 484 -94
+	vegan: 478 +81
+	badcompany2: 449 +0
+	treecomics: 442 +196
+	WebGames: 441 +2
+	redditguild: 437 -27
+	PHP: 434 +195
+	woahdude: 434 -6
+	nosleep: 418 +291
+	LosAngeles: 414 +164
+	Physics: 403 +89
+	electronicmusic: 386 -13
+	religion: 386 +40
+	amiugly: 383 +164
+	tipofmytongue: 379 -20
+	Eve: 372 -402
+	happy: 366 +33
+	mexico: 366 +66
+	TrueReddit: 365 +89
+	Atlanta: 358 +68
+	hiphopheads: 358 +123
+	poker: 357 +127
+	PhilosophyofScience: 349 +247
+	creepy: 341 +71
+	tennis: 336 +286
+	london: 327 +64
+	911truth: 318 +226
+	montreal: 316 +162
+	Dallas: 292 +137
+	pokemon: 292 +24
+	india: 285 +17
+	lost: 282 +60
+	twincitiessocial: 282 +112
+	learnprogramming: 277 +68
+	digg: 274 -225
+	climateskeptics: 272 +15
+	vancouver: 271 +39
+	IWantToLearn: 256 +84
+	law: 254 -31
+	cheatatmathhomework: 251 +189
+	Military: 251 +69
+	Buddhism: 251 -118
+	japan: 251 -68
+	Logos: 251 +215
+	obama: 246 +55
+	newzealand: 246 -67
+	StarWars: 242 -21
+	depression: 242 -121
+	dogs: 241 +78
+	education: 237 +87
+	engineering: 234 +67
+	cats: 231 +184
+	philadelphia: 231 -50
+	Boobies: 231 +48
+	washingtondc: 230 +33
+	design_critiques: 224 +136
+	Entlantis: 223 +223
+	ideasfortheadmins: 223 -44
+	meetup: 220 -71
+	gamedev: 219 +62
+	BDSMcommunity: 219 +58
+	gardening: 216 +10
+	AMA: 213 +73
+	windowshots: 213 +103
+	HeroesofNewerth: 210 +30
+	logo: 209 +160
+	xbox360: 209 -76
+	RUGC_Midwest: 204 +28
+	transgender: 202 +3
+	Team_Awesome: 201 +51
+	tattoos: 201 +34
+	Documentaries: 200 -2
+	mcprivate: 200 +71
+	TrueBlood: 199 +176
+	linux4noobs: 194 +62
+	___: 194 +129
+	OkCupid: 194 +121
+	til: 192 -11
+	chemistry: 191 -183
+	CampingandHiking: 190 +33
+	Stargate: 190 +111
+	houston: 190 +106
+	biology: 190 +53
+	howto: 189 +65
+	Bad_Cop_No_Donut: 188 -45
+	comicbooks: 188 -230
+	ads: 187 -4
+	r4r: 185 +51
+	BurningMan: 185 +156
+	rit: 183 -211
+	starcraft2: 182 -62
+	ireland: 182 +38
+	trackers: 182 +2
+	cars: 178 +80
+	javascript: 174 +12
+	sandiego: 172 +32
+	women: 168 +26
+	WhatWouldYouRather: 168 +168
+	stopsmoking: 167 -1
+	television: 166 -156
+	Enhancement: 164 +46
+	DAE: 162 +2
+	photocritique: 160 +4
+	prop19: 160 +65
+	ILiveIn: 158 -13
+	DateRape: 158 +156
+	somethingimade: 151 +20
+	bayarea: 149 +83
+	mac: 149 -25
+	skateboarding: 142 +64
+	Fantasy: 142 +98
+	feminisms: 141 +16
+	sysadmin: 140 +24
+	UniversityofReddit: 140 -199
+	Parenting: 138 +93
+	wallpaper: 138 +14
+	RedditvFCC: 137 +3
+	Denver: 137 +65
+	software: 137 -56
+	YouShouldKnow: 135 +101
+	gameswap: 135 +13
+	conspiratard: 135 -11
+	phish: 134 +10
+	transformice: 134 -113
+	StLouis: 134 +30
+	webdev: 132 +25
+	loseit: 131 -26
+	bubbling: 130 -405
+	madmen: 128 -2
+	compsci: 127 -83
+	FixedGearBicycle: 127 +1
+	Astronomy: 127 +44
+	ottawa: 126 +24
+	catpictures: 121 +25
+	RPI: 120 +38
+	polyamory: 119 +89
+	climbing: 117 -63
+	collapse: 115 -206
+	jobs: 114 +21
+	Filmmakers: 114 +56
+	boardgames: 114 -28
+	video: 112 -6
+	haskell: 112 -140
+	Coffee: 112 +16
+	Equality: 111 -88
+	opensource: 110 -4
+	RealGirls: 110 +72
+	webcomics: 108 +0
+	DnB: 108 -10
+	ECE: 107 -25
+	BritishTV: 107 +54
+	sanfrancisco: 106 -52
+	EA_NHL: 105 +87
+	Scotch: 105 +43
+	pittsburgh: 105 +4
+	weddingplanning: 104 +38
+	Meditation: 103 +72
+	aviation: 103 +24
+	P90X: 102 +42
+	49ers: 101 +82
+	corgi: 101 +88
+	nostalgia: 101 +94
+	Connecticut: 101 +70
+	discgolf: 100 +66
+	fashion: 100 +25
+	lolcats: 100 +42
+	UIUC: 100 +58
+	gamemusic: 99 +63
+	ruby: 99 +73
+	java: 97 +44
+	classicalmusic: 97 +16
+	progressive: 97 +46
+	networking: 96 +61
+	help: 95 -33
+	vim: 94 -6
+	xkcd: 93 +45
+	minecraftau: 93 +73
+	longboarding: 93 +0
+	wordcount: 91 +49
+	cannabis: 91 -1
+	NarFFL: 89 -115
+	civ: 88 +23
+	socialism: 88 -135
+	SomebodyMakeThis: 87 +38
+	Torontoevents: 87 +46
+	BipolarReddit: 87 +25
+	WeAreTheFilmMakers: 86 +39
+	tampa: 85 +41
+	Louisville: 85 +26
+	electronics: 85 +12
+	Wordpress: 84 +9
+	firefox: 84 +45
+	linguistics: 83 -86
+	astoria: 82 +55
+	photoclass: 82 -14
+	google: 82 -10
+	FTH: 81 +30
+	GirlGamers: 80 -38
+	IDAP: 79 +46
+	Conservative: 79 +20
+	bjj: 78 -1
+	skiing: 78 +65
+	tf2au: 77 +45
+	IndieGaming: 76 -96
+	kansascity: 76 +43
+	90daysgoal: 75 -51
+	chess: 75 +16
+	Poetry: 75 +59
+	Quebec: 75 +42
+	24hoursupport: 75 -10
+	mashups: 74 +23
+	carepackage: 74 +58
+	LegalTeens: 74 +6
+	wallpapers: 74 +25
+	moviecritic: 73 +9
+	recipes: 73 -9
+	Forts: 73 +48
+	snowboarding: 73 -5
+	Guildwars2: 71 +47
+	beertrade: 70 +58
+	roguelikes: 70 +0
+	thick: 69 -16
+	ipad: 69 -8
+	4chan: 68 -126
+	Warhammer: 68 +30
+	Learnmusic: 68 +6
+	Assistance: 68 +52
+	golf: 67 -80
+	Birmingham: 66 +63
+	django: 65 +25
+	arizona: 64 +17
+	lookatmygirlfriend: 64 +11
+	UniversityOfHouston: 63 +16
+	architecture: 63 -102
+	ass: 63 +15
+	trance: 62 -77
+	arduino: 62 +52
+	surfing: 61 -34
+	secretsanta: 61 -10
+	orlando: 61 +20
+	kde: 59 +17
+	sailing: 59 +8
+	penpals: 58 +34
+	wine: 58 +42
+	oklahoma: 58 +34
+	horror: 57 -30
+	osx: 57 +47
+	blueberryjam: 57 +57
+	lisp: 57 -4
+	punk: 57 -17
+	ronpaul: 57 +26
+	applehelp: 56 -28
+	Psychonaut: 56 -19
+	Naruto: 55 +12
+	vegas: 55 +22
+	NaziHunting: 55 +27
+	ar15: 55 +27
+	finance: 55 -24
+	starcraft2_class: 52 -40
+	newreddits: 52 -6
+	halifax: 52 -19
+	cincinnati: 51 +7
+	StarcraftFeedback: 51 -23
+	Columbus: 51 -22
+	electrohouse: 51 +2
+	droid: 51 +21
+	stencils: 50 +47
+	brisbane: 50 -23
+	Iowa: 50 +5
+	China: 50 -13
+	windows: 50 +0
+	AcademicPhilosophy: 50 +33
+	StandUpComedy: 50 +22
+	learnmath: 49 -10
+	shamelessplug: 49 +36
+	lego: 49 +19
+	football: 49 +24
+	GetMotivated: 49 -25
+	photoshop: 49 -9
+	LearnJapanese: 49 -2
+	Jokes: 48 +10
+	heythatwasin: 48 +23
+	ritfl: 48 -61
+	belgium: 48 +37
+	ReverseEngineering: 48 +22
+	computergraphics: 48 +42
+	linuxquestions: 48 +40
+	comic_crits: 47 -26
+	firefly: 47 +4
+	movieclub: 47 +22
+	new_right: 46 +29
+	nature: 46 -15
+	cyberlaws: 46 +28
+	BSG: 45 +29
+	Green: 45 +26
+	babylon5: 45 +29
+	chrome: 45 +10
+	radioreddit: 45 +25
+	BarefootRunning: 44 +10
+	drums: 44 -5
+	Khazar_Pride: 44 -17
+	canucks: 43 +11
+	melbourne: 43 -56
+	sweden: 42 +9
+	lists: 42 +33
+	worstof: 42 -37
+	pic: 42 +28
+	AskWomen: 41 -95
+	cycling: 41 -11
+	androiddev: 41 +10
+	Jazz: 40 -86
+	Michigan: 40 +12
+	ginger: 40 -12
+	Winnipeg: 40 -8
+	Detroit: 40 -12
+	VegRecipes: 39 +29
+	ToolBand: 39 -5
+	NewToTF2: 39 +5
+	VolleyballGirls: 39 -41
+	Rockwall: 39 +39
+	webdesign: 38 +7
+	gif: 38 +15
+	Mommit: 38 -53
+	NewAlbums: 38 +38
+	bikinis: 38 +8
+	berkeley: 37 -11
+	triangle: 37 +28
+	whatsthisbug: 37 -85
+	hugeboobs: 37 +24
+	FoodPorn: 37 +7
+	amateurradio: 37 +27
+	NSFW_nospam: 37 -16
+	violentacrez: 36 -5
+	buildapcsales: 36 +17
+	Iceland: 36 +30
+	bristol: 36 +34
+	prowrestling: 36 +18
+	Tgirls: 36 -41
+	literature: 36 +12
+	Fishing: 36 -23
+	mnc: 36 -27
+	venturebros: 36 +35
+	No_Pants_Party: 35 +5
+	grammar: 35 +2
+	perl: 35 +5
+	emacs: 35 -45
+	Baking: 34 +17
+	typography: 34 +15
+	malemodels: 34 +3
+	snackexchange: 34 -27
+	furry: 34 -39
+	Dexter: 34 -63
+	racism: 34 +18
+	linux_gaming: 34 -20
+	rutgers: 33 -68
+	Bacon: 33 -21
+	OpenChristian: 33 +18
+	Sexy: 33 -15
+	rac: 33 -32
+	mcservers: 32 +20
+	freethinkers: 32 -3
+	HONORSBIOLOGY: 32 +16
+	reloading: 32 +28
+	CKHPHighlanderTeam: 32 +21
+	baduk: 31 +27
+	fitnesschallenge: 31 +31
+	HIPSTERGURLZ: 30 +1
+	manchester: 30 +26
+	Gunners: 30 -8
+	florida: 30 +20
+	ptkchiepsilonproject: 30 +29
+	nugs: 30 -8
+	mixcd: 30 +18
+	Foodforthought: 30 +1
+	FL_Studio: 30 +22
+	Anthropology: 30 +13
+	Celebs: 29 +14
+	DJs: 29 -18
+	malkovich: 29 +12
+	animation: 29 +6
+	Bass: 29 -27
+	offmychest: 29 +3
+	yoga: 29 +26
+	tldr: 29 +12
+	apathy: 29 -52
+	cpp: 29 +0
+	WritersGroup: 29 -7
+	Nootropics: 29 -29
+	geology: 28 +20
+	SaltLakeCity: 28 -2
+	quotes: 28 +10
+	de: 28 -2
+	NonAustrianEconomics: 28 -7
+	rugc_greatlakes: 28 -11
+	wisconsin: 28 -16
+	MachineLearning: 27 -15
+	Lubbock: 27 +15
+	fringe: 27 +9
+	crime: 27 +10
+	DrinkingGames: 27 +25
+	FinancialPlanning: 27 +6
+	texas: 27 -24
+	redditgw: 27 +9
+	Screenwriting: 27 +0
+	AnimalRights: 27 +6
+	Lovecraft: 27 -15
+	coding: 26 -2
+	bikesgonewild: 26 +20
+	Graffiti: 26 +4
+	HomeworkHelp: 26 +8
+	Drawing101: 26 -20
+	UFOs: 26 -67
+	Sonsofanarchy: 26 +25
+	nonprofit: 26 -9
+	government: 26 -21
+	NYGiants: 26 +14
+	PigJargon: 26 +4
+	auto: 25 +3
+	futuregarage: 25 +20
+	coversongs: 25 +24
+	complexanalysisclub: 25 -8
+	wii: 25 -18
+	bisexual: 25 -2
+	IWantOut: 25 -1
+	Freethought: 25 +21
+	asheville: 25 -12
+	statistics: 25 -4
+	archlinux: 25 -10
+	rediculouswebsites: 25 +25
+	IAMAUpdate: 25 +25
+	Colorado: 24 +1
+	nsfw2: 24 +2
+	milf: 24 -26
+	altmed: 24 +22
+	namethemovie: 24 +2
+	overpopulation: 24 +7
+	steampunk: 24 +17
+	Philippines: 24 -6
+	Techno: 24 -2
+	redditores: 24 +18
+	triathlon: 24 -25
+	memphis: 24 -8
+	selfhelp: 24 +11
+	reddithax: 23 +20
+	voluptuous: 23 -49
+	lostgeneration: 23 +13
+	Judaism: 23 +18
+	futurama: 23 -49
+	manlove: 23 -8
+	SQL: 23 +22
+	Jeep: 23 +12
+	futurebeats: 23 +3
+	RenewableEnergy: 23 +0
+	spicy: 23 -161
+	DebateAnAtheist: 23 -159
+	gameconceptart: 23 +18
+	OneParagraph: 22 +10
+	Youngluck: 22 +14
+	computers: 22 +14
+	Piracy: 22 +14
+	sydney: 22 -7
+	geocaching: 22 -32
+	investing: 22 +1
+	rails: 22 +15
+	musictheory: 22 +19
+	SEC: 22 +1
+	HuntsvilleAlabama: 22 -25
+	rva: 22 +18
+	n900: 22 +22
+	spotify: 22 +2
+	martialarts: 22 -8
+	minnesota: 22 +3
+	milwaukee: 22 +21
+	askagirl: 22 +20
+	groovesharkplaylists: 22 +10
+	Inception: 22 -20
+	redditmakesagame: 22 +22
+	osugame: 22 +7
+	Cryptogon: 21 +8
+	water: 21 +5
+	gonewildstories: 21 +13
+	dogpictures: 21 +10
+	graphic_design: 21 +19
+	languagelearning: 21 +13
+	Gunpla: 21 +17
+	editors: 21 +9
+	ThePriceIsRight: 21 -19
+	whedon: 21 +16
+	House: 21 +3
+	treemusic: 21 -2
+	tea: 21 +16
+	orangecounty: 21 +17
+	Boardgame_AI_101: 20 -52
+	rush: 20 +16
+	bourbon: 20 +16
+	ZenHabits: 20 -7
+	gnu: 20 +12
+	keto: 20 +19
+	Yapi: 20 +20
+	swtor: 20 -2
+	French: 20 +9
+	Eugene: 20 -9
+	DukeNukemForever: 20 +20
+	GreaseMonkey: 20 +6
+	Brooklyn: 20 +15
+	SDSU: 20 +13
+	PennStateUniversity: 20 +10
+	Magic: 20 +13
+	PhotoBlog: 20 +16
+	simracing: 19 +11
+	SkyDiving: 19 +3
+	Redskins: 19 +18
+	aspergers: 19 +19
+	ryerson: 19 +18
+	pornvids: 19 -1
+	robotics: 19 +4
+	Hamilton: 19 +0
+	ucf: 19 +15
+	cwru: 19 +13
+	tech: 19 +17
+	penis: 19 +1
+	freebies: 19 -26
+	NewOrleans: 19 +7
+	occult: 19 +16
+	miamidolphins: 19 +16
+	uwaterloo: 19 -7
+	gratefuldead: 19 +13
+	Cleveland: 19 -11
+	weeaboo: 19 +18
+	HairyPussy: 18 -16
+	birdpics: 18 -21
+	dragonage: 18 +15
+	HappyBirthday: 18 +8
+	NetflixBestOf: 18 -32
+	MakeupAddiction: 18 -23
+	womensmokingweed: 18 +18
+	DeepSpaceNine: 18 +12
+	youtube: 18 -7
+	DollarFiasco: 18 +18
+	guitarlessons: 18 -7
+	Albuquerque: 18 +9
+	CasualMath: 18 +17
+	Filevo: 18 -16
+	Clojure: 18 -6
+	UMD: 18 +13
+	sanantonio: 18 -5
+	Denmark: 18 +14
+	herps: 18 +11
+	Entrepreneur: 18 -27
+	philosophyclub: 18 -18
+	duke: 17 +15
+	teaching: 17 +17
+	cute: 17 +3
+	RHL: 17 -7
+	LNC: 17 -21
+	softscience: 17 +15
+	Entomology: 17 +8
+	redheads: 17 +2
+	csshelp: 17 +13
+	nba: 17 +6
+	ultimate: 17 +0
+	londonontario: 17 +17
+	bbwbikinis: 17 +8
+	operabrowser: 17 +0
+	longisland: 17 +15
+	gossip: 17 +1
+	madisonwi: 17 -24
+	DandD: 17 +3
+	Catholicism: 17 -4
+	MusicMakersCritique: 17 -32
+	blackberry: 16 +7
+	bugs: 16 -5
+	hiphop: 16 +9
+	torrents: 16 -33
+	AmericanGovernment: 16 +11
+	ravens: 16 +2
+	ps3hacks: 16 +13
+	trailrunning: 16 +16
+	sportsbook: 16 +16
+	Calgary: 16 -40
+	Hunting: 16 -10
+	flossdaily: 16 -22
+	CanadianPolitics: 16 +16
+	hardbodies: 16 +4
+	Archery: 16 +12
+	tattoo: 15 +14
+	italy: 15 +4
+	opiates: 15 +5
+	indianapolis: 15 +7
+	Boise: 15 +4
+	glutenfree: 15 -8
+	codbo: 15 -19
+	stonerrock: 15 -14
+	ask: 15 +2
+	NexusOne: 15 -13
+	Chattanooga: 15 +6
+	exjw: 15 -5
+	UQreddit: 15 +14
+	SelfSufficiency: 15 -63
+	OnePiece: 15 -6
+	LaTeX: 15 +15
+	SAHP: 15 +8
+	SEO: 15 +3
+	newjersey: 15 +9
+	computing: 15 -8
+	snowpics: 15 +14
+	RealEstate: 15 +3
+	browsers: 14 +6
+	trees_IRL: 14 -7
+	vmware: 14 +5
+	arhomu: 14 +14
+	oblivion: 14 -4
+	pokemontrades: 14 -7
+	christinahendricks: 14 +4
+	rapecounseling: 14 +3
+	runescape: 14 -16
+	Rochester: 14 -6
+	motorcycle: 14 +4
+	waterloo: 14 -17
+	MiddleEasternMusic: 14 +8
+	SF4: 14 -24
+	metacirclejerk: 14 -4
+	ForeignMovies: 14 +0
+	BloomingtonNormal: 14 +14
+	AlienBlue: 14 -14
+	modhelp: 14 -10
+	Punkskahardcore: 14 -50
+	tasker: 14 -21
+	sbmarking: 14 +5
+	GuildWars: 13 +10
+	france: 13 -19
+	Tufts: 13 +13
+	shorthairedhotties: 13 +12
+	Paranormal: 13 +11
+	cancer: 13 +8
+	neuro: 13 +11
+	AppEngine: 13 -5
+	gifs: 13 -4
+	Republican: 13 +3
+	Permaculture: 13 +1
+	norge: 13 -13
+	nook: 13 -3
+	mycology: 13 -17
+	uicwhatshot: 13 +9
+	arresteddevelopment: 13 +12
+	HighHeels: 13 +7
+	vegetarian: 13 +13
+	thehunt: 13 +12
+	boulder: 13 -40
+	diabetes: 13 +8
+	worldevents: 13 -27
+	wilwheaton: 13 +13
+	derp: 13 +3
+	linux_devices: 13 -5
+	tolkienfans: 12 +12
+	redditdev: 12 -7
+	Blowjobs: 12 -6
+	rigofthemonth: 12 +12
+	tulsa: 12 +12
+	Coolness: 12 +12
+	Africa: 12 +11
+	BodyAcceptance: 12 +12
+	tea_party: 12 +9
+	PHPhelp: 12 +12
+	raleigh: 12 +12
+	phpscripts: 12 +12
+	hookah: 12 -12
+	facebook: 12 -12
+	Bellingham: 12 +11
+	postrock: 12 +2
+	Vegetarianism: 12 +6
+	classicfilms: 12 +0
+	LANL_German: 12 +11
+	minecraftsuggestions: 12 +12
+	fitnesscirclejerk: 12 +7
+	filmmaking: 12 +10
+	shroomers: 12 +12
+	Braves: 12 +5
+	Redditch: 12 +2
+	css: 12 +1
+	microsoft: 12 -7
+	rdbp: 12 +12
+	redditrequest: 12 -4
+	Gore: 12 +1
+	lebowskiisms: 12 -1
+	team3: 11 +11
+	NEU: 11 +5
+	knives: 11 -10
+	Cubers: 11 +7
+	PlatonicFriends: 11 -2
+	kindle: 11 -26
+	berlin: 11 +11
+	culturalstudies: 11 +11
+	autism: 11 +2
+	opendirectories: 11 -12
+	korea: 11 +5
+	NuclearPower: 11 +7
+	BattlestarGalactica: 11 +11
+	warehouse13: 11 -9
+	airguns: 11 +10
+	marketing: 11 +3
+	blogspotcommunity: 11 +11
+	mormonorgchats: 11 +11
+	holycheck: 11 +11
+	linuxadmin: 11 +5
+	soapier: 11 -273
+	Pictures: 11 -8
+	HackBloc: 11 +11
+	Zappa: 11 +5
+	farscape: 11 +7
+	scuba: 11 +7
+	MAME: 11 +11
+	radiohead: 11 -12
+	battlestations: 11 -32
+	magick: 11 +8
+	anarchocommunism: 11 +8
+	exSistersinZion: 11 -41
+	jquery: 11 +7
+	ChemicalEngineering: 11 +7
+	confessions: 11 +7
+	AndroidQuestions: 11 +8
+	food2: 11 +1
+	neopagan: 11 +11
+	batman: 11 -18
+	manga: 10 -9
+	o7i3: 10 +10
+	porn: 10 +5
+	intelligencesquared: 10 +10
+	bodymods: 10 -8
+	DYR: 10 -2
+	APBIOLOGY: 10 +7
+	tricities: 10 +10
+	cocktails: 10 +8
+	charts: 10 +10
+	Scotland: 10 +1
+	redditlogos: 10 +8
+	chile: 10 -18
+	singularity: 10 +10
+	xboxlive: 10 +5
+	DOTA: 10 +1
+	git: 10 +4
+	socialmedia: 10 +2
+	ufl: 10 +10
+	booksuggestions: 10 -5
+	piano: 10 -30
+	Cornell: 10 +10
+	museum: 10 +0
+	RollerDerbyReddit: 10 +10
+	baltimore: 10 -7
+	atheistgems: 10 +5
+	voluntarism: 10 +8
+	sc2replays: 10 +10
+	LoLTourney: 10 +10
+	russia: 9 +7
+	gamereviews: 9 +4
+	LucidDreaming: 9 -8
+	fnv: 9 +9
+	tyneside: 9 +9
+	radiocontrol: 9 +3
+	electronic_cigarette: 9 +6
+	RacistReddit: 9 +2
+	indonesia: 9 +3
+	alcohol: 9 -16
+	regionalaustralia: 9 +8
+	LadyGaga: 9 -2
+	gamestreams: 9 +3
+	trippy: 9 +7
+	Upskirt: 9 +4
+	breadboard: 9 +9
+	tothemoon: 9 +9
+	PCOS: 9 +9
+	whitewater: 9 -3
+	reddart: 9 +9
+	SciFiScroll: 9 +2
+	singing: 9 +8
+	coys: 9 -6
+	Anarcho_Capitalism: 9 +6
+	paris: 9 +2
+	airsoft: 9 -17
+	xxfitness: 9 +4
+	newhampshire: 9 -5
+	xss: 9 +3
+	breakingbad: 9 -27
+	reggae: 9 +8
+	knitting: 9 -7
+	paintball: 9 +9
+	drupal: 9 -14
+	CommonLaw: 9 -6
+	geography: 9 +8
+	SanJoseSharks: 9 -10
+	MINIMALTECH: 9 +8
+	ps3bc2: 9 -1
+	SFstories: 9 +5
+	bloomington: 9 -15
+	dating: 9 -2
+	OrganicGardening: 9 +9
+	juggling: 9 +5
+	MMORPG: 8 +8
+	oliviawilde: 8 +8
+	germany: 8 -4
+	Revival: 8 +8
+	WingChun: 8 +7
+	awesomechicks: 8 +7
+	Everybody: 8 -21
+	startups: 8 -19
+	bdsm: 8 +5
+	bottlesofbeer: 8 -2
+	nederlands: 8 +8
+	sabres: 8 +8
+	england: 8 -5
+	Morocco: 8 -8
+	cesky: 8 +6
+	LSD: 8 -30
+	simpleliving: 8 +1
+	indepthstories: 8 +2
+	Scholar: 8 -7
+	aggies: 8 -3
+	Temple: 8 +7
+	ns2: 8 +8
+	productivity: 8 -4
+	Osaka: 8 +8
+	HELPPPP: 8 +8
+	photoit: 8 +8
+	JapaneseFood: 8 +1
+	pakistan: 8 -17
+	batteryexpress: 8 -13
+	ECEHelpMe: 8 +8
+	hungary: 8 +8
+	metaleks: 8 +8
+	Hardwarenews: 8 +0
+	MusicNews: 8 -1
+	bleach: 8 -4
+	thestarwars: 8 +8
+	RUGC: 8 -6
+	p2p: 8 +6
+	oaklandraiders: 8 -1
+	RedDwarf: 8 -10
+	americanpirateparty: 8 +7
+	INTP: 8 +8
+	printSF: 8 +7
+	Riddle: 7 +7
+	northbay: 7 +7
+	WritingPrompts: 7 +7
+	DepthHub: 7 +4
+	BIKEPOLO: 7 +6
+	dontBEaSHEEPLE: 7 +7
+	ektenyheter: 7 +7
+	TheChurch: 7 +4
+	FortWorth: 7 -9
+	Rubicon: 7 +3
+	merlinbbc: 7 +7
+	Boxing: 7 +3
+	Greensboro: 7 +7
+	afghanistan: 7 +6
+	lojban: 7 +7
+	freegames: 7 +0
+	hackintosh: 7 -2
+	agile: 7 +7
+	Survivalist: 7 -11
+	inthemorning: 7 -8
+	iplayer: 7 +7
+	Stepmania: 7 -3
+	FittitBuddy: 7 -3
+	JonBenetRamsey: 7 +7
+	TEFL: 7 +1
+	israelexposed: 7 +5
+	Pantyfetish: 7 +6
+	GreenBayPackers: 7 +7
+	Smokin: 7 +0
+	santacruz: 7 +4
+	HoMfloor: 7 +5
+	tvclub: 7 +4
+	announcements: 7 -269
+	CyclePDX: 7 +4
+	slackerrecipes: 7 -22
+	Daleks: 7 -1
+	homebrew: 7 +5
+	rally: 7 +2
+	NorthCarolina: 7 +7
+	bodybuilding: 7 +6
+	GirlswithGlasses: 7 -5
+	legal: 7 +3
+	biblestudy: 7 +5
+	AmericanPolitics: 7 +3
+	OrthodoxChristianity: 7 +7
+	daddit: 7 -15
+	DOTDJAX: 7 +7
+	childfree: 7 -11
+	ffxi: 7 +3
+	morrowindmmo: 7 +6
+	morrissey: 7 -3
+	Ebay: 7 +5
+	linuxmint: 7 +4
+	wordplay: 7 +1
+	Vocaloid: 7 +7
+	psytrance: 7 +3
+	Rockband: 7 +4
+	Hotchickswithtattoos: 7 +3
+	athiesm: 7 -16
+	southwales: 7 -4
+	deep_ecology: 6 +6
+	burst: 6 +6
+	Bondage: 6 -1
+	Twitter: 6 -10
+	TheoryOfReddit: 6 +5
+	Norway: 6 -6
+	festivals: 6 +1
+	Purdue: 6 -12
+	SonicTheHedgehog: 6 +5
+	audio: 6 +5
+	bioinformatics: 6 +5
+	Swimming: 6 -8
+	conservation: 6 +6
+	euguild: 6 -3
+	MapleLinks: 6 -1
+	alpinism: 6 -4
+	CHIBears: 6 +6
+	Games: 6 -1
+	it: 6 +6
+	SantaClarita: 6 +6
+	asoiaf: 6 +6
+	lol: 6 +1
+	RenaissanceFestivals: 6 +6
+	scientology: 6 -17
+	PrettyGirls: 6 +2
+	Shopping: 6 +5
+	burpees: 6 +6
+	eyes: 6 +6
+	PicsOfDeadKids: 6 -1
+	BSD: 6 -21
+	UNI: 6 +6
+	judo: 6 -3
+	totse: 6 +6
+	steamdeals: 6 -10
+	veg: 6 -6
+	hugenaturals: 6 +4
+	Dreams: 6 -5
+	Switzerland: 6 +5
+	gso: 6 +6
+	industrialmusic: 6 +6
+	EmmaWatson: 6 -3
+	zen: 6 -1
+	babies: 6 +5
+	ancientegypt: 6 +6
+	reddeadredemption: 6 +4
+	meego: 6 -1
+	rant: 6 -16
+	Pirate: 6 +4
+	macapps: 6 -14
+	iran: 6 +5
+	zelda: 6 -8
+	perth: 6 +5
+	portugal: 6 +6
+	Archaeology: 6 +5
+	leafs: 6 +2
+	Arabic101: 6 -30
+	WAYWT: 6 +6
+	ADATO: 6 +6
+	shill: 6 -15
+	neopets: 6 +6
+	IowaCity: 6 +2
+	Kayaking: 6 -14
+	morelikethat: 6 -7
+	Browns: 6 -3
+	360MW2: 6 -13
+	telecaster: 6 -16
+	bookclub: 6 -12
+	ted: 6 +3
+	JustMeJT: 6 +5
+	1000words: 6 +1
+	SexyButNotPorn: 6 +5
+	advertising: 6 +5
+	California: 6 +3
+	Miami: 6 +3
+	TimAndEric: 6 +5
+	climate: 6 -1
+	TeaParty: 6 +6
+	ThisIsOurMusic: 6 +2
+	tonightsdinner: 6 -3
+	ntnu: 6 -2
+	msu: 6 +2
+	UCDavis: 5 +5
+	nashua: 5 +5
+	fantasybaseball: 5 -3
+	SPEV: 5 +5
+	Mormonism: 5 +5
+	culture: 5 +5
+	node: 5 +5
+	recycle: 5 +4
+	semanticweb: 5 +4
+	general: 5 +0
+	GNV: 5 +3
+	Basketball: 5 -9
+	TillSverige: 5 -4
+	academiceconomics: 5 +5
+	alien_swarm: 5 +1
+	PoopSandwiches: 5 -1
+	bobblehead: 5 +5
+	MMJ: 5 +3
+	experimentalmusic: 5 +2
+	fr: 5 +3
+	Tacoma: 5 +1
+	gaynsfw: 5 +2
+	nethack: 5 -11
+	blogs: 5 -1
+	WorldHistory: 5 +3
+	kettlebell: 5 +4
+	brighton: 5 +4
+	metametacirclejerk: 5 +5
+	malehairadvice: 5 +0
+	Paleo: 5 +5
+	liquor: 5 -1
+	Parkour: 5 +2
+	Alabama: 5 +4
+	stephenking: 5 +5
+	DOG: 5 +5
+	ambient: 5 -3
+	CollegeBasketball: 5 +1
+	wp7dev: 5 -1
+	SF_Book_Club: 5 -17
+	happyhardcore: 5 +4
+	Eureka: 5 +1
+	boltedontits: 5 -4
+	newyork: 5 +0
+	androidtabs: 5 +3
+	matlab: 5 +3
+	delphi: 5 -1
+	ndp: 5 +5
+	IntroToRBP: 5 +0
+	epidemiology: 5 +2
+	boxeyroxey: 5 +1
+	Objectivism: 5 +4
+	Tucson: 5 +4
+	thousandhours: 5 +2
+	EdmontonOilers: 5 +4
+	geekguys: 5 +3
+	matheducation: 5 -10
+	matt: 5 +5
+	Galaxy_S: 5 -11
+	DetroitRedWings: 5 +4
+	Amateur: 5 +0
+	flash: 5 +5
+	Reprap: 5 +5
+	cosplay: 5 +1
+	905: 5 -54
+	tfc: 5 +4
+	psychopharmacology: 5 +3
+	Custom_Motorcycles: 5 -2
+	rap: 5 -10
+	Sunlight: 5 +1
+	MissingPersons: 5 +4
+	audioengineering: 5 -10
+	Database: 5 +2
+	WomenOfColor: 5 -6
+	hacking: 5 +4
+	lockpicking: 5 -7
+	EventsNYC: 5 +5
+	ukmcnortheast: 4 +3
+	MUD: 4 +4
+	MiddleEastNews: 4 +3
+	oregon: 4 +1
+	TrollAlert: 4 +2
+	audible: 4 +4
+	criticism: 4 +1
+	Neuropsychology: 4 +1
+	Animals: 4 +1
+	IASIP: 4 -1
+	whatisthisthing: 4 -17
+	Omaha: 4 +0
+	hiking: 4 +0
+	tax: 4 +1
+	camping: 4 -3
+	rainbowbar: 4 -6
+	videography: 4 -4
+	WhiteRights: 4 +3
+	rape: 4 -10
+	mungojelly: 4 +3
+	pics2: 4 +2
+	Tobacco: 4 +4
+	QuakeLive: 4 -2
+	chairs: 4 +4
+	opensourcehardware: 4 +2
+	TreesSketchbook: 4 +4
+	Oddball: 4 -1
+	backpacking: 4 +4
+	Pareidolia: 4 +4
+	worldnews2: 4 +4
+	Buffalo: 4 +4
+	futbolmx: 4 +3
+	nerdfighters: 4 +4
+	texasfavors: 4 +3
+	Dance: 4 +4
+	ultimaonline: 4 +4
+	cfs: 4 +2
+	Liberty: 4 +1
+	UFO_2012: 4 +1
+	SexPositive: 4 -17
+	Zerg: 4 +4
+	SOS: 4 -6
+	CaribbeanGirls: 4 -5
+	bakedart: 4 -2
+	PoliticalHumor: 4 +4
+	PoliticsPDFs: 4 +1
+	nottingham: 4 +3
+	Thrifty: 4 +2
+	Magyarorszag: 4 +4
+	gilf: 4 -2
+	citricsquid: 4 +4
+	USF: 4 +4
+	europe: 4 -31
+	gamedevclass: 4 +0
+	Zune: 4 +4
+	triphop: 4 +4
+	no: 4 -4
+	DallasMeetups: 4 +2
+	meta: 4 +2
+	Anticonsumption: 4 -24
+	MetaAnarchism: 4 -5
+	Rockland: 4 +3
+	JAX: 4 +2
+	Berries: 4 +4
+	abletonlive: 4 -5
+	Seattle_bicycling: 4 -3
+	procurement: 4 +3
+	Chefit: 4 +3
+	stocks: 4 +1
+	russian: 4 +3
+	Image: 4 +4
+	TheistVsAtheist: 4 +4
+	lupus: 4 -1
+	Shores_of_Hazeron: 4 +4
+	VictoriaBC: 4 -50
+	relationshipadvice: 4 +3
+	computervision: 4 -4
+	security: 4 +3
+	Photoessay: 4 -5
+	hipsters: 4 +1
+	aikido: 4 -5
+	ucla: 4 +3
+	Umphreys: 4 -5
+	Monterrey: 4 +2
+	blender: 4 +3
+	Lambsauce: 4 +4
+	RhodeIsland: 4 +4
+	medicine: 4 +4
+	FIlm: 4 +0
+	rescuedogs: 4 +1
+	pokemon_black: 4 +2
+	Knoxville: 4 +4
+	fuckyea: 4 -3
+	ShinyPorn: 4 +2
+	chickenfighters: 4 +4
+	rugby: 4 +4
+	Palestine: 4 +0
+	mormon: 4 -6
+	urbanexploration: 3 +3
+	politics2: 3 +3
+	SWResources: 3 +3
+	studygroup: 3 +3
+	Volunteers: 3 +3
+	openholes: 3 +3
+	FootFetish: 3 +3
+	energydrinks: 3 -4
+	Advice: 3 +3
+	Sherlock: 3 +3
+	animalid: 3 +1
+	synthesizers: 3 +1
+	thewikipediagame: 3 +3
+	farming: 3 +1
+	chiptunes: 3 +3
+	30daysit: 3 -3
+	hookandyarn: 3 -2
+	men: 3 +2
+	DoesAnyoneKnow: 3 -9
+	norfolk: 3 -5
+	travelwriting: 3 +2
+	mysql: 3 -5
+	highdeas: 3 +3
+	muenstercheese: 3 +3
+	Nokia: 3 +2
+	NSFW_Wallpapers: 3 -6
+	ohm: 3 +3
+	wacrover: 3 +3
+	Slackline: 3 +1
+	WhiteMenGoneWild: 3 +2
+	historiography: 3 +3
+	timetravel: 3 +1
+	blackculture: 3 +3
+	shittingadvice: 3 +2
+	nanoscience: 3 +1
+	MusicEssentials: 3 -54
+	NeedToKnow: 3 +3
+	Dinosaurs: 3 +3
+	MorgantownWV: 3 +3
+	carlhprogramming: 3 +3
+	UVA: 3 -9
+	devils: 3 +3
+	galveston: 3 +3
+	Eskrima: 3 +3
+	RPGrecordings: 3 -7
+	Drifting: 3 -1
+	KnowYourRights: 3 +3
+	urbanplanning: 3 +3
+	facebookquotes: 3 +2
+	test: 3 -5
+	rickygervais: 3 +0
+	imgur: 3 +2
+	mentors: 3 +2
+	zh: 3 +2
+	embedded: 3 +3
+	ageofempiresrevival: 3 +3
+	ReligionInAmerica: 3 -1
+	gay: 3 -1
+	justanotherreddit: 3 +3
+	FML: 3 +3
+	toys: 3 +3
+	intj: 3 +3
+	xmonad: 3 +0
+	antiwar: 3 +3
+	magyarno: 3 +3
+	beards: 3 +1
+	ambiversive: 3 +3
+	Kucinich: 3 +3
+	gamingnews: 3 +3
+	ipod: 3 +3
+	FindAGame: 3 +3
+	personsunknown: 3 -12
+	recumbent: 3 -3
+	Drexel: 3 +1
+	impoliteconversation: 3 +3
+	black_porn: 3 +3
+	asshole: 3 +3
+	deathclub: 3 -1
+	PhxClassWarCouncil: 3 +2
+	dancing: 3 +3
+	vintage_advertising: 3 +3
+	theology: 3 +1
+	AskUsers: 3 +3
+	Marquette: 3 +1
+	werdyo: 3 +3
+	Themepark: 3 +0
+	english_articles: 3 +3
+	Virginia: 3 +1
+	bioethics: 3 +3
+	HardRock: 3 +1
+	MaleStudies: 3 -4
+	oxford: 3 -3
+	argentina: 3 -14
+	canberra: 3 +2
+	techtheatre: 3 +3
+	FinerMinds: 3 +3
+	asktransgender: 3 +3
+	trollcave: 3 -2
+	gothicandhorror: 3 +3
+	mixes: 3 +0
+	windowsadmin: 3 +3
+	mountandblade: 3 +3
+	SeaShepherd: 3 -6
+	Wales: 3 +3
+	LANL_Latin: 3 +1
+	scooters: 3 -12
+	columbiamo: 3 +1
+	diablo2: 3 +2
+	QuadCities: 3 +3
+	left_handed: 3 +2
+	lexington: 3 +3
+	AmericanJewishPower: 3 +3
+	vexillology: 3 +3
+	drawitblind: 3 +0
+	Palm: 3 -1
+	ParticlePhysics: 3 +3
+	USCivilWar: 3 +3
+	lectures: 3 -6
+	vodka: 3 +2
+	Montana: 3 +3
+	mileycyrus: 3 +3
+	woodworking: 3 -8
+	ledelse: 3 +3
+	statuegropers: 3 +2
+	Indiana: 3 -3
+	metanarchism: 3 +3
+	house_music: 3 +0
+	TF2_Trading: 3 +1
+	Liberal: 3 +2
+	snacks: 3 +3
+	fargo: 3 +3
+	EQ2: 3 +3
+	Portal: 3 -5
+	redditmusicclub: 3 +2
+	treemovies: 3 -4
+	freelance: 2 -4
+	DrugWarNews: 2 +0
+	CableNews: 2 +0
+	CPA: 2 +2
+	Home: 2 +2
+	nycfood: 2 +2
+	WWTT: 2 -6
+	Seahawks: 2 +2
+	CNGH: 2 -25
+	spirituality: 2 +0
+	browncoats: 2 +1
+	datass: 2 +2
+	Meetups: 2 +2
+	qwantzparty: 2 +1
+	ducklings: 2 +2
+	Gentoo: 2 -1
+	HandsAcrossAmerica: 2 +2
+	kravmaga: 2 +2
+	designthought: 2 +0
+	Tibia: 2 +2
+	blackflag: 2 +2
+	fsu: 2 -3
+	secondlife: 2 +2
+	lotr: 2 +2
+	dotnet: 2 -38
+	KansasCityChiefs: 2 +2
+	OregonStateUniv: 2 +1
+	katyperry: 2 -3
+	penguins: 2 +0
+	Administrators: 2 +2
+	346class10: 2 +2
+	ColoradoRockies: 2 +2
+	deutschland: 2 -3
+	redditstories: 2 -1
+	Etab: 2 +2
+	Tokyo: 2 +2
+	police: 2 -1
+	frenchally: 2 +2
+	college: 2 +1
+	harmonica: 2 +2
+	caving: 2 +1
+	3DMA: 2 +2
+	diabolo: 2 +2
+	meanwhileInJapan: 2 +2
+	cumfetish: 2 -16
+	UCONN: 2 -4
+	BikingATX: 2 -9
+	Ohio: 2 +0
+	interiorsandliving: 2 -5
+	whatwillido: 2 +1
+	slowitup: 2 +2
+	USC: 2 -3
+	warriors: 2 -1
+	debian: 2 +1
+	BBQers: 2 +2
+	CalgaryPeople: 2 +2
+	cookmesomething: 2 +1
+	spam: 2 +2
+	mathbooks: 2 +2
+	Ornithology: 2 -3
+	goodnewseveryone: 2 +2
+	ru: 2 +1
+	chuck: 2 -1
+	AmericanHistory: 2 +2
+	southcarolina: 2 -5
+	cyprustourism: 2 +1
+	media: 2 -8
+	vaguequestions: 2 +1
+	fetish: 2 +2
+	Chargers: 2 -2
+	LearnANewLanguage: 2 +2
+	kelowna: 2 +2
+	346class10week7: 2 +2
+	Flyers: 2 +2
+	belarus: 2 +2
+	atheist: 2 -4
+	Harley: 2 +2
+	nsfwvideos: 2 +2
+	wedding: 2 +0
+	hon: 2 -1
+	latin: 2 -1
+	diving: 2 +0
+	X3TC: 2 +2
+	cannabiscultivation: 2 +2
+	Maps: 2 +2
+	NPBC: 2 +1
+	RapidshareList: 2 +2
+	joel: 2 +2
+	Supernatural: 2 +2
+	Arkansas: 2 +2
+	giveaways: 2 +2
+	heady: 2 +1
+	PowerShell: 2 +2
+	chans: 2 +2
+	DearKittenmittens: 2 +2
+	Internet: 2 -6
+	boosh: 2 +2
+	alcoholism: 2 -7
+	thoriumreactor: 2 +2
+	3dsmax: 2 +1
+	Augusta: 2 -4
+	happiness: 2 +1
+	nashville: 2 +0
+	grease: 2 +2
+	medicalschool: 2 +2
+	nothinghere: 2 +2
+	iPods: 2 -1
+	unicycling: 2 +2
+	Cosmetics: 2 +1
+	chicagomusicscene: 2 -2
+	nihilisms: 2 +2
+	Kiteboarding: 2 +1
+	Amblyopia: 2 +2
+	theleague: 2 +2
+	tf2west: 2 -1
+	csusm: 2 -6
+	usenet: 2 +2
+	drugscience: 2 +2
+	digimon: 2 +2
+	dragoncon: 2 -6
+	ytmnd: 2 +2
+	Mathematica: 2 +2
+	Spearfishing: 2 +1
+	lakers: 2 +1
+	Plumpers: 2 +1
+	e17: 2 +2
+	PipeTobacco: 2 +1
+	chubbyshemale: 2 +1
+	BSUFootball: 2 -1
+	BurnNotice: 2 +1
+	tcp: 2 +2
+	vids: 2 +2
+	scala: 2 -1
+	espnFFleague: 2 +2
+	morelikethis: 2 -6
+	comedy: 2 -10
+	fishtank: 2 -6
+	Firefighting: 2 +1
+	Apologetics: 2 +2
+	acting: 2 +0
+	Waco: 2 -2
+	language: 2 +2
+	watchthis: 2 +2
+	ThisIsWhatImReading: 2 -5
+	PoliticalStrategy: 2 +2
+	sailingcrew: 2 +2
+	Theatre: 2 -1
+	nursing: 2 +1
+	Printmakers: 2 +2
+	LibertarianLeft: 2 +2
+	pubmed: 2 +2
+	dndeez: 2 -3
+	netneutrality: 2 -6
+	cnf: 2 +2
+	cambridge_uni: 2 +2
+	danmark: 2 +2
+	Faces: 2 +2
+	100BlackMen: 2 +2
+	kpop: 2 +2
+	scheme: 2 -9
+	presents: 2 +2
+	MetaTrueReddit: 2 +2
+	whitesox: 2 +2
+	IWW: 2 -1
+	Woerterbuecher: 2 -1
+	fonts: 2 +2
+	fidget: 2 -1
+	chillwave: 2 -1
+	Genealogy: 2 -2
+	darkstep: 2 -3
+	Habs: 2 +2
+	LaughOrCry: 2 +2
+	stockings: 2 +2
+	Delaware: 2 +2
+	SceneGirls: 2 +1
+	joos: 2 -12
+	Yarnswap: 2 +2
+	afrikaans: 2 +2
+	aves: 2 +2
+	work: 2 +1
+	nanotech: 2 -2
+	trees_movieclub: 2 +2
+	StateOfTheUnion: 2 -3
+	Gameboy: 2 +0
+	newfoundland: 2 +2
+	southafrica: 2 +2
+	joomla: 2 -4
+	Cyberpunk: 2 +2
+	freeculture: 2 -7
+	Quipster: 2 +2
+	spiders: 2 +1
+	watchthisUK: 2 -1
+	JungleFever: 2 +2
+	Korean: 2 -1
+	SantaBarbara: 2 +0
+	off_lawn: 2 +2
+	steak: 2 +0
+	futurefunkairlines: 2 +1
+	Forex: 2 -1
+	1920s: 2 -5
+	interestingasfuck: 2 +2
+	doommetal: 2 -9
+	Cheap_Meals: 2 -11
+	delhi: 2 +2
+	bookexchange: 2 -4
+	TexasRangers: 2 +2
+	frozensynapse: 2 +2
+	userstyles: 2 +0
+	crossfit: 2 +2
+	doc: 2 -4
+	webdeals: 2 +2
+	AnimeMusicVideos: 2 +2
+	Skeet: 2 +1
+	BurningManNet: 2 +2
+	rmccuetest: 2 +2
+	tickling: 2 +2
+	migraine: 2 +1
+	glee: 2 +0
+	Blogging: 2 +2
+	Saxophonics: 2 +2
+	CRM: 2 +2
+	ebooks: 2 -2
+	japanlife: 2 -2
+	parentingthegifted: 2 -3
+	UGKrishnamurti: 2 +1
+	lnb: 2 +1
+	hackers: 2 +2
+	restaurants: 2 +2
+	Tabs: 2 -3
+	cyprus: 2 +2
+	quilting: 2 +2
+	LastNight: 2 -24
+	blogger: 2 +1
+	flying: 2 -2
+	Petloss: 2 +2
+	unity_games: 2 +1
+	weather: 2 -2
+	PostApocalypse: 1 +1
+	Top5: 1 +1
+	GameswapUK: 1 +1
+	entheogens: 1 +1
+	ReasonableDiscussion: 1 -41
+	html5: 1 -4
+	meh: 1 +1
+	audiophile: 1 -1
+	Bittorrent: 1 +1
+	BostonBruins: 1 -2
+	wargames: 1 +1
+	Rainmeter: 1 +1
+	britpolitics: 1 +1
+	PHX: 1 -3
+	photo: 1 +1
+	mmhmm: 1 +1
+	Speleology: 1 +1
+	nottheonion: 1 +1
+	Safari: 1 +1
+	logophilia: 1 +0
+	trolltunga: 1 +1
+	SanJose: 1 +1
+	OffGrid: 1 -7
+	Rants: 1 +0
+	Cinema: 1 +1
+	Trickfist: 1 +1
+	macedonia: 1 +1
+	botany: 1 -3
+	norwegian_princess: 1 +1
+	fuckbuddies: 1 +1
+	Unicode: 1 +1
+	uchicago: 1 -1
+	SpringfieldIL: 1 +0
+	collegensfw: 1 +1
+	atheistcomics: 1 +1
+	NativeAmerican: 1 +0
+	shell: 1 +0
+	LearningASL: 1 +1
+	Rateme: 1 -1
+	Genshiken: 1 +0
+	worldbuilding: 1 -11
+	PostgreSQL: 1 +0
+	censorship: 1 +0
+	CARTOON: 1 +1
+	Spanking: 1 +0
+	suppressors: 1 +1
+	sunglasses: 1 +1
+	agnosticism: 1 -2
+	Louisiana: 1 -3
+	beerporn: 1 -1
+	abandoned: 1 +1
+	PetRede: 1 +1
+	DakotaFanning: 1 +0
+	email: 1 +1
+	BBW: 1 +1
+	timecube: 1 +1
+	weed: 1 +0
+	redditectives: 1 +1
+	ciriclejerk: 1 +1
+	LearnUkulele: 1 +1
+	xbmc: 1 -1
+	linkedin: 1 +1
+	reddevils: 1 +1
+	hentai: 1 -2
+	technews: 1 -5
+	ageofempires: 1 +1
+	bach: 1 -1
+	howshitreallyworks: 1 +0
+	Shaded: 1 +1
+	Gifts: 1 +1
+	pedalsteel: 1 +1
+	numerical: 1 +1
+	noelsusman: 1 +1
+	Glasgow_Celtic: 1 +1
+	medications: 1 +1
+	TVShowsDirectory: 1 +1
+	freeagent: 1 +1
+	jobreddit: 1 +1
+	videopros: 1 +1
+	midwestgonewild: 1 +1
+	NutritionUpdates: 1 -1
+	WorldMusic: 1 -2
+	carmechanics101: 1 +0
+	browsermmo: 1 -2
+	Cloud: 1 +1
+	bfbc2au: 1 +1
+	singapore: 1 -12
+	Edinburgh: 1 +1
+	egalitarian: 1 +1
+	beauty: 1 +1
+	steelers: 1 +1
+	Transhuman: 1 +1
+	celebrities: 1 -4
+	bondiblueos9: 1 +1
+	magicgathering: 1 +1
+	proper: 1 +1
+	sheffield: 1 +1
+	midgets: 1 +1
+	Hunger: 1 +1
+	starfleetnews: 1 +1
+	mydrugmusic: 1 +1
+	urt: 1 +1
+	winemaking: 1 +1
+	Wake: 1 +0
+	WiiHacks: 1 -17
+	Nautical: 1 +1
+	gmod: 1 +1
+	vid: 1 +1
+	GoRVing: 1 +1
+	LAGalaxy: 1 +0
+	verse: 1 +1
+	Hardcore: 1 +1
+	MMATalk: 1 -3
+	iastate: 1 -7
+	USNEWS: 1 -1
+	BubblePorn: 1 +1
+	valve: 1 +1
+	GreenParty: 1 +1
+	iamaf: 1 -3
+	Fabrics: 1 -1
+	InfoSec3T: 1 +1
+	YogaPants: 1 +1
+	Standup: 1 +0
+	Demoscene: 1 +1
+	mwchannel: 1 +1
+	shmups: 1 +1
+	ada: 1 +1
+	Algonquin_College: 1 -1
+	louisck: 1 +1
+	irc: 1 -25
+	AskMen: 1 +1
+	Dream: 1 +1
+	Veganism: 1 +1
+	other: 1 -4
+	consulting: 1 +1
+	QuantumComputing: 1 +1
+	UpstateSC: 1 +1
+	sandbox: 1 -4
+	dontbetrolled: 1 +1
+	topfive: 1 +1
+	MathFinance101: 1 +0
+	Quakecon: 1 +1
+	hip_hop: 1 -2
+	presentations: 1 +1
+	redditbooks: 1 +1
+	lacrosse: 1 +1
+	redditia: 1 +1
+	SULTAN: 1 +1
+	MichelleTrachtenberg: 1 +1
+	Biking: 1 +1
+	triplemetacirclejerk: 1 +0
+	catpics: 1 +1
+	Finland: 1 +1
+	Models: 1 -1
+	NewAge: 1 +1
+	HBD: 1 +0
+	SketchComedy: 1 -33
+	nosql: 1 +1
+	vidoes: 1 +1
+	shrooms: 1 +1
+	chillmusic: 1 +1
+	Space4001: 1 +1
+	podcasts: 1 -3
+	actuallesbians: 1 -7
+	hookups: 1 +1
+	toledo: 1 +0
+	sadcandy: 1 +1
+	nintendo: 1 -5
+	musicians: 1 +0
+	NashvilleTN: 1 +0
+	contextfreepete: 1 +1
+	bustybabes: 1 +1
+	UBC: 1 +1
+	poetscorner: 1 +0
+	warpiggs: 1 +1
+	our: 1 +1
+	Nsfw_Amateurs: 1 -2
+	saddestof: 1 -1
+	yard: 1 -2
+	notetoself: 1 -2
+	hotamputees: 1 +1
+	Dogtraining: 1 -5
+	Completely_blank: 1 +1
+	euro: 1 +1
+	FREE: 1 +0
+	ItsAlwaysSunny: 1 +1
+	sportsvideo: 1 -1
+	tallbuildings: 1 +1
+	car: 1 +1
+	AegonReligare: 1 +0
+	whoadude: 1 -35
+	arma: 1 +1
+	kratom: 1 +0
+	xna: 1 +1
+	BDSMvideo: 1 +1
+	GenderSanity: 1 +1
+	makerbot: 1 +1
+	USHistory: 1 +1
+	misogyny: 1 +1
+	moronswithoutaclue: 1 +1
+	retreat: 1 +1
+	nishasharma: 1 +1
+	Divorce: 1 +1
+	SamanthaJayne: 1 +1
+	logic: 1 +1
+	redditchan: 1 +0
+	LabVIEW: 1 +1
+	cocoa: 1 +1
+	Blondes: 1 +1
+	RUG_Leeds: 1 +0
+	jewelry: 1 -3
+	PS3borrow: 1 -18
+	chapelhill: 1 -11
+	AVSForum: 1 +1
+	Relax: 1 +1
+	Reddit_Road_Trip: 1 +1
+	housing: 1 +1
+	Guilherme666: 1 +1
+	Turkey: 1 +1
+	visualization: 1 +0
+	grandrapids: 1 -3
+	Hosting: 1 +1
+	DebunkThisForward: 1 +1
+	phillies: 1 +0
+	democrats: 1 -3
+	tf2lemmings: 1 +1
+	Coyotes: 1 +1
+	Shortfilms: 1 +0
+	roundearth: 1 +0
+	selfimprovement: 1 +1
+	meat: 1 +1
+	GreenBay: 1 +1
+	misc: 1 -1
+	homeschool: 1 +0
+	hardscience: 1 -6
+	AndStillAlive: 1 +0
+	PostHardcore: 1 +1
+	racing: 1 +1
+	gunsmithing: 1 +0
+	immigration: 1 +0
+	StJohnsNL: 1 -2
+	mumbai: 1 +1
+	rum: 1 -7
+	cybermen: 1 +1
+	usability: 1 -1
+	grime: 1 -2
+	InteriorDesign: 1 -1
+	CompanyOfHeroes: 1 -4
+	liberalarts: 1 -9
+	thesims: 1 -1
+	drumstep: 1 +0
+	latinas: 1 +1
+	missoula: 1 +1
+	fedor: 1 -19
+	alcoholicsanonymous: 1 +1
+	redditor_football: 1 +1
+	translation: 1 +1
+	Nerf: 1 +0
+	FrontPage: 1 +0
+	cannibus: 1 +1
+	labor: 1 +1
+	desmoines: 1 +1
+	Roku: 1 +1
+	contacts: 1 +1
+	Groningen: 1 +1
+	nhl: 1 +1
+	humour: 1 +1
+	Hypothyroidism: 1 -1
+	SuperSwedishGirls: 1 +1
+	modnews: 1 -9
+	sweetafton: 1 +1
+	spain: 1 +1
+	blackpower: 1 +1
+	TopGear: 1 -10
+	Ska: 1 -1
+	Bikini: 1 +1
+	powerviolence: 1 -1
+	Gin: 1 +1
+	udub: 1 +0
+	newcollege: 1 +1
+	pussy: 1 +1
+	treees: 1 -1
+	radio: 1 +1
+	suicidegirls: 1 +1
+	entourage: 1 +1
+	fiction: 1 -1
+	gamedevquestions: 1 -11
+	StockMarket: 1 -1
+	UofT: 1 +1
+	starlets: 1 +1
+	MichMeet: 1 +1
+	fantasyhockey: 1 +1
+	redit: 1 +1
+	SegaSaturn: 1 +1
+	Starcraft3: 1 +1
+	hug: 1 +1
+	as3: 1 +1
+	unicornporn: 1 +1
+	gmaps: 1 +1
+	KTRU: 1 +0
+	lemote: 1 +0
+	celeb: 1 +1
+	nsf: 1 +1
+	print: 1 +1
+	fringescience: 1 +1
+	gape: 1 +0
+	redditisland: 1 -2
+	EatingDisorders: 1 +1
+	StopMeg: 1 +1
+	tablets: 1 +1
+	sustainability: 1 +1
+	billmurray: 1 +0
+	socks: 1 +1
+	Feminism: 1 -3
+	holiday: 1 +0
+	MotionDesign: 1 +1
+	shareddit: 1 +1
+	Employment: 1 +1
+	_______________: 1 +1
+	winstonsalem: 1 +1
+	vlogging: 1 +1
+	Zombie: 1 +1
+	engrproject: 1 -1
+	dvdsetcollection: 1 +0
+	popping: 1 +0
+	gender: 1 +0
+	datasets: 1 +1
+	ipv6: 1 +1
+	PhilosophyOfTech: 1 +1
+	gymnasts: 1 +1
+	newhaven: 1 +1
+	gnome: 1 +1
+	TwinCities: 1 +0
+	brewing: 1 +1
+	Fedora: 1 +0
+	crybaby: 1 +1
+	Mercedesbenz: 1 +1
+	actuary: 1 +0
+	OSU: 1 +1
+	Brazil: 1 -4
+	dub: 1 +1
+	craigslist: 1 -1
+	HatPorn: 1 +1
+	paypal: 1 +1
+	conspiracies: 1 +1
+	psyforum: 1 +1
+	smoking: 1 +1
+	Ducati: 1 +1
+	hamburg: 1 +1
+	fantasysports: 1 +0
+	sales: 1 -3
+	F2E: 1 +0
+	birthdaystick: 1 -4
+	driving: 1 +1
+	hackerspaces: 1 +1
+	introvert: 1 +1
+	FillInTheBlank: 1 +1
+	Eating: 1 +1
+	bank: 1 +1
+	Bluegrass: 1 +1
+	WTF_Florida: 1 +1
+	jerseycity: 1 +1
+	OttawaSenators: 1 -5
+	questionablecontent: 1 +1
+	ggggbabybabybaby: 1 +1
+	love: 1 +0
+	Vaping: 1 +1
+	fallout3: 1 +1
+	thewalkingdead: 1 -2
+	stupidquestions: 1 +1
+	PalinProblem: 1 +0
+	breakbeat: 1 +1
+	nipponichi: 1 +1
+	programingchallenges: 1 +1
+	SelenaGomez: 1 -2
+	ecoreddit: 1 +1
+	isleofmisfits: 1 +0
+	dprk: 1 +1
+	developer: 1 +1
+	yugioh: 1 -13
+	Borderlands: 1 -14
+	HealthProject: 1 -2
+	AskPaige: 1 +1
+	govcon: 1 +1
+	RBT: 1 +1
+	foambox: 1 +1
+	RATS: 1 -4
+	drpbx: 1 +0
+	FragReddit: 1 -1
+	brainteasers: 1 +1
+	papercraft: 1 +1
+	nehrim: 1 +1
+	kimberlistar: 1 +1
+	redditathon: 1 +1
+	0ldb0yoffbeat: 1 +1
+	curve: 1 +1
+	raerth: 1 -1
+	forumgames: 1 +1
+	grool: 1 -1
+	djmixes: 1 +1
+	facesinplaces: 1 +1
+	codeprojects: 1 +1
+	noob: 1 +1
+	chambermusic: 1 +1
+	softwaretesting: 1 +1
+	oceansize: 1 -3
+	TMBR: 1 -6
+	restaurant: 1 +1
+	duluth: 1 -1
+	smartphone: 1 +1
+	sociology: 1 +1
+	debauchery: 1 +1
+	Waif: 1 +0
+	vfx: 1 +1
+	diplomacy: 1 +1
+	firstpage: 1 +0
+	casualgamer: 1 +1
+	privacy: 1 -1
+	Jimgohse: 1 +1
+	hbo: 1 -1
+	ectalProlapse: 1 +1
+	Outdoors: 1 -8
+	eclipsephase: 1 +1
+	SinCity: 1 -1
+	headphones: 1 +1
+	violenceagainstwomen: 1 +1
+	ukulele: 1 +1
+	Round_Table: 1 +1
+	FuckYou: 1 +1
+	ObscureMedia: 1 -14
+	minimal: 1 -1
+	UCL: 1 +1
+	resilientcommunities: 1 +0
+	Costo245: 1 +1
+	sysor: 1 -1
+	csharp: 1 +1
+	onlinegames: 1 +1
+	Anarchist: 1 -3
+	tsa: 1 +1
+	conan: 1 -12
+	weightlifting: 1 -1
+	letshavebeertogether: 1 +1
+	artificial: 1 -2
+	WorldPeanutInvasion: 1 +1
+	penguin: 1 +1
+	paleskin: 1 +1
+	tutorials: 1 +1
+	Menspot: 1 +1
+	biotech: 1 +1
+	LANL_Spanish: 1 -2
+	WEEDS: 1 +0
+	Amd: 1 -1
+	Wildlife: 1 -3
+	pantyhose: 1 +1
+	saskatoon: 1 +1
+	C_Programming: 1 +1
+	Jurisprudence: 1 +1
+	PornReview: 1 +0
+	AsianNSFW: 1 +1
+	done: 1 +0
+	aycj: 1 +1
+	femalesgonewild: 1 +1
+	Ghosts: 1 +1
+	Yiddish: 1 -2
+	LandscapeArch: 1 +1
+	IndianBabes: 1 -3
+	maemo: 1 +1
+	Americana: 1 +1
+	usa: 1 -6
+	Anxiety: 1 +0
+	giftgold: 1 -2
+	Gainesville: 1 +1
+	sport: 1 +1
+	mormonporn: 1 +0
+	redditreviews: 1 +1
+	cannabisconnoisseurs: 1 -1
+	worstwebsites: 1 +1
+	grunge: 1 +1
+	fanfic: 1 +1
+	astrology: 1 +0
+	chat: 1 +1
+	rage: 1 +1
+	Protoculture: 1 +1
+	CoolDesigns: 1 -3
+	front_end: 1 +1
+	Negocios: 1 +1
+	Demonoid: 1 +1
+
+Week 2
+--------------
+reddits: 2220
+accounts: 101885
+names: 875163
+
+Subreddits:
+	AskReddit: 132755 -7320
+	pics: 82518 +1406
+	reddit.com: 66122 +11636
+	politics: 37064 -3025
+	IAmA: 34719 +1786
+	gaming: 31892 -2860
+	WTF: 28042 +467
+	funny: 25430 -762
+	atheism: 23920 +344
+	trees: 22631 +912
+	Minecraft: 16616 +6699
+	fffffffuuuuuuuuuuuu: 14889 +2736
+	science: 11885 +2370
+	worldnews: 11492 +1938
+	starcraft: 11147 -826
+	programming: 9046 -2385
+	technology: 8912 -475
+	videos: 8632 +1032
+	TwoXChromosomes: 7527 +204
+	DoesAnybodyElse: 7464 +590
+	sex: 7464 +430
+	todayilearned: 6385 -573
+	movies: 5927 +1485
+	Fitness: 5888 -124
+	Music: 5506 -1730
+	ColbertRally: 5371 +3671
+	Economics: 5186 -185
+	Android: 5179 -176
+	self: 5156 -552
+	gonewild: 5141 +366
+	blog: 5005 -435
+	canada: 4706 +603
+	Libertarian: 4381 +720
+	offbeat: 4205 -714
+	relationship_advice: 3858 -756
+	comics: 3583 +718
+	guns: 3406 -1024
+	food: 3246 -157
+	geek: 3090 -96
+	shittyadvice: 3044 -311
+	scifi: 2789 +347
+	entertainment: 2739 -479
+	apple: 2737 -3
+	bicycling: 2730 +351
+	wow: 2689 +229
+	soccer: 2681 +267
+	linux: 2672 -177
+	Frugal: 2540 -114
+	books: 2312 -337
+	news: 2265 -1057
+	MensRights: 2172 -322
+	tf2: 2045 -222
+	relationships: 2016 -86
+	sports: 1959 -777
+	nsfw: 1881 -69
+	photography: 1879 +181
+	gadgets: 1848 +150
+	lgbt: 1842 -850
+	australia: 1832 -151
+	business: 1821 -654
+	Christianity: 1807 -21
+	promos: 1796 +546
+	nfl: 1746 -2104
+	fantasyfootball: 1707 +421
+	environment: 1678 +24
+	conspiracy: 1664 -757
+	beer: 1641 +436
+	exmormon: 1512 +442
+	philosophy: 1458 -424
+	WeAreTheMusicMakers: 1452 +42
+	math: 1431 +414
+	Marijuana: 1345 +419
+	MW2: 1306 -505
+	seduction: 1287 -268
+	RedditCarpool: 1284 +1284
+	leagueoflegends: 1271 -1060
+	hardware: 1257 -90
+	humor: 1218 +79
+	web_design: 1200 +4
+	halo: 1198 +711
+	wikipedia: 1197 -177
+	answers: 1160 +285
+	motorcycles: 1077 +266
+	DIY: 1074 -45
+	techsupport: 1065 -170
+	itookapicture: 1037 +38
+	space: 1009 +175
+	magicTCG: 1000 -24
+	aww: 995 -284
+	listentothis: 985 +278
+	Seattle: 975 -32
+	Guitar: 965 +199
+	iphone: 964 -6
+	Anarchism: 933 -1033
+	Metal: 922 +69
+	Health: 917 +64
+	Drugs: 915 -233
+	Cooking: 906 -750
+	anime: 903 +190
+	buildapc: 900 -872
+	toronto: 892 -604
+	MMA: 890 +184
+	Homebrewing: 880 -55
+	dwarffortress: 840 -528
+	PS3: 824 -26
+	boston: 787 +277
+	CFB: 784 -206
+	redditoroftheday: 784 +63
+	bestof: 773 -158
+	announcements: 761 +754
+	chicago: 757 +67
+	circlejerk: 755 -638
+	travel: 718 +86
+	hockey: 714 -325
+	history: 711 +200
+	Favors: 703 -398
+	ads: 703 +516
+	DebateAChristian: 695 -422
+	needadvice: 694 -152
+	SuicideWatch: 682 -87
+	Austin: 673 +44
+	Python: 673 +76
+	dubstep: 669 -117
+	baseball: 652 -25
+	worldpolitics: 645 +3
+	nyc: 644 -475
+	askscience: 634 -117
+	Portland: 633 +119
+	rpg: 625 -197
+	running: 622 +38
+	unitedkingdom: 609 -191
+	malefashionadvice: 585 -100
+	startrek: 579 +39
+	energy: 579 +57
+	badcompany2: 558 +109
+	london: 557 +230
+	xbox360: 554 +345
+	skeptic: 551 -26
+	doctorwho: 551 -140
+	drunk: 549 +42
+	mexico: 548 +182
+	Design: 545 -157
+	electronicmusic: 528 +142
+	Autos: 526 -115
+	pokemon: 525 +233
+	Art: 524 -31
+	netsec: 520 -142
+	Israel: 520 -110
+	Pets: 518 +34
+	redditguild: 502 +65
+	ffxiv: 498 -174
+	montreal: 497 +181
+	washingtondc: 496 +266
+	Eve: 464 +92
+	ukpolitics: 454 -98
+	writing: 452 -163
+	MLS: 449 -39
+	Physics: 448 +45
+	nosleep: 422 +4
+	cogsci: 422 -159
+	formula1: 421 -112
+	Ubuntu: 397 -90
+	rit: 392 +209
+	tipofmytongue: 391 +12
+	islam: 390 -127
+	vegan: 390 -88
+	PHP: 383 -51
+	hiphopheads: 378 +20
+	WebGames: 371 -70
+	civ: 368 +280
+	PlacetoStay: 367 +367
+	economy: 353 -150
+	law: 350 +96
+	poker: 345 -12
+	cheatatmathhomework: 340 +89
+	psychology: 339 -172
+	twincitiessocial: 332 +50
+	creepy: 330 -11
+	evedreddit: 328 -188
+	IWantToLearn: 328 +72
+	woahdude: 328 -106
+	dogs: 323 +82
+	lost: 319 +37
+	Bad_Cop_No_Donut: 316 +128
+	climbing: 314 +197
+	houston: 311 +121
+	happy: 308 -58
+	software: 299 +162
+	sanfrancisco: 279 +173
+	StarWars: 278 +36
+	Atlanta: 272 -86
+	sweden: 272 +230
+	learnprogramming: 263 -14
+	TrueReddit: 261 -104
+	meetup: 257 +37
+	chemistry: 255 +64
+	religion: 255 -131
+	amiugly: 255 -128
+	Buddhism: 248 -3
+	LosAngeles: 248 -166
+	cars: 244 +66
+	comicbooks: 243 +55
+	ireland: 241 +59
+	ILiveIn: 239 +81
+	television: 237 +71
+	collapse: 235 +120
+	tattoos: 234 +33
+	Military: 233 -18
+	AMA: 228 +15
+	OkCupid: 224 +30
+	climateskeptics: 221 -51
+	mcservers: 220 +188
+	gameswap: 219 +84
+	gamedev: 218 -1
+	compsci: 216 +89
+	linux4noobs: 215 +21
+	DAE: 215 +53
+	FTH: 211 +130
+	vancouver: 209 -62
+	mcprivate: 207 +7
+	BDSMcommunity: 207 -12
+	india: 205 -80
+	newzealand: 198 -48
+	education: 197 -40
+	aviation: 197 +94
+	HeroesofNewerth: 196 -14
+	depression: 196 -46
+	treecomics: 195 -247
+	digg: 192 -82
+	ECE: 190 +83
+	Astronomy: 190 +63
+	ideasfortheadmins: 187 -36
+	sandiego: 187 +15
+	Team_Awesome: 186 -15
+	zombies: 185 -399
+	loseit: 185 +54
+	trackers: 184 +2
+	haskell: 182 +70
+	FixedGearBicycle: 180 +53
+	NarFFL: 180 +91
+	webdev: 179 +47
+	somethingimade: 178 +27
+	philadelphia: 176 -55
+	engineering: 176 -58
+	mac: 176 +27
+	feminisms: 175 +34
+	wallpaper: 174 +36
+	linguistics: 171 +88
+	ipad: 170 +101
+	starcraft2: 169 -13
+	Boobies: 167 -64
+	r4r: 166 -19
+	design_critiques: 165 -59
+	brisbane: 164 +114
+	CampingandHiking: 163 -27
+	transformice: 162 +28
+	PhilosophyofScience: 160 -189
+	obama: 158 -88
+	til: 158 -34
+	javascript: 158 -16
+	RPI: 158 +38
+	BodyAcceptance: 155 +143
+	socialism: 154 +66
+	GirlGamers: 152 +72
+	911truth: 152 -166
+	StLouis: 149 +15
+	cannabis: 148 +57
+	YouShouldKnow: 147 +12
+	boardgames: 147 +33
+	video: 145 +33
+	craftit: 145 +145
+	transgender: 145 -57
+	japan: 144 -107
+	Dallas: 142 -150
+	starcraft2_class: 141 +89
+	opensource: 139 +29
+	windowshots: 139 -74
+	P90X: 138 +36
+	Equality: 136 +25
+	Documentaries: 136 -64
+	skateboarding: 135 -7
+	catpictures: 131 +10
+	Assistance: 131 +63
+	worstof: 130 +88
+	ottawa: 129 +3
+	cats: 128 -103
+	Coffee: 127 +15
+	photocritique: 126 -34
+	snowboarding: 126 +53
+	jobs: 124 +10
+	madmen: 124 -4
+	gardening: 122 -94
+	RUGC_Midwest: 121 -83
+	wallpapers: 120 +46
+	Parenting: 118 -20
+	Techno: 118 +94
+	biology: 117 -73
+	Winnipeg: 115 +75
+	DebateAnAtheist: 113 +90
+	minecraftau: 112 +19
+	pittsburgh: 111 +6
+	ruby: 108 +9
+	recipes: 107 +34
+	Enhancement: 107 -57
+	CollegeBasketball: 106 +101
+	triangle: 105 +68
+	astoria: 104 +22
+	electronics: 103 +18
+	photoclass: 103 +21
+	phish: 99 -35
+	RealGirls: 98 -12
+	sysadmin: 98 -42
+	stopsmoking: 97 -70
+	help: 96 +1
+	49ers: 95 -6
+	tea: 95 +74
+	UIUC: 94 -6
+	gamemusic: 93 -6
+	vim: 93 -1
+	prop19: 93 -67
+	tampa: 93 +8
+	progressive: 91 -6
+	Denver: 90 -47
+	finance: 90 +35
+	reachclan: 90 +90
+	Quebec: 90 +15
+	melbourne: 89 +46
+	Columbus: 87 +36
+	Logos: 87 -164
+	Torontoevents: 87 +0
+	mw2FallTourney: 86 +86
+	moviecritic: 85 +12
+	discgolf: 85 -15
+	lookatmygirlfriend: 85 +21
+	Cartalk: 85 +85
+	trance: 84 +22
+	Filmmakers: 84 -30
+	StandUpComedy: 84 +34
+	chess: 83 +8
+	webcomics: 81 -27
+	Nootropics: 81 +52
+	Baking: 80 +46
+	secretsanta: 80 +19
+	java: 79 -18
+	Conservative: 79 +0
+	Forts: 79 +6
+	LegalTeens: 78 +4
+	women: 78 -90
+	newreddits: 77 +25
+	asktransgender: 77 +74
+	oklahoma: 76 +18
+	Fantasy: 76 -66
+	DnB: 76 -32
+	startups: 74 +66
+	Warhammer: 73 +5
+	AcademicPhilosophy: 72 +22
+	arizona: 72 +8
+	bayarea: 72 -77
+	fashion: 72 -28
+	furry: 72 +38
+	google: 71 -11
+	pokemontrades: 70 +56
+	IDAP: 70 -9
+	torrents: 70 +54
+	nature: 69 +23
+	coding: 69 +43
+	SanityCouches: 69 +69
+	NewOrleans: 69 +50
+	firefox: 68 -16
+	wii: 68 +43
+	Dexter: 67 +33
+	redditdev: 66 +54
+	howto: 66 -123
+	bjj: 66 -12
+	roguelikes: 66 -4
+	longboarding: 66 -27
+	vegas: 65 +10
+	nugs: 65 +35
+	Jazz: 65 +25
+	UFOs: 64 +38
+	China: 64 +14
+	UniversityofReddit: 64 -76
+	logo: 63 -146
+	Mommit: 63 +25
+	cincinnati: 63 +12
+	MusicEssentials: 62 +59
+	hospitalday: 62 +62
+	linuxquestions: 62 +14
+	xkcd: 61 -32
+	90daysgoal: 60 -15
+	sydney: 59 +37
+	classicalmusic: 59 -38
+	TrueBlood: 59 -140
+	AskWomen: 59 +18
+	cyberlaws: 59 +13
+	pic: 59 +17
+	Graffiti: 58 +32
+	ass: 58 -5
+	Jokes: 57 +9
+	NewToTF2: 57 +18
+	VolleyballGirls: 57 +18
+	SaltLakeCity: 56 +28
+	geocaching: 56 +34
+	snackexchange: 56 +22
+	microsoft: 56 +44
+	bottlesofbeer: 55 +47
+	Bass: 55 +26
+	CasualMath: 55 +37
+	literature: 55 +19
+	LearnJapanese: 55 +6
+	NaziHunting: 54 -1
+	SF4: 54 +40
+	Reign: 54 +54
+	applehelp: 53 -3
+	surfing: 53 -8
+	lolcats: 53 -47
+	bookexchange: 53 +51
+	rva: 53 +31
+	foodbank: 53 +53
+	linux_gaming: 53 +19
+	BipolarReddit: 53 -34
+	kindle: 52 +41
+	Entlantis: 52 -171
+	venturebros: 52 +16
+	HomeworkHelp: 52 +26
+	WelcomeToDC: 52 +52
+	Colorado: 51 +27
+	IndieGaming: 51 -25
+	Wordpress: 51 -33
+	MakeupAddiction: 51 +33
+	BritishTV: 51 -56
+	WeAreTheFilmMakers: 50 -36
+	4chan: 50 -18
+	tech: 50 +31
+	de: 49 +21
+	24hoursupport: 49 -26
+	mycology: 48 +35
+	scooters: 48 +45
+	ucla: 48 +44
+	auto: 47 +22
+	Tree: 47 +47
+	webdesign: 47 +9
+	lisp: 47 -10
+	Catholicism: 47 +30
+	archlinux: 47 +22
+	weddingplanning: 47 -57
+	tonightsdinner: 47 +41
+	voluptuous: 46 +23
+	Drawing101: 46 +20
+	golf: 46 -21
+	Lovecraft: 46 +19
+	orlando: 46 -15
+	Naruto: 45 -10
+	fitnesschallenge: 45 +14
+	horror: 45 -12
+	Iowa: 45 -5
+	ronpaul: 45 -12
+	berkeley: 44 +7
+	BarefootRunning: 44 +0
+	oblivion: 44 +30
+	thick: 44 -25
+	Stargate: 44 -146
+	AlienBlue: 44 +30
+	operabrowser: 44 +27
+	punk: 44 -13
+	Entrepreneur: 44 +26
+	UniversityOfHouston: 43 -20
+	siterider: 43 +43
+	bikesgonewild: 43 +17
+	polyamory: 43 -76
+	Calgary: 42 +26
+	UMD: 42 +24
+	Khazar_Pride: 41 -3
+	Michigan: 41 +1
+	statistics: 41 +16
+	nsfw2: 40 +16
+	RallyOrganizers: 40 +40
+	penis: 40 +21
+	gossip: 40 +23
+	knitting: 40 +31
+	madisonwi: 40 +23
+	learnmath: 39 -10
+	Bacon: 39 +6
+	canucks: 39 -4
+	osx: 39 -18
+	macapps: 39 +33
+	emacs: 39 +4
+	MachineLearning: 38 +11
+	BSG: 38 -7
+	fringe: 38 +11
+	___: 38 -156
+	Cricket: 38 +38
+	Scotch: 38 -67
+	networking: 38 -58
+	Cleveland: 38 +19
+	SelfSufficiency: 38 +23
+	GetMotivated: 38 -11
+	androiddev: 38 -3
+	Miami: 38 +32
+	Database: 38 +33
+	UCDavis: 37 +32
+	mashups: 37 -37
+	Gunners: 37 +7
+	musictheory: 37 +15
+	ptkchiepsilonproject: 37 +7
+	udub: 37 +36
+	Philippines: 37 +13
+	photoshop: 37 -12
+	wordcount: 37 -54
+	nostalgia: 37 -64
+	Connecticut: 37 -64
+	Redskins: 36 +17
+	Youngluck: 36 +14
+	Louisville: 36 -49
+	under18: 36 +36
+	ar15: 36 -19
+	RIA3000: 36 +36
+	architecture: 36 -27
+	belgium: 36 -12
+	MeetLGBT: 36 +36
+	Judaism: 36 +13
+	Freethought: 35 +10
+	VegRecipes: 35 -4
+	bodybuilding: 35 +28
+	new_right: 35 -11
+	Jeep: 35 +12
+	electrohouse: 35 -16
+	boulder: 35 +22
+	anarchocommunism: 35 +24
+	chrome: 35 -10
+	ginger: 34 -6
+	gonewildstories: 34 +13
+	england: 34 +26
+	LNC: 34 +17
+	evecsm: 34 +34
+	swtor: 34 +14
+	futurebeats: 34 +11
+	conspiratard: 34 -101
+	thestoppagetimes: 33 +33
+	Green: 33 -12
+	heythatwasin: 33 -15
+	Sexy: 33 +0
+	StarcraftFeedback: 33 -18
+	Hunting: 33 +17
+	VictoriaBC: 33 +29
+	DJs: 32 +3
+	rutgers: 32 -1
+	postrock: 32 +20
+	babylon5: 32 -13
+	Eugene: 32 +12
+	Pictures: 32 +21
+	guitarlessons: 32 +14
+	Birmingham: 32 -34
+	shroomers: 32 +20
+	chuck: 32 +30
+	Reno: 32 +32
+	teaching: 31 +14
+	football: 31 -18
+	marketing: 31 +20
+	metacirclejerk: 31 +17
+	Anticonsumption: 31 +27
+	Clojure: 31 +13
+	mnc: 31 -5
+	ps2: 31 +31
+	government: 31 +5
+	PigJargon: 31 +5
+	fsu: 31 +29
+	sailing: 31 -28
+	tf2au: 30 -47
+	pornvids: 30 +11
+	Learnmusic: 30 -38
+	movieclub: 30 -17
+	EA_NHL: 30 -75
+	nonprofit: 30 +4
+	rdbp: 30 +18
+	HairyPussy: 29 +11
+	perl: 29 -6
+	IWantOut: 29 +4
+	japanlife: 29 +27
+	HuntsvilleAlabama: 29 +7
+	malehairadvice: 29 +24
+	bubbling: 29 -101
+	BurningMan: 29 -156
+	Cheap_Meals: 29 +27
+	triathlon: 29 +5
+	Vindictus: 29 +29
+	KansasCityChiefs: 28 +26
+	birdpics: 28 +10
+	opendirectories: 28 +17
+	Swimming: 28 +22
+	battlestations: 28 +17
+	sanantonio: 28 +10
+	asheville: 28 +3
+	HighHeels: 28 +15
+	Anthropology: 28 -2
+	SonyPS3: 28 +28
+	Tribesnext: 28 +28
+	worldevents: 28 +15
+	memphis: 28 +4
+	france: 27 +14
+	corgi: 27 -74
+	FinancialPlanning: 27 +0
+	ToolBand: 27 -12
+	martialarts: 27 +5
+	lists: 27 -15
+	keto: 27 +7
+	Tgirls: 27 -9
+	ReverseEngineering: 27 -21
+	apathy: 27 -2
+	PennStateUniversity: 27 +7
+	redditrequest: 27 +15
+	treemusic: 26 +5
+	italy: 26 +11
+	singapore: 26 +25
+	europe: 26 +22
+	HappyBirthday: 26 +8
+	IASIP: 26 +22
+	Boise: 26 +11
+	manass: 26 +26
+	neopagan: 26 +15
+	Morocco: 26 +18
+	ASPNET: 26 +26
+	grammarwatch: 26 +26
+	youtube: 26 +8
+	Poetry: 26 -49
+	drupal: 26 +17
+	csshelp: 26 +9
+	Bellingham: 26 +14
+	kansascity: 26 -50
+	duke: 25 +8
+	grammar: 25 -10
+	comic_crits: 25 -22
+	quotes: 25 -3
+	batteryexpress: 25 +17
+	singing: 25 +16
+	socialmedia: 25 +15
+	Meditation: 25 -78
+	booksuggestions: 25 +15
+	dndeez: 25 +23
+	SomebodyMakeThis: 25 -62
+	radiohead: 25 +14
+	AnimalRights: 25 -2
+	FL_Studio: 25 -5
+	Detroit: 25 -15
+	NetflixBestOf: 24 +6
+	AppEngine: 24 +11
+	LearnANewLanguage: 24 +22
+	Rochester: 24 +10
+	gif: 24 -14
+	FoodPorn: 24 -13
+	Fishing: 24 -12
+	secret: 24 +24
+	WritersGroup: 24 -5
+	LoLTourney: 24 +14
+	arresteddevelopment: 24 +11
+	selfhelp: 23 -1
+	latin: 23 +21
+	SketchComedy: 23 +22
+	OSOM: 23 +23
+	beertrade: 23 -47
+	halifax: 23 -29
+	browsers: 23 +9
+	freelance: 22 +20
+	brighton: 22 +17
+	HIPSTERGURLZ: 22 -8
+	computers: 22 +0
+	drums: 22 -22
+	Hamilton: 22 +3
+	steampunk: 22 -2
+	Foodforthought: 22 -8
+	rugc_greatlakes: 22 -6
+	skiing: 22 -56
+	photoit: 22 +14
+	computing: 22 +7
+	GT5: 21 +21
+	AlienBlueNews: 21 +21
+	Yapi: 21 +1
+	Iceland: 21 -15
+	blogspotcommunity: 21 +10
+	liquor: 21 +16
+	glutenfree: 21 +6
+	overpopulation: 21 -3
+	bikinis: 21 -17
+	tldr: 21 -8
+	cycling: 21 -20
+	racism: 21 -13
+	germany: 21 +13
+	jquery: 21 +10
+	Twitter: 20 +14
+	design_challenge: 20 +20
+	milf: 20 -4
+	freethinkers: 20 -12
+	kde: 20 -39
+	anti_intellectual: 20 +20
+	lotro: 20 +20
+	Feminism: 20 +19
+	ritfl: 20 -28
+	newjersey: 20 +5
+	NeoAnarchism: 20 +20
+	Cryptogon: 19 -2
+	bdsm: 19 +11
+	caving: 19 +17
+	uwaterloo: 19 +0
+	Guildwars2: 19 -52
+	ReligionInAmerica: 19 +16
+	windows: 19 -31
+	rac: 19 -14
+	LaTeX: 19 +4
+	wisconsin: 19 -9
+	ender: 19 +19
+	whatsthisbug: 18 -19
+	BoardwalkEmpire: 18 +18
+	warehouse13: 18 +7
+	cumfetish: 18 +16
+	classicfilms: 18 +6
+	craigslist: 18 +17
+	namethemovie: 18 -6
+	indepthstories: 18 +10
+	wicked_edge: 18 +18
+	santacruz: 18 +11
+	fitnesscirclejerk: 18 +6
+	leafs: 18 +12
+	RenewableEnergy: 18 -5
+	radioreddit: 18 -27
+	perth: 18 +12
+	Celebs: 17 -12
+	audio: 17 +11
+	NSFW_Wallpapers: 17 +14
+	videography: 17 +13
+	Waco: 17 +15
+	GreenBayPackers: 17 +10
+	malemodels: 17 -17
+	treescolbertmeetup: 17 +17
+	Amateur: 17 +12
+	amateurradio: 17 -20
+	ravens: 16 +0
+	HackBloc: 16 +5
+	stonerrock: 16 +1
+	facebook: 16 +4
+	ucf: 16 -3
+	BSD: 16 +10
+	Entomology: 16 -1
+	mixcd: 16 -14
+	bloomington: 16 +7
+	Scholar: 16 +8
+	ancientegypt: 16 +10
+	Albuquerque: 16 -2
+	computergraphics: 16 -32
+	Screenwriting: 16 -11
+	portugal: 16 +10
+	airsoft: 16 +7
+	flossdaily: 16 +0
+	soapier: 16 +5
+	reloading: 16 -16
+	Punkskahardcore: 16 +2
+	SanJoseSharks: 16 +7
+	gratefuldead: 16 -3
+	groovesharkplaylists: 16 -6
+	NSFW_nospam: 16 -21
+	treemovies: 16 +13
+	geology: 15 -13
+	NEU: 15 +4
+	exjw: 15 +0
+	BloomingtonNormal: 15 +1
+	runescape: 15 +1
+	BikingATX: 15 +13
+	typography: 15 -19
+	ask: 15 +0
+	SEC: 15 -7
+	balmdone: 15 +15
+	manlove: 15 -8
+	VirginiaTech: 15 +15
+	redheads: 15 -2
+	rant: 15 +9
+	devils: 15 +12
+	miamidolphins: 15 -4
+	redditores: 15 -9
+	Texans: 15 +15
+	rugby: 15 +11
+	simracing: 14 -5
+	worldbuilding: 14 +13
+	lookatmysister: 14 +14
+	dotnet: 14 +12
+	buildapcsales: 14 -22
+	autism: 14 +3
+	Neuropsychology: 14 +10
+	Chargers: 14 +12
+	seoul: 14 +14
+	softscience: 14 -3
+	rails: 14 -8
+	AquariumFish: 14 +14
+	slackerrecipes: 14 +7
+	Huskers: 14 +14
+	French: 14 -6
+	Virginia: 14 +11
+	desmoines: 14 +13
+	spotify: 14 -8
+	gunsmithing: 14 +13
+	lectures: 14 +11
+	israelexposed: 14 +7
+	PHX: 14 +13
+	Anarcho_Capitalism: 14 +5
+	PhotoBlog: 14 -6
+	OneParagraph: 13 -9
+	fantasybaseball: 13 +8
+	gamingnews: 13 +10
+	DYR: 13 +3
+	ytmnders: 13 +13
+	Scotland: 13 +3
+	hiking: 13 +9
+	tea_party: 13 +1
+	Cplusplus: 13 +13
+	AmericanGovernment: 13 -3
+	ents: 13 +13
+	lego: 13 -36
+	hugeboobs: 13 -24
+	California: 13 +7
+	Knoxville: 13 +9
+	waterloo: 13 -1
+	LinkinPark: 13 +13
+	evolution: 13 +13
+	offmychest: 13 -16
+	SciFiScroll: 13 +4
+	alien_swarm: 13 +8
+	reggae: 13 +4
+	yiff: 13 +13
+	NYGiants: 13 -13
+	sc2replays: 13 +3
+	juggling: 13 +4
+	Lubbock: 12 -15
+	rush: 12 -8
+	Gentoo: 12 +10
+	homebrew: 12 +5
+	PlatonicFriends: 12 +1
+	berlin: 12 +1
+	Purdue: 12 +6
+	Theatre: 12 +10
+	futureofreddit: 12 +12
+	ForeignMovies: 12 -2
+	firefly: 12 -35
+	printSF: 12 +4
+	florida: 12 -18
+	spreadsheets: 12 +12
+	Nsfw_Amateurs: 12 +11
+	Survivalist: 12 +5
+	nerdfighters: 12 +8
+	newhampshire: 12 +3
+	GirlswithGlasses: 12 +5
+	urbanplanning: 12 +9
+	StateOfTheUnion: 12 +10
+	SDSU: 12 -8
+	RUG_Leeds: 12 +11
+	breadboard: 12 +3
+	sociology: 12 +11
+	DateRape: 12 -146
+	ferrets: 12 +12
+	hardbodies: 12 -4
+	vinyl: 12 +12
+	shamelessplug: 12 -37
+	baduk: 11 -20
+	Blowjobs: 11 -1
+	Boardgame_AI_101: 11 -9
+	robotics: 11 -8
+	ZenHabits: 11 -9
+	Etsy: 11 +11
+	freegames: 11 +4
+	motorcycle: 11 -3
+	Smartphones: 11 +11
+	mctradedepot: 11 +11
+	deceth: 11 +11
+	norge: 11 -2
+	zen: 11 +5
+	JustMeJT: 11 +5
+	piano: 11 +1
+	OnePiece: 11 -4
+	bleach: 11 +3
+	transit: 11 +11
+	animalid: 11 +8
+	Cthulhu: 11 +11
+	html5: 11 +10
+	Psychonaut: 11 -45
+	Inception: 11 -11
+	LastNight: 11 +9
+	drklausch: 10 +10
+	manchester: 10 -20
+	Rubicon: 10 +3
+	MMJ: 10 +5
+	arduino: 10 -52
+	steamdeals: 10 +4
+	animation: 10 -19
+	Oddball: 10 +6
+	GradSchool: 10 +10
+	DeepSpaceNine: 10 -8
+	LSD: 10 +2
+	JRPG: 10 +10
+	gifs: 10 -3
+	Shopping: 10 +4
+	GreenBay: 10 +9
+	rol: 10 +10
+	Pirate: 10 +4
+	ultimate: 10 -7
+	freebies: 10 -9
+	House: 10 -11
+	mentors: 10 +7
+	bbwbikinis: 10 -7
+	vegetarian: 10 -3
+	django: 10 -55
+	CaribbeanGirls: 10 +6
+	CollaborationStation: 10 +10
+	matheducation: 10 +5
+	joos: 10 +8
+	stocks: 10 +6
+	AmericanPolitics: 10 +3
+	Everybody: 10 +2
+	cosplay: 10 +5
+	food2: 10 -1
+	thehunt: 10 -3
+	DepthHub: 9 +2
+	Chattanooga: 9 -6
+	customers: 9 +9
+	cute: 9 -8
+	rainbowbar: 9 +5
+	coys: 9 +0
+	Ornithology: 9 +7
+	daddit: 9 +2
+	Buffalo: 9 +5
+	SoundersFC: 9 +9
+	inthemorning: 9 +2
+	theevent: 9 +9
+	water: 9 -12
+	Pottery: 9 +9
+	Switzerland: 9 +3
+	Liberty: 9 +5
+	fantasyhockey: 9 +8
+	languagelearning: 9 -12
+	GreaseMonkey: 9 -11
+	bisexual: 9 -16
+	fishtank: 9 +7
+	boxeyroxey: 9 +4
+	Brooklyn: 9 -11
+	USF: 9 +5
+	Filevo: 9 -9
+	pakistan: 9 +1
+	Hardwarenews: 9 +1
+	tennis: 9 -327
+	SEO: 9 -6
+	linuxmint: 9 +2
+	DandD: 9 -8
+	ETF2LHighlander: 9 +9
+	tasker: 9 -5
+	ScarlettJohansson: 9 +9
+	TwinCities: 9 +8
+	RealEstate: 9 -6
+	Gore: 9 -3
+	Rockband: 9 +2
+	lebowskiisms: 9 -3
+	trees_IRL: 8 -6
+	Bondage: 8 +2
+	shorthairedhotties: 8 -5
+	alcoholism: 8 +6
+	TheoryOfReddit: 8 +2
+	BIKEPOLO: 8 +1
+	WingChun: 8 +0
+	dragonage: 8 -10
+	ateosmexicanos: 8 +8
+	devo: 8 +8
+	indianapolis: 8 -7
+	winemaking: 8 +7
+	escapisttheater: 8 +8
+	neuro: 8 -5
+	crime: 8 -19
+	RacistReddit: 8 -1
+	gaynsfw: 8 +3
+	rapecounseling: 8 -6
+	LadyGaga: 8 -1
+	BostonBruins: 8 +7
+	Sammich: 8 +8
+	Parkour: 8 +3
+	cfs: 8 +4
+	prowrestling: 8 -28
+	erlang: 8 +8
+	editors: 8 -13
+	futurama: 8 -15
+	nook: 8 -5
+	Smokin: 8 +1
+	merlinbbc: 8 +1
+	fantasysports: 8 +7
+	Zappa: 8 -3
+	redditisland: 8 +7
+	wine: 8 -50
+	Fedora: 8 +7
+	gamestheory: 8 +8
+	AcksReddit: 8 +8
+	Beekeeping: 8 +8
+	spaceflight: 8 +8
+	RollerDerbyReddit: 8 -2
+	Braves: 8 -4
+	css: 8 -4
+	droid: 8 -43
+	MINIMALTECH: 8 -1
+	Eureka: 8 +3
+	reddittraveljetblue: 8 +8
+	batman: 8 -3
+	goth: 8 +8
+	nottingham: 8 +4
+	sbmarking: 8 -6
+	FIlm: 8 +4
+	lfg: 8 +8
+	Portal: 8 +5
+	Edmonton: 7 +7
+	opiates: 7 -8
+	porn: 7 -3
+	Louisiana: 7 +6
+	GWYM: 7 +7
+	futuregarage: 7 -18
+	filmmaking: 7 -5
+	carpool: 7 +7
+	rape: 7 +3
+	spicy: 7 -16
+	OpenChristian: 7 -26
+	lol: 7 +1
+	Cows: 7 +7
+	alcohol: 7 -2
+	actuallesbians: 7 +6
+	productivity: 7 -1
+	Arkansas: 7 +5
+	No_Pants_Party: 7 -28
+	Liberal: 7 +4
+	Republican: 7 -6
+	SACKofTATERS: 7 +7
+	cwru: 7 -12
+	texas: 7 -20
+	Boxing: 7 +0
+	EeePC: 7 +7
+	TheLastAirbender: 7 +7
+	investing: 7 -15
+	taiwan: 7 +7
+	diaspora: 7 +7
+	canberra: 7 +4
+	baltimore: 7 -3
+	OrthodoxChristianity: 7 +0
+	doublegay: 7 +7
+	LGBTrees: 7 +7
+	morrissey: 7 +0
+	raerth: 7 +6
+	voluntarism: 7 -3
+	tfc: 7 +2
+	snooker: 7 +7
+	Amsterdam: 7 +7
+	looble: 7 +7
+	Seahawks: 7 +5
+	philosophyclub: 7 -11
+	Magic: 7 -13
+	athiesm: 7 +0
+	TraditionalGaming: 6 +6
+	rangers: 6 +6
+	SkyDiving: 6 -13
+	knives: 6 -5
+	Paranormal: 6 -7
+	designthought: 6 +4
+	legal: 6 -1
+	fitlog: 6 +6
+	Thrifty: 6 +2
+	HealthProject: 6 +5
+	penpals: 6 -52
+	incest: 6 +6
+	GNV: 6 +1
+	college: 6 +4
+	bodymods: 6 -4
+	muenstercheese: 6 +3
+	panthers: 6 +6
+	haiku: 6 +6
+	pics2: 6 +2
+	PHPhelp: 6 -6
+	fatosphere: 6 +6
+	womensmokingweed: 6 -12
+	modhelp: 6 -8
+	cocktails: 6 -4
+	herpetology: 6 +6
+	dogpictures: 6 -15
+	raleigh: 6 -6
+	PowerShell: 6 +4
+	police: 6 +4
+	Tufts: 6 -7
+	counter_strike: 6 +6
+	Amblyopia: 6 +4
+	ween: 6 +6
+	lostgeneration: 6 -17
+	Maine: 6 +6
+	PoliticalHumor: 6 +2
+	comedy: 6 +4
+	deepthroat: 6 +6
+	git: 6 -4
+	EmmaWatson: 6 +0
+	violentacrez: 6 -30
+	scheme: 6 +4
+	occult: 6 -13
+	xss: 6 -3
+	SantaClarita: 6 +0
+	FortWorth: 6 -1
+	veg: 6 +0
+	Jeopardy: 6 +6
+	diablo2: 6 +3
+	BMW: 6 +6
+	farming: 6 +3
+	oaklandraiders: 6 -2
+	Tibia: 6 +4
+	Montana: 6 +3
+	Indiana: 6 +3
+	audioengineering: 6 +1
+	confessions: 6 -5
+	OU_Norman: 6 +6
+	footballmanagergames: 6 +6
+	WomenOfColor: 6 +1
+	worstwebsites: 6 +5
+	hacking: 6 +1
+	SWResources: 5 +2
+	wargames: 5 +4
+	browncoats: 5 +3
+	minecraftautest: 5 +5
+	arhomu: 5 -9
+	blackberry: 5 -11
+	Norway: 5 -1
+	reavercss: 5 +5
+	rigofthemonth: 5 -7
+	PunkGirls: 5 +5
+	SubGenius: 5 +5
+	hyderabad: 5 +5
+	1000words: 5 -1
+	zombieplans: 5 +5
+	csssandbox: 5 +5
+	euguild: 5 -1
+	MapleLinks: 5 -1
+	celebrities: 5 +4
+	norfolk: 5 +2
+	BBQers: 5 +3
+	mathbooks: 5 +3
+	sportsbook: 5 -11
+	southcarolina: 5 +3
+	NLP: 5 +5
+	OrganicGardening: 5 -4
+	flugscheibe: 5 +5
+	gnu: 5 -15
+	afghanistan: 5 -2
+	midnighttrain: 5 +5
+	heady: 5 +3
+	vets: 5 +5
+	ebooks: 5 +3
+	CannotUnsee: 5 +5
+	Internet: 5 +3
+	podcasting: 5 +5
+	Osaka: 5 -3
+	TEFL: 5 -2
+	wp7dev: 5 +0
+	SF_Book_Club: 5 +0
+	shortstories: 5 +5
+	mumbai: 5 +4
+	hookandyarn: 5 +2
+	waitguys: 5 +5
+	Posters: 5 +5
+	ambiversive: 5 +2
+	toledo: 5 +4
+	sketchshows: 5 +5
+	Drexel: 5 +2
+	StoriesWithAHole: 5 +5
+	dayton: 5 +5
+	herps: 5 -13
+	jamt9000: 5 +5
+	AnimalCollective: 5 +5
+	newbrunswickcanada: 5 +5
+	bioethics: 5 +2
+	argentina: 5 +2
+	fr: 5 +0
+	HONORSBIOLOGY: 5 -27
+	etymology: 5 +5
+	upstate_new_york: 5 +5
+	bullied: 5 +5
+	brewing: 5 +4
+	trollcave: 5 +2
+	paintball: 5 -4
+	HongKong: 5 +5
+	Redditch: 5 -7
+	lupus: 5 +1
+	learncsharp: 5 +5
+	RUGC: 5 -3
+	sustainability: 5 +4
+	breakcore: 5 +5
+	milwaukee: 5 -17
+	NSFW4: 5 +5
+	rap: 5 +0
+	Agorism: 5 +5
+	gameconceptart: 5 -18
+	newyork: 5 +0
+	climate: 5 -1
+	Archery: 5 -11
+	psytrance: 5 -2
+	testpostan: 5 +5
+	Piracy: 5 -17
+	russia: 4 -5
+	CableNews: 4 +2
+	Home: 4 +2
+	CNGH: 4 +2
+	MUD: 4 +0
+	vmware: 4 -10
+	hipsters: 4 +0
+	TheKoreans: 4 +4
+	metalworking: 4 +4
+	podcasts: 4 +3
+	entourage: 4 +3
+	democrats: 4 +3
+	lonely: 4 +4
+	tattoo: 4 -11
+	general: 4 -1
+	foreskin: 4 +4
+	ryerson: 4 -15
+	beauty: 4 +3
+	es: 4 +4
+	interiorsandliving: 4 +2
+	Under15: 4 +4
+	codbo: 4 -11
+	Fencing: 4 +4
+	debian: 4 +2
+	LAGalaxy: 4 +3
+	media: 4 +2
+	simpleliving: 4 -4
+	other: 4 +3
+	QuakeLive: 4 +0
+	experimentalmusic: 4 -1
+	DrinkingGames: 4 -23
+	Unicode: 4 +3
+	Libraries: 4 +4
+	raggajungle: 4 +4
+	rambunctious: 4 +4
+	reddart: 4 -5
+	derp: 4 -9
+	nba: 4 -13
+	hookah: 4 -8
+	poetscorner: 4 +3
+	xna: 4 +3
+	neurophilosophy: 4 +4
+	judo: 4 -2
+	UFO_2012: 4 +0
+	Ska: 4 +3
+	phpscripts: 4 -8
+	omegle: 4 +4
+	DOG: 4 -1
+	palmbeach: 4 +4
+	Shortfilms: 4 +3
+	NewAlbums: 4 -34
+	RunchPrans: 4 +4
+	Permaculture: 4 -9
+	graphic_design: 4 -17
+	bakedart: 4 +0
+	boltedontits: 4 -1
+	Hotchickswithtattoos: 4 -3
+	personalfinance: 4 +4
+	PipeTobacco: 4 +2
+	smokefree2009: 4 +4
+	jabberzac: 4 +4
+	blueberryjam: 4 -53
+	whitewater: 4 -5
+	beards: 4 +1
+	OpenSimAnt: 4 +4
+	Dance: 4 +0
+	Windows_7: 4 +4
+	PoliticalPhilosophy: 4 +4
+	redditgw: 4 -23
+	Dreams: 4 -2
+	uicwhatshot: 4 -9
+	UTSA: 4 +4
+	Tallahassee: 4 +4
+	unity_blogs: 4 +4
+	zelda: 4 -2
+	MusicNews: 4 -4
+	farscape: 4 -7
+	AskUsers: 4 +1
+	londonontario: 4 -13
+	FittitBuddy: 4 -3
+	ChristopherHitchens: 4 +4
+	BikeLA: 4 +4
+	openttd: 4 +4
+	Vaping: 4 +3
+	psyforum: 4 +3
+	SantaBarbara: 4 +2
+	hackerspaces: 4 +3
+	oliviawilde: 4 -4
+	Kayaking: 4 -2
+	meego: 4 -2
+	Shores_of_Hazeron: 4 +0
+	columbiamo: 4 +1
+	geography: 4 -5
+	colbertreport: 4 +4
+	scientology: 4 -2
+	yugioh: 4 +3
+	RATS: 4 +3
+	nehrim: 4 +3
+	hardstyle: 4 +4
+	Palm: 4 +1
+	nyjets: 4 +4
+	Forex: 4 +2
+	SexyButNotPorn: 4 -2
+	Outdoors: 4 +3
+	iPhoneDev: 4 +4
+	advertising: 4 -2
+	Drifting: 4 +1
+	TheWire: 4 +4
+	signs: 4 +4
+	NoveltyAccounts: 4 +4
+	saskatoon: 4 +3
+	AsianNSFW: 4 +3
+	Pennsylvania: 4 +4
+	dating: 4 -5
+	Rockwall: 4 -35
+	americanpirateparty: 4 -4
+	cannabisconnoisseurs: 4 +3
+	VinylCollectors: 4 +4
+	MultipleSclerosis: 4 +4
+	shaving: 4 +4
+	weather: 4 +2
+	Catholic: 3 +3
+	Ebay: 3 -4
+	festivals: 3 -3
+	done: 3 +2
+	poland: 3 +3
+	Costco: 3 +3
+	openholes: 3 +0
+	TrollAlert: 3 -1
+	RedditRomania: 3 +3
+	logic: 3 +2
+	banjo: 3 +3
+	goblincamp: 3 +3
+	metametacirclejerk: 3 -2
+	starlets: 3 +2
+	OVER30REDDIT: 3 +3
+	PhxClassWarCouncil: 3 +0
+	thewikipediagame: 3 +0
+	crochet: 3 +3
+	IMadeThis: 3 +3
+	LibrePensadoresMex: 3 +3
+	SonicTheHedgehog: 3 -3
+	technews: 3 +2
+	RADIOBRASILE: 3 +3
+	WorldMusic: 3 +2
+	Basketball: 3 -2
+	tvcritic: 3 +3
+	Wellington: 3 +3
+	FeedThePoorRedditors: 3 +3
+	WDP: 3 +3
+	korea: 3 -8
+	britishcolumbia: 3 +3
+	tricities: 3 -7
+	madscientist: 3 +3
+	Algonquin_College: 3 +2
+	scientists: 3 +3
+	NuclearPower: 3 -8
+	mlb: 3 +3
+	sandbox: 3 +2
+	Tacoma: 3 -2
+	childfree: 3 -4
+	O_Faces: 3 +3
+	futanari: 3 +3
+	nsfwvideos: 3 +1
+	DarwinAward: 3 +3
+	lifehack: 3 +3
+	UVA: 3 +0
+	diabetes: 3 -10
+	science2: 3 +3
+	bristol: 3 -33
+	tvclub: 3 -4
+	retreat: 3 +2
+	ultimaonline: 3 -1
+	washu: 3 +3
+	holycheck: 3 -8
+	totse: 3 -3
+	RCHobby: 3 +3
+	Galaxy_S: 3 -2
+	Dietandhealth: 3 +3
+	redditor_pics: 3 +3
+	OnlineDating: 3 +3
+	lotr: 3 +1
+	Coyotes: 3 +2
+	happyhardcore: 3 -2
+	antiwar: 3 +0
+	InteriorDesign: 3 +2
+	gamereviews: 3 -6
+	labor: 3 +2
+	riderville: 3 +3
+	acting: 3 +1
+	whedon: 3 -18
+	language: 3 +1
+	ForeverAlone: 3 +3
+	survivalfood: 3 +3
+	disability: 3 +3
+	isleofmisfits: 3 +2
+	epidemiology: 3 -2
+	UofT: 3 +2
+	msu: 3 -3
+	HELPPPP: 3 -5
+	n900: 3 -19
+	atheist: 3 +1
+	dancing: 3 +0
+	TwinCityProjects: 3 +3
+	SMU: 3 +3
+	kpop: 3 +1
+	ADD: 3 +3
+	Browns: 3 -3
+	Sonsofanarchy: 3 -23
+	laptops: 3 +3
+	motorsports: 3 +3
+	MetaTrueReddit: 3 +1
+	yoga: 3 -26
+	xxfitness: 3 -6
+	AFL: 3 +3
+	nude: 3 +3
+	rally: 3 -4
+	Brazil: 3 +2
+	zooeydeschanel: 3 +3
+	lookatmyboyfriend: 3 +3
+	freeculture: 3 +1
+	GREEK: 3 +3
+	neopets: 3 -3
+	magick: 3 -8
+	museum: 3 -7
+	downssyndromeiscool: 3 +3
+	TopGear: 3 +2
+	illinoispolitics: 3 +3
+	Coolkats: 3 +3
+	coupons: 3 +3
+	malaysia: 3 +3
+	nanotech: 3 +1
+	rediculouswebsites: 3 -22
+	cpp: 3 -26
+	NonAustrianEconomics: 3 -25
+	Photoessay: 3 -1
+	minnesota: 3 -19
+	waterpolo: 3 +3
+	Korean: 3 +1
+	engrproject: 3 +2
+	jacksonville: 3 +3
+	aikido: 3 -1
+	wordplay: 3 -4
+	Esperanto: 3 +3
+	djing: 3 +3
+	doommetal: 3 +1
+	conan: 3 +2
+	roundrobin: 3 +3
+	C_Programming: 3 +2
+	coldfusion: 3 +3
+	IndianBabes: 3 +2
+	CRM: 3 +1
+	ShinyPorn: 3 -1
+	TeaParty: 3 -3
+	tcp: 3 +1
+	redditmakesagame: 3 -19
+	weeaboo: 3 -16
+	quilting: 3 +1
+	linux_devices: 3 -10
+	webbit: 2 +2
+	DrugWarNews: 2 +0
+	politics2: 2 -1
+	WWTT: 2 +0
+	harmonica: 2 +0
+	Marvel: 2 +2
+	OffGrid: 2 +1
+	RedditFX: 2 +2
+	smallprog: 2 +2
+	fnv: 2 -7
+	JapaneseFood: 2 -6
+	WilmingtonNC: 2 +2
+	Athens: 2 +2
+	WritingPrompts: 2 -5
+	OMGWTF: 2 +2
+	SanJose: 2 +1
+	PostgreSQL: 2 +1
+	MDMA: 2 +2
+	ColumbusBlueJackets: 2 +2
+	Agel: 2 +2
+	CommonLaw: 2 -7
+	Madden: 2 +2
+	northbay: 2 -5
+	Revival: 2 -6
+	russian: 2 -2
+	irc: 2 +1
+	bourbon: 2 -18
+	aerospace: 2 +2
+	hentai: 2 +1
+	abbotsford: 2 +2
+	semanticweb: 2 -3
+	thestarwars: 2 -6
+	Coolness: 2 -10
+	culturalstudies: 2 -9
+	346class10: 2 +0
+	bestofthefray: 2 +2
+	Africa: 2 -10
+	medications: 2 +1
+	parent: 2 +2
+	magicgathering: 2 +1
+	Animals: 2 -2
+	conservation: 2 -4
+	bozarking: 2 +2
+	deep_ecology: 2 -4
+	Omaha: 2 -2
+	suicide: 2 +2
+	stencils: 2 -48
+	Ohio: 2 +0
+	LaughOrCry: 2 +0
+	Nautical: 2 +1
+	iugaming: 2 +2
+	CouchDB: 2 +2
+	PoopSandwiches: 2 -3
+	Games: 2 -4
+	androidapps: 2 +2
+	trailrunning: 2 -14
+	OutdoorSports: 2 +2
+	vaguequestions: 2 +0
+	breakingbad: 2 -7
+	kung_fu: 2 +2
+	Webmasters: 2 +2
+	QuantumComputing: 2 +1
+	shittingadvice: 2 -1
+	survivalism: 2 +2
+	kelowna: 2 +0
+	topfive: 2 +1
+	IowaCity: 2 -4
+	TimAndEric: 2 -4
+	blogs: 2 -3
+	teleco: 2 +2
+	alaska: 2 +2
+	ps3hacks: 2 -14
+	PrettyGirls: 2 -4
+	e_lucas: 2 +2
+	fortlauderdale: 2 +2
+	eyes: 2 -4
+	joel: 2 +0
+	TibiaMMO: 2 +2
+	bustybabes: 2 +1
+	chans: 2 +0
+	psu: 2 +2
+	coversongs: 2 -23
+	Infographics: 2 +2
+	PicsOfDeadKids: 2 -4
+	crafts: 2 +2
+	redditlogos: 2 -8
+	Puscifer: 2 +2
+	idrew: 2 +2
+	BlogWindowsBrasil: 2 +2
+	joindiaspora: 2 +2
+	Divorce: 2 +1
+	redditchan: 2 +1
+	LabVIEW: 2 +1
+	uwo: 2 +2
+	bollywood: 2 +2
+	linuxphoto: 2 +2
+	SexPositive: 2 -2
+	LibertarianSocialism: 2 +2
+	unicycling: 2 +0
+	PublicRelations: 2 +2
+	HoMfloor: 2 -5
+	criticism: 2 -2
+	Alabama: 2 -3
+	complexanalysisclub: 2 -23
+	ambient: 2 -3
+	whisky: 2 +2
+	penguins: 2 +0
+	tothemoon: 2 -7
+	ParticlePhysics: 2 -1
+	MiddleEasternMusic: 2 -12
+	Habs: 2 +0
+	gay: 2 -1
+	fence: 2 +2
+	tf2west: 2 +0
+	CalgaryFlames: 2 +2
+	misc: 2 +1
+	manga: 2 -8
+	digimon: 2 +0
+	FML: 2 -1
+	Plumpers: 2 +0
+	RadicalFeminism: 2 +2
+	snm: 2 +2
+	Debate: 2 +2
+	grad: 2 +2
+	androidtabs: 2 -3
+	nin: 2 +2
+	fedor: 2 +1
+	htc: 2 +2
+	OandA: 2 +2
+	ytp: 2 +2
+	aggies: 2 -6
+	Temple: 2 -6
+	chicagomusicscene: 2 +0
+	mandingo: 2 +2
+	yardsale: 2 +2
+	aquaponics: 2 +2
+	hashhouseharriers: 2 +2
+	UQreddit: 2 -13
+	matlab: 2 -3
+	ThisIsWhatImReading: 2 +0
+	hiphop: 2 -14
+	narwhals: 2 +2
+	Movie: 2 +2
+	personsunknown: 2 -1
+	asoiaf: 2 -4
+	redditroommates: 2 +2
+	gis: 2 +2
+	intelligencesquared: 2 -8
+	procrastinate: 2 +2
+	scuba: 2 -9
+	decide: 2 +2
+	Sunlight: 2 -3
+	Etab: 2 +0
+	MotionDesign: 2 +1
+	garden: 2 +2
+	Redditresearch: 2 +2
+	Zombie: 2 +1
+	Daleks: 2 -5
+	CanadianPolitics: 2 -14
+	dragoncon: 2 +0
+	IWW: 2 +0
+	usenet: 2 +0
+	newhaven: 2 +1
+	Dublin: 2 +2
+	vcu: 2 +2
+	Woerterbuecher: 2 +0
+	Arabic101: 2 -4
+	grandrapids: 2 +1
+	OSU: 2 +1
+	crypto: 2 +2
+	nihilisms: 2 +0
+	athiest: 2 +2
+	Survival: 2 +2
+	Genealogy: 2 +0
+	wrongnumber: 2 +2
+	CrohnsDisease: 2 +2
+	SAHP: 2 -13
+	F2E: 2 +1
+	introvert: 2 +1
+	346class10week9: 2 +2
+	compscipapers: 2 +2
+	WTF_Florida: 2 +1
+	ColoradoAvalanche: 2 +2
+	mixes: 2 -1
+	insects: 2 +2
+	SeaShepherd: 2 -1
+	livestock: 2 +2
+	deathclub: 2 -1
+	DailyShow: 2 +2
+	ipr: 2 +2
+	newfoundland: 2 +0
+	backpacking: 2 -2
+	suggestions: 2 +2
+	ffxi: 2 -5
+	askagirl: 2 -20
+	SouthFlorida: 2 +2
+	RBT: 2 +1
+	grool: 2 +1
+	Pantyfetish: 2 -5
+	liberalarts: 2 +1
+	bookclub: 2 -4
+	TimeTravellers: 2 +2
+	firstpage: 2 +1
+	psychopharmacology: 2 -3
+	ps3bc2: 2 -7
+	Custom_Motorcycles: 2 -3
+	RHL: 2 -15
+	Metalcore: 2 +2
+	ukulele: 2 +1
+	Monterrey: 2 -2
+	mileycyrus: 2 -1
+	gatech: 2 +2
+	sysor: 2 +1
+	medicine: 2 -2
+	TMBR: 2 +1
+	Vocaloid: 2 -5
+	RedDwarf: 2 -6
+	excel: 2 +2
+	pinball: 2 +2
+	fellatio: 2 +2
+	maemo: 2 +1
+	AnimeMusicVideos: 2 +0
+	bestsitesever: 2 +2
+	Radiolab: 2 +2
+	radiocontrol: 2 -7
+	A6a8i: 2 +2
+	glassart: 2 +2
+	ireddit: 2 +2
+	l4d2: 2 +2
+	hawks: 2 +2
+	Syracuse: 2 +2
+	Petloss: 2 +0
+	mormon: 2 -2
+	GameswapUK: 1 +0
+	Netfluff: 1 +1
+	Notebook: 1 +1
+	gwchat: 1 +1
+	audiophile: 1 +0
+	stolaf: 1 +1
+	AlteSS: 1 +1
+	mint: 1 +1
+	Printmakers: 1 -1
+	socialscience: 1 +1
+	Scam: 1 +1
+	pua: 1 +1
+	istanbul: 1 +1
+	studygroup: 1 -2
+	exercisemusic: 1 +1
+	FreeForReddit: 1 +1
+	Copemans: 1 +1
+	Speleology: 1 +0
+	jpop: 1 +1
+	wallingford: 1 +1
+	mysql: 1 -2
+	logophilia: 1 +0
+	REDDITEXCHANGE: 1 +1
+	christinahendricks: 1 -13
+	Mariners: 1 +1
+	rugbyunion: 1 +1
+	adultswim: 1 +1
+	GBV: 1 +1
+	Volunteers: 1 -2
+	pussy: 1 +0
+	SPAN101: 1 +1
+	uchicago: 1 +0
+	SpringfieldIL: 1 +0
+	gothsluts: 1 +1
+	coke: 1 +1
+	Adonis: 1 +1
+	Stitchy: 1 +1
+	spork: 1 +1
+	ARKEOLOGOSMAN: 1 +1
+	gambling: 1 +1
+	telecaster: 1 -5
+	hugenaturals: 1 -5
+	FlowerArranging: 1 +1
+	LesPaul: 1 +1
+	UofRmideastpolitics: 1 +1
+	NPR: 1 +1
+	Victoria: 1 +1
+	kravmaga: 1 -1
+	painting: 1 +1
+	bugs: 1 -15
+	Paleontology: 1 +1
+	bahai: 1 +1
+	Sherlock: 1 -2
+	bilgisayar: 1 +1
+	tacos: 1 +1
+	sc2lan: 1 +1
+	beerporn: 1 +0
+	synthesizers: 1 -2
+	KansasUniversity: 1 +1
+	piercing: 1 +1
+	DakotaFanning: 1 +0
+	LGBTerrific: 1 +1
+	wireless: 1 +1
+	weed: 1 +0
+	redditstories: 1 -1
+	slashat: 1 +1
+	reddithax: 1 -22
+	tulsa: 1 -11
+	arizonarally: 1 +1
+	quake: 1 +1
+	lakemohawk: 1 +1
+	atheistgems: 1 -9
+	socialwork: 1 +1
+	Shaded: 1 +0
+	Gifts: 1 +0
+	deutschland: 1 -1
+	nederlands: 1 -7
+	bioinformatics: 1 -5
+	appleseed: 1 +1
+	eclipsephase: 1 +0
+	toothbrushes: 1 +1
+	SC2: 1 +1
+	gamedevquestions: 1 +0
+	vampires: 1 +1
+	Borderlands: 1 +0
+	left4dead: 1 +1
+	APBIOLOGY: 1 -9
+	CarCheckup: 1 +1
+	awesome: 1 +1
+	WartaKatong: 1 +1
+	Desktop_Wallpaper: 1 +1
+	texasfavors: 1 -3
+	Arabiya: 1 +1
+	City: 1 +1
+	race: 1 +1
+	dolphinfap: 1 +1
+	December: 1 +1
+	Transhuman: 1 +0
+	UCONN: 1 -1
+	moddingguides: 1 +1
+	popper: 1 +1
+	carlhprogramming: 1 -2
+	Edinburgh: 1 +0
+	RedditVenture: 1 +1
+	christianbashing: 1 +1
+	Essays: 1 +1
+	urt: 1 +0
+	RoadRage: 1 +1
+	TechEntrepreneur: 1 +1
+	spirituality: 1 -1
+	WiiHacks: 1 +0
+	slowitup: 1 -1
+	economics2: 1 +1
+	Atheism2: 1 +1
+	academiceconomics: 1 -4
+	Sandwhich: 1 +1
+	rand: 1 +1
+	tedtalks: 1 +1
+	glbt: 1 +1
+	sportsvideo: 1 +0
+	palomafaith: 1 +1
+	StockMarket: 1 +0
+	PornStars: 1 +1
+	WhiteMenGoneWild: 1 -2
+	USNEWS: 1 +0
+	SOS: 1 -3
+	wildhockey: 1 +1
+	LearnGerman: 1 +1
+	turds: 1 +1
+	IAmInLove: 1 +1
+	timetravel: 1 -2
+	dreamact: 1 +1
+	Standup: 1 +0
+	lojban: 1 -6
+	Civilization: 1 +1
+	usability: 1 +0
+	ada: 1 +0
+	discworld: 1 +1
+	wargaming: 1 +1
+	conspiracyhub: 1 +1
+	PFA: 1 +1
+	professionalcycling: 1 +1
+	opticalillusions: 1 +1
+	fetish: 1 -1
+	LaTeX101: 1 +1
+	Nightshift: 1 +1
+	bybanen: 1 +1
+	fountainpens: 1 +1
+	heartwarming: 1 +1
+	beard: 1 +1
+	shitmydadsays: 1 +1
+	snes: 1 +1
+	GameDeals: 1 +1
+	writers: 1 +1
+	massachusetts: 1 +1
+	Horses: 1 +1
+	346class10week7: 1 -1
+	Vigilante: 1 +1
+	SULTAN: 1 +0
+	nethack: 1 -4
+	opinion: 1 +1
+	indonesia: 1 -8
+	Money: 1 +1
+	RFD: 1 +1
+	RedditRanch: 1 +1
+	Intelligence: 1 +1
+	airguns: 1 -10
+	tipofmytounge: 1 +1
+	AvantGardeMusic: 1 +1
+	regionalaustralia: 1 -8
+	Image: 1 -3
+	kettlebell: 1 -4
+	zorlan: 1 +1
+	Riddle: 1 -6
+	Advice: 1 -2
+	AwesomePlaylists: 1 +1
+	nintendo: 1 +0
+	musicians: 1 +0
+	Denmark: 1 -17
+	contextfreepete: 1 +0
+	asianmovieclub: 1 +1
+	acne: 1 +1
+	hackintosh: 1 -6
+	aliens: 1 +1
+	notetoself: 1 +0
+	the13colonies: 1 +1
+	noveltygraveyard: 1 +1
+	FREE: 1 +0
+	recovery: 1 +1
+	Ducati: 1 +0
+	saved: 1 +1
+	Abarcas: 1 +1
+	Logic_Studio: 1 +1
+	batterystore: 1 +1
+	whoadude: 1 +0
+	crossdressing: 1 +1
+	qtp: 1 +1
+	chrome_extensions: 1 +1
+	fireflycirclejerk: 1 +1
+	makerbot: 1 +0
+	USHistory: 1 +0
+	weightlifting: 1 +0
+	d3clan: 1 +1
+	CHIBears: 1 -5
+	Nipples: 1 +1
+	xbmc: 1 +0
+	AmericaNextTopModel: 1 +1
+	censorship: 1 +0
+	sushi: 1 +1
+	mspaint: 1 +1
+	Patriots: 1 +1
+	iastate: 1 +0
+	test: 1 -2
+	fail: 1 +1
+	Upskirt: 1 -8
+	Blondes: 1 +0
+	trippy: 1 -8
+	test54321: 1 +1
+	CarletonU: 1 +1
+	futurefunkairlines: 1 -1
+	FructoseAndHealth: 1 +1
+	terror: 1 +1
+	oldreddits: 1 +1
+	tarvu: 1 +1
+	embedded: 1 -2
+	pagan: 1 +1
+	arabic: 1 +1
+	Gameboy: 1 -1
+	IPUNK_PANDAWA_PUTRI: 1 +1
+	actuary: 1 +0
+	JonBenetRamsey: 1 -6
+	hamburg: 1 +0
+	Goodcops: 1 +1
+	gonwild: 1 +1
+	Kiteboarding: 1 -1
+	SurveyJerk: 1 +1
+	questionablecontent: 1 +0
+	matt: 1 -4
+	TPB: 1 +1
+	country: 1 +1
+	UKFunky: 1 +1
+	BOAB: 1 +1
+	reddittown: 1 +1
+	exSistersinZion: 1 -10
+	nutrition: 1 +1
+	homeschool: 1 +0
+	DOTA: 1 -9
+	fashionphotography: 1 +1
+	UAE: 1 +1
+	xmonad: 1 -2
+	LANL_German: 1 -11
+	sandwich_makers: 1 +1
+	jemfinch: 1 +1
+	bellevue: 1 +1
+	circlejerkcirclejerk: 1 +1
+	TreesSketchbook: 1 -3
+	immigration: 1 +0
+	hitchhiking: 1 +1
+	ja: 1 +1
+	FuelTV: 1 +1
+	scientific_denialism: 1 +1
+	StJohnsNL: 1 +0
+	Palestine: 1 -3
+	rum: 1 +0
+	electronic_cigarette: 1 -8
+	poi: 1 +1
+	geospatial: 1 +1
+	Charity: 1 +1
+	Corruption: 1 +1
+	CompulsiveDownvoters: 1 +1
+	cambridge_uni: 1 -1
+	fringescience: 1 +0
+	netflix: 1 +1
+	missoula: 1 +0
+	vids: 1 -1
+	scala: 1 -1
+	DistritoFederal: 1 +1
+	mobilesoftware: 1 +1
+	FrontPage: 1 +0
+	ecommerce: 1 +1
+	olympia: 1 +1
+	Comedycasting: 1 +1
+	Demotivational: 1 +1
+	crazystairs: 1 +1
+	pantyhose: 1 +0
+	industrialmusic: 1 -5
+	Fearthesanity: 1 +1
+	Hypothyroidism: 1 +0
+	Unemployed: 1 +1
+	spain: 1 +0
+	costarica: 1 +1
+	citricsquid: 1 -3
+	blackpower: 1 +0
+	hero0fwar: 1 +1
+	NotYou: 1 +1
+	Supernatural: 1 -1
+	pigtails: 1 +1
+	ipod: 1 -2
+	babies: 1 -5
+	TrueMetal: 1 +1
+	ns2: 1 -7
+	radio: 1 +0
+	indierock: 1 +1
+	halloween: 1 +1
+	sailingcrew: 1 -1
+	diplomacy: 1 +0
+	fascinating: 1 +1
+	tumblr: 1 +1
+	Coalmarch: 1 +1
+	WeAreTheCandyEaters: 1 +1
+	complaintbox: 1 +1
+	Maxcactus: 1 +1
+	MMORPG: 1 -7
+	barter: 1 +1
+	no: 1 -3
+	HTCEVO: 1 +1
+	caps: 1 +1
+	hug: 1 +0
+	getting_over_it: 1 +1
+	opendata: 1 +1
+	iran: 1 -5
+	giveaways: 1 -1
+	breastfeeding: 1 +1
+	hackers: 1 -1
+	tomorrowiwill: 1 +1
+	asshole: 1 -2
+	smalltalk: 1 +1
+	Bulk: 1 +1
+	piggy: 1 +1
+	lawvslife: 1 +1
+	kendo: 1 +1
+	3dporn: 1 +1
+	gape: 1 +0
+	opera: 1 +1
+	DOTDJAX: 1 -6
+	FantasyFiction299: 1 +1
+	cassandra: 1 +1
+	Vacation: 1 +1
+	calvinandhobbes: 1 +1
+	billmurray: 1 +0
+	sabres: 1 -7
+	dvds: 1 +1
+	karate: 1 +1
+	CollegeFootball: 1 +1
+	newdigg: 1 +1
+	Employment: 1 +0
+	hiphoptruth: 1 +1
+	poop: 1 +1
+	inmemoryof: 1 +1
+	lingerie: 1 +1
+	hrvatska: 1 +1
+	merch: 1 +1
+	DosugPoRuskij: 1 +1
+	Archaeology: 1 -5
+	BigfishGames: 1 +1
+	cuda101: 1 +1
+	stcatharinesON: 1 +1
+	Tress: 1 +1
+	ranprieur: 1 +1
+	PixelArt: 1 +1
+	tablets: 1 +0
+	ECEHelpMe: 1 -7
+	fonts: 1 -1
+	astrophysics: 1 +1
+	fidget: 1 -1
+	aks: 1 +1
+	Deathcore: 1 +1
+	chillwave: 1 -1
+	RugbyWorldCup: 1 +1
+	PalinProblem: 1 +0
+	UCI: 1 +1
+	MaleStudies: 1 -2
+	shmups: 1 +0
+	wootoff: 1 +1
+	AnxietyPanic: 1 +1
+	Agriculture: 1 +1
+	Lethbridge: 1 +1
+	longisland: 1 -16
+	TheParentPad: 1 +1
+	Caprica: 1 +1
+	locksport: 1 +1
+	shill: 1 -5
+	Starcraft3: 1 +0
+	electro: 1 +1
+	AllMods: 1 +1
+	bobdylan: 1 +1
+	fortran: 1 +1
+	OregonStateUniv: 1 -1
+	Cornell: 1 -9
+	arizonapolitics: 1 +1
+	guitarnoodles: 1 +1
+	wsu: 1 +1
+	GoodNewsInBadTimes: 1 +1
+	nationalist: 1 +1
+	APB: 1 +1
+	love: 1 +0
+	biblestudy: 1 -6
+	compartilhando: 1 +1
+	theology: 1 -2
+	advancedsquadleader: 1 +1
+	neuroscience: 1 +1
+	MINI: 1 +1
+	Interestingstuff: 1 +1
+	HamRadio: 1 +1
+	DetroitRedWings: 1 -4
+	gpgpu: 1 +1
+	NexusOne: 1 -14
+	southafrica: 1 -1
+	Insurance: 1 +1
+	cdfcomms: 1 +1
+	Theosophy: 1 +1
+	QualityAssurance: 1 +1
+	Amd: 1 +0
+	relationshipadvice: 1 -3
+	360MW2: 1 -5
+	Roku: 1 +0
+	demonssouls: 1 +1
+	redditia: 1 +0
+	mechanics: 1 +1
+	futbolmx: 1 -3
+	Environmentalism: 1 +1
+	taoism: 1 +1
+	SummerGlau: 1 +1
+	FragReddit: 1 +0
+	playground: 1 +1
+	lexington: 1 -2
+	techhelp: 1 +1
+	4_Panel_Comics: 1 +1
+	Watches: 1 +1
+	buttsex: 1 +1
+	treesfood: 1 +1
+	CHANGEDMYLIFE: 1 +1
+	arabwomen: 1 +1
+	coho: 1 +1
+	905: 1 -4
+	DurrIsALazyFaggot: 1 +1
+	collegensfw: 1 +0
+	types: 1 +1
+	drawitblind: 1 -2
+	oregon: 1 -3
+	duluth: 1 +0
+	MagicEye: 1 +1
+	losangeleskings: 1 +1
+	Launchpad: 1 +1
+	White_Pride: 1 +1
+	mets: 1 +1
+	AnnArbor: 1 +1
+	USCivilWar: 1 -2
+	livechat: 1 +1
+	HoleyHands: 1 +1
+	confidence: 1 +1
+	StreetFighter: 1 +1
+	vodka: 1 -2
+	Potato_Mug: 1 +1
+	blogger: 1 -1
+	UofMemphis: 1 +1
+	mobilephones: 1 +1
+	snowball: 1 +1
+	AirForce: 1 +1
+	cloud_computing: 1 +1
+	ru: 1 -1
+	SinCity: 1 +0
+	delhi: 1 -1
+	blender: 1 -3
+	f1test: 1 +1
+	emoticons: 1 +1
+	phuzion: 1 +1
+	GreekBibleStudy: 1 +1
+	woodworking: 1 -2
+	algorithms: 1 +1
+	cigars: 1 +1
+	minimal: 1 +0
+	Glasgow_Celtic: 1 +0
+	princeton: 1 +1
+	todayinww2: 1 +1
+	obert_paulson: 1 +1
+	artificial: 1 +0
+	yankees: 1 +1
+	GVR4: 1 +1
+	homicidewatch: 1 +1
+	ChemicalEngineering: 1 -10
+	doc: 1 -1
+	SFstories: 1 -8
+	hardscience: 1 +0
+	salesforce: 1 +1
+	Ninjas: 1 +1
+	Carpentry: 1 +1
+	fortunecookie: 1 +1
+	p90xlog: 1 +1
+	HBD: 1 +0
+	hbo: 1 +0
+	Blogging: 1 -1
+	SubredditSubreddit: 1 +1
+	Yiddish: 1 +0
+	tabletop: 1 +1
+	LandscapeArch: 1 +0
+	ideas: 1 +1
+	Americana: 1 +0
+	PBS: 1 +1
+	wilwheaton: 1 -12
+	artechniques: 1 +1
+	dependent_types: 1 +1
+	fuckyea: 1 -3
+	albumcritic: 1 +1
+	Hipster: 1 +1
+	TillSverige: 1 -4
+	inspirational: 1 +1
+	reportthetrolls: 1 +1
+	it: 1 -5
+	centralpa: 1 +1
+	SizzleGrove: 1 +1
+	fanfic: 1 +0
+	48HFP: 1 +1
+	carepackage: 1 -73
+	EQ2: 1 -2
+	solar: 1 +1
+	chomsky: 1 +1
+	triplemetacirclejerk: 1 +0
+	ThisIsOurMusic: 1 -5
+	Marathon: 1 +1
+	Donyee: 1 +1
+	lockpicking: 1 -4
+	bangalore: 1 +1
+	furniture: 1 +1
+	CoolDesigns: 1 +0
+	EventsNYC: 1 -4
+	front_end: 1 +0
+	ntnu: 1 -5
+	purveyor: 1 +1
+	maru: 1 +1
+
+Week 3
+--------------
+reddits: 2280
+accounts: 102751
+names: 862392
+
+Subreddits:
+	AskReddit: 146428 +13673
+	pics: 75778 -6740
+	reddit.com: 51047 -15075
+	politics: 36603 -461
+	gaming: 34129 +2237
+	WTF: 30316 +2274
+	IAmA: 29302 -5417
+	funny: 26513 +1083
+	trees: 21194 -1437
+	Minecraft: 20012 +3396
+	atheism: 19869 -4051
+	fffffffuuuuuuuuuuuu: 15158 +269
+	worldnews: 12115 +623
+	starcraft: 11449 +302
+	science: 10248 -1637
+	videos: 8122 -510
+	programming: 8076 -970
+	technology: 7747 -1165
+	todayilearned: 7507 +1122
+	DoesAnybodyElse: 7058 -406
+	Music: 6618 +1112
+	sex: 6485 -979
+	Fitness: 6284 +396
+	TwoXChromosomes: 5753 -1774
+	self: 5683 +527
+	Android: 4972 -207
+	Economics: 4958 -228
+	gonewild: 4951 -190
+	canada: 4758 +52
+	Libertarian: 4640 +259
+	movies: 4541 -1386
+	relationship_advice: 3897 +39
+	offbeat: 3862 -343
+	guns: 3581 +175
+	food: 3421 +175
+	Frugal: 3296 +756
+	comics: 3228 -355
+	entertainment: 3228 +489
+	blog: 3145 -1860
+	apple: 3095 +358
+	ColbertRally: 3088 -2283
+	shittyadvice: 2973 -71
+	linux: 2870 +198
+	lgbt: 2792 +950
+	geek: 2772 -318
+	soccer: 2703 +22
+	sports: 2702 +743
+	wow: 2631 -58
+	scifi: 2611 -178
+	civ: 2541 +2173
+	bicycling: 2513 -217
+	news: 2444 +179
+	business: 2317 +496
+	Christianity: 2237 +430
+	nfl: 2155 +409
+	MensRights: 2139 -33
+	photography: 2047 +168
+	books: 1982 -330
+	relationships: 1970 -46
+	philosophy: 1928 +470
+	humor: 1870 +652
+	nsfw: 1769 -112
+	Cooking: 1700 +794
+	conspiracy: 1678 +14
+	australia: 1653 -179
+	math: 1649 +218
+	tf2: 1576 -469
+	fantasyfootball: 1540 -167
+	promos: 1492 -304
+	gadgets: 1487 -361
+	WeAreTheMusicMakers: 1452 +0
+	beer: 1448 -193
+	leagueoflegends: 1403 +132
+	environment: 1401 -277
+	seduction: 1361 +74
+	web_design: 1352 +152
+	buildapc: 1336 +436
+	Drugs: 1276 +361
+	halo: 1259 +61
+	hardware: 1257 +0
+	techsupport: 1249 +184
+	aww: 1238 +243
+	answers: 1221 +61
+	MW2: 1156 -150
+	hockey: 1152 +438
+	motorcycles: 1140 +63
+	wikipedia: 1103 -94
+	listentothis: 1053 +68
+	Marijuana: 1037 -308
+	exmormon: 1033 -479
+	bestof: 1015 +242
+	MMA: 1003 +113
+	Guitar: 969 +4
+	toronto: 966 +74
+	DIY: 950 -124
+	askscience: 947 +313
+	PS3: 947 +123
+	magicTCG: 938 -62
+	Homebrewing: 927 +47
+	travel: 916 +198
+	itookapicture: 910 -127
+	Seattle: 903 -72
+	netsec: 870 +350
+	unitedkingdom: 857 +248
+	Health: 855 -62
+	ffxiv: 835 +337
+	DebateAChristian: 824 +129
+	Favors: 807 +104
+	iphone: 807 -157
+	space: 806 -203
+	skeptic: 799 +248
+	anime: 783 -120
+	dwarffortress: 756 -84
+	history: 756 +45
+	running: 750 +128
+	nyc: 732 +88
+	Austin: 732 +59
+	playitforward: 727 +727
+	Anarchism: 712 -221
+	baseball: 706 +54
+	Design: 704 +159
+	SuicideWatch: 697 +15
+	redditoroftheday: 696 -88
+	formula1: 677 +256
+	rpg: 670 +45
+	Metal: 645 -277
+	malefashionadvice: 642 +57
+	dubstep: 637 -32
+	chicago: 632 -125
+	writing: 622 +170
+	badcompany2: 616 +58
+	Physics: 609 +161
+	poker: 608 +263
+	Eve: 588 +124
+	needadvice: 575 -119
+	boston: 568 -219
+	CFB: 561 -223
+	circlejerk: 557 -198
+	worldpolitics: 550 -95
+	Team_Awesome: 529 +343
+	reachclan: 521 +431
+	Israel: 509 -11
+	startrek: 506 -73
+	Ubuntu: 502 +105
+	Pets: 494 -24
+	Art: 487 -37
+	Python: 484 -189
+	Dexter: 474 +407
+	psychology: 461 +122
+	doctorwho: 455 -96
+	TrueReddit: 452 +191
+	tipofmytongue: 451 +60
+	drunk: 439 -110
+	IWantToLearn: 436 +108
+	religion: 426 +171
+	xbox360: 424 -130
+	PhilosophyofScience: 416 +256
+	lost: 409 +90
+	electronicmusic: 404 -124
+	loseit: 402 +217
+	london: 394 -163
+	Autos: 391 -135
+	energy: 374 -205
+	economy: 374 +21
+	cogsci: 373 -49
+	mcservers: 368 +148
+	mexico: 368 -180
+	twincitiessocial: 368 +36
+	woahdude: 367 +39
+	ukpolitics: 365 -89
+	climbing: 364 +50
+	biology: 363 +246
+	PHP: 360 -23
+	houston: 351 +40
+	sanfrancisco: 350 +71
+	hiphopheads: 349 -29
+	creepy: 345 +15
+	zombies: 344 +159
+	___: 341 +303
+	minecraftau: 338 +226
+	montreal: 337 -160
+	Portland: 336 -297
+	ads: 335 -368
+	evedreddit: 334 +6
+	learnprogramming: 327 +64
+	nosleep: 325 -97
+	WebGames: 320 -51
+	washingtondc: 317 -179
+	happy: 304 -4
+	philadelphia: 302 +126
+	photocritique: 294 +168
+	climateskeptics: 294 +73
+	pokemon: 290 -235
+	MLS: 287 -162
+	depression: 283 +87
+	law: 274 -76
+	television: 273 +36
+	islam: 266 -124
+	transformice: 258 +96
+	vegan: 255 -135
+	comicbooks: 242 -1
+	treecomics: 240 +45
+	bayarea: 239 +167
+	LosAngeles: 237 -11
+	ideasfortheadmins: 233 +46
+	japan: 232 +88
+	StarWars: 228 -50
+	Parenting: 228 +110
+	education: 228 +31
+	FTH: 225 +14
+	india: 223 +18
+	Atlanta: 222 -50
+	gameswap: 221 +2
+	911truth: 215 +63
+	cats: 210 +82
+	gamedev: 209 -9
+	cheatatmathhomework: 207 -133
+	haskell: 207 +25
+	newzealand: 204 +6
+	dogs: 201 -122
+	brisbane: 201 +37
+	r4r: 200 +34
+	Bad_Cop_No_Donut: 199 -117
+	mac: 199 +23
+	Quebec: 198 +108
+	linguistics: 197 +26
+	Dallas: 196 +54
+	boardgames: 196 +49
+	rit: 194 -198
+	javascript: 192 +34
+	chemistry: 192 -63
+	RedditCarpool: 190 -1094
+	madmen: 190 +66
+	cars: 190 -54
+	software: 186 -113
+	jobs: 184 +60
+	ireland: 182 -59
+	collapse: 181 -54
+	ottawa: 180 +51
+	vancouver: 179 -30
+	redditguild: 174 -328
+	sandiego: 170 -17
+	Buddhism: 169 -79
+	Stargate: 169 +125
+	til: 168 +10
+	OkCupid: 167 -57
+	Torontoevents: 165 +78
+	progmetal: 161 +161
+	obama: 160 +2
+	meetup: 159 -98
+	help: 158 +62
+	tattoos: 157 -77
+	feminisms: 157 -18
+	DAE: 156 -59
+	Documentaries: 156 +20
+	recipes: 152 +45
+	UIUC: 152 +58
+	golf: 152 +106
+	Military: 150 -83
+	Astronomy: 150 -40
+	thick: 149 +105
+	sysadmin: 148 +50
+	Boobies: 147 -20
+	starcraft2: 145 -24
+	MinecraftSuccession: 145 +145
+	aviation: 145 -52
+	polyamory: 144 +101
+	AMA: 143 -85
+	FixedGearBicycle: 143 -37
+	ToolBand: 143 +116
+	electronics: 142 +39
+	HeroesofNewerth: 142 -54
+	conspiratard: 139 +105
+	amiugly: 138 -117
+	BodyAcceptance: 137 -18
+	stopsmoking: 137 +40
+	DnB: 137 +61
+	4chan: 136 +86
+	Equality: 136 +0
+	gardening: 134 +12
+	BDSMcommunity: 131 -76
+	metacirclejerk: 131 +100
+	Jazz: 131 +66
+	pittsburgh: 129 +18
+	snowboarding: 129 +3
+	Logos: 125 +38
+	webdev: 123 -56
+	snackexchange: 119 +63
+	skateboarding: 118 -17
+	classicalmusic: 115 +56
+	ILiveIn: 115 -124
+	trackers: 115 -69
+	prop19: 114 +21
+	fashion: 114 +42
+	somethingimade: 114 -64
+	fringe: 112 +74
+	kindle: 110 +58
+	StLouis: 110 -39
+	photoclass: 109 +6
+	longboarding: 109 +43
+	KansasCityChiefs: 108 +80
+	Bacon: 106 +67
+	Freethought: 106 +71
+	GirlGamers: 105 -47
+	engineering: 104 -72
+	Filmmakers: 104 +20
+	Assistance: 104 -27
+	chess: 103 +20
+	linux4noobs: 102 -113
+	cyberlaws: 101 +42
+	design_critiques: 101 -64
+	CampingandHiking: 99 -64
+	windowshots: 99 -40
+	wallpapers: 99 -21
+	women: 98 +20
+	progressive: 98 +7
+	gamemusic: 97 +4
+	video: 96 -49
+	socialism: 96 -58
+	moviecritic: 94 +9
+	digg: 94 -98
+	Winnipeg: 94 -21
+	wallpaper: 94 -80
+	firefox: 93 +25
+	Cartalk: 93 +8
+	phish: 92 -7
+	SomebodyMakeThis: 91 +66
+	transgender: 91 -54
+	BipolarReddit: 91 +38
+	opendirectories: 90 +62
+	P90X: 88 -50
+	RealGirls: 87 -11
+	ECE: 87 -103
+	lookatmygirlfriend: 87 +2
+	AlienBlue: 86 +42
+	HomeworkHelp: 86 +34
+	oklahoma: 86 +10
+	mctradedepot: 84 +73
+	NarFFL: 83 -97
+	punk: 82 +38
+	sailing: 82 +51
+	PlacetoStay: 81 -286
+	webcomics: 81 +0
+	Warhammer: 81 +8
+	finance: 80 -10
+	inmemoryof: 80 +79
+	Fantasy: 79 +3
+	UniversityofReddit: 78 +14
+	trance: 77 -7
+	gaygeek: 77 +77
+	Wordpress: 76 +25
+	photoshop: 76 +39
+	newreddits: 75 -2
+	triangle: 74 -31
+	Hamilton: 74 +52
+	LegalTeens: 74 -4
+	RUGC_Midwest: 74 -47
+	cannabis: 74 -74
+	YouShouldKnow: 73 -74
+	mcprivate: 73 -134
+	architecture: 73 +37
+	RDDT: 73 +73
+	opensource: 72 -67
+	horror: 71 +26
+	sweden: 71 -201
+	worstof: 71 -59
+	IndieGaming: 70 +19
+	Jokes: 70 +13
+	coding: 70 +1
+	gossip: 70 +30
+	90daysgoal: 69 +9
+	drums: 69 +47
+	voluptuous: 69 +23
+	howto: 69 +3
+	xkcd: 69 +8
+	webdesign: 68 +21
+	49ers: 67 -28
+	Tgirls: 67 +40
+	Lovecraft: 67 +21
+	Guildwars2: 66 +47
+	Bass: 66 +11
+	theevent: 66 +57
+	vim: 66 -27
+	penpals: 65 +59
+	rutgers: 64 +32
+	24hoursupport: 64 +15
+	arizona: 63 -9
+	audio: 63 +46
+	Piracy: 63 +58
+	UFOs: 62 -2
+	sanantonio: 62 +34
+	makethemsmile: 62 +62
+	vegas: 61 -4
+	discgolf: 61 -24
+	wicked_edge: 61 +43
+	Youngluck: 61 +25
+	roguelikes: 60 -6
+	futurebeats: 60 +26
+	lists: 59 +32
+	Enhancement: 58 -49
+	lolcats: 58 +5
+	Forts: 58 -21
+	kde: 57 +37
+	secretsanta: 57 -23
+	Eugene: 57 +25
+	groovesharkplaylists: 57 +41
+	Foodforthought: 56 +34
+	catpictures: 56 -75
+	MutualAid: 55 +55
+	logo: 55 -8
+	EVEOMFG: 54 +54
+	cincinnati: 54 -9
+	bjj: 54 -12
+	GetMotivated: 54 +16
+	igc: 53 +53
+	Gunners: 53 +16
+	ReverseEngineering: 53 +26
+	furry: 53 -19
+	archlinux: 53 +6
+	tampa: 52 -41
+	Conservative: 52 -27
+	China: 52 -12
+	starcraft2_class: 52 -89
+	LearnJapanese: 52 -3
+	sydney: 51 -8
+	Baking: 51 -29
+	movieclub: 51 +21
+	IAmWeird: 51 +51
+	microsoft: 51 -5
+	fsu: 51 +20
+	RPI: 51 -107
+	UCDavis: 50 +13
+	BritishTV: 50 -1
+	nostalgia: 50 +13
+	tea: 50 -45
+	Revival: 49 +47
+	compsci: 49 -167
+	WeAreTheFilmMakers: 49 -1
+	beertrade: 49 +26
+	UMD: 49 +7
+	knitting: 49 +9
+	RUG_Leeds: 49 +37
+	java: 48 -31
+	Columbus: 48 -39
+	wordcount: 48 +11
+	redditdev: 47 -19
+	applehelp: 47 -6
+	firefly: 47 +35
+	browsers: 47 +24
+	geology: 46 +31
+	UniversityOfHouston: 46 +3
+	GT5: 46 +25
+	Administrators: 46 +46
+	tothemoon: 46 +44
+	ptkchiepsilonproject: 46 +9
+	ass: 46 -12
+	government: 46 +15
+	gamelibrary: 46 +46
+	emacs: 46 +7
+	DepthHub: 45 +36
+	homebrew: 45 +33
+	canucks: 45 +6
+	grammarwatch: 45 +19
+	mycology: 45 -3
+	Khazar_Pride: 45 +4
+	lisp: 45 -2
+	google: 45 -26
+	mashups: 44 +7
+	torrents: 44 -26
+	nugs: 44 -21
+	radioreddit: 44 +26
+	typography: 43 +28
+	Graffiti: 43 -15
+	tech: 43 -7
+	ruby: 43 -65
+	astoria: 43 -61
+	StandUpComedy: 43 -41
+	mw2FallTourney: 42 -44
+	tolkienfans: 42 +42
+	futurama: 42 +34
+	CaptchaArt: 42 +42
+	uwaterloo: 42 +23
+	androiddev: 42 +4
+	RealEstate: 42 +33
+	LastNight: 42 +31
+	OpenChristian: 41 +34
+	MusicEssentials: 41 -21
+	EmploymentAssistance: 41 +41
+	slackerrecipes: 41 +27
+	UBreddit: 41 +41
+	MakeupAddiction: 41 -10
+	melbourne: 41 -48
+	NetflixCanada: 40 +40
+	Scholar: 40 +24
+	AskWomen: 40 -19
+	Clojure: 40 +9
+	PigJargon: 40 +9
+	BarefootRunning: 39 -5
+	manchester: 39 +29
+	Louisville: 39 +3
+	craftit: 39 -106
+	ipad: 39 -131
+	Birmingham: 39 +7
+	milwaukee: 39 +34
+	opiates: 38 +31
+	surfing: 38 -15
+	nature: 38 -31
+	orlando: 38 -8
+	radiohead: 37 +12
+	Mommit: 37 -26
+	wii: 37 -31
+	Nootropics: 37 -44
+	offmychest: 37 +24
+	steampunk: 37 +15
+	bikinis: 37 +16
+	NewOrleans: 37 -32
+	Psychonaut: 37 +26
+	rac: 37 +18
+	europe: 36 +10
+	windows: 36 +17
+	texas: 36 +29
+	freebies: 36 +26
+	ultimate: 36 +26
+	Poetry: 36 +10
+	oblivion: 35 -9
+	HIPSTERGURLZ: 35 +13
+	networking: 35 -3
+	Denver: 35 -55
+	ronpaul: 35 -10
+	bubbling: 35 +6
+	simracing: 34 +20
+	learnmath: 34 -5
+	IWantOut: 34 +5
+	glee: 34 +34
+	altdotstupidity: 34 +34
+	Pictures: 33 +1
+	CollegeBasketball: 33 -73
+	IDAP: 33 -37
+	pornvids: 33 +3
+	ucf: 33 +17
+	LGBTrees: 33 +26
+	new_right: 33 -2
+	de: 33 -16
+	penis: 33 -7
+	piano: 33 +22
+	VictoriaBC: 33 +0
+	DebateAnAtheist: 33 -80
+	bloomington: 33 +17
+	treemusic: 32 +6
+	arduino: 32 +22
+	daddit: 32 +23
+	linuxquestions: 32 -30
+	Fishing: 32 +8
+	birdpics: 32 +4
+	perl: 31 +2
+	OSOM: 31 +8
+	FittitBuddy: 31 +27
+	BurningMan: 31 +2
+	Green: 31 -2
+	Anthropology: 31 +3
+	computing: 31 +9
+	cycling: 31 +10
+	NSFW_nospam: 31 +15
+	NEU: 30 +15
+	codbo: 30 +26
+	investing: 30 +23
+	hugeboobs: 30 +17
+	ar15: 30 -6
+	Parkour: 30 +22
+	ritfl: 30 +10
+	belgium: 30 -6
+	HONORSBIOLOGY: 30 +25
+	WritersGroup: 30 +6
+	startups: 29 -45
+	battlestations: 29 +1
+	StarcraftFeedback: 29 -4
+	MeetLGBT: 29 -7
+	mixcd: 29 +13
+	Minneapolis: 29 +29
+	matlab: 29 +27
+	operabrowser: 29 -15
+	Entrepreneur: 29 -15
+	tonightsdinner: 29 -18
+	Naruto: 28 -17
+	Paranormal: 28 +22
+	Purdue: 28 +16
+	siterider: 28 -15
+	postrock: 28 -4
+	ForeignMovies: 28 +16
+	FinancialPlanning: 28 +1
+	Liberal: 28 +21
+	linux_gaming: 28 -25
+	literature: 28 -27
+	OnePiece: 28 +17
+	AnimalRights: 28 +3
+	droid: 28 +20
+	Miami: 28 -10
+	Cryptogon: 27 +8
+	Norway: 27 +22
+	quotes: 27 +2
+	Judaism: 27 -9
+	guitarlessons: 27 -5
+	FoodPorn: 27 +3
+	tldr: 27 +6
+	NotASubreddit: 27 +27
+	Vindictus: 27 -2
+	Detroit: 27 +2
+	Celebs: 26 +9
+	tf2au: 26 -4
+	statistics: 26 -15
+	django: 26 +16
+	Redskins: 26 -10
+	newjersey: 26 +6
+	food2: 26 +16
+	Rubicon: 25 +15
+	Calgary: 25 -17
+	corgi: 25 -2
+	miamidolphins: 25 +10
+	baltimore: 25 +18
+	worldevents: 25 -3
+	LaTeX: 25 +6
+	wisconsin: 25 +6
+	HairyPussy: 24 -5
+	dotnet: 24 +10
+	neuro: 24 +16
+	swtor: 24 -10
+	HuntsvilleAlabama: 24 -5
+	Iowa: 24 -21
+	weirdquestions: 24 +24
+	under18: 24 -12
+	Hunting: 24 -9
+	rugc_greatlakes: 24 +2
+	weddingplanning: 24 -23
+	rescuedogs: 24 +24
+	Database: 24 -14
+	IASIP: 23 -3
+	NaziHunting: 23 -31
+	diabetes: 23 +20
+	Republican: 23 +16
+	EA_NHL: 23 -7
+	veg: 23 +17
+	redditrequest: 23 -4
+	MachineLearning: 22 -16
+	Eesti: 22 +22
+	BSG: 22 -16
+	OneParagraph: 22 +9
+	nsfw2: 22 -18
+	computers: 22 +0
+	Omaha: 22 +20
+	grammar: 22 -3
+	stonerrock: 22 +6
+	Construction: 22 +22
+	water: 22 +13
+	computebazaar: 22 +22
+	gif: 22 -2
+	manlove: 22 +7
+	VirginiaTech: 22 +7
+	electrohouse: 22 -13
+	mnc: 22 -9
+	shamelessplug: 22 +10
+	pic: 22 -37
+	BoardwalkEmpire: 21 +3
+	IowaCity: 21 +19
+	the13colonies: 21 +20
+	LSD: 21 +11
+	AcademicPhilosophy: 21 -51
+	photoit: 21 -1
+	FL_Studio: 21 -4
+	herps: 21 +16
+	berkeley: 20 -24
+	rangers: 20 +14
+	knives: 20 +14
+	electronic_cigarette: 20 +19
+	florida: 20 +8
+	facebook: 20 +4
+	liquor: 20 -1
+	grilledcheese: 20 +20
+	booksuggestions: 20 -5
+	rva: 20 -33
+	Ska: 20 +16
+	Drexel: 20 +15
+	conspiracies: 20 +20
+	asktransgender: 20 -57
+	StateOfTheUnion: 20 +8
+	pinball: 20 +18
+	hawks: 20 +18
+	DJs: 19 -13
+	designthought: 19 +13
+	Redditoria: 19 +19
+	futuregarage: 19 +12
+	futureofreddit: 19 +7
+	animation: 19 +9
+	warehouse13: 19 +1
+	babylon5: 19 -13
+	Buffalo: 19 +10
+	treesgonewild: 19 +19
+	evecsm: 19 -15
+	actuallesbians: 19 +12
+	productivity: 19 +12
+	skiing: 19 -3
+	Drawing101: 19 -27
+	NexusOne: 19 +18
+	chuck: 19 -13
+	venturebros: 19 -33
+	vegetarian: 19 +9
+	Scotch: 19 -19
+	apathy: 19 -8
+	nonprofit: 19 -11
+	SDSU: 19 +7
+	C_Programming: 19 +16
+	Archery: 19 +14
+	Gore: 19 +10
+	WomenOfColor: 19 +13
+	msu: 19 +16
+	HandsAcrossAmerica: 18 +18
+	caving: 18 -1
+	RUGC: 18 +13
+	CNGH: 18 +14
+	cocktails: 18 +12
+	softscience: 18 +4
+	morrissey: 18 +11
+	French: 18 +4
+	Sexy: 18 -15
+	bisexual: 18 +9
+	computergraphics: 18 +2
+	JapaneseFood: 18 +16
+	Braves: 18 +10
+	Borderlands: 18 +17
+	Connecticut: 18 -19
+	freelance: 17 -5
+	russia: 17 +13
+	KEXP: 17 +17
+	trees_IRL: 17 +9
+	Blowjobs: 17 +6
+	bdsm: 17 -2
+	videography: 17 +0
+	LNC: 17 -17
+	rapecounseling: 17 +9
+	marketing: 17 -14
+	musictheory: 17 -20
+	SEC: 17 +2
+	ChicagoHomebrewers: 17 +17
+	norge: 17 +6
+	freethinkers: 17 -3
+	indepthstories: 17 -1
+	Catholicism: 17 -30
+	reggae: 17 +4
+	perth: 17 -1
+	cpp: 17 +14
+	demonssouls: 17 +16
+	RATS: 17 +13
+	Korean: 17 +14
+	oaklandraiders: 17 +11
+	SEO: 17 +8
+	lockpicking: 17 +16
+	Colorado: 16 -35
+	hiphop: 16 +14
+	Fencing: 16 +12
+	manass: 16 -10
+	cute: 16 +7
+	milf: 16 -4
+	Paleo: 16 +16
+	Learnmusic: 16 -14
+	dogpictures: 16 +10
+	printSF: 16 +4
+	VegRecipes: 16 -19
+	Yapi: 16 -5
+	graphic_design: 16 +12
+	LoLTourney: 16 -8
+	chrome: 16 -19
+	csshelp: 16 -10
+	EmmaWatson: 16 +10
+	Meditation: 16 -9
+	CasualMath: 16 -39
+	ComputerSecurity: 16 +16
+	racism: 16 -5
+	SanJoseSharks: 16 +0
+	LoLChampcraft: 16 +16
+	sbmarking: 16 +8
+	mcvgocmf: 15 +15
+	wargames: 15 +10
+	auto: 15 -32
+	vjing: 15 +15
+	BP_Gulf_Oil_Spill: 15 +15
+	kmnrinnovation: 15 +15
+	Tufts: 15 +9
+	england: 15 -19
+	NewToTF2: 15 -42
+	cambridge_uni: 15 +14
+	Hypothyroidism: 15 +14
+	TrueBlood: 15 -44
+	macapps: 15 -24
+	asheville: 15 -13
+	diaspora: 15 +8
+	SantaBarbara: 15 +11
+	HongKong: 15 +10
+	VolleyballGirls: 15 -42
+	AnnArbor: 15 +14
+	Bellingham: 15 -11
+	jquery: 15 -6
+	memphis: 15 -13
+	rush: 14 +2
+	Twitter: 14 -6
+	TheoryOfReddit: 14 +6
+	blackberry: 14 +9
+	doublegay: 14 +7
+	reddithax: 14 +13
+	robotics: 14 +3
+	sabres: 14 +13
+	SketchComedy: 14 -9
+	blogspotcommunity: 14 -7
+	rails: 14 +0
+	Coffee: 14 -113
+	gay: 14 +12
+	manga: 14 +12
+	GreenBayPackers: 14 -3
+	Cricket: 14 -24
+	malemodels: 14 -3
+	Michigan: 14 -27
+	Admin: 14 +14
+	trollcave: 14 +9
+	piratenpartei: 14 +14
+	anarchocommunism: 14 -21
+	CommonLaw: 14 +12
+	Galaxy_S: 14 +11
+	types: 14 +13
+	spicy: 14 +7
+	tasker: 14 +5
+	footballmanagergames: 14 +8
+	hacking: 14 +8
+	italy: 13 -13
+	UCL: 13 +13
+	Louisiana: 13 +6
+	Boardgame_AI_101: 13 +2
+	HealthProject: 13 +7
+	hinduism: 13 +13
+	NetflixBestOf: 13 -11
+	Swimming: 13 -15
+	japanlife: 13 -16
+	No_Pants_Party: 13 +6
+	Switzerland: 13 +4
+	redditmotto: 13 +13
+	notorious35: 13 +13
+	Philippines: 13 -24
+	rant: 13 -2
+	modhelp: 13 +7
+	HighHeels: 13 -15
+	RenewableEnergy: 13 -5
+	Rochester: 13 -11
+	lostgeneration: 13 +7
+	ucla: 13 -35
+	vfx: 13 +13
+	GWYM: 13 +6
+	ravens: 13 -3
+	audioengineering: 13 +7
+	Pennsylvania: 13 +9
+	arresteddevelopment: 13 -11
+	Inception: 13 +2
+	ebooks: 13 +8
+	bugs: 12 +11
+	whatsthisbug: 12 -6
+	reasoners: 12 +12
+	thestoppagetimes: 12 -21
+	norfolk: 12 +7
+	carepackage: 12 +11
+	APBIOLOGY: 12 +11
+	rainbowbar: 12 +3
+	thehunt: 12 +2
+	SaltLakeCity: 12 -44
+	git: 12 +6
+	heythatwasin: 12 -21
+	CanP40S3: 12 +12
+	pjparty: 12 +12
+	youtube: 12 -14
+	classicfilms: 12 -6
+	Amblyopia: 12 +6
+	languagelearning: 12 +3
+	Brooklyn: 12 +3
+	SciFiScroll: 12 -1
+	newbrunswickcanada: 12 +7
+	Neuropsychology: 12 -2
+	yugioh: 12 +8
+	hipsters: 12 +8
+	kansascity: 12 -14
+	france: 11 -16
+	Rateme: 11 +11
+	banjo: 11 +8
+	singapore: 11 -15
+	HappyBirthday: 11 -15
+	tricities: 11 +8
+	AnxietyPanic: 11 +10
+	gnu: 11 +6
+	Libraries: 11 +7
+	vmware: 11 +7
+	DeepSpaceNine: 11 +1
+	Gaytheists: 11 +11
+	SuggestALaptop: 11 +11
+	coversongs: 11 +9
+	totse: 11 +8
+	Techno: 11 -107
+	enlight: 11 +11
+	Kayaking: 11 +7
+	nba: 11 +7
+	devils: 11 -4
+	civ5smac: 11 +11
+	Sacramento: 11 +11
+	minnesota: 11 +8
+	rdbp: 11 -19
+	BostonBruins: 11 +3
+	ginger: 11 -23
+	radiocontrol: 11 +9
+	RIA3000: 11 -25
+	hackintosh: 10 +9
+	OrthodoxChristianity: 10 +3
+	bottlesofbeer: 10 -45
+	teaching: 10 -21
+	comic_crits: 10 -15
+	fortlauderdale: 10 +8
+	timetravel: 10 +9
+	childfree: 10 +7
+	football: 10 -21
+	nethack: 10 +9
+	seedstock: 10 +10
+	keto: 10 -17
+	ask: 10 -5
+	crossdressing: 10 +9
+	Entomology: 10 -6
+	Permaculture: 10 +6
+	hardscience: 10 +9
+	nook: 10 +2
+	missoula: 10 +9
+	anarchistbookclub: 10 +10
+	redheads: 10 -5
+	flossdaily: 10 -6
+	hashhouseharriers: 10 +8
+	Screenwriting: 10 -6
+	Anticonsumption: 10 -21
+	Sonsofanarchy: 10 +7
+	wine: 10 +2
+	MetaTrueReddit: 10 +7
+	uchicago: 10 +9
+	leafs: 10 -8
+	CaribbeanGirls: 10 +0
+	Etsy: 10 -1
+	crossfit: 10 +10
+	tennis: 10 +1
+	Punkskahardcore: 10 -6
+	jacksonville: 10 +7
+	linuxmint: 10 +1
+	tf2lemmings: 10 +10
+	ukulele: 10 +8
+	p90xlog: 10 +9
+	spotify: 10 -4
+	cwg: 10 +10
+	CrohnsDisease: 10 +8
+	gameconceptart: 10 +5
+	exmormonfffuuuu: 10 +10
+	fitnesschallenge: 9 -36
+	exjw: 9 -6
+	design_challenge: 9 -11
+	beards: 9 +5
+	lectures: 9 -5
+	filmmaking: 9 +2
+	panthers: 9 +3
+	academiceconomics: 9 +8
+	iastate: 9 +8
+	gaynsfw: 9 +1
+	store: 9 +9
+	socialmedia: 9 -16
+	freegames: 9 -2
+	malehairadvice: 9 -20
+	christinahendricks: 9 +8
+	prowrestling: 9 +1
+	UTSA: 9 +5
+	counter_strike: 9 +3
+	fence: 9 +7
+	happyhardcore: 9 +6
+	liberalarts: 9 +7
+	repair: 9 +9
+	evolution: 9 -4
+	overpopulation: 9 -12
+	foodbank: 9 -44
+	zelda: 9 +5
+	SelfSufficiency: 9 -29
+	vectorgraphics: 9 +9
+	longisland: 9 +8
+	martialarts: 9 -18
+	drupal: 9 -17
+	breakbeat: 9 +9
+	WelcomeToDC: 9 -43
+	madisonwi: 9 -31
+	gratefuldead: 9 -7
+	farming: 9 +3
+	NYGiants: 9 -4
+	minimal: 9 +8
+	urbanplanning: 9 -3
+	ScarlettJohansson: 9 +0
+	vinyl: 9 -3
+	Texans: 9 -6
+	tattoo: 9 +5
+	Suomi: 9 +9
+	treemovies: 9 -7
+	germany: 9 -12
+	Lubbock: 8 -4
+	festivals: 8 +5
+	paris: 8 +8
+	fictioncircus: 8 +8
+	1000words: 8 +3
+	Boise: 8 -18
+	fidget: 8 +7
+	carpool: 8 +1
+	gonewildstories: 8 -26
+	hockeyHOF: 8 +8
+	cpslo: 8 +8
+	Maine: 8 +2
+	crime: 8 +0
+	Morocco: 8 -18
+	AppEngine: 8 -16
+	Hardwarenews: 8 -1
+	Horses: 8 +7
+	lego: 8 -5
+	alcohol: 8 +1
+	ender: 8 -11
+	cumfetish: 8 -10
+	gifs: 8 -2
+	rickygervais: 8 +8
+	thesims: 8 +8
+	nottingham: 8 +0
+	usability: 8 +7
+	PipeTobacco: 8 +4
+	Jeopardy: 8 +2
+	hookandyarn: 8 +3
+	ancientegypt: 8 -8
+	yoga: 8 +5
+	lotro: 8 -12
+	bbwbikinis: 8 -2
+	Anarcho_Capitalism: 8 -6
+	Etab: 8 +6
+	redditisland: 8 +0
+	bleach: 8 -3
+	UUreddit: 8 +8
+	sociology: 8 -4
+	MINIMALTECH: 8 +0
+	ferrets: 8 -4
+	conan: 8 +5
+	Rockwall: 8 +4
+	linux_devices: 8 +5
+	ntnu: 8 +7
+	mormon: 8 +6
+	lonely: 7 +3
+	TwinCities: 7 -2
+	node: 7 +7
+	Reign: 7 -47
+	aerospace: 7 +5
+	hiking: 7 -6
+	UCI: 7 +6
+	Mahjong: 7 +7
+	ipsc: 7 +7
+	nude: 7 +4
+	Amateur: 7 -10
+	GradSchool: 7 -3
+	GreenParty: 7 +7
+	futanari: 7 +4
+	latin: 7 -16
+	eyes: 7 +5
+	police: 7 +1
+	csharp: 7 +7
+	UFO_2012: 7 +3
+	xbmc: 7 +6
+	RedDwarf: 7 +5
+	flickr: 7 +7
+	erlang: 7 -1
+	Eureka: 7 -1
+	fishtank: 7 -2
+	Jeep: 7 -28
+	zen: 7 -4
+	epidemiology: 7 +4
+	dndeez: 7 -18
+	xbox360games: 7 +7
+	Albuquerque: 7 -9
+	QuakeLive: 7 +3
+	philosophyclub: 7 +0
+	xss: 7 +1
+	gamestheory: 7 -1
+	introvert: 7 +5
+	hardcorepunk: 7 +7
+	livestock: 7 +5
+	SantaClarita: 7 +1
+	CanadianPolitics: 7 +5
+	socialskills: 7 +7
+	halifax: 7 -16
+	minimalism: 7 +7
+	noiserock: 7 +7
+	telecaster: 7 +6
+	tfc: 7 +0
+	346class10: 7 +5
+	rap: 7 +2
+	Monterrey: 7 +5
+	3dsmax: 7 +7
+	DandD: 7 -2
+	bookexchange: 7 -46
+	ETF2LHighlander: 7 -2
+	princeton: 7 +6
+	snooker: 7 +0
+	weightlifting: 7 +6
+	JustMeJT: 7 -4
+	Reno: 7 -25
+	baduk: 6 -5
+	triathlon: 6 -23
+	shorthairedhotties: 6 -2
+	airsoft: 6 -10
+	wireless: 6 +5
+	crochet: 6 +3
+	bikesgonewild: 6 -37
+	Basketball: 6 +3
+	DYR: 6 -7
+	celebrities: 6 +1
+	Sammich: 6 -2
+	BBQers: 6 +1
+	PortlandRally: 6 +6
+	steamdeals: 6 -4
+	ExpertProgramming: 6 +6
+	AskRedditt: 6 +6
+	kelowna: 6 +4
+	fountainpens: 6 +5
+	NSFW_Inspirational: 6 +6
+	redditlogos: 6 +4
+	Dogtraining: 6 +6
+	RhodeIsland: 6 +6
+	alcoholism: 6 -2
+	TheWire: 6 +2
+	medicalschool: 6 +6
+	bodybuilding: 6 -29
+	sportsbook: 6 +1
+	uwo: 6 +4
+	complexanalysisclub: 6 +4
+	Tallahassee: 6 +2
+	misc: 6 +4
+	PoliticalHumor: 6 +0
+	batteryexpress: 6 -19
+	namethemovie: 6 -12
+	GreaseMonkey: 6 -3
+	nerdfighters: 6 -6
+	udub: 6 -31
+	chile: 6 +6
+	linuxadmin: 6 +6
+	fiction: 6 +6
+	House: 6 -4
+	rally: 6 +3
+	londonontario: 6 +2
+	ReasonProduction: 6 +6
+	newhampshire: 6 -6
+	LaughOrCry: 6 +4
+	Cleveland: 6 -32
+	compscipapers: 6 +4
+	GirlswithGlasses: 6 -6
+	Kiteboarding: 6 +5
+	deathclub: 6 +4
+	lupus: 6 +1
+	css: 6 -2
+	relationshipadvice: 6 +5
+	pokemontrades: 6 -64
+	transit: 6 -5
+	Cheap_Meals: 6 -23
+	sc2replays: 6 -7
+	uofmn: 6 +6
+	saskatoon: 6 +2
+	PHX: 6 -8
+	efbc: 6 +6
+	worstwebsites: 6 +0
+	FIlm: 6 -2
+	cosplay: 6 -4
+	juggling: 6 -7
+	EventsNYC: 6 +5
+	socialscience: 5 +4
+	MMORPG: 5 +4
+	rugbyunion: 5 +4
+	singing: 5 -20
+	ChristianityPolicy: 5 +5
+	glutenfree: 5 -16
+	PostgreSQL: 5 +3
+	r0ll3rb0t: 5 +5
+	Sherlock: 5 +4
+	gamingnews: 5 -8
+	Inlandnorthwest: 5 +5
+	CollaborationStation: 5 -5
+	tulsa: 5 +4
+	FortWorth: 5 -1
+	bioinformatics: 5 +4
+	stencils: 5 +3
+	reddeadredemption: 5 +5
+	AlienBlueNews: 5 -16
+	redditstories: 5 +4
+	AFL: 5 +2
+	Ohio: 5 +3
+	WhiteRights: 5 +5
+	SOS: 5 +4
+	RHL: 5 +3
+	Aquariums: 5 +5
+	Zappa: 5 -3
+	experimentalmusic: 5 +1
+	shittingadvice: 5 +3
+	SLO: 5 +5
+	Oddball: 5 -5
+	California: 5 -8
+	Iceland: 5 -16
+	Home: 5 +1
+	bustybabes: 5 +3
+	alberta: 5 +5
+	iPhoneDev: 5 +1
+	Internet: 5 +0
+	thoriumreactor: 5 +5
+	Liberty: 5 -4
+	Entlantis: 5 -47
+	actuary: 5 +4
+	wp7dev: 5 +0
+	HighStrangeness: 5 +5
+	editors: 5 -3
+	NLP: 5 +0
+	geospatial: 5 +4
+	atheistgems: 5 +4
+	industrialmusic: 5 +4
+	Boxing: 5 -2
+	Yarnswap: 5 +5
+	Dreams: 5 +1
+	Pirate: 5 -5
+	SanityCouches: 5 -64
+	kpop: 5 +2
+	ChristopherHitchens: 5 +1
+	shroomers: 5 -27
+	midnighttrain: 5 +0
+	MaleStudies: 5 +4
+	canberra: 5 -2
+	ZenHabits: 5 -6
+	freeculture: 5 +2
+	F2E: 5 +3
+	redditores: 5 -10
+	Rabbits: 5 +5
+	love: 5 +4
+	CalgaryFlames: 5 +3
+	DOTA: 5 +4
+	scooters: 5 -43
+	ClassicMetal: 5 +5
+	berlin: 5 -7
+	Steam: 5 +5
+	Outdoors: 5 +1
+	TheShire: 5 +5
+	bakedart: 5 +1
+	djing: 5 +2
+	advertising: 5 +1
+	blender: 5 +4
+	Erotica: 5 +5
+	woodworking: 5 +4
+	RedditTravel2010: 5 +5
+	signs: 5 +1
+	Ghosts: 5 +5
+	batman: 5 -3
+	usa: 5 +5
+	iloveboxxy: 5 +5
+	cannabisconnoisseurs: 5 +1
+	TheBugle: 5 +5
+	bestof_Minecraft: 5 +5
+	gwchat: 4 +3
+	Pastafarian: 4 +4
+	abletonlive: 4 +4
+	Edmonton: 4 -3
+	JesusMyth: 4 +4
+	maryland: 4 +4
+	katyperry: 4 +4
+	es: 4 +0
+	PhillyBus: 4 +4
+	GNV: 4 -2
+	flying: 4 +4
+	hospitalday: 4 -58
+	Scotland: 4 -9
+	beauty: 4 +0
+	NSFW_Wallpapers: 4 -13
+	haiku: 4 -2
+	tea_party: 4 -9
+	debian: 4 +0
+	AskMe: 4 +4
+	neopagan: 4 -22
+	Games: 4 +2
+	Offline: 4 +4
+	iamaf: 4 +4
+	climate: 4 -1
+	pics2: 4 -2
+	MMJ: 4 -6
+	womensmokingweed: 4 -2
+	lol: 4 -3
+	100BlackMen: 4 +4
+	flugscheibe: 4 -1
+	Bluegrass: 4 +4
+	PrettyGirls: 4 +2
+	Coyotes: 4 +1
+	hyderabad: 4 -1
+	hookah: 4 +0
+	waterloo: 4 -9
+	PowerShell: 4 -2
+	musiciansphilly: 4 +4
+	brokenpieces: 4 +4
+	TotallyTennessee: 4 +4
+	BSD: 4 -12
+	cfs: 4 -4
+	Upskirt: 4 +3
+	KHGuide: 4 +4
+	chapelhill: 4 +4
+	wildhockey: 4 +3
+	penguins: 4 +2
+	seoul: 4 -10
+	csusm: 4 +4
+	PicsNotMemes: 4 +4
+	ytmnd: 4 +4
+	lakers: 4 +4
+	mumbai: 4 -1
+	DebateIt: 4 +4
+	netflix: 4 +3
+	SexPositive: 4 +2
+	blueberryjam: 4 +0
+	PHPhelp: 4 -2
+	UQreddit: 4 +2
+	urbantransport: 4 +4
+	triphop: 4 +4
+	treescolbertmeetup: 4 -13
+	netneutrality: 4 +4
+	tvclub: 4 +1
+	masseffect: 4 +4
+	IMadeThis: 4 +1
+	scuba: 4 +2
+	MovieUpdates: 4 +4
+	whalebait: 4 +4
+	karate: 4 +3
+	Browns: 4 +1
+	boulder: 4 -31
+	MotionDesign: 4 +2
+	AnimalCollective: 4 -1
+	motorsports: 4 +1
+	pointless_whining: 4 +4
+	newhaven: 4 +2
+	Archaeology: 4 +3
+	replayvalue: 4 +4
+	ReligionInAmerica: 4 -15
+	SFstories: 4 +3
+	spaceflight: 4 -4
+	outerlimits: 4 +4
+	MusicNews: 4 +0
+	stupidquestions: 4 +4
+	qwantzparty: 4 +4
+	spiders: 4 +4
+	FML: 4 +2
+	redditmakesagame: 4 +1
+	HomeMaintenance: 4 +4
+	RightWingers: 4 +4
+	breadboard: 4 -8
+	flash: 4 +4
+	Umphreys: 4 +4
+	Metalcore: 4 +2
+	backpacking: 4 +2
+	sysor: 4 +2
+	ShinyPorn: 4 +1
+	lebanon: 4 +4
+	Everybody: 4 -6
+	SSDP: 4 +4
+	magicgathering: 4 +2
+	nerdcore: 4 +4
+	indianapolis: 4 -4
+	scheme: 4 -2
+	audiophile: 3 +2
+	sigep: 3 +3
+	gamereviews: 3 +0
+	pua: 3 +2
+	everybodyedits: 3 +3
+	browncoats: 3 -2
+	idm: 3 +3
+	poland: 3 +0
+	naturism: 3 +3
+	Bondage: 3 -5
+	Catholic: 3 +0
+	wichita: 3 +3
+	censorship: 3 +2
+	Williamsport: 3 +3
+	trains: 3 +3
+	PlatonicFriends: 3 -9
+	violentacrez: 3 -3
+	OVER30REDDIT: 3 +0
+	fitlog: 3 -3
+	KansasUniversity: 3 +2
+	WingChun: 3 -5
+	ytknowstest: 3 +3
+	bourbon: 3 +1
+	hentai: 3 +1
+	technews: 3 +0
+	autism: 3 -11
+	deutschland: 3 +2
+	Africa: 3 +1
+	appleseed: 3 +2
+	TVShowsDirectory: 3 +3
+	PoliticsPDFs: 3 +3
+	whatisthisthing: 3 +3
+	RockClimbing: 3 +3
+	Virginia: 3 -11
+	texasfavors: 3 +2
+	MapleLinks: 3 -2
+	BikingATX: 3 -12
+	interiorsandliving: 3 -1
+	LucidDreaming: 3 +3
+	Atheism2: 3 +2
+	QueerTransmen: 3 +3
+	redditmusicclub: 3 +3
+	Slackline: 3 +3
+	StockMarket: 3 +2
+	secretgentlemansclub: 3 +3
+	ents: 3 -10
+	BILF: 3 +3
+	LearnANewLanguage: 3 -21
+	flattr: 3 +3
+	Vegetarianism: 3 +3
+	indonesia: 3 +2
+	Knoxville: 3 -10
+	democracy: 3 +3
+	DarwinAward: 3 +0
+	chomsky: 3 +2
+	LibertarianLeft: 3 +3
+	pakistan: 3 -6
+	scientology: 3 -1
+	phillies: 3 +3
+	musicians: 3 +2
+	locksport: 3 +2
+	inthemorning: 3 -6
+	Infographics: 3 +1
+	e_lucas: 3 +1
+	Shopping: 3 -7
+	UVA: 3 +0
+	VOIP: 3 +3
+	ANDRA: 3 +3
+	madscientist: 3 +0
+	WikiLeaks: 3 +3
+	omegle: 3 -1
+	civ5: 3 +3
+	DOG: 3 -1
+	celebrity: 3 +3
+	circlefingerbang: 3 +3
+	lotr: 3 +0
+	Goodcops: 3 +2
+	fantasyhockey: 3 -6
+	NewAlbums: 3 -1
+	Colts: 3 +3
+	ElPaso: 3 +3
+	boltedontits: 3 -1
+	arizonarally: 3 +2
+	Gunpla: 3 +3
+	poi: 3 +2
+	northkorea: 3 +3
+	economics2: 3 +2
+	southcarolina: 3 -2
+	aperfectcircle: 3 +3
+	aquaponics: 3 +1
+	language: 3 +0
+	LeftWingers: 3 +3
+	iran: 3 +2
+	WhiteNationalism: 3 +3
+	asshole: 3 +2
+	announcements: 3 -758
+	RadicalFeminism: 3 +1
+	Filevo: 3 -6
+	l4d2: 3 +1
+	portugal: 3 -13
+	MuayThai: 3 +3
+	epiphanies: 3 +3
+	cuda101: 3 +2
+	nihilisms: 3 +1
+	eebooks: 3 +3
+	scientists: 3 +0
+	simpleliving: 3 -1
+	TimAndEric: 3 +1
+	Lethbridge: 3 +2
+	psyforum: 3 -1
+	Demonoid: 3 +3
+	mixes: 3 +1
+	stocks: 3 -7
+	origami: 3 +3
+	thewalkingdead: 3 +3
+	ArtHistory: 3 +3
+	BastropTX: 3 +3
+	dprk: 3 +3
+	reloading: 3 -13
+	Reading_Berkshire: 3 +3
+	Ebay: 3 +0
+	glassart: 3 +1
+	drawitblind: 3 +2
+	Sir_Jedd_of_Hampton: 3 +3
+	Montana: 3 -3
+	headphones: 3 +3
+	CallOfDuty: 3 +3
+	weeaboo: 3 +0
+	Vocaloid: 3 +1
+	rand: 3 +2
+	Indiana: 3 -3
+	AndroidQuestions: 3 +3
+	Blogging: 3 +2
+	dating: 3 -1
+	Marriage: 3 +3
+	openstreetmap: 3 +3
+	pcgaming: 3 +3
+	psytrance: 3 -2
+	dxm: 3 +3
+	lfg: 3 -5
+	highshroomery: 3 +3
+	spiritual: 3 +3
+	idea: 2 +2
+	CableNews: 2 -2
+	ReefBlackstar: 2 +2
+	cobrareddit: 2 +2
+	JAX: 2 +2
+	WWTT: 2 +0
+	lowbrow: 2 +2
+	raytracing: 2 +2
+	touhou: 2 +2
+	SpringfieldIL: 2 +1
+	WEEDS: 2 +2
+	facebookquotes: 2 +2
+	oregon: 2 +1
+	films: 2 +2
+	privacy: 2 +2
+	maker: 2 +2
+	Colombia: 2 +2
+	tyneside: 2 +2
+	Shoes: 2 +2
+	Cheese: 2 +2
+	PennStateUniversity: 2 -25
+	ItsNotOnion: 2 +2
+	porn: 2 -5
+	podcasts: 2 -2
+	criticism: 2 +0
+	MST3K: 2 +2
+	intelligencesquared: 2 +0
+	russian: 2 +0
+	piercing: 2 +1
+	buildapcsales: 2 -12
+	Haven: 2 +2
+	ChicagoGameSwap: 2 +2
+	retrogaming: 2 +2
+	GrammarNazi: 2 +2
+	SubGenius: 2 -3
+	jihadwatch: 2 +2
+	Arabic101: 2 +0
+	Animals: 2 +0
+	gamedevquestions: 2 +1
+	college: 2 -4
+	thai: 2 +2
+	ryerson: 2 -2
+	3DMA: 2 +2
+	meanwhileInJapan: 2 +2
+	sideboob: 2 +2
+	LANL_Russian: 2 +2
+	346class10week10: 2 +2
+	Survivalist: 2 -10
+	lusciousladies: 2 +2
+	coys: 2 -7
+	WiiHacks: 2 +1
+	Disneyland: 2 +2
+	puzzles: 2 +2
+	bing: 2 +2
+	PoopSandwiches: 2 +0
+	CHIBears: 2 +1
+	USNEWS: 2 +1
+	androidapps: 2 +0
+	Blacksmith: 2 +2
+	Standup: 2 +1
+	it: 2 +1
+	DistritoFederal: 2 +1
+	vaguequestions: 2 +0
+	cereal: 2 +2
+	RacistReddit: 2 -6
+	other: 2 -2
+	dropspaceintertime: 2 +2
+	Chargers: 2 -12
+	racism_immigration: 2 +2
+	RenaissanceFestivals: 2 +2
+	sandbox: 2 -1
+	baby_animals: 2 +2
+	handbags: 2 +2
+	346class10week7: 2 +1
+	nescommunity: 2 +2
+	nashua: 2 +2
+	alaska: 2 +0
+	ps3hacks: 2 +0
+	Models: 2 +2
+	HBD: 2 +1
+	Dinosaurs: 2 +2
+	Advice: 2 +1
+	Dance: 2 -2
+	joel: 2 +0
+	entquotes: 2 +2
+	TibiaMMO: 2 +0
+	poetscorner: 2 -2
+	SF4: 2 -52
+	Drifting: 2 -2
+	stevens: 2 +2
+	atheist: 2 -1
+	slackware: 2 +2
+	solar: 2 +1
+	Puscifer: 2 +0
+	Doom: 2 +2
+	xna: 2 -2
+	podcasting: 2 -3
+	programing: 2 +2
+	judo: 2 -2
+	FixedAndSingleSpeed: 2 +2
+	Divorce: 2 +0
+	nova: 2 +2
+	LabVIEW: 2 +0
+	washu: 2 -1
+	test: 2 +1
+	WhiteMenGoneWild: 2 +1
+	CarletonU: 2 +1
+	Tribesnext: 2 -26
+	SceneGirls: 2 +2
+	saskatchewan: 2 +2
+	toys: 2 +2
+	meat: 2 +2
+	algorithms: 2 +1
+	Chattanooga: 2 -7
+	GreenBay: 2 -8
+	nutrition: 2 +1
+	homeschool: 2 +1
+	toledo: 2 -3
+	leftist: 2 +2
+	PlayBook: 2 +2
+	motorcycle: 2 -9
+	amateur_filmmakers: 2 +2
+	duke: 2 -23
+	Corruption: 2 +1
+	osx: 2 -37
+	Smokin: 2 -6
+	BSUFootball: 2 +2
+	htc: 2 +0
+	Nerf: 2 +2
+	Pantyfetish: 2 +0
+	Posters: 2 -3
+	spain: 2 +1
+	yardsale: 2 +0
+	whitewater: 2 -2
+	golang: 2 +2
+	Supernatural: 2 +1
+	powerviolence: 2 +2
+	delphi: 2 +2
+	santacruz: 2 -16
+	friendship: 2 +2
+	stockdiscussion: 2 +2
+	indierock: 2 +1
+	nursing: 2 +2
+	meego: 2 -2
+	ECEHelpMe: 2 +1
+	beasts: 2 +2
+	nin: 2 +0
+	HELPPPP: 2 -1
+	chroncilethegreat: 2 +2
+	kendo: 2 +1
+	homeless: 2 +2
+	synthesizers: 2 +1
+	meta: 2 +2
+	AskUsers: 2 -2
+	ie9: 2 +2
+	BurningManNet: 2 +2
+	occult: 2 -4
+	DADA: 2 +2
+	regionalaustralia: 2 +1
+	silverlight: 2 +2
+	Simpsons: 2 +2
+	Survival: 2 +0
+	stockings: 2 +2
+	writingprompt: 2 +2
+	fortran: 2 +1
+	ILoveBagel: 2 +2
+	expressionengine: 2 +2
+	winstonsalem: 2 +2
+	ColoradoAvalanche: 2 +0
+	bkbeezy: 2 +2
+	joos: 2 -8
+	museum: 2 -1
+	simutrans: 2 +2
+	RollerDerbyReddit: 2 -6
+	geocaching: 2 -54
+	OttawaSenators: 2 +2
+	DallasMeetups: 2 +2
+	chubbyshemale: 2 +2
+	AmericanPolitics: 2 -8
+	DetroitRedWings: 2 +1
+	cloudcomputing: 2 +2
+	humanRightsLiberties: 2 +2
+	360MW2: 2 +1
+	Roku: 2 +1
+	botany: 2 +2
+	p2p: 2 +2
+	lexington: 2 +1
+	sto: 2 +2
+	derp: 2 -2
+	thermodynamics: 2 +2
+	vexillology: 2 +2
+	socialwork: 2 +1
+	UCSB: 2 +2
+	Cubers: 2 +2
+	bookclub: 2 +0
+	losangeleskings: 2 +1
+	TimeTravellers: 2 +0
+	DateRape: 2 -10
+	israelexposed: 2 -12
+	fashionphotography: 2 +1
+	quantfinance: 2 +2
+	malkovich: 2 +2
+	queer: 2 +2
+	exSistersinZion: 2 +1
+	ru: 2 +1
+	CKHPHighlanderTeam: 2 +2
+	PotterNerds: 2 +2
+	war: 2 +2
+	TMBR: 2 +0
+	obert_paulson: 2 +1
+	genetics: 2 +2
+	smashbros: 2 +2
+	reddit_fact_check: 2 +2
+	hardbodies: 2 -10
+	tvcritic: 2 -1
+	HipsterMetal: 2 +2
+	socialanxiety: 2 +2
+	orangecounty: 2 +2
+	AdoptANoob: 2 +2
+	ProgMusic: 2 +2
+	events: 2 +2
+	sport: 2 +2
+	CoolDesigns: 2 +1
+	Equus: 2 +2
+	pregnant: 2 +2
+	Portal: 2 -6
+	culturalstudies: 2 +0
+	html5: 1 -10
+	Cosmetics: 1 +1
+	mumbhai: 1 +1
+	no: 1 +0
+	stolaf: 1 +0
+	gis: 1 -1
+	legs: 1 +1
+	AnimalRescue: 1 +1
+	whining: 1 +1
+	Knowing: 1 +1
+	lute: 1 +1
+	drklausch: 1 -9
+	EarlyMusic: 1 +1
+	logic: 1 -2
+	bodymods: 1 -5
+	Copemans: 1 +0
+	oliviawilde: 1 -3
+	videogamebabes: 1 +1
+	logophilia: 1 +0
+	PixelArt: 1 +0
+	TMBD: 1 +1
+	adventures: 1 +1
+	TreesSketchbook: 1 +0
+	Feminism: 1 -19
+	JavaFX: 1 +1
+	collegensfw: 1 +0
+	liero: 1 +1
+	LoanModification: 1 +1
+	arhomu: 1 -4
+	SkyDiving: 1 -5
+	mapplecraft: 1 +1
+	snakes: 1 +1
+	sspaciss: 1 +1
+	NoveltyAccounts: 1 -3
+	fantasybaseball: 1 -12
+	jewellerychannel: 1 +1
+	questions: 1 +1
+	journalit: 1 +1
+	worldbuilding: 1 -13
+	BIKEPOLO: 1 -7
+	firespin: 1 +1
+	PoliSci: 1 +1
+	lookatmysister: 1 -13
+	hugenaturals: 1 +0
+	recalls: 1 +1
+	MiddleEastNews: 1 +1
+	MDMA: 1 -1
+	ColumbusBlueJackets: 1 -1
+	ChristineOFace: 1 +1
+	ireddit: 1 -1
+	ektenyheter: 1 +1
+	toilet: 1 +1
+	oxford: 1 +1
+	USHistory: 1 +0
+	Madden: 1 -1
+	AnimatedGIF: 1 +1
+	metametacirclejerk: 1 -2
+	Zune: 1 +1
+	SwingDancing: 1 +1
+	rigofthemonth: 1 -4
+	agnosticism: 1 +1
+	SF_Book_Club: 1 -4
+	llama: 1 +1
+	cambralha: 1 +1
+	PhxClassWarCouncil: 1 -2
+	YouMakeRedditSuck: 1 +1
+	missouri: 1 +1
+	datarecover: 1 +1
+	OregonStateUniv: 1 +0
+	legal: 1 -5
+	Hawaii: 1 +1
+	irc: 1 -1
+	capetown: 1 +1
+	pharmacology: 1 +1
+	abbotsford: 1 -1
+	ShitBricks: 1 +1
+	Forex: 1 -3
+	LessWrong: 1 +1
+	Coolness: 1 -1
+	stationery: 1 +1
+	incest: 1 -5
+	general: 1 -3
+	newcastle: 1 +1
+	NonAustrianEconomics: 1 -2
+	ColoradoRockies: 1 +1
+	anticirclejerk: 1 +1
+	Glasgow_Celtic: 1 +0
+	Demotivational: 1 +0
+	parent: 1 -1
+	coldfusion: 1 -2
+	DoesAnyoneKnow: 1 +1
+	sad: 1 +1
+	aaargh: 1 +1
+	videopros: 1 +1
+	FuckYou: 1 +1
+	SFA: 1 +1
+	BDSMvideo: 1 +1
+	stanford: 1 +1
+	fluxflashor: 1 +1
+	muenstercheese: 1 -5
+	Nsfw_Amateurs: 1 -11
+	onlinegames: 1 +1
+	haskell_proposals: 1 +1
+	ytmnders: 1 -12
+	Shop: 1 +1
+	irvine: 1 +1
+	LiverpoolFC: 1 +1
+	browsermmo: 1 +1
+	suicide: 1 -1
+	trivia: 1 +1
+	6minutestory: 1 +1
+	Transhuman: 1 +0
+	whyamericasucks: 1 +1
+	HackBloc: 1 -15
+	popper: 1 +0
+	Edinburgh: 1 +0
+	criticalsoftware: 1 +1
+	auckland: 1 +1
+	Review: 1 +1
+	RedditFX: 1 -1
+	redditia: 1 +0
+	slowitup: 1 +0
+	socryaboutit: 1 +1
+	opensourcehardware: 1 +1
+	Waco: 1 -16
+	fwb: 1 +1
+	deepthroat: 1 -5
+	unity_tutorials: 1 +1
+	bestofcraigslist: 1 +1
+	img: 1 +1
+	asia: 1 +1
+	cookmesomething: 1 +1
+	reviewmycode: 1 +1
+	glbt: 1 +0
+	sportsvideo: 1 +0
+	car: 1 +1
+	Ornithology: 1 -8
+	korea: 1 -2
+	lebowskiisms: 1 -8
+	kitchen: 1 +1
+	valve: 1 +1
+	IntroToMusicTheory: 1 +1
+	AmericanGovernment: 1 -12
+	Fabrics: 1 +1
+	gunsmithing: 1 -13
+	centralpa: 1 +0
+	awards: 1 +1
+	britishcolumbia: 1 -2
+	lojban: 1 +0
+	osx86: 1 +1
+	vets: 1 -4
+	media: 1 -3
+	conspiracyhub: 1 +0
+	stupidshit: 1 +1
+	kneesocks: 1 +1
+	JanaDefi: 1 +1
+	OGame: 1 +1
+	celebrityfakes: 1 +1
+	Round_Table: 1 +1
+	infp: 1 +1
+	rottingmultiplex: 1 +1
+	ThemeSongs: 1 +1
+	DrinkingGames: 1 -3
+	IndependentThinking: 1 +1
+	bybanen: 1 +0
+	Folj: 1 +1
+	Asexual: 1 +1
+	Poetrylovers: 1 +1
+	shitmydadsays: 1 +0
+	snes: 1 +0
+	nodnodwinkwink: 1 +1
+	cgi: 1 +1
+	mathNEWS: 1 +1
+	Money: 1 +0
+	oakland: 1 +1
+	O_Faces: 1 -2
+	eugenics: 1 +1
+	strainreviews: 1 +1
+	userscripts: 1 +1
+	airguns: 1 +0
+	WorldPeanutInvasion: 1 +1
+	RallyOrganizers: 1 -39
+	flashlights: 1 +1
+	e17: 1 +1
+	waitguys: 1 -4
+	gantz: 1 +1
+	raleigh: 1 -5
+	flvmacconverter: 1 +1
+	games_de: 1 +1
+	brighton: 1 -21
+	burpees: 1 +1
+	spreadsheets: 1 -11
+	america: 1 +1
+	LadyGaga: 1 -7
+	cesky: 1 +1
+	mod360: 1 +1
+	mcgillastroph: 1 +1
+	de_IT: 1 +1
+	Glasgow_Rangers: 1 +1
+	Deutsch: 1 +1
+	tedtalks: 1 +0
+	notetoself: 1 +0
+	JRPG: 1 -9
+	NsfwPanel: 1 +1
+	LizzyLayne: 1 +1
+	opera: 1 +0
+	Bushwick: 1 +1
+	cocaine: 1 +1
+	NASCAR: 1 +1
+	Zombie: 1 -1
+	joindiaspora: 1 -1
+	elgoonishshive: 1 +1
+	webhosting: 1 +1
+	Japanize: 1 +1
+	modemuser: 1 +1
+	twincitiesmusic: 1 +1
+	KoalaBomb: 1 +1
+	groceryfiendscomics: 1 +1
+	AppRequest: 1 +1
+	mobilesoftware: 1 +0
+	politcs: 1 +1
+	trippy: 1 +0
+	test54321: 1 +0
+	springfieldMO: 1 +1
+	FAITH: 1 +1
+	nsfw_video: 1 +1
+	Mixdown: 1 +1
+	pol: 1 +1
+	zh: 1 +1
+	embedded: 1 +0
+	DynamicsAX: 1 +1
+	arabic: 1 +0
+	CivV: 1 +1
+	WarioWareDIY: 1 +1
+	idontunderstand: 1 +1
+	STS9: 1 +1
+	girlsflashing: 1 +1
+	harrypotter: 1 +1
+	craigslist: 1 -17
+	RTP: 1 +1
+	xboxlive: 1 +1
+	TopGear: 1 -2
+	palmbeach: 1 -3
+	Weedit: 1 +1
+	wp7: 1 +1
+	CDU: 1 +1
+	soapier: 1 -15
+	Deathcore: 1 +0
+	Shortfilms: 1 -3
+	country: 1 +0
+	justanotherreddit: 1 +1
+	askaguy: 1 +1
+	culturejamming: 1 +1
+	disconeckted: 1 +1
+	reviewmyapp: 1 +1
+	drugscience: 1 +1
+	antiwar: 1 -2
+	hitchhiking: 1 +0
+	ja: 1 +0
+	bobdylan: 1 +0
+	AnalPorn: 1 +1
+	albinoanimals: 1 +1
+	346class10week8: 1 +1
+	electricvehicles: 1 +1
+	Palm: 1 -3
+	elections: 1 +1
+	LinkinPark: 1 -12
+	InteriorDesign: 1 -2
+	MorgantownWV: 1 +1
+	SecularHumanism: 1 +1
+	Victoria: 1 +0
+	upstate_new_york: 1 -4
+	Orgasms: 1 +1
+	pattonphilia: 1 +1
+	WestVirginia: 1 +1
+	graydon: 1 +1
+	Photoessay: 1 -2
+	LondonLawNerds: 1 +1
+	PublicRelations: 1 -1
+	orchestra: 1 +1
+	toosoon: 1 +1
+	comedy: 1 -5
+	ListenToThisEddie: 1 +1
+	EroticSubmission: 1 +1
+	bicycles: 1 +1
+	Firefighting: 1 +1
+	citricsquid: 1 +0
+	BDSM_NoSpam: 1 +1
+	AirsoftGuns: 1 +1
+	Bikini: 1 +1
+	PornVideos43: 1 +1
+	ipod: 1 +0
+	babies: 1 +0
+	Polska: 1 +1
+	redditgw: 1 -3
+	redsox: 1 +1
+	insomnia: 1 +1
+	USF: 1 -8
+	ThisIsWhatImReading: 1 -1
+	sailingcrew: 1 +0
+	taijiquan: 1 +1
+	PornReview: 1 +1
+	audible: 1 +1
+	uicwhatshot: 1 -3
+	Cplusplus: 1 -12
+	narwhals: 1 -1
+	imgur: 1 +1
+	badreligion: 1 +1
+	WhatWouldYouRather: 1 +1
+	Egypt: 1 +1
+	sketchshows: 1 -4
+	RollOnFriday: 1 +1
+	guitartab: 1 +1
+	ReasonableDiscussion: 1 +1
+	treees: 1 +1
+	Slender_Man: 1 +1
+	physicsbooks: 1 +1
+	EagleScoutsOnReddit: 1 +1
+	ReddDeadRedemption: 1 +1
+	Recipies: 1 +1
+	mentors: 1 -9
+	caps: 1 +0
+	Heroism: 1 +1
+	gotrich: 1 +1
+	getting_over_it: 1 +0
+	southwales: 1 +1
+	ANTISHARIA: 1 +1
+	black_porn: 1 +1
+	computerviruses: 1 +1
+	zines: 1 +1
+	smalltalk: 1 +0
+	spoilers: 1 +1
+	Darts: 1 +1
+	Planetside: 1 +1
+	moderndrinker: 1 +1
+	rosehulman: 1 +1
+	unheardof: 1 +1
+	DOTDJAX: 1 +0
+	AustralianRules: 1 +1
+	FantasyFiction299: 1 +0
+	cassandra: 1 +0
+	sustainability: 1 -4
+	chinchilla: 1 +1
+	whitepeople: 1 +1
+	lifehack: 1 -2
+	TShirt: 1 +1
+	Tacoma: 1 -2
+	billmurray: 1 +0
+	ASU: 1 +1
+	peacecorps: 1 +1
+	ABDL: 1 +1
+	IPhoneApps: 1 +1
+	GaryJohnson: 1 +1
+	Sunlight: 1 -1
+	ADD: 1 -2
+	independent: 1 +1
+	tumblr: 1 +0
+	Domestic: 1 +1
+	laptops: 1 -2
+	hip_hop: 1 +1
+	ElectJenniferMcGrath: 1 +1
+	education2: 1 +1
+	usenet: 1 -1
+	internetclassics: 1 +1
+	rocketry: 1 +1
+	eroticliterature: 1 +1
+	DosugPoRuskij: 1 +0
+	BigfishGames: 1 +0
+	tongues: 1 +1
+	xxfitness: 1 -2
+	bronx: 1 +1
+	mayonesa: 1 +1
+	Sculpture: 1 +1
+	vcu: 1 -1
+	Tress: 1 +0
+	kindness: 1 +1
+	redditor_pics: 1 -2
+	StreetFighter: 1 +0
+	reeemix: 1 +1
+	mozilla: 1 +1
+	Metaphysics: 1 +1
+	semanticai: 1 +1
+	nhl: 1 +1
+	Thrifty: 1 -5
+	crypto: 1 -1
+	freebsd: 1 +1
+	stories: 1 +1
+	kn0thing: 1 +1
+	darkstep: 1 +1
+	astro: 1 +1
+	NaturalBeauty: 1 +1
+	OhmKrishna: 1 +1
+	etymology: 1 -4
+	unfunny: 1 +1
+	southpark: 1 +1
+	shill: 1 +0
+	treadmills: 1 +1
+	hackerspaces: 1 -3
+	Marching_Arts: 1 +1
+	Beekeeping: 1 -7
+	346class10week9: 1 -1
+	paintball: 1 -4
+	cuba: 1 +1
+	sewcrazy: 1 +1
+	My_KeTat: 1 +1
+	thenewmidnight: 1 +1
+	matheducation: 1 -9
+	cwru: 1 -6
+	ChatRoulette: 1 +1
+	jerseycity: 1 +1
+	Theatre: 1 -11
+	recprogramming: 1 +1
+	Temple: 1 -1
+	illinoispolitics: 1 -2
+	procurement: 1 +1
+	opendata: 1 +0
+	MeganFox: 1 +1
+	work: 1 +1
+	nanotech: 1 -2
+	biblestudy: 1 +0
+	Cityofheroes: 1 +1
+	pennstate: 1 +1
+	neuroscience: 1 +0
+	giftsservice: 1 +1
+	sayyit: 1 +1
+	morelikethat: 1 +1
+	DSP: 1 +1
+	Birdflu: 1 +1
+	DailyShow: 1 -1
+	coins: 1 +1
+	whedon: 1 -2
+	columbiamo: 1 -3
+	NorthCarolina: 1 +1
+	ecoreddit: 1 +1
+	smartsex: 1 +1
+	PSP: 1 +1
+	colbertreport: 1 -3
+	Newblogs: 1 +1
+	diablo2: 1 -5
+	Ethics: 1 +1
+	amateurradio: 1 -16
+	learncsharp: 1 -4
+	CaptchArt: 1 +1
+	4talesa: 1 +1
+	redditathon: 1 +1
+	SouthFlorida: 1 -1
+	firstrobotics: 1 +1
+	CARTOON: 1 +1
+	taoism: 1 +0
+	redditorial: 1 +1
+	Neil_deGrasse_Tyson: 1 +1
+	cssdose: 1 +1
+	DCcomics: 1 +1
+	day9: 1 +1
+	raerth: 1 -6
+	Maplestory: 1 +1
+	security: 1 +1
+	Costco: 1 -2
+	engrproject: 1 -2
+	alcoholexchange: 1 +1
+	Adelaide: 1 +1
+	aikido: 1 -2
+	animalid: 1 -10
+	kabeljaringan: 1 +1
+	FFFUUUUUX_News: 1 +1
+	ted: 1 +1
+	White_Pride: 1 +0
+	fbb: 1 +1
+	DisappointingStory: 1 +1
+	Restricted: 1 +1
+	NSFW4: 1 -4
+	Flagstaff: 1 +1
+	SexyButNotPorn: 1 -3
+	amiga: 1 +1
+	ps3bc2: 1 -1
+	strength_training: 1 +1
+	Custom_Motorcycles: 1 -1
+	Wizards: 1 +1
+	edpsych: 1 +1
+	selfeducation: 1 +1
+	delhi: 1 +0
+	shmups: 1 +0
+	thousandhours: 1 +1
+	ElSalvador: 1 +1
+	resilientcommunities: 1 +1
+	deadchannel: 1 +1
+	feeds: 1 +1
+	Canning: 1 +1
+	Anarchist: 1 +1
+	girlskissing: 1 +1
+	medicine: 1 -1
+	artificial: 1 +0
+	dartmouth: 1 +1
+	Dietandhealth: 1 -2
+	Amsterdam: 1 -6
+	DwarfFortress101: 1 +1
+	panhandling: 1 +1
+	ecigs: 1 +1
+	roundrobin: 1 -2
+	newyork: 1 -4
+	LANL_Spanish: 1 +1
+	UEA: 1 +1
+	transhumanism: 1 +1
+	postquebec: 1 +1
+	scientific_denialism: 1 +0
+	growweedeasy: 1 +1
+	WorldHistory: 1 +1
+	femalesgonewild: 1 +1
+	TwinCityProjects: 1 -2
+	Anxiety: 1 +1
+	dependent_types: 1 +0
+	fireflycirclejerk: 1 +0
+	fuckyea: 1 +0
+	americanpirateparty: 1 -3
+	TeaParty: 1 -2
+	INTP: 1 +1
+	Magic: 1 -6
+	Plumpers: 1 -1
+	pornstar: 1 +1
+	AskPaige: 1 +1
+	mcredstone: 1 +1
+	herpetology: 1 -5
+	LearnGerman: 1 +0
+	hackers: 1 +0
+	Magento: 1 +1
+	MultipleSclerosis: 1 -3
+	unity_games: 1 +1
+	korean101: 1 +1
+	philsex: 1 +1
+	Hotchickswithtattoos: 1 -3
+	Loans: 1 +1
+	astrology: 1 +1
+	Christian: 1 +1
+	blogger: 1 +0
+	Wildlife: 1 +1
+	OrganicGardening: 1 -4
+	UFC_MMA: 1 +1
+	IndianBabes: 1 -2
+	gurps: 1 +1
+	front_end: 1 +0
+	Petloss: 1 -1
+	immobilier: 1 +1
+	brass: 1 +1
+	doommetal: 1 -2
+all: 3401007

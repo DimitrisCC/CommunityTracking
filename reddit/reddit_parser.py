@@ -212,10 +212,10 @@ class RedditParser:
                 pid = attrs1['pid']
                 if pid in data.keys():
                     attrs2 = data[pid]
-                    edges.append((attrs1['author'], attrs2['author'], {'subreddit': attrs1['subreddit'],
-                                                                       'time': attrs1['time']}))
+                    edges.append((attrs1['author'], attrs2['author'], {'subreddit': attrs1['subreddit']}))
+                    # 'time': attrs1['time']}))
             G.add_edges_from(edges)
-            deg = nx.degree(G)
+            # deg = nx.degree(G)
             remove = [node for node, degree in G.degree().items() if degree < 2]
             G.remove_nodes_from(remove)
 
@@ -224,25 +224,71 @@ class RedditParser:
             nx.write_gml(G, os.path.join('data', 'graphs', gf))
 
     @staticmethod
+    def read_data_from_json(date):
+        year = str(date[0])
+        month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
+        filename = 'RC_' + year + '-' + month + '.json'
+        wdata = [[], [], [], []]
+        with open('data/json/' + filename, 'r') as file:
+            for l in file:
+                data = json.loads(l)
+                if data['author'] != '[deleted]':
+                    day = int(data['created_utc'][-2:])
+                    week = (day - 1) // 7
+                    if week < 4:
+                        keep_keys = ['name', 'author', 'subreddit', 'parent_id']
+                        data = dict((k, data[k]) for k in keep_keys if k in data)
+                        wdata[week].append(data)
+        return wdata
+
+    @staticmethod
+    def create_graph_files(data, year, month, min_degree=1):
+        year = str(year)
+        month = str(month) if month >= 10 else '0' + str(month)
+        for tfi in range(len(data)):
+            G = nx.Graph()
+            datadict = {}
+            for d in data[tfi]:
+                datadict[d['name']] = {'author': d['author'], 'pid': d['parent_id'], 'subreddit': d['subreddit']}
+            edges = []
+            i = 0
+            for attrs1 in datadict.values():
+                if i % 20000 == 0:
+                    print(i)
+                i += 1
+                pid = attrs1['pid']
+                if pid in datadict.keys():
+                    attrs2 = datadict[pid]
+                    edges.append((attrs1['author'], attrs2['author'], {'subreddit': attrs1['subreddit']}))
+                    # 'time': attrs1['time']}))
+            G.add_edges_from(edges)
+            remove = [node for node, degree in G.degree().items() if degree < min_degree]
+            G.remove_nodes_from(remove)
+            # Write graph to GML
+            gf = "RC" + "_" + year + "-" + month + "_" + str(tfi) + ".gml"
+            nx.write_gml(G, os.path.join('data', 'graphs', gf))
+
+    @staticmethod
     def read_graphs(dates, sampling_p=None, mean_degree_sampling=False):
         Gs = []
         for date in dates:
             year = str(date[0])
             month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
-            filename = 'RC_' + year + '-' + month + '.gml'
-            G = nx.read_gml(os.path.join('data', 'graphs', filename))
-            G.name = 'RC_' + year + '-' + month
-            print("Read")
+            for tfi in range(4):
+                filename = 'RC_' + year + '-' + month + '_' + str(tfi) + '.gml'
+                G = nx.read_gml(os.path.join('data', 'graphs', filename))
+                G.name = 'RC_' + year + '-' + month + '_' + str(tfi)
+                print("Read")
 
-            # sampling
-            if mean_degree_sampling:
-                mean_degree = sum(G.degree().values()) / float(len(G))
-                G.remove_nodes_from([n for n in G.nodes() if G.degree(n) < mean_degree])
-            if sampling_p is not None:
-                ch = list(np.random.choice(G.nodes(), (1 - sampling_p) * nx.number_of_nodes(G), replace=False))
-                G = G.subgraph(ch)
+                # sampling
+                if mean_degree_sampling:
+                    mean_degree = sum(G.degree().values()) / float(len(G))
+                    G.remove_nodes_from([n for n in G.nodes() if G.degree(n) < mean_degree])
+                if sampling_p is not None:
+                    ch = list(np.random.choice(G.nodes(), (1 - sampling_p) * nx.number_of_nodes(G), replace=False))
+                    G = G.subgraph(ch)
 
-            Gs.append(G)
+                Gs.append(G)
 
         if len(Gs) == 1:
             return Gs[0]
@@ -351,23 +397,30 @@ class RedditParser:
 
 
 def write_stats():
-    G = RedditParser.read_graphs([(2010, 9)])
+    Gs = RedditParser.read_graphs([(2010, 9)])
 
-    f = open(os.path.join(RedditParser.path, 'stats', G.name + '_stats.txt'), 'w+')
+    for G in Gs:
+        f = open(os.path.join(RedditParser.path, 'stats', G.name + '_stats.txt'), 'w+')
 
-    print('\n\n--- Main Graph ---')
-    f.write('\n\n--- Main Graph ---\n')
-    RedditParser.graph_stats(G, f)
-    components = RedditParser.get_k_largest_components(G, 20, file=f)
+        print('\n\n--- Main Graph ---')
+        f.write('\n\n--- Main Graph ---\n')
+        RedditParser.graph_stats(G, f)
+        components = RedditParser.get_k_largest_components(G, 20, file=f)
 
-    for c in components:
-        print('\n- Component -')
-        f.write('\n- Component -\n')
-        RedditParser.graph_stats(c, f)
-    f.close()
+        for c in components:
+            print('\n- Component -')
+            f.write('\n- Component -\n')
+            RedditParser.graph_stats(c, f)
+        f.close()
 
 
-RedditParser.get_week_stats_from_json((2010, 9), distribution=True)
+# RedditParser.get_week_stats_from_json((2010, 9), distribution=False)
+# data = RedditParser.read_data_from_json((2010, 9))
+# data = RedditParser.sampling(data, uniform_p=0.4, min_replies=130, max_replies=16000, max_p=0.08)
+# RedditParser.create_graph_files(data, year=2010, month=9)
+
+write_stats()
+
 
 # write_stats()
 # G = RedditParser.read_graphs([(2010, 9)])

@@ -1,0 +1,1337 @@
+RC_2010-09
+----------------
+Sampling: , uniform_p=0.4, min_replies=130, max_replies=16000, max_p=0.08
+----------------
+Week 0
+--------------
+reddits: 324
+accounts: 36111
+names: 111638
+all posts: 111638
+
+Subreddits: posts +- from previous week
+	programming: 3399 
+	videos: 3106 
+	Music: 3099 
+	technology: 3052 
+	TwoXChromosomes: 2853 
+	DoesAnybodyElse: 2638 
+	todayilearned: 2389 
+	Android: 2198 
+	sex: 2112 
+	Fitness: 2105 
+	Economics: 2057 
+	self: 1893 
+	apple: 1875 
+	blog: 1698 
+	Libertarian: 1698 
+	movies: 1660 
+	canada: 1639 
+	offbeat: 1626 
+	gonewild: 1611 
+	comics: 1453 
+	shittyadvice: 1382 
+	geek: 1265 
+	tf2: 1236 
+	food: 1232 
+	relationship_advice: 1212 
+	entertainment: 1190 
+	scifi: 1175 
+	linux: 1112 
+	guns: 1091 
+	lgbt: 1063 
+	news: 1043 
+	sports: 983 
+	MensRights: 965 
+	photography: 961 
+	books: 961 
+	soccer: 959 
+	environment: 887 
+	business: 858 
+	australia: 833 
+	Anarchism: 823 
+	relationships: 819 
+	Frugal: 789 
+	nsfw: 773 
+	bicycling: 755 
+	MW2: 699 
+	wow: 655 
+	ffxiv: 639 
+	circlejerk: 638 
+	Cooking: 608 
+	Christianity: 607 
+	motorcycles: 588 
+	conspiracy: 582 
+	math: 569 
+	gadgets: 550 
+	seduction: 548 
+	WeAreTheMusicMakers: 505 
+	exmormon: 494 
+	Guitar: 493 
+	techsupport: 490 
+	buildapc: 484 
+	humor: 476 
+	web_design: 463 
+	nfl: 449 
+	answers: 448 
+	philosophy: 448 
+	Drugs: 439 
+	iphone: 433 
+	fantasyfootball: 422 
+	anime: 410 
+	hardware: 410 
+	wikipedia: 404 
+	hockey: 404 
+	leagueoflegends: 393 
+	DIY: 389 
+	promos: 382 
+	beer: 377 
+	aww: 362 
+	Marijuana: 355 
+	Seattle: 352 
+	Metal: 351 
+	Health: 350 
+	toronto: 349 
+	space: 347 
+	itookapicture: 338 
+	listentothis: 337 
+	bestof: 334 
+	unitedkingdom: 333 
+	netsec: 328 
+	skeptic: 326 
+	MMA: 321 
+	Homebrewing: 313 
+	redditoroftheday: 312 
+	dwarffortress: 309 
+	drunk: 308 
+	Eve: 301 
+	Favors: 299 
+	malefashionadvice: 294 
+	PS3: 286 
+	travel: 282 
+	rpg: 281 
+	history: 257 
+	baseball: 253 
+	SuicideWatch: 250 
+	nyc: 248 
+	Pets: 245 
+	Autos: 244 
+	askscience: 242 
+	energy: 234 
+	dubstep: 230 
+	psychology: 226 
+	bubbling: 221 
+	CFB: 218 
+	Portland: 218 
+	digg: 209 
+	Art: 205 
+	Israel: 202 
+	Ubuntu: 202 
+	needadvice: 201 
+	writing: 193 
+	Design: 193 
+	doctorwho: 187 
+	Austin: 183 
+	magicTCG: 181 
+	WebGames: 175 
+	badcompany2: 173 
+	redditguild: 172 
+	tipofmytongue: 171 
+	chemistry: 171 
+	worldpolitics: 171 
+	cogsci: 170 
+	running: 170 
+	ukpolitics: 168 
+	chicago: 167 
+	vegan: 166 
+	electronicmusic: 166 
+	woahdude: 161 
+	islam: 160 
+	economy: 159 
+	comicbooks: 159 
+	MLS: 159 
+	rit: 157 
+	DebateAChristian: 157 
+	boston: 148 
+	religion: 144 
+	Buddhism: 141 
+	zombies: 140 
+	startrek: 139 
+	evedreddit: 139 
+	UniversityofReddit: 138 
+	formula1: 137 
+	depression: 133 
+	newzealand: 125 
+	climateskeptics: 125 
+	happy: 124 
+	japan: 123 
+	television: 123 
+	Python: 119 
+	Atlanta: 119 
+	meetup: 119 
+	mexico: 119 
+	haskell: 116 
+	Physics: 116 
+	xbox360: 115 
+	announcements: 114 
+	philadelphia: 112 
+	collapse: 111 
+	creepy: 111 
+	LosAngeles: 110 
+	ideasfortheadmins: 110 
+	india: 110 
+	Bad_Cop_No_Donut: 106 
+	TrueReddit: 106 
+	london: 103 
+	pokemon: 101 
+	treecomics: 100 
+	PHP: 97 
+	Equality: 97 
+	vancouver: 96 
+	law: 95 
+	compsci: 94 
+	hiphopheads: 94 
+	transformice: 93 
+	starcraft2: 92 
+	socialism: 91 
+	StarWars: 89 
+	climbing: 89 
+	amiugly: 89 
+	gardening: 87 
+	Documentaries: 87 
+	poker: 87 
+	halo: 82 
+	NarFFL: 80 
+	lost: 78 
+	gamedev: 78 
+	RUGC_Midwest: 78 
+	obama: 78 
+	til: 77 
+	ads: 77 
+	transgender: 77 
+	software: 75 
+	Boobies: 75 
+	washingtondc: 74 
+	trackers: 73 
+	HeroesofNewerth: 72 
+	Military: 71 
+	BDSMcommunity: 70 
+	4chan: 70 
+	IndieGaming: 69 
+	twincitiessocial: 69 
+	sanfrancisco: 67 
+	tattoos: 67 
+	learnprogramming: 66 
+	javascript: 65 
+	DAE: 64 
+	dogs: 64 
+	Dallas: 63 
+	engineering: 63 
+	mac: 62 
+	linguistics: 62 
+	ILiveIn: 62 
+	CampingandHiking: 60 
+	education: 60 
+	biology: 59 
+	conspiratard: 59 
+	sandiego: 59 
+	boardgames: 58 
+	r4r: 58 
+	ECE: 57 
+	opensource: 57 
+	women: 57 
+	IWantToLearn: 57 
+	loseit: 57 
+	gameswap: 56 
+	somethingimade: 55 
+	AMA: 55 
+	stopsmoking: 55 
+	linux4noobs: 55 
+	nosleep: 54 
+	Team_Awesome: 54 
+	golf: 53 
+	howto: 52 
+	ireland: 52 
+	montreal: 51 
+	phish: 51 
+	Jazz: 50 
+	photocritique: 50 
+	trance: 50 
+	feminisms: 48 
+	FixedGearBicycle: 48 
+	wallpaper: 47 
+	webdev: 46 
+	cars: 46 
+	GirlGamers: 46 
+	Enhancement: 45 
+	windowshots: 45 
+	webcomics: 45 
+	mcprivate: 45 
+	help: 44 
+	Coffee: 44 
+	jobs: 44 
+	ottawa: 43 
+	video: 42 
+	madmen: 41 
+	photoclass: 39 
+	starcraft2_class: 39 
+	cannabis: 39 
+	StLouis: 38 
+	DnB: 38 
+	longboarding: 38 
+	PhilosophyofScience: 37 
+	pittsburgh: 37 
+	sysadmin: 36 
+	Stargate: 36 
+	prop19: 36 
+	classicalmusic: 35 
+	vim: 34 
+	recipes: 34 
+	worstof: 34 
+	thick: 33 
+	skateboarding: 33 
+	catpictures: 33 
+	911truth: 32 
+	electronics: 32 
+	Dexter: 32 
+	Astronomy: 32 
+	ipad: 32 
+	brisbane: 32 
+	FTH: 31 
+	OkCupid: 30 
+	P90X: 29 
+	RPI: 29 
+	Denver: 29 
+	cheatatmathhomework: 28 
+	houston: 28 
+	civ: 27 
+	fashion: 27 
+	snowboarding: 26 
+	___: 26 
+	aviation: 25 
+	design_critiques: 24 
+	progressive: 23 
+	bayarea: 22 
+	gamemusic: 21 
+	Fantasy: 21 
+	wallpapers: 20 
+	Filmmakers: 19 
+	logo: 19 
+	tennis: 18 
+	UIUC: 17 
+	cats: 17 
+	Torontoevents: 17 
+	ColbertRally: 17 
+	Logos: 16 
+	Parenting: 14 
+	YouShouldKnow: 12 
+	minecraftau: 11 
+	polyamory: 11 
+	TrueBlood: 11 
+	sweden: 10 
+	Quebec: 9 
+	Assistance: 7 
+	mcservers: 4 
+	reachclan: 3 
+	RedditCarpool: 2 
+
+Week 1
+--------------
+reddits: 322
+accounts: 38556
+names: 124228
+all posts: 124228
+
+Subreddits: posts +- from previous week
+	programming: 4531 +1132
+	technology: 3755 +703
+	videos: 3024 -82
+	TwoXChromosomes: 2950 +97
+	sex: 2812 +700
+	todayilearned: 2810 +421
+	DoesAnybodyElse: 2777 +139
+	Music: 2769 -330
+	Fitness: 2434 +329
+	self: 2324 +431
+	blog: 2200 +502
+	Economics: 2136 +79
+	Android: 2057 -141
+	offbeat: 1923 +297
+	gonewild: 1913 +302
+	relationship_advice: 1870 +658
+	movies: 1802 +142
+	guns: 1787 +696
+	canada: 1618 -21
+	nfl: 1540 +1091
+	Libertarian: 1498 -200
+	food: 1386 +154
+	shittyadvice: 1356 -26
+	news: 1319 +276
+	geek: 1267 +2
+	entertainment: 1232 +42
+	linux: 1154 +42
+	comics: 1126 -327
+	apple: 1105 -770
+	lgbt: 1089 +26
+	books: 1088 +127
+	sports: 1086 +103
+	Frugal: 1019 +230
+	business: 1000 +142
+	scifi: 991 -184
+	wow: 976 +321
+	soccer: 965 +6
+	MensRights: 962 -3
+	leagueoflegends: 942 +549
+	bicycling: 923 +168
+	conspiracy: 920 +338
+	tf2: 892 -344
+	relationships: 846 +27
+	Anarchism: 803 -20
+	nsfw: 793 +20
+	australia: 776 -57
+	philosophy: 769 +321
+	MW2: 756 +57
+	Christianity: 745 +138
+	buildapc: 718 +234
+	Cooking: 683 +75
+	photography: 679 -282
+	gadgets: 670 +120
+	ColbertRally: 669 +652
+	environment: 650 -237
+	toronto: 625 +276
+	seduction: 619 +71
+	WeAreTheMusicMakers: 575 +70
+	dwarffortress: 555 +246
+	wikipedia: 548 +144
+	circlejerk: 548 -90
+	techsupport: 521 +31
+	hardware: 518 +108
+	promos: 511 +129
+	aww: 500 +138
+	fantasyfootball: 495 +73
+	beer: 476 +99
+	web_design: 472 +9
+	nyc: 470 +222
+	DIY: 463 +74
+	DebateAChristian: 456 +299
+	Drugs: 453 +14
+	humor: 429 -47
+	Favors: 419 +120
+	magicTCG: 415 +234
+	hockey: 407 +3
+	CFB: 402 +184
+	math: 401 -168
+	exmormon: 399 -95
+	iphone: 391 -42
+	Seattle: 388 +36
+	itookapicture: 383 +45
+	Homebrewing: 382 +69
+	Metal: 376 +25
+	space: 353 +6
+	bestof: 348 +14
+	Marijuana: 346 -9
+	unitedkingdom: 345 +12
+	rpg: 343 +62
+	Health: 342 -8
+	answers: 341 -107
+	needadvice: 337 +136
+	PS3: 331 +45
+	motorcycles: 320 -268
+	SuicideWatch: 313 +63
+	askscience: 305 +63
+	dubstep: 301 +71
+	doctorwho: 295 +108
+	Guitar: 288 -205
+	listentothis: 287 -50
+	MMA: 284 -37
+	baseball: 283 +30
+	ffxiv: 279 -360
+	redditoroftheday: 275 -37
+	malefashionadvice: 273 -21
+	Austin: 268 +85
+	anime: 266 -144
+	chicago: 263 +96
+	netsec: 260 -68
+	running: 254 +84
+	worldpolitics: 254 +83
+	Design: 251 +58
+	Autos: 251 +7
+	writing: 247 +54
+	zombies: 244 +104
+	travel: 244 -38
+	Israel: 243 +41
+	Portland: 230 +12
+	ukpolitics: 229 +61
+	cogsci: 229 +59
+	skeptic: 228 -98
+	boston: 226 +78
+	Art: 225 +20
+	Python: 224 +105
+	startrek: 222 +83
+	economy: 219 +60
+	islam: 215 +55
+	formula1: 210 +73
+	evedreddit: 210 +71
+	energy: 209 -25
+	history: 201 -56
+	Ubuntu: 201 -1
+	MLS: 196 +37
+	halo: 192 +110
+	vegan: 190 +24
+	psychology: 188 -38
+	nosleep: 186 +132
+	drunk: 184 -124
+	treecomics: 183 +83
+	Pets: 181 -64
+	badcompany2: 180 +7
+	WebGames: 178 +3
+	woahdude: 176 +15
+	redditguild: 174 +2
+	LosAngeles: 173 +63
+	amiugly: 169 +80
+	Physics: 168 +52
+	PHP: 166 +69
+	happy: 158 +34
+	tipofmytongue: 155 -16
+	Atlanta: 153 +34
+	creepy: 150 +39
+	TrueReddit: 150 +44
+	hiphopheads: 148 +54
+	tennis: 145 +127
+	PhilosophyofScience: 142 +105
+	electronicmusic: 141 -25
+	religion: 140 -4
+	Eve: 139 -162
+	Dallas: 133 +70
+	mexico: 133 +14
+	poker: 125 +38
+	london: 123 +20
+	pokemon: 122 +21
+	montreal: 120 +69
+	digg: 119 -90
+	911truth: 117 +85
+	lost: 115 +37
+	twincitiessocial: 112 +43
+	climateskeptics: 111 -14
+	vancouver: 110 +14
+	law: 108 +13
+	india: 107 -3
+	engineering: 107 +44
+	IWantToLearn: 105 +48
+	ideasfortheadmins: 105 -5
+	learnprogramming: 105 +39
+	Logos: 103 +87
+	newzealand: 101 -24
+	depression: 100 -33
+	obama: 99 +21
+	dogs: 98 +34
+	philadelphia: 95 -17
+	Buddhism: 95 -46
+	Boobies: 95 +20
+	windowshots: 91 +46
+	cats: 91 +74
+	StarWars: 91 +2
+	til: 90 +13
+	washingtondc: 90 +16
+	TrueBlood: 89 +78
+	OkCupid: 89 +59
+	cheatatmathhomework: 89 +61
+	logo: 85 +66
+	education: 85 +25
+	RUGC_Midwest: 85 +7
+	japan: 84 -39
+	xbox360: 84 -31
+	Military: 84 +13
+	AMA: 84 +29
+	design_critiques: 84 +60
+	gardening: 83 -4
+	___: 82 +56
+	Documentaries: 82 -5
+	ireland: 81 +29
+	HeroesofNewerth: 81 +9
+	ads: 79 +2
+	mcprivate: 79 +34
+	comicbooks: 79 -80
+	BDSMcommunity: 78 +8
+	chemistry: 78 -93
+	Bad_Cop_No_Donut: 78 -28
+	howto: 77 +25
+	linux4noobs: 77 +22
+	transgender: 75 -2
+	stopsmoking: 75 +20
+	tattoos: 75 +8
+	rit: 74 -83
+	r4r: 73 +15
+	Team_Awesome: 73 +19
+	meetup: 73 -46
+	starcraft2: 72 -20
+	Stargate: 72 +36
+	trackers: 72 -1
+	houston: 71 +43
+	gamedev: 70 -8
+	biology: 70 +11
+	Enhancement: 68 +23
+	cars: 67 +21
+	javascript: 67 +2
+	ILiveIn: 67 +5
+	television: 66 -57
+	sysadmin: 65 +29
+	sandiego: 65 +6
+	skateboarding: 63 +30
+	somethingimade: 62 +7
+	CampingandHiking: 62 +2
+	women: 62 +5
+	DAE: 62 -2
+	gameswap: 61 +5
+	Astronomy: 61 +29
+	photocritique: 61 +11
+	Parenting: 61 +47
+	madmen: 60 +19
+	UniversityofReddit: 60 -78
+	loseit: 60 +3
+	bayarea: 60 +38
+	bubbling: 59 -162
+	phish: 58 +7
+	feminisms: 57 +9
+	FixedGearBicycle: 56 +8
+	webdev: 55 +9
+	wallpaper: 55 +8
+	prop19: 55 +19
+	haskell: 53 -63
+	ottawa: 53 +10
+	Fantasy: 53 +32
+	Denver: 52 +23
+	software: 51 -24
+	mac: 51 -11
+	longboarding: 51 +13
+	polyamory: 50 +39
+	RPI: 50 +21
+	StLouis: 49 +11
+	collapse: 49 -62
+	YouShouldKnow: 49 +37
+	ECE: 48 -9
+	climbing: 48 -41
+	conspiratard: 47 -12
+	compsci: 46 -48
+	DnB: 44 +6
+	aviation: 44 +19
+	Equality: 43 -54
+	opensource: 43 -14
+	video: 43 +1
+	transformice: 42 -51
+	Coffee: 41 -3
+	UIUC: 41 +24
+	fashion: 41 +14
+	help: 40 -4
+	Filmmakers: 40 +21
+	boardgames: 40 -18
+	pittsburgh: 40 +3
+	webcomics: 39 -6
+	civ: 39 +12
+	sanfrancisco: 39 -28
+	jobs: 38 -6
+	catpictures: 38 +5
+	progressive: 38 +15
+	P90X: 37 +8
+	GirlGamers: 37 -9
+	linguistics: 37 -25
+	NarFFL: 36 -44
+	vim: 35 +1
+	electronics: 35 +3
+	socialism: 35 -56
+	classicalmusic: 34 -1
+	Quebec: 34 +25
+	gamemusic: 33 +12
+	minecraftau: 32 +21
+	Torontoevents: 32 +15
+	4chan: 32 -38
+	recipes: 30 -4
+	FTH: 29 -2
+	thick: 28 -5
+	snowboarding: 28 +2
+	ipad: 27 -5
+	IndieGaming: 27 -42
+	Assistance: 26 +19
+	starcraft2_class: 25 -14
+	cannabis: 24 -15
+	photoclass: 23 -16
+	wallpapers: 22 +2
+	golf: 20 -33
+	brisbane: 20 -12
+	worstof: 18 -16
+	sweden: 15 +5
+	Jazz: 15 -35
+	trance: 15 -35
+	Dexter: 12 -20
+	mcservers: 9 +5
+	announcements: 2 -112
+
+Week 2
+--------------
+reddits: 325
+accounts: 38917
+names: 120844
+all posts: 120844
+
+Subreddits: posts +- from previous week
+	technology: 3593 -162
+	programming: 3575 -956
+	videos: 3454 +430
+	sex: 2988 +176
+	TwoXChromosomes: 2976 +26
+	DoesAnybodyElse: 2964 +187
+	todayilearned: 2583 -227
+	Fitness: 2418 -16
+	movies: 2322 +520
+	Music: 2275 -494
+	ColbertRally: 2193 +1524
+	Economics: 2091 -45
+	Android: 2091 +34
+	self: 2074 -250
+	blog: 2053 -147
+	gonewild: 2026 +113
+	canada: 1851 +233
+	Libertarian: 1745 +247
+	offbeat: 1678 -245
+	relationship_advice: 1548 -322
+	comics: 1449 +323
+	guns: 1325 -462
+	food: 1272 -114
+	geek: 1252 -15
+	shittyadvice: 1222 -134
+	scifi: 1151 +160
+	bicycling: 1128 +205
+	entertainment: 1121 -111
+	apple: 1096 -9
+	linux: 1045 -109
+	wow: 1045 +69
+	soccer: 1032 +67
+	Frugal: 1016 -3
+	books: 930 -158
+	MensRights: 895 -67
+	news: 888 -431
+	tf2: 843 -49
+	relationships: 791 -55
+	sports: 781 -305
+	australia: 732 -44
+	gadgets: 731 +61
+	nsfw: 727 -66
+	photography: 726 +47
+	lgbt: 713 -376
+	Christianity: 706 -39
+	business: 701 -299
+	promos: 699 +188
+	environment: 678 +28
+	conspiracy: 675 -245
+	fantasyfootball: 671 +176
+	nfl: 664 -876
+	beer: 652 +176
+	exmormon: 589 +190
+	math: 588 +187
+	philosophy: 584 -185
+	WeAreTheMusicMakers: 563 -12
+	RedditCarpool: 554 +554
+	seduction: 545 -74
+	leagueoflegends: 544 -398
+	MW2: 526 -230
+	Marijuana: 516 +170
+	humor: 497 +68
+	hardware: 494 -24
+	web_design: 483 +11
+	halo: 470 +278
+	wikipedia: 460 -88
+	answers: 458 +117
+	motorcycles: 444 +124
+	DIY: 436 -27
+	techsupport: 436 -85
+	aww: 411 -89
+	Seattle: 405 +17
+	itookapicture: 401 +18
+	iphone: 392 +1
+	Guitar: 391 +103
+	space: 390 +37
+	magicTCG: 388 -27
+	Anarchism: 385 -418
+	Health: 375 +33
+	anime: 371 +105
+	listentothis: 369 +82
+	buildapc: 363 -355
+	Drugs: 361 -92
+	Metal: 361 -15
+	PS3: 357 +26
+	Cooking: 354 -329
+	dwarffortress: 351 -204
+	toronto: 351 -274
+	Homebrewing: 346 -36
+	redditoroftheday: 328 +53
+	MMA: 323 +39
+	announcements: 321 +319
+	bestof: 319 -29
+	CFB: 316 -86
+	hockey: 316 -91
+	boston: 316 +90
+	DebateAChristian: 307 -149
+	chicago: 305 +42
+	circlejerk: 304 -244
+	ads: 302 +223
+	travel: 295 +51
+	Python: 283 +59
+	SuicideWatch: 281 -32
+	Austin: 281 +13
+	dubstep: 275 -26
+	worldpolitics: 267 +13
+	rpg: 265 -78
+	Portland: 265 +35
+	unitedkingdom: 264 -81
+	Favors: 263 -156
+	needadvice: 258 -79
+	running: 256 +2
+	nyc: 255 -215
+	askscience: 254 -51
+	baseball: 249 -34
+	energy: 247 +38
+	malefashionadvice: 243 -30
+	history: 242 +41
+	badcompany2: 232 +52
+	doctorwho: 231 -64
+	drunk: 224 +40
+	startrek: 223 +1
+	skeptic: 221 -7
+	mexico: 221 +88
+	xbox360: 213 +129
+	london: 211 +88
+	Israel: 207 -36
+	Autos: 206 -45
+	redditguild: 206 +32
+	Design: 206 -45
+	pokemon: 206 +84
+	washingtondc: 206 +116
+	Pets: 202 +21
+	electronicmusic: 195 +54
+	Art: 195 -30
+	writing: 188 -59
+	Physics: 188 +20
+	montreal: 188 +68
+	ffxiv: 186 -93
+	netsec: 181 -79
+	nosleep: 177 -9
+	tipofmytongue: 174 +19
+	Eve: 171 +32
+	ukpolitics: 171 -58
+	MLS: 167 -29
+	islam: 166 -49
+	cogsci: 164 -65
+	vegan: 162 -28
+	rit: 156 +82
+	Ubuntu: 156 -45
+	formula1: 155 -55
+	hiphopheads: 154 +6
+	woahdude: 151 -25
+	civ: 149 +110
+	economy: 144 -75
+	PlacetoStay: 143 +143
+	cheatatmathhomework: 143 +54
+	dogs: 141 +43
+	evedreddit: 140 -70
+	psychology: 138 -50
+	PHP: 138 -28
+	WebGames: 137 -41
+	law: 135 +27
+	creepy: 135 -15
+	Bad_Cop_No_Donut: 134 +56
+	houston: 133 +62
+	poker: 133 +8
+	lost: 130 +15
+	happy: 128 -30
+	software: 124 +73
+	climbing: 123 +75
+	IWantToLearn: 119 +14
+	twincitiessocial: 118 +6
+	StarWars: 117 +26
+	Atlanta: 117 -36
+	meetup: 114 +41
+	sweden: 111 +96
+	TrueReddit: 111 -39
+	religion: 109 -31
+	Military: 103 +19
+	ireland: 103 +22
+	learnprogramming: 103 -2
+	Buddhism: 102 +7
+	amiugly: 102 -67
+	sanfrancisco: 102 +63
+	BDSMcommunity: 100 +22
+	cars: 99 +32
+	AMA: 96 +12
+	television: 96 +30
+	DAE: 94 +32
+	newzealand: 93 -8
+	FTH: 93 +64
+	comicbooks: 92 +13
+	gamedev: 89 +19
+	chemistry: 88 +10
+	linux4noobs: 88 +11
+	LosAngeles: 87 -86
+	collapse: 86 +37
+	mcprivate: 86 +7
+	treecomics: 85 -98
+	OkCupid: 85 -4
+	climateskeptics: 84 -27
+	india: 84 -23
+	ILiveIn: 83 +16
+	HeroesofNewerth: 83 +2
+	education: 82 -3
+	somethingimade: 81 +19
+	vancouver: 81 -29
+	tattoos: 80 +5
+	compsci: 79 +33
+	mcservers: 77 +68
+	wallpaper: 77 +22
+	Team_Awesome: 77 +4
+	digg: 76 -43
+	ECE: 76 +28
+	aviation: 76 +32
+	webdev: 74 +19
+	depression: 74 -26
+	Boobies: 74 -21
+	Astronomy: 72 +11
+	transformice: 72 +30
+	starcraft2: 72 +0
+	sandiego: 72 +7
+	gameswap: 72 +11
+	philadelphia: 70 -25
+	brisbane: 70 +50
+	engineering: 69 -38
+	ideasfortheadmins: 68 -37
+	video: 68 +25
+	loseit: 67 +7
+	GirlGamers: 67 +30
+	obama: 67 -32
+	Dallas: 66 -67
+	feminisms: 66 +9
+	zombies: 65 -179
+	haskell: 65 +12
+	ipad: 65 +38
+	mac: 65 +14
+	FixedGearBicycle: 65 +9
+	worstof: 64 +46
+	r4r: 64 -9
+	javascript: 63 -4
+	windowshots: 63 -28
+	NarFFL: 63 +27
+	Assistance: 62 +36
+	CampingandHiking: 62 +0
+	trackers: 62 -10
+	design_critiques: 62 -22
+	PhilosophyofScience: 61 -81
+	linguistics: 61 +24
+	911truth: 61 -56
+	madmen: 59 -1
+	YouShouldKnow: 59 +10
+	japan: 58 -26
+	RPI: 58 +8
+	cannabis: 58 +34
+	StLouis: 57 +8
+	opensource: 57 +14
+	skateboarding: 57 -6
+	starcraft2_class: 56 +31
+	transgender: 55 -20
+	socialism: 55 +20
+	P90X: 54 +17
+	til: 54 -36
+	Coffee: 53 +12
+	photocritique: 53 -8
+	Documentaries: 52 -30
+	jobs: 51 +13
+	Equality: 50 +7
+	ottawa: 49 -4
+	cats: 49 -42
+	boardgames: 48 +8
+	minecraftau: 48 +16
+	sysadmin: 47 -18
+	pittsburgh: 47 +7
+	RUGC_Midwest: 47 -38
+	electronics: 46 +11
+	gardening: 46 -37
+	wallpapers: 46 +24
+	catpictures: 45 +7
+	Denver: 45 -7
+	reachclan: 44 +44
+	snowboarding: 44 +16
+	biology: 44 -26
+	Enhancement: 43 -25
+	gamemusic: 42 +9
+	phish: 40 -18
+	vim: 39 +4
+	help: 39 -1
+	stopsmoking: 39 -36
+	Torontoevents: 38 +6
+	photoclass: 37 +14
+	Parenting: 37 -24
+	Filmmakers: 36 -4
+	recipes: 36 +6
+	DnB: 36 -8
+	progressive: 35 -3
+	prop19: 34 -21
+	Quebec: 34 +0
+	bayarea: 34 -26
+	UIUC: 32 -9
+	Fantasy: 32 -21
+	trance: 32 +17
+	Logos: 31 -72
+	women: 30 -32
+	classicalmusic: 29 -5
+	fashion: 29 -12
+	howto: 28 -49
+	longboarding: 28 -23
+	webcomics: 26 -13
+	logo: 25 -60
+	Jazz: 24 +9
+	Dexter: 23 +11
+	TrueBlood: 22 -67
+	IndieGaming: 22 -5
+	polyamory: 20 -30
+	4chan: 20 -12
+	thick: 20 -8
+	UniversityofReddit: 17 -43
+	golf: 16 -4
+	___: 14 -68
+	Stargate: 14 -58
+	bubbling: 13 -46
+	conspiratard: 13 -34
+	tennis: 5 -140
+
+Week 3
+--------------
+reddits: 326
+accounts: 39108
+names: 120011
+all posts: 120011
+
+Subreddits: posts +- from previous week
+	videos: 3327 -127
+	programming: 3228 -347
+	technology: 3106 -487
+	todayilearned: 3000 +417
+	DoesAnybodyElse: 2877 -87
+	sex: 2677 -311
+	Music: 2630 +355
+	Fitness: 2486 +68
+	TwoXChromosomes: 2289 -687
+	self: 2191 +117
+	Economics: 1996 -95
+	gonewild: 1993 -33
+	Android: 1975 -116
+	movies: 1879 -443
+	Libertarian: 1876 +131
+	canada: 1840 -11
+	relationship_advice: 1584 +36
+	offbeat: 1518 -160
+	guns: 1444 +119
+	food: 1397 +125
+	Frugal: 1337 +321
+	comics: 1308 -141
+	entertainment: 1296 +175
+	blog: 1290 -763
+	apple: 1247 +151
+	ColbertRally: 1239 -954
+	shittyadvice: 1168 -54
+	geek: 1122 -130
+	linux: 1119 +74
+	sports: 1099 +318
+	lgbt: 1097 +384
+	wow: 1078 +33
+	scifi: 1063 -88
+	soccer: 1038 +6
+	bicycling: 1004 -124
+	news: 1000 +112
+	civ: 996 +847
+	business: 958 +257
+	nfl: 911 +247
+	MensRights: 888 -7
+	Christianity: 887 +181
+	photography: 815 +89
+	philosophy: 786 +202
+	books: 786 -144
+	relationships: 780 -11
+	humor: 733 +236
+	nsfw: 722 -5
+	australia: 716 -16
+	Cooking: 675 +321
+	conspiracy: 663 -12
+	math: 656 +68
+	fantasyfootball: 628 -43
+	promos: 626 -73
+	tf2: 612 -231
+	beer: 602 -50
+	gadgets: 601 -130
+	leagueoflegends: 578 +34
+	WeAreTheMusicMakers: 576 +13
+	environment: 548 -130
+	buildapc: 531 +168
+	web_design: 528 +45
+	seduction: 526 -19
+	hardware: 520 +26
+	halo: 517 +47
+	techsupport: 514 +78
+	Drugs: 512 +151
+	answers: 483 +25
+	aww: 467 +56
+	motorcycles: 466 +22
+	hockey: 462 +146
+	wikipedia: 449 -11
+	listentothis: 449 +80
+	MW2: 448 -78
+	Marijuana: 422 -94
+	PS3: 420 +63
+	Guitar: 396 +5
+	MMA: 392 +69
+	bestof: 390 +71
+	askscience: 384 +130
+	magicTCG: 382 -6
+	Seattle: 382 -23
+	exmormon: 375 -214
+	DIY: 374 -62
+	toronto: 373 +22
+	travel: 371 +76
+	ffxiv: 362 +176
+	Homebrewing: 355 +9
+	itookapicture: 353 -48
+	unitedkingdom: 347 +83
+	netsec: 346 +165
+	DebateAChristian: 340 +33
+	Health: 340 -35
+	space: 331 -59
+	skeptic: 325 +104
+	iphone: 319 -73
+	history: 317 +75
+	running: 313 +57
+	anime: 310 -61
+	Favors: 301 +38
+	Austin: 295 +14
+	playitforward: 294 +294
+	baseball: 292 +43
+	Anarchism: 288 -97
+	SuicideWatch: 285 +4
+	nyc: 284 +29
+	rpg: 282 +17
+	dwarffortress: 282 -69
+	Design: 282 +76
+	redditoroftheday: 275 -53
+	formula1: 267 +112
+	writing: 261 +73
+	malefashionadvice: 257 +14
+	dubstep: 249 -26
+	circlejerk: 244 -60
+	poker: 244 +111
+	chicago: 241 -64
+	needadvice: 239 -19
+	Metal: 238 -123
+	badcompany2: 238 +6
+	boston: 231 -85
+	CFB: 229 -87
+	Eve: 226 +55
+	Physics: 221 +33
+	Team_Awesome: 218 +141
+	reachclan: 214 +170
+	startrek: 214 -9
+	Pets: 203 +1
+	worldpolitics: 199 -68
+	Ubuntu: 193 +37
+	psychology: 188 +50
+	doctorwho: 185 -46
+	TrueReddit: 185 +74
+	Israel: 184 -23
+	Python: 184 -99
+	Art: 181 -14
+	Dexter: 180 +157
+	drunk: 180 -44
+	IWantToLearn: 172 +53
+	PhilosophyofScience: 171 +110
+	tipofmytongue: 166 -8
+	xbox360: 165 -48
+	woahdude: 164 +13
+	Autos: 162 -44
+	energy: 157 -90
+	ukpolitics: 157 -14
+	london: 155 -56
+	electronicmusic: 154 -41
+	mexico: 153 -68
+	ads: 152 -150
+	religion: 152 +43
+	loseit: 152 +85
+	mcservers: 151 +74
+	WebGames: 149 +12
+	economy: 149 +5
+	lost: 148 +18
+	washingtondc: 147 -59
+	sanfrancisco: 146 +44
+	learnprogramming: 146 +43
+	PHP: 143 +5
+	montreal: 143 -45
+	climbing: 142 +19
+	creepy: 141 +6
+	twincitiessocial: 141 +23
+	Portland: 139 -126
+	zombies: 138 +73
+	___: 138 +124
+	minecraftau: 137 +89
+	houston: 135 +2
+	hiphopheads: 134 -20
+	cogsci: 133 -31
+	biology: 133 +89
+	nosleep: 126 -51
+	philadelphia: 122 +52
+	climateskeptics: 119 +35
+	photocritique: 119 +66
+	evedreddit: 117 -23
+	pokemon: 116 -90
+	islam: 112 -54
+	television: 112 +16
+	happy: 111 -17
+	StarWars: 110 -7
+	law: 110 -25
+	MLS: 109 -58
+	depression: 108 +34
+	education: 107 +25
+	comicbooks: 106 +14
+	vegan: 103 -59
+	transformice: 98 +26
+	gameswap: 94 +22
+	bayarea: 93 +59
+	ideasfortheadmins: 91 +23
+	Atlanta: 91 -26
+	brisbane: 91 +21
+	Parenting: 88 +51
+	cats: 86 +37
+	boardgames: 85 +37
+	cars: 85 -14
+	treecomics: 85 +0
+	911truth: 85 +24
+	FTH: 84 -9
+	india: 84 +0
+	javascript: 84 +21
+	LosAngeles: 84 -3
+	japan: 82 +24
+	RedditCarpool: 81 -473
+	mac: 81 +16
+	linguistics: 80 +19
+	jobs: 80 +29
+	ottawa: 78 +29
+	madmen: 78 +19
+	cheatatmathhomework: 78 -65
+	haskell: 77 +12
+	dogs: 77 -64
+	newzealand: 77 -16
+	r4r: 76 +12
+	gamedev: 76 -13
+	chemistry: 75 -13
+	rit: 75 -81
+	Dallas: 75 +9
+	ireland: 74 -29
+	Documentaries: 73 +21
+	Bad_Cop_No_Donut: 73 -61
+	vancouver: 73 -8
+	til: 73 +19
+	collapse: 72 -14
+	obama: 72 +5
+	UIUC: 71 +39
+	software: 71 -53
+	OkCupid: 71 -14
+	sandiego: 71 -1
+	DAE: 70 -24
+	redditguild: 69 -137
+	Quebec: 69 +35
+	aviation: 68 -8
+	conspiratard: 65 +52
+	Stargate: 65 +51
+	Buddhism: 64 -38
+	thick: 63 +43
+	Military: 63 -40
+	FixedGearBicycle: 63 -2
+	Astronomy: 62 -10
+	meetup: 61 -53
+	4chan: 61 +41
+	AMA: 60 -36
+	Torontoevents: 60 +22
+	feminisms: 58 -8
+	tattoos: 58 -22
+	polyamory: 57 +37
+	help: 56 +17
+	sysadmin: 55 +8
+	Equality: 55 +5
+	gardening: 55 +9
+	golf: 55 +39
+	recipes: 54 +18
+	DnB: 54 +18
+	longboarding: 54 +26
+	StLouis: 52 -5
+	BDSMcommunity: 52 -48
+	Boobies: 52 -22
+	HeroesofNewerth: 52 -31
+	electronics: 51 +5
+	pittsburgh: 51 +4
+	Logos: 50 +19
+	snowboarding: 50 +6
+	starcraft2: 50 -22
+	webdev: 49 -25
+	amiugly: 49 -53
+	Assistance: 48 -14
+	wallpaper: 48 -29
+	stopsmoking: 47 +8
+	ILiveIn: 47 -36
+	Jazz: 45 +21
+	skateboarding: 45 -12
+	photoclass: 45 +8
+	GirlGamers: 45 -22
+	prop19: 45 +11
+	Filmmakers: 44 +8
+	somethingimade: 43 -38
+	CampingandHiking: 43 -19
+	digg: 43 -33
+	fashion: 43 +14
+	wallpapers: 43 -3
+	women: 43 +13
+	progressive: 42 +7
+	linux4noobs: 42 -46
+	engineering: 40 -29
+	trackers: 39 -23
+	gamemusic: 38 -4
+	video: 37 -31
+	socialism: 37 -18
+	transgender: 36 -19
+	P90X: 35 -19
+	trance: 35 +3
+	classicalmusic: 35 +6
+	PlacetoStay: 32 -111
+	Fantasy: 32 +0
+	IndieGaming: 32 +10
+	YouShouldKnow: 32 -27
+	cannabis: 32 -26
+	phish: 31 -9
+	windowshots: 30 -33
+	vim: 28 -11
+	NarFFL: 28 -35
+	ECE: 28 -48
+	UniversityofReddit: 28 +11
+	mcprivate: 28 -58
+	RUGC_Midwest: 27 -20
+	webcomics: 26 +0
+	howto: 26 -2
+	catpictures: 26 -19
+	logo: 25 +0
+	worstof: 24 -40
+	sweden: 23 -88
+	starcraft2_class: 23 -33
+	opensource: 22 -35
+	design_critiques: 22 -40
+	compsci: 20 -59
+	Enhancement: 19 -24
+	RPI: 18 -40
+	ipad: 14 -51
+	bubbling: 13 +0
+	Denver: 11 -34
+	TrueBlood: 8 -14
+	Coffee: 7 -46
+	tennis: 4 -1
+	announcements: 2 -319
+all: 476721
