@@ -317,9 +317,6 @@ class RedditParser:
             edges = []
             i = 0
             for attrs1 in datadict.values():
-                if i % 20000 == 0:
-                    print(i)
-                i += 1
                 pid = attrs1['pid']
                 if pid in datadict.keys():
                     attrs2 = datadict[pid]
@@ -330,6 +327,7 @@ class RedditParser:
             G.remove_nodes_from(remove)
             # Write graph to GML
             gf = "RC" + "_" + year + "-" + month + "_" + str(tfi) + ".gml"
+            G.name = "RC" + "_" + year + "-" + month + "_" + str(tfi)
             nx.write_gml(G, os.path.join('data', 'graphs', gf))
             Gs.append(G)
         return Gs
@@ -354,8 +352,7 @@ class RedditParser:
             for tfi in range(4):
                 filename = 'RC_' + year + '-' + month + '_' + str(tfi) + '.gml'
                 G = nx.read_gml(os.path.join('data', 'graphs', filename))
-                G.name = 'RC_' + year + '-' + month + '_' + str(tfi)
-                print("Read")
+                print("Read graph ", G.name)
 
                 # sampling
                 if mean_degree_sampling:
@@ -495,8 +492,8 @@ def write_graph_stats(Gs, components_also=False, k=20):
 data = RedditParser.read_data_from_json((2010, 9))
 data, sampling_str = RedditParser.sampling(data, uniform_p=0.7, min_replies=130, max_replies=16000, max_p=0.1,
                                            user_min=8, user_threshold=5)
-RedditParser.get_week_stats_from_data(data, (2010, 9), sampling=True, sampling_str=sampling_str)
-Gs = RedditParser.create_graph_files(data, year=2010, month=9, min_degree=1)
+# RedditParser.get_week_stats_from_data(data, (2010, 9), sampling=True, sampling_str=sampling_str)
+Gs = RedditParser.create_graph_files(data, year=2010, month=9, min_degree=2)
 write_graph_stats(Gs)
 
 # year = "2010"
