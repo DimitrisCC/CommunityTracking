@@ -1,0 +1,17 @@
+RC_2010-09
+----------------
+Sampling: uniform_p=1, min_replies=1, max_replies=inf, max_p=1, user_min=8, user_threshold=5
+----------------
+Low  1  replies:  0     Percentage: 0.0
+Low  2  replies:  0     Percentage: 0.0
+Low  3  replies:  0     Percentage: 0.0
+Low  4  replies:  0     Percentage: 0.0
+Low  5  replies:  4644     Percentage: 0.09025888206483713
+Low  6  replies:  3395     Percentage: 0.06598382958874291
+Low  7  replies:  2564     Percentage: 0.049832853922102155
+Low  8  replies:  2267     Percentage: 0.044060483557490475
+Low  9  replies:  1581     Percentage: 0.03072766850656923
+Low  10  replies:  1866     Percentage: 0.03626681178574205
+Low all:  16317     Percentage: 0.3171305294254839
+High:  2001     Percentage: 0.038890616496929174
+ALL:  51452

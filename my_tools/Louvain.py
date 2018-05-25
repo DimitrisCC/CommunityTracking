@@ -1,6 +1,6 @@
 import networkx as nx
 import igraph as ig
-import louvain_igraph as louvain
+# import louvain_igraph as louvain
 import community
 
 

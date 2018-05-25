@@ -1,0 +1,17 @@
+RC_2010-09
+Users and their replies
+No sampling
+---------------------------------------------------------------------
+Low  1  replies:  48247     Percentage: 0.2999465347027081
+Low  2  replies:  19911     Percentage: 0.1237845970208639
+Low  3  replies:  12458     Percentage: 0.07745007833287743
+Low  4  replies:  8934     Percentage: 0.0555417402332579
+Low  5  replies:  6851     Percentage: 0.042591947877552036
+Low  6  replies:  5564     Percentage: 0.03459080396886579
+Low  7  replies:  4581     Percentage: 0.028479596150498596
+Low  8  replies:  3840     Percentage: 0.02387287693034591
+Low  9  replies:  3242     Percentage: 0.020155173700047248
+Low  10  replies:  2863     Percentage: 0.017798970482182378
+Low all:  116491     Percentage: 0.7242123193991993
+High:  1468     Percentage: 0.009126401909830155
+ALL:  160852

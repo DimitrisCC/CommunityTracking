@@ -1,0 +1,22 @@
+RC_2010-09
+----------------
+Sampling: , uniform_p=1, min_replies=130, max_replies=16000, max_p=0.08
+----------------
+
+NEW  Week  1 ||   Num:  1
+BodyAcceptance :  7,
+----
+DEAD  Week  1 ||   Num:  2
+RedditCarpool :  2,  playitforward :  2,
+
+NEW  Week  2 ||   Num:  3
+RedditCarpool :  492,  PlacetoStay :  132,  reachclan :  32,
+----
+DEAD  Week  2 ||   Num:  0
+
+
+NEW  Week  3 ||   Num:  1
+playitforward :  279,
+----
+DEAD  Week  3 ||   Num:  2
+announcements :  293,  soapier :  10,

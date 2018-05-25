@@ -48,33 +48,77 @@ class RedditParser:
                             jsondump.write('\n')
 
     @staticmethod
-    def sampling(data, uniform_p=0.4, min_replies=130, max_replies=16000, max_p=0.08):
+    def sampling(data, uniform_p=0.4, min_replies=130, min_replies_week=5, max_replies=16000, max_p=0.08,
+                 user_min=8, user_threshold=5):
+        if uniform_p == 1 and min_replies <= 1 and max_replies == float(
+                'inf') and max_p == 1 and min_replies_week <= 1 and user_min <= 1 and user_threshold <= 1:
+            return data
         # general uniform sampling
         sample = []
-        for tf in data:
-            sample.append(np.random.choice(tf, round(uniform_p * len(tf)), replace=False))
-        reddits_count = defaultdict(int)
-        all = 0
-        reddits_to_remove = set()
-        final_data = []
-        for tf in sample:
-            for d in tf:
-                reddits_count[d['subreddit']] += 1
-                all += 1
-        for reddit, count in reddits_count.items():
-            r_distr = count / all
-            if count < min_replies or count > max_replies or r_distr > max_p:
-                reddits_to_remove.add(reddit)
-        for tf in sample:
-            final_tf = []
-            for d in tf:
-                if d['subreddit'] not in reddits_to_remove:
-                    final_tf.append(d)
-            # else:
-            #         if d['subreddit'] in reddits_count:
-            #             del reddits_count[d['subreddit']]
-            final_data.append(final_tf)
-        return final_data
+        if uniform_p != 1:
+            for tf in data:
+                sample.append(np.random.choice(tf, round(uniform_p * len(tf)), replace=False))
+        else:
+            sample = data
+
+        # users sampling
+        if user_min > 1 or user_threshold > 1:
+            users = defaultdict(lambda: defaultdict(int))
+            for tf in data:
+                for d in tf:
+                    users[d['author']][d['subreddit']] += 1
+                    users[d['author']]['all'] += 1
+            users_to_remove = set()
+            users_reds_to_remove = defaultdict(list)
+            for user in users:
+                if users[user]['all'] < user_min:  # if user is not active enough
+                    users_to_remove.add(user)
+                else:
+                    for red in users[user]:
+                        if users[user][red] < user_threshold:  # if the user contributed far too little to some reddits
+                            users_reds_to_remove[user].append(red)
+            final_data = []
+            for tf in data:
+                final_tf = []
+                for d in tf:
+                    duser = d['author']
+                    if duser not in users_to_remove and d['subreddit'] not in users_reds_to_remove[duser]:
+                        final_tf.append(d)
+                final_data.append(final_tf)
+            sample = final_data
+
+        # reddit sampling
+        if min_replies > 1 or max_replies != float('inf') or max_p < 1 or min_replies_week > 1:
+            reddits_count = defaultdict(lambda: defaultdict(int))
+            all = 0
+            reddits_to_remove = set()
+            reddits_to_remove_week = [set() for tf in sample]
+            final_data = []
+            for tfi in range(len(sample)):
+                for d in sample[tfi]:
+                    reddits_count[d['subreddit']][tfi] += 1
+                    reddits_count[d['subreddit']]['all'] += 1
+                    all += 1
+            for reddit, rtfs in reddits_count.items():
+                count = rtfs['all']
+                r_distr = count / all
+                if count < min_replies or count > max_replies or r_distr > max_p:
+                    reddits_to_remove.add(reddit)
+                else:
+                    for tfi in range(len(sample)):
+                        if rtfs[tfi] < min_replies_week:  # those subreddits are considered inactive/dead
+                            reddits_to_remove_week[tfi].add(reddit)
+            for tf in sample:
+                final_tf = []
+                for d in tf:
+                    if d['subreddit'] not in reddits_to_remove:
+                        final_tf.append(d)
+                final_data.append(final_tf)
+            sample = final_data
+        sampling_str = "uniform_p=" + str(uniform_p) + ", min_replies=" + str(min_replies) + ", max_replies=" + str(
+            max_replies) + ", max_p=" + str(max_p) + ", user_min=" + str(user_min) + ", user_threshold=" + str(
+            user_threshold) + ", min_replies_week=" + str(min_replies_week)
+        return sample, sampling_str
 
     @staticmethod
     def get_stats_from_json(date, sample_p_post=0.5, sample_p_com=0.333):
@@ -100,57 +144,76 @@ class RedditParser:
             print(red.get_group(key), "\n\n")
 
     @staticmethod
-    def get_week_stats_from_json(date, distribution=False,
-                                 uniform_p=0.4, min_replies=130, max_replies=16000, max_p=0.08):
-        sampling = True
-        sampling_str = '_sample'
-        if uniform_p == 1 or min_replies == 1 or max_replies == float('inf') or max_p == 1:
-            sampling = False
-            sampling_str = ''
+    def get_week_stats_from_data(data, date, distribution=False, sampling=False, sampling_str=None):
         year = str(date[0])
         month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
         filename = 'RC_' + year + '-' + month
         distr = '_distr' if distribution is True else ''
-        with open('data/json/' + filename + '.json', 'r') as file, \
+        sample_ = '_sample' if sampling is True else ''
+        with open(os.path.join(RedditParser.path, 'stats',
+                               '{0}_weeks{1}{2}.txt'.format(filename, distr, sample_)), 'w+') as fweeks, \
                 open(os.path.join(RedditParser.path, 'stats',
-                                  '{0}_weeks{1}{2}.txt'.format(filename, distr, sampling_str)), 'w+') as fweeks:
-            red = [set(), set(), set(), set()]
+                                  '{0}_users{1}.txt'.format(filename, sample_)), 'w+') as fusers:
+            reddits = [set(), set(), set(), set()]
             acc = [set(), set(), set(), set()]
             name = [set(), set(), set(), set()]
+            accounts = set()
             subs = [defaultdict(int), defaultdict(int), defaultdict(int), defaultdict(int)]
+            users = defaultdict(lambda: defaultdict(int))
             i = [0, 0, 0, 0]
-            wdata = [[], [], [], []]
-            for l in file:
-                data = json.loads(l)
-                if data['author'] != '[deleted]':
-                    day = int(data['created_utc'][-2:])
-                    week = (day - 1) // 7
-                    if week < 4:
-                        keep_keys = ['name', 'author', 'subreddit', 'parent_id']
-                        data = dict((k, data[k]) for k in keep_keys if k in data)
-                        wdata[week].append(data)
-                        ########
-            # sampling
-            wdata = RedditParser.sampling(wdata, uniform_p, min_replies, max_replies)
+
             for w in range(4):
-                for cur_data in wdata[w]:
+                for cur_data in data[w]:
                     acc[w].add(cur_data['author'])
                     subreddit = cur_data['subreddit']
-                    red[w].add(subreddit)
+                    reddits[w].add(subreddit)
                     name[w].add(cur_data['name'])
                     subs[w][subreddit] += 1
-                i[w] = len(wdata[w])
+                    users[cur_data['author']][cur_data['subreddit']] += 1
+                    users[cur_data['author']]['all'] += 1
+                    accounts.add(cur_data['author'])
+                i[w] = len(data[w])
+
+            # USERS
+            _low = 11
+            low = [0 for l in range(_low)]
+            high = 0
+            fusers.write(filename)
+            fusers.write('\n----------------')
+            fusers.write('\nSampling: ' + sampling_str)
+            fusers.write('\n----------------')
+            sorted_u = sorted(users.items(), key=lambda k_v: k_v[1]['all'], reverse=True)
+            fusers.write('\nWHOLE MONTH')
+            for user in sorted_u:
+                user = user[0]
+                fusers.write("\n" + user)
+                sorted_r = sorted(users[user].items(), key=lambda k_v: k_v[1], reverse=True)
+                for red in sorted_r:
+                    red = red[0]
+                    replies = users[user][red]
+                    fusers.write("\n    " + red + ": " + str(replies))
+                    if red == 'all':
+                        for l in range(1, _low):
+                            if replies == l:
+                                low[l - 1] += 1
+                        if replies > 200:
+                            high += 1
+            for l in range(1, _low):
+                print("Low ", l, " replies: ", low[l - 1], "    Percentage:", low[l - 1] / len(accounts))
+            print("Low all: ", sum(low), "    Percentage:", sum(low) / len(accounts))
+            print("High: ", high, "    Percentage:", high / len(accounts))
+            print("ALL: ", len(accounts))
+            #
 
             nrmlz = i if distribution else [1, 1, 1, 1]  # normalizers
             fweeks.write(filename)
             fweeks.write('\n----------------')
-            fweeks.write('\nSampling: ' + ", uniform_p=" + str(uniform_p) + ", min_replies=" + str(min_replies)
-                         + ", max_replies=" + str(max_replies) + ", max_p=" + str(max_p))
+            fweeks.write('\nSampling: ' + sampling_str)
             fweeks.write('\n----------------')
             for w in range(4):
                 fweeks.write('\nWeek ' + str(w))
                 fweeks.write('\n--------------')
-                fweeks.write("\nreddits: " + str(len(red[w])))
+                fweeks.write("\nreddits: " + str(len(reddits[w])))
                 fweeks.write("\naccounts: " + str(len(acc[w])))
                 fweeks.write("\nnames: " + str(len(name[w])))
                 fweeks.write('\nall posts: ' + str(i[w]) + '\n')
@@ -242,9 +305,10 @@ class RedditParser:
         return wdata
 
     @staticmethod
-    def create_graph_files(data, year, month, min_degree=1):
+    def create_graph_files(data, year, month, min_degree=2):
         year = str(year)
         month = str(month) if month >= 10 else '0' + str(month)
+        Gs = []
         for tfi in range(len(data)):
             G = nx.Graph()
             datadict = {}
@@ -267,6 +331,19 @@ class RedditParser:
             # Write graph to GML
             gf = "RC" + "_" + year + "-" + month + "_" + str(tfi) + ".gml"
             nx.write_gml(G, os.path.join('data', 'graphs', gf))
+            Gs.append(G)
+        return Gs
+
+    @staticmethod
+    def get_communities_from_graph(G, contribution_threshold=0):
+        """
+        :param G: the graph of a timeframe
+        :param contribution_threshold: the percentage of user's replies needed to be assigned to a community
+                0 means maximum overlapping, 1 or anything larger than the largest contribution of a user to
+                a community means no overlapping
+        :return: dict of communities
+        """
+        pass
 
     @staticmethod
     def read_graphs(dates, sampling_p=None, mean_degree_sampling=False):
@@ -396,31 +473,40 @@ class RedditParser:
         # plt.show()
 
 
-def write_stats():
-    Gs = RedditParser.read_graphs([(2010, 9)])
+def write_graph_stats(Gs, components_also=False, k=20):
+    if Gs is None:
+        Gs = RedditParser.read_graphs([(2010, 9)])
 
+    f = open(os.path.join(RedditParser.path, 'stats', Gs[0].name[:-2] + '_graph_stats.txt'), 'w+')
     for G in Gs:
-        f = open(os.path.join(RedditParser.path, 'stats', G.name + '_stats.txt'), 'w+')
-
-        print('\n\n--- Main Graph ---')
-        f.write('\n\n--- Main Graph ---\n')
+        print('\n\n--- Main Graph ', G.name[-1], " ---")
+        f.write('\n\n--- Main Graph ' + G.name[-1] + " ---\n")
         RedditParser.graph_stats(G, f)
-        components = RedditParser.get_k_largest_components(G, 20, file=f)
 
-        for c in components:
-            print('\n- Component -')
-            f.write('\n- Component -\n')
-            RedditParser.graph_stats(c, f)
-        f.close()
+        if components_also:
+            components = RedditParser.get_k_largest_components(G, k, file=f)
+            for c in components:
+                print('\n- Component -')
+                f.write('\n- Component -\n')
+                RedditParser.graph_stats(c, f)
+    f.close()
 
 
-# RedditParser.get_week_stats_from_json((2010, 9), distribution=False)
-# data = RedditParser.read_data_from_json((2010, 9))
-# data = RedditParser.sampling(data, uniform_p=0.4, min_replies=130, max_replies=16000, max_p=0.08)
-# RedditParser.create_graph_files(data, year=2010, month=9)
+data = RedditParser.read_data_from_json((2010, 9))
+data, sampling_str = RedditParser.sampling(data, uniform_p=0.7, min_replies=130, max_replies=16000, max_p=0.1,
+                                           user_min=8, user_threshold=5)
+RedditParser.get_week_stats_from_data(data, (2010, 9), sampling=True, sampling_str=sampling_str)
+Gs = RedditParser.create_graph_files(data, year=2010, month=9, min_degree=1)
+write_graph_stats(Gs)
 
-write_stats()
-
+# year = "2010"
+# month = "09"
+# tfi = 1
+# filename = 'RC_' + year + '-' + month + '_' + str(tfi) + '.gml'
+# G = nx.read_gml(os.path.join('data', 'graphs', filename))
+# G.name = 'RC_' + year + '-' + month + '_' + str(tfi)
+# nx.draw_spring(G, cmap=plt.get_cmap('jet'), node_size=20, with_labels=False)
+# plt.show()
 
 # write_stats()
 # G = RedditParser.read_graphs([(2010, 9)])

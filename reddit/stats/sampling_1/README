@@ -1,0 +1,1 @@
+Sampling: uniform_p=0.4, min_replies=130, max_replies=16000, max_p=0.08, user_min=1, user_threshold=1, min_degree=2
