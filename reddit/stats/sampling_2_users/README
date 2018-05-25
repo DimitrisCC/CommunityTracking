@@ -1,1 +1,5 @@
-Sampling: uniform_p=1, min_replies=1, max_replies=99999999, max_p=1, user_min=8, user_threshold=5, min_degree=1
+Sampling: uniform_p=1, min_replies=1, max_replies=inf, max_p=1, user_min=8, user_threshold=5, min_degree=1
+
+Users-based sampling:
+	Deleting users with less than 8 replies across all timeframes due to inactiveness and from the remaining active ones
+	deleting their replies in subreddits if they are less than 5

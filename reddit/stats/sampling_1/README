@@ -1,1 +1,5 @@
 Sampling: uniform_p=0.4, min_replies=130, max_replies=16000, max_p=0.08, user_min=1, user_threshold=1, min_degree=2
+
+Subreddit-based sampling:
+	uniform sampling 40% in all replies -> thresholds in min and max replies of each subreddit across all timeframes
+	 to delete inactive or overly active subreddits -> minimum node degree 2
