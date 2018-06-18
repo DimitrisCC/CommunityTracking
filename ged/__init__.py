@@ -1,2 +1,2 @@
-from GedLoad import GedLoad
-from GedWrite import GedWrite
+from .GedLoad import GedLoad
+from .GedWrite import GedWrite

@@ -1,12 +1,9 @@
-# -*- coding: utf-8 -*-
-import json
-import networkx as nx
-import preprocessing, config
+from .preprocessing import *
 import sys
 import time
-from inclusion import *
-from event import Event
-from hypergraph import Hypergraph
+from .inclusion import *
+from .event import Event
+from .hypergraph import Hypergraph
 
 trueEvents = {'merging': 0, 'splitting': 0, 'growing': 0, 'shrinking': 0,
               'continuing': 0, 'dissolving': 0, 'forming': 0, 'No_event': 0}
@@ -94,10 +91,12 @@ class Tracker():
 if __name__ == '__main__':
     if len(sys.argv) != 2:
         print('Usage: Tracker.py <inputfile.json>')
-        print('Exiting with code 1')
-        exit(1)
+        # print('Exiting with code 1')
+        # exit(1)
+        print("Now running default example")
+        sys.argv.append('input_example/community_edges.json')
     start_time = time.time()
-    graphs = preprocessing.getGraphs(sys.argv[1])
+    graphs = getGraphs(sys.argv[1])  # from preprocessing
     tracker = Tracker(graphs)
     tracker.compare_communities()
     with open('ged_results.csv', 'w')as f:

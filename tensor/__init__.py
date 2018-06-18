@@ -1,1 +1,1 @@
-from TensorFact import TensorFact
+from .TensorFact import TensorFact

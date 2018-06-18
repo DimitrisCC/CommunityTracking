@@ -1,6 +1,6 @@
 from __future__ import division
 from itertools import combinations
-from collections_ import Counter
+from collections_ import Counter, Counter_
 
 
 class Omega:
@@ -72,8 +72,8 @@ class Omega:
         return J, K, N, obs, tuples1, tuples2
 
     def expected(self, J, K, N, tuples1, tuples2):
-        N1 = Counter(tuples1.values())
-        N2 = Counter(tuples2.values())
+        N1 = Counter_(tuples1.values())
+        N2 = Counter_(tuples2.values())
         exp = sum((N1[j] * N2[j]) for j in range(min(J, K) + 1)) / (N ** 2)
         return exp
 

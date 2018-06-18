@@ -1,2 +1,2 @@
-from SyntheticDataConverter import SyntheticDataConverter
-from Evaluation import Evaluation
+from .SyntheticDataConverter import SyntheticDataConverter
+from .Evaluation import Evaluation

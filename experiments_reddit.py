@@ -1,24 +1,21 @@
 from __future__ import division
-from muturank import Muturank_new
-from synthetic import SyntheticDataConverter
-from metrics import evaluate
-# from dblp import dblp_loader
-import networkx as nx
-from itertools import combinations_with_replacement
-import random
-from tensor import TensorFact
-import pickle
-from collections import OrderedDict
-import time
-import json
-from tabulate import tabulate
+
 import pprint
+import time
+from collections import OrderedDict, defaultdict
+
+import networkx as nx
 from ged_lib import Tracker
 from ged_lib import preprocessing
+from metrics import evaluate
+from muturank import Muturank_new
+from ordered_set import OrderedSet
+from tabulate import tabulate
+from tensor import TensorFact
 
 
 class Data(object):
-    def __init__(self, comms, graphs, timeFrames, number_of_dynamic_communities, dynamic_truth=[]):
+    def __init__(self, comms, graphs, timeFrames, number_of_dynamic_communities, dynamic_truth={}):
         self.comms = comms
         self.graphs = graphs
         self.timeFrames = timeFrames
@@ -38,9 +35,34 @@ def object_decoder(obj, num):
     return obj
 
 
-def run_experiments(data, ground_truth, network_num):
+def create_Data_object_from_graphs(Gs):
+    def to_dict(d):
+        if isinstance(d, defaultdict):
+            d = {k: to_dict(v) for k, v in d.items()}
+        elif isinstance(d, set) or isinstance(d, OrderedSet):
+            d = list(d)
+        return d
+
+    communities = defaultdict(lambda: defaultdict(set))
+    dynamic_communities = defaultdict(OrderedSet)  # dynamic_truth
+    graphs = {}
+    for G in Gs:
+        tf = int(G.name[-1])
+        graphs[tf] = G
+        for edge in G.edges(data=True):
+            subreddit = edge[2]['subreddit']
+            communities[tf][subreddit].add(edge[0])
+            communities[tf][subreddit].add(edge[1])
+            dynamic_communities[subreddit].add(edge[0] + '-t' + str(tf))
+            dynamic_communities[subreddit].add(edge[1] + '-t' + str(tf))
+    return Data(to_dict(communities), graphs, len(Gs), len(dynamic_communities), to_dict(dynamic_communities))
+
+
+def run_experiments(data, ground_truth, results_file):
+    times = []
     all_res = []
     # Timerank with one connection - default q
+    start_time = time.time()
     mutu4 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='one',
                          clusters=len(ground_truth), default_q=True)
     all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni", mutu4.tfs,
@@ -49,8 +71,12 @@ def run_experiments(data, ground_truth, network_num):
                                         eval="sets", duration=mutu4.duration))
     all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni", mutu4.tfs,
                                         eval="per_tf", duration=mutu4.duration))
+    duration = time.time() - start_time
+    print("Timerank with one connection - default q: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
 
     # Timerank with all connections - default q
+    start_time = time.time()
     mutu5 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='all',
                          clusters=len(ground_truth), default_q=True)
     all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni"
@@ -60,8 +86,12 @@ def run_experiments(data, ground_truth, network_num):
                                         eval="sets"))
     all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni", mutu5.tfs,
                                         eval="per_tf"))
+    duration = time.time() - start_time
+    print("Timerank with all connection - default q: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
 
     # Timerank with next connection - default q
+    start_time = time.time()
     mutu6 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='next',
                          clusters=len(ground_truth), default_q=True)
     all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni"
@@ -70,8 +100,12 @@ def run_experiments(data, ground_truth, network_num):
                                         mutu6.tfs, eval="sets"))
     all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni",
                                         mutu6.tfs, eval="per_tf"))
+    duration = time.time() - start_time
+    print("Timerank with next connection - default q: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
 
     # Run Timerank - One connection
+    start_time = time.time()
     mutu1 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='one',
                          clusters=len(ground_truth), default_q=False)
     all_res.append(evaluate.get_results(ground_truth, mutu1.dynamic_coms, "Timerank-STC", mutu1.tfs,
@@ -80,11 +114,15 @@ def run_experiments(data, ground_truth, network_num):
                                         eval="sets"))
     all_res.append(evaluate.get_results(ground_truth, mutu1.dynamic_coms, "Timerank-STC", mutu1.tfs,
                                         eval="per_tf"))
+    duration = time.time() - start_time
+    print("Timerank with one connection: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     muturank_res = OrderedDict()
     muturank_res["tf/node"] = ['t' + str(tf) for tf in mutu1.tfs_list]
     for i, node in enumerate(mutu1.node_ids):
         muturank_res[node] = [mutu1.p_new[tf * len(mutu1.node_ids) + i] for tf in range(mutu1.tfs)]
-    f = open('results_reddit.txt', 'a')
+    f = open(results_file, 'a')
     f.write("ONE CONNECTION\n")
     f.write(tabulate(muturank_res, headers="keys", tablefmt="grid") + "\n")
     f.write(tabulate(zip(['t' + str(tf) for tf in mutu1.tfs_list], mutu1.q_new), headers="keys",
@@ -92,6 +130,7 @@ def run_experiments(data, ground_truth, network_num):
     f.close()
 
     # Timerank with all connections
+    start_time = time.time()
     mutu2 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='all',
                          clusters=len(ground_truth), default_q=False)
     all_res.append(evaluate.get_results(ground_truth, mutu2.dynamic_coms, "Timerank-AOC", mutu2.tfs,
@@ -100,11 +139,15 @@ def run_experiments(data, ground_truth, network_num):
                                         eval="sets"))
     all_res.append(evaluate.get_results(ground_truth, mutu2.dynamic_coms, "Timerank-AOC", mutu2.tfs,
                                         eval="per_tf"))
+    duration = time.time() - start_time
+    print("Timerank with all connection: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     muturank_res = OrderedDict()
     muturank_res["tf/node"] = ['t' + str(tf) for tf in mutu2.tfs_list]
     for i, node in enumerate(mutu2.node_ids):
         muturank_res[node] = [mutu2.p_new[tf * len(mutu2.node_ids) + i] for tf in range(mutu2.tfs)]
-    f = open('results_reddit.txt', 'a')
+    f = open(results_file, 'a')
     f.write("ALL CONNECTIONS\n")
     f.write(tabulate(muturank_res, headers="keys", tablefmt="grid") + "\n")
     f.write(tabulate(zip(['t' + str(tf) for tf in mutu2.tfs_list], mutu2.q_new), headers="keys",
@@ -112,6 +155,7 @@ def run_experiments(data, ground_truth, network_num):
     f.close()
 
     # Timerank with next connection
+    start_time = time.time()
     mutu3 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='next',
                          clusters=len(ground_truth), default_q=False)
     all_res.append(evaluate.get_results(ground_truth, mutu3.dynamic_coms, "Timerank-NOC", mutu3.tfs,
@@ -120,11 +164,15 @@ def run_experiments(data, ground_truth, network_num):
                                         eval="sets"))
     all_res.append(evaluate.get_results(ground_truth, mutu3.dynamic_coms, "Timerank-NOC", mutu3.tfs,
                                         eval="per_tf"))
+    duration = time.time() - start_time
+    print("Timerank with next connection: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     muturank_res = OrderedDict()
     muturank_res["tf/node"] = ['t' + str(tf) for tf in mutu3.tfs_list]
     for i, node in enumerate(mutu3.node_ids):
         muturank_res[node] = [mutu3.p_new[tf * len(mutu3.node_ids) + i] for tf in range(mutu3.tfs)]
-    f = open('results_reddit.txt', 'a')
+    f = open(results_file, 'a')
     f.write("NEXT CONNECTION\n")
     f.write(tabulate(muturank_res, headers="keys", tablefmt="grid") + "\n")
     f.write(tabulate(zip(['t' + str(tf) for tf in mutu3.tfs_list], mutu3.q_new), headers="keys",
@@ -140,11 +188,16 @@ def run_experiments(data, ground_truth, network_num):
     f.close()
 
     # NNTF
+    start_time = time.time()
     fact = TensorFact(data.graphs, num_of_coms=len(ground_truth), threshold=1e-4, seeds=1, overlap=False)
     all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF", mutu6.tfs, eval="dynamic"))
     all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF", mutu6.tfs, eval="sets"))
     all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF", mutu6.tfs, eval="per_tf"))
-    with open('results_reddit.txt', 'a') as f:
+    duration = time.time() - start_time
+    print("NNTF: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
+    with open(results_file, 'a') as f:
         f.write("NNTF\n")
         f.write("Error: " + str(fact.error) + "Seed: " + str(fact.best_seed) + "\n")
         f.write("A\n")
@@ -158,6 +211,7 @@ def run_experiments(data, ground_truth, network_num):
     new_graphs = {}
     for i, A in mutu1.a.items():
         new_graphs[i] = nx.from_scipy_sparse_matrix(A)
+    start_time = time.time()
     fact2 = TensorFact(new_graphs, num_of_coms=len(ground_truth), threshold=1e-4, seeds=1, overlap=False,
                        original_graphs=data.graphs)
     all_res.append(evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs,
@@ -166,7 +220,10 @@ def run_experiments(data, ground_truth, network_num):
         evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs, eval="sets"))
     all_res.append(
         evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs, eval="per_tf"))
-    with open('results_reddit.txt', 'a') as f:
+    duration = time.time() - start_time
+    print("NNTF-Timerank tensor: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+    with open(results_file, 'a') as f:
         f.write("NNTF\n")
         f.write("Error: " + str(fact2.error) + "Seed: " + str(fact2.best_seed) + "\n")
         f.write("A\n")
@@ -176,51 +233,49 @@ def run_experiments(data, ground_truth, network_num):
         f.write("C\n")
         pprint.pprint(fact2.C, stream=f, width=150)
         pprint.pprint(fact2.dynamic_coms, stream=f, width=150)
+
     # GED
     import sys
     sys.path.insert(0, '../GED/')
-    # import preprocessing, Tracker
     start_time = time.time()
-    from ged import GedLoad, GedWrite, ReadGEDResults
+    from ged import GedWrite, ReadGEDResults
     ged_data = GedWrite(data)
     graphs = preprocessing.getGraphs(ged_data.fileName)
     tracker = Tracker.Tracker(graphs)
     tracker.compare_communities()
-    # outfile = 'tmpfiles/ged_results.csv'
-    if not os.path.exists('results'):
-        os.makedirs('results')
-    outfile = os.path.join('results', 'GED-reddit' + str(network_num) + '.csv')
-    # outfile = './results/GED-reddit-' + str(network_num) + '.csv'
+    outfile = os.path.join(os.path.split(results_file)[0], 'GED-events-reddit.csv')
+
     with open(outfile, 'w+') as f:
         for hypergraph in tracker.hypergraphs:
             hypergraph.calculateEvents(f)
-    print("--- %s seconds ---" % (time.time() - start_time))
+
     ged = ReadGEDResults.ReadGEDResults(file_coms=ged_data.fileName, file_output=outfile)
-    with open('results_reddit.txt', 'a') as f:
+    with open(results_file, 'a') as f:
         f.write("GED\n")
         pprint.pprint(ged.dynamic_coms, stream=f, width=150)
     all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED-T", mutu6.tfs, eval="dynamic"))
     all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED-T", mutu6.tfs, eval="sets"))
     all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED-T", mutu6.tfs, eval="per_tf"))
+    duration = time.time() - start_time
+    print("GED-T: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     # GED with timerank communities
     # GED
     import sys
     sys.path.insert(0, '../GED/')
-    # import preprocessing, Tracker
     start_time = time.time()
     from ged import GedWrite, ReadGEDResults
     ged_data = GedWrite(Data(mutu1.comms, data.graphs, len(graphs), len(mutu1.dynamic_coms), mutu1.dynamic_coms))
     graphs = preprocessing.getGraphs(ged_data.fileName)
     tracker = Tracker.Tracker(graphs)
     tracker.compare_communities()
-    # outfile = 'tmpfiles/ged_results.csv'
-    outfile = './results/GED-reddit-' + str(network_num) + '.csv'
-    with open(outfile, 'w')as f:
+    outfile = os.path.join(os.path.split(results_file)[0], 'GED-wTimerank-events-reddit.csv')
+    with open(outfile, 'w') as f:
         for hypergraph in tracker.hypergraphs:
             hypergraph.calculateEvents(f)
-    print("--- %s seconds ---" % (time.time() - start_time))
     ged = ReadGEDResults.ReadGEDResults(file_coms=ged_data.fileName, file_output=outfile)
-    with open('results_reddit.txt', 'a') as f:
+    with open(results_file, 'a') as f:
         f.write("GED\n")
         pprint.pprint(ged.dynamic_coms, stream=f, width=150)
     all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs,
@@ -229,6 +284,12 @@ def run_experiments(data, ground_truth, network_num):
         evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs, eval="sets"))
     all_res.append(
         evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs, eval="per_tf"))
+    duration = time.time() - start_time
+    print("GED - with Timerank comms: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
+    print("TOTAL TIME: %d min, %d sec" % (sum(times) // 60, sum(times) % 60))
+
     return all_res
 
 
@@ -243,54 +304,50 @@ def create_ground_truth(communities, number_of_dynamic_communities):
 
 if __name__ == "__main__":
     import os
+    from reddit.reddit_parser import RedditParser
 
     path_full = os.path.dirname(os.path.abspath(__file__))
-    path_full = os.path.join(path_full, "data", "hand-drawn-data.json")
+    path_full = os.path.join(path_full, "reddit")
 
-    with open(path_full, mode='r') as fp:
-        reddit = json.load(fp)
-    for i in range(len(reddit)):
-        # for i in [2]:
-        data = object_decoder(reddit, i)
-        # from plot import PlotGraphs
-        # PlotGraphs(data.graphs, len(data.graphs), 'reddit'+str(i), 500)
-        f = open('results_reddit.txt', 'a')
-        f.write("\n" + "-" * 80 + "NETWORK #" + str(reddit[i]['id']) + "-" * 80 + "\n")
-        f.close()
-        print(reddit[i]['id'])
-        all_res = run_experiments(data, data.dynamic_truth, reddit[i]['id'])
-        results = OrderedDict()
-        results["Method"] = []
-        results['Eval'] = []
-        results['NMI'] = []
-        results['Omega'] = []
-        results['Bcubed-Precision'] = []
-        results['Bcubed-Recall'] = []
-        results['Bcubed-F1'] = []
-        results['Duration'] = []
-        for res in all_res:
-            for k, v in res.items():
-                results[k].extend(v)
-        f = open('results_hand.txt', 'a')
-        f.write(tabulate(results, headers="keys", tablefmt="grid") + "\n")
-        import pandas as pd
+    Gs = RedditParser.read_graphs([(2010, 9)])
+    data = create_Data_object_from_graphs(Gs)
 
-        df = pd.DataFrame.from_dict(results)
-        del df["Duration"]
-        f.write("\\begin{table}[h!] \n\centering \n\\begin{tabular}{ |p{4cm}||p{2cm}|p{3cm}|p{2cm}|p{2cm}|p{2cm}|} "
-                "\n"
-                "\hline \n\multicolumn{6}{|c|}{Evaluation comparison} \\\\\n\hline\n Method& NMI & Omega Index & "
-                "BCubed Precision & BCubed Recall & BCubed F\\\\\n\hline\n")
-        for index, row in df.iterrows():
-            if row["Eval"] == "dynamic":
-                del row["Eval"]
-                f.write(str(row[0]))
-                for item in row[1:]:
-                    f.write(" & " + str(item))
-                f.write(str("\\\\") + "\n")
-        f.write("\hline\n\end{tabular}\n\caption{Comparison of different frameworks on Hand-drawn Network \\# "
-                "" + str(reddit[i]['id']) +
-                " illustrated in \\ref{fig: network" + str(reddit[i]['id']) + "} }"
-                                                                              "\n\label{table:results-network" + str(
-            reddit[i]['id']) + "}\n\end{table}\n")
-        f.close()
+    # from plot import PlotGraphs
+    # PlotGraphs(data.graphs, len(data.graphs), 'reddit'+str(i), 500)
+    results_file = os.path.join(path_full, 'results_reddit.txt')
+    f = open(results_file, 'w+')
+    f.write("\n" + "-" * 80 + "REDDIT NETWORK" + "-" * 80 + "\n")
+    f.close()
+    all_res = run_experiments(data, data.dynamic_truth, results_file)
+    results = OrderedDict()
+    results["Method"] = []
+    results['Eval'] = []
+    results['NMI'] = []
+    results['Omega'] = []
+    results['Bcubed-Precision'] = []
+    results['Bcubed-Recall'] = []
+    results['Bcubed-F1'] = []
+    results['Duration'] = []
+    for res in all_res:
+        for k, v in res.items():
+            results[k].extend(v)
+    f = open(results_file, 'a')
+    f.write(tabulate(results, headers="keys", tablefmt="grid") + "\n")
+    import pandas as pd
+
+    df = pd.DataFrame.from_dict(results)
+    del df["Duration"]
+    f.write("\\begin{table}[h!] \n\centering \n\\begin{tabular}{ |p{4cm}||p{2cm}|p{3cm}|p{2cm}|p{2cm}|p{2cm}|} "
+            "\n"
+            "\hline \n\multicolumn{6}{|c|}{Evaluation comparison} \\\\\n\hline\n Method& NMI & Omega Index & "
+            "BCubed Precision & BCubed Recall & BCubed F\\\\\n\hline\n")
+    for index, row in df.iterrows():
+        if row["Eval"] == "dynamic":
+            del row["Eval"]
+            f.write(str(row[0]))
+            for item in row[1:]:
+                f.write(" & " + str(item))
+            f.write(str("\\\\") + "\n")
+    f.write("\hline\n\end{tabular}\n\caption{Comparison of different frameworks on Reddit Network \\" +
+            "\n\label{table:results-network}\n\end{table}\n")
+    f.close()

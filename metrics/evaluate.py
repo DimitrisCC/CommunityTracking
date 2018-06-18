@@ -4,9 +4,9 @@ import itertools
 from collections import OrderedDict
 from collections_ import Counter_
 
-import Bcubed
-import NMI
-import Omega
+from .Bcubed import Bcubed
+from .NMI import NMI
+from .Omega import Omega
 
 
 def unravel_tf(dynamic, tfs_len):
@@ -21,8 +21,9 @@ def unravel_tf(dynamic, tfs_len):
     comms = {t: {} for t in range(tfs_len)}
     for c, dyn in dynamic.items():
         for node in dyn:
-            tf = int(node.split('-')[1][1])
-            node = int(node.split('-')[0])
+            tf = int(node.rsplit('-', 1)[1][1])
+            # node = int(node.rsplit('-', 1)[0])
+            node = node.rsplit('-', 1)[0]
             try:
                 comms[tf][c].append(node)
             except KeyError:
@@ -47,9 +48,9 @@ def remove_duplicate_coms(communities):
 
 def evaluate(ground_truth, method, name, eval, duration):
     ## TEMPORARILY without NMI
-    # nmi = NMI.NMI(ground_truth, method).results
-    omega = Omega.Omega(ground_truth, method)
-    bcubed = Bcubed.Bcubed(ground_truth, method)
+    # nmi = NMI(ground_truth, method).results
+    omega = Omega(ground_truth, method)
+    bcubed = Bcubed(ground_truth, method)
     results = OrderedDict()
     results["Method"] = [name]
     results["Eval"] = [eval]
@@ -70,11 +71,11 @@ def get_results(ground_truth, method, name, tfs_len, eval="dynamic", duration=0)
         new_comms1 = {i: set() for i in ground_truth.keys()}
         for i, comm in ground_truth.items():
             for node in comm:
-                new_comms1[i].add(node.split('-')[0])
+                new_comms1[i].add(node.rsplit('-', 1)[0])
         new_comms2 = {i: set() for i in method.keys()}
         for i, comm in method.items():
             for node in comm:
-                new_comms2[i].add(node.split('-')[0])
+                new_comms2[i].add(node.rsplit('-', 1)[0])
         results = evaluate(new_comms1, new_comms2, name, eval, duration)
     elif eval == "per_tf":
         new_comms1 = unravel_tf(ground_truth, tfs_len)

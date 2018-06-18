@@ -212,7 +212,7 @@ def run_experiments(data, ground_truth, network_num):
     tracker.compare_communities()
     # outfile = 'tmpfiles/ged_results.csv'
     outfile = './results/GED-events-handdrawn-' + str(network_num) + '.csv'
-    with open(outfile, 'w')as f:
+    with open(outfile, 'w') as f:
         for hypergraph in tracker.hypergraphs:
             hypergraph.calculateEvents(f)
     print("--- %s seconds ---" % (time.time() - start_time))

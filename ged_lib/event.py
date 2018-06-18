@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-import config
+from .config import *
 
 
 class Event:
     def __init__(self, g1, g2, inclusion, inversed_inclusion, inclusions):
-        self.alpha = config.ALPHA
-        self.beta = config.BETA
+        self.alpha = ALPHA  # config
+        self.beta = BETA  # config
         self.g1 = g1
         self.g2 = g2
         self.g1_size = len(g1)

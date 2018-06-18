@@ -287,21 +287,24 @@ class RedditParser:
             nx.write_gml(G, os.path.join('data', 'graphs', gf))
 
     @staticmethod
-    def read_data_from_json(date):
+    def read_data_from_json(date, sampled=False, specific_reddits=None):
         year = str(date[0])
         month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
-        filename = 'RC_' + year + '-' + month + '.json'
+        sampled_str = '_sampled' if sampled else ''
+        filename = 'RC_' + year + '-' + month + sampled_str + '.json'
         wdata = [[], [], [], []]
         with open('data/json/' + filename, 'r') as file:
             for l in file:
                 data = json.loads(l)
                 if data['author'] != '[deleted]':
-                    day = int(data['created_utc'][-2:])
-                    week = (day - 1) // 7
-                    if week < 4:
-                        keep_keys = ['name', 'author', 'subreddit', 'parent_id']
-                        data = dict((k, data[k]) for k in keep_keys if k in data)
-                        wdata[week].append(data)
+                    if (specific_reddits and data['subreddit'] in specific_reddits) or not specific_reddits:
+                        day = int(data['created_utc'][-2:])
+                        week = (day - 1) // 7
+                        if week < 4:
+                            if not sampled_str:
+                                keep_keys = ['name', 'author', 'subreddit', 'parent_id', 'created_utc']
+                                data = dict((k, data[k]) for k in keep_keys if k in data)
+                            wdata[week].append(data)
         return wdata
 
     @staticmethod
@@ -344,6 +347,24 @@ class RedditParser:
         pass
 
     @staticmethod
+    def write_json_from_sampled(data, date, specific_reddits=None):
+        year = str(date[0])
+        month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
+        filename = 'RC_' + year + '-' + month + '_sampled.json'
+        selected = []
+        for week_data in data:
+            for d in week_data:
+                if specific_reddits:
+                    if d['subreddit'] in specific_reddits:
+                        selected.append(d)
+                else:
+                    selected.append(d)
+        with open(os.path.join(RedditParser.path, 'data', 'json', filename), 'w+') as jsondump:
+            for d in selected:
+                json.dump(d, jsondump, ensure_ascii=False)
+                jsondump.write('\n')
+
+    @staticmethod
     def read_graphs(dates, sampling_p=None, mean_degree_sampling=False):
         Gs = []
         for date in dates:
@@ -351,7 +372,7 @@ class RedditParser:
             month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
             for tfi in range(4):
                 filename = 'RC_' + year + '-' + month + '_' + str(tfi) + '.gml'
-                G = nx.read_gml(os.path.join('data', 'graphs', filename))
+                G = nx.read_gml(os.path.join(RedditParser.path, 'data', 'graphs', filename))
                 print("Read graph ", G.name)
 
                 # sampling
@@ -489,57 +510,64 @@ def write_graph_stats(Gs, components_also=False, k=20):
     f.close()
 
 
-data = RedditParser.read_data_from_json((2010, 9))
-data, sampling_str = RedditParser.sampling(data, uniform_p=0.7, min_replies=130, max_replies=16000, max_p=0.1,
-                                           user_min=8, user_threshold=5)
-# RedditParser.get_week_stats_from_data(data, (2010, 9), sampling=True, sampling_str=sampling_str)
-Gs = RedditParser.create_graph_files(data, year=2010, month=9, min_degree=2)
-write_graph_stats(Gs)
+if __name__ == "__main__":
+    data = RedditParser.read_data_from_json((2010, 9), sampled=True,
+                                            specific_reddits=['AskWomen', 'javascript', 'China', 'Jazz', 'craftit',
+                                                              'tennis', 'Techno', 'math', 'cars'])
+    # specific_reddits=['Techno', 'craftit', 'WhatWouldYouRather', 'trackers',
+    #                   'depression'])
+    # data, sampling_str = RedditParser.sampling(data, uniform_p=0.7, min_replies=130, max_replies=16000, max_p=0.1,
+    #                                            user_min=8, user_threshold=5)
+    # RedditParser.write_json_from_sampled(data, date=(2010, 9))
+    # data = RedditParser.read_data_from_json((2010, 9), sampled=True)
+    # RedditParser.get_week_stats_from_data(data, (2010, 9), sampling=True, sampling_str=sampling_str)
+    Gs = RedditParser.create_graph_files(data, year=2010, month=9, min_degree=1)
+    # write_graph_stats(Gs)
 
-# year = "2010"
-# month = "09"
-# tfi = 1
-# filename = 'RC_' + year + '-' + month + '_' + str(tfi) + '.gml'
-# G = nx.read_gml(os.path.join('data', 'graphs', filename))
-# G.name = 'RC_' + year + '-' + month + '_' + str(tfi)
-# nx.draw_spring(G, cmap=plt.get_cmap('jet'), node_size=20, with_labels=False)
-# plt.show()
+    # year = "2010"
+    # month = "09"
+    # tfi = 1
+    # filename = 'RC_' + year + '-' + month + '_' + str(tfi) + '.gml'
+    # G = nx.read_gml(os.path.join('data', 'graphs', filename))
+    # G.name = 'RC_' + year + '-' + month + '_' + str(tfi)
+    # nx.draw_spring(G, cmap=plt.get_cmap('jet'), node_size=20, with_labels=False)
+    # plt.show()
 
-# write_stats()
-# G = RedditParser.read_graphs([(2010, 9)])
-# G = RedditParser.community_detection(G)
-# dic = defaultdict(int)
-# for e in G.edges(data=True):
-#     nodes = G.nodes(data=True)
-#     n1 = G.nodes(data=True)[e[0]]
-#     n2 = G.nodes(data=True)[e[1]]
-#     subreddit1 = n1['subreddit']
-#     subreddit2 = n2['subreddit']
-#     com = e[2]['modularity']
-#     dic[com][subreddit1] += 1
-#     dic[com][subreddit2] += 1
-#
-# print(dic)
+    # write_stats()
+    # G = RedditParser.read_graphs([(2010, 9)])
+    # G = RedditParser.community_detection(G)
+    # dic = defaultdict(int)
+    # for e in G.edges(data=True):
+    #     nodes = G.nodes(data=True)
+    #     n1 = G.nodes(data=True)[e[0]]
+    #     n2 = G.nodes(data=True)[e[1]]
+    #     subreddit1 = n1['subreddit']
+    #     subreddit2 = n2['subreddit']
+    #     com = e[2]['modularity']
+    #     dic[com][subreddit1] += 1
+    #     dic[com][subreddit2] += 1
+    #
+    # print(dic)
 
 
 
-# rp = RedditParser(from_=(2010, 10), to_=(2010, 10))
-# rp.dump_to_json()
+    # rp = RedditParser(from_=(2010, 10), to_=(2010, 10))
+    # rp.dump_to_json()
 
-# RedditParser.get_stats_from_json((2010, 9), sample_p_post=0.05, sample_p_com=0.005)
+    # RedditParser.get_stats_from_json((2010, 9), sample_p_post=0.05, sample_p_com=0.005)
 
-# #a = {"yolo": "swag", "yolo": "lel", }
-# r = nx.random_regular_graph(d=2, n=5)
-# lab = {1: "lel", 2: "swag", 3: "e7r", 4: "fr", 0: "grh"}
-# nx.set_node_attributes(r, "labelyol", lab)
-# G = nx.Graph()
-# G.add_nodes_from({"yolo": {"label1": 5, "label2": "kati"},
-#                   "swag": {"label1": 32, "label2": "katiallo"},
-#                   "lel": {"label1": 6, "label2": "katiakoma"}})
-# # G.add_edges_from({'lel':{'swag':{}, 'yolo':{}}})
-#
-# s = {'yolo': "haha", "swag": "gr"}
-# for v, f in s.values():
-#     print(v)
-#     print(f)
-# print()
+    # #a = {"yolo": "swag", "yolo": "lel", }
+    # r = nx.random_regular_graph(d=2, n=5)
+    # lab = {1: "lel", 2: "swag", 3: "e7r", 4: "fr", 0: "grh"}
+    # nx.set_node_attributes(r, "labelyol", lab)
+    # G = nx.Graph()
+    # G.add_nodes_from({"yolo": {"label1": 5, "label2": "kati"},
+    #                   "swag": {"label1": 32, "label2": "katiallo"},
+    #                   "lel": {"label1": 6, "label2": "katiakoma"}})
+    # # G.add_edges_from({'lel':{'swag':{}, 'yolo':{}}})
+    #
+    # s = {'yolo': "haha", "swag": "gr"}
+    # for v, f in s.values():
+    #     print(v)
+    #     print(f)
+    # print()
