@@ -39,8 +39,10 @@ def object_decoder(obj, num):
 
 
 def run_experiments(data, ground_truth, network_num):
+    times = []
     all_res = []
     # Timerank with one connection - default q
+    start_time = time.time()
     mutu4 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='one',
                          clusters=len(ground_truth), default_q=True)
     all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni", mutu4.tfs,
@@ -49,34 +51,52 @@ def run_experiments(data, ground_truth, network_num):
                                         eval="sets", duration=mutu4.duration))
     all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni", mutu4.tfs,
                                         eval="per_tf", duration=mutu4.duration))
+    duration = time.time() - start_time
+    print("Timerank with one connection - default q: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     # Timerank with all connections - default q
+    start_time = time.time()
     mutu5 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='all',
                          clusters=len(ground_truth), default_q=True)
-    all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni"
-                                        , mutu5.tfs,
-                                        eval="dynamic"))
     all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni", mutu5.tfs,
-                                        eval="sets"))
+                                        eval="dynamic", duration=mutu5.duration))
     all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni", mutu5.tfs,
-                                        eval="per_tf"))
+                                        eval="sets", duration=mutu5.duration))
+    all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni", mutu5.tfs,
+                                        eval="per_tf", duration=mutu5.duration))
+    duration = time.time() - start_time
+    print("Timerank with all connection - default q: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     # Timerank with next connection - default q
+    start_time = time.time()
     mutu6 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='next',
                          clusters=len(ground_truth), default_q=True)
     all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni"
-                                        , mutu6.tfs, eval="dynamic"))
+                                        , mutu6.tfs, eval="dynamic", duration=mutu6.duration))
     all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni",
-                                        mutu6.tfs, eval="sets"))
+                                        mutu6.tfs, eval="sets", duration=mutu6.duration))
     all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni",
-                                        mutu6.tfs, eval="per_tf"))
+                                        mutu6.tfs, eval="per_tf", duration=mutu6.duration))
+    duration = time.time() - start_time
+    print("Timerank with next connection - default q: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     # Run Timerank - One connection
+    start_time = time.time()
     mutu1 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='one',
                          clusters=len(ground_truth), default_q=False)
     all_res.append(evaluate.get_results(ground_truth, mutu1.dynamic_coms, "Timerank-STC", mutu1.tfs,
-                                        eval="dynamic"))
+                                        eval="dynamic", duration=mutu1.duration))
     all_res.append(evaluate.get_results(ground_truth, mutu1.dynamic_coms, "Timerank-STC", mutu1.tfs,
-                                        eval="sets"))
+                                        eval="sets", duration=mutu1.duration))
     all_res.append(evaluate.get_results(ground_truth, mutu1.dynamic_coms, "Timerank-STC", mutu1.tfs,
-                                        eval="per_tf"))
+                                        eval="per_tf", duration=mutu1.duration))
+    duration = time.time() - start_time
+    print("Timerank with one connection: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     muturank_res = OrderedDict()
     muturank_res["tf/node"] = ['t' + str(tf) for tf in mutu1.tfs_list]
     for i, node in enumerate(mutu1.node_ids):
@@ -89,14 +109,19 @@ def run_experiments(data, ground_truth, network_num):
     f.close()
 
     # Timerank with all connections
+    start_time = time.time()
     mutu2 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='all',
                          clusters=len(ground_truth), default_q=False)
     all_res.append(evaluate.get_results(ground_truth, mutu2.dynamic_coms, "Timerank-AOC", mutu2.tfs,
-                                        eval="dynamic"))
+                                        eval="dynamic", duration=mutu2.duration))
     all_res.append(evaluate.get_results(ground_truth, mutu2.dynamic_coms, "Timerank-AOC", mutu2.tfs,
-                                        eval="sets"))
+                                        eval="sets", duration=mutu2.duration))
     all_res.append(evaluate.get_results(ground_truth, mutu2.dynamic_coms, "Timerank-AOC", mutu2.tfs,
-                                        eval="per_tf"))
+                                        eval="per_tf", duration=mutu2.duration))
+    duration = time.time() - start_time
+    print("Timerank with all connection: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     muturank_res = OrderedDict()
     muturank_res["tf/node"] = ['t' + str(tf) for tf in mutu2.tfs_list]
     for i, node in enumerate(mutu2.node_ids):
@@ -109,14 +134,19 @@ def run_experiments(data, ground_truth, network_num):
     f.close()
 
     # Timerank with next connection
+    start_time = time.time()
     mutu3 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='next',
                          clusters=len(ground_truth), default_q=False)
     all_res.append(evaluate.get_results(ground_truth, mutu3.dynamic_coms, "Timerank-NOC", mutu3.tfs,
-                                        eval="dynamic"))
+                                        eval="dynamic", duration=mutu3.duration))
     all_res.append(evaluate.get_results(ground_truth, mutu3.dynamic_coms, "Timerank-NOC", mutu3.tfs,
-                                        eval="sets"))
+                                        eval="sets", duration=mutu3.duration))
     all_res.append(evaluate.get_results(ground_truth, mutu3.dynamic_coms, "Timerank-NOC", mutu3.tfs,
-                                        eval="per_tf"))
+                                        eval="per_tf", duration=mutu3.duration))
+    duration = time.time() - start_time
+    print("Timerank with next connection: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     muturank_res = OrderedDict()
     muturank_res["tf/node"] = ['t' + str(tf) for tf in mutu3.tfs_list]
     for i, node in enumerate(mutu3.node_ids):
@@ -137,10 +167,20 @@ def run_experiments(data, ground_truth, network_num):
     f.close()
 
     # NNTF
+    start_time = time.time()
     fact = TensorFact(data.graphs, num_of_coms=len(ground_truth), threshold=1e-4, seeds=1, overlap=False)
-    all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF", mutu6.tfs, eval="dynamic"))
-    all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF", mutu6.tfs, eval="sets"))
-    all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF", mutu6.tfs, eval="per_tf"))
+    fact_dur = time.time() - start_time
+    fact_dur = "%d:%d" % (fact_dur // 60, fact_dur % 60)
+    all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF", mutu6.tfs, eval="dynamic",
+                                        duration=fact_dur))
+    all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF", mutu6.tfs, eval="sets",
+                                        duration=fact_dur))
+    all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF", mutu6.tfs, eval="per_tf",
+                                        duration=fact_dur))
+    duration = time.time() - start_time
+    print("NNTF: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     with open('results_hand.txt', 'a') as f:
         f.write("NNTF\n")
         f.write("Error: " + str(fact.error) + "Seed: " + str(fact.best_seed) + "\n")
@@ -152,17 +192,25 @@ def run_experiments(data, ground_truth, network_num):
         pprint.pprint(fact.C, stream=f, width=150)
         pprint.pprint(fact.dynamic_coms, stream=f, width=150)
 
+    # NNTF-Timerank tensor
     new_graphs = {}
     for i, A in mutu1.a.items():
         new_graphs[i] = nx.from_scipy_sparse_matrix(A)
+    start_time = time.time()
     fact2 = TensorFact(new_graphs, num_of_coms=len(ground_truth), threshold=1e-4, seeds=1, overlap=False,
                        original_graphs=data.graphs)
+    fact_dur = time.time() - start_time
+    fact_dur = "%d:%d" % (fact_dur // 60, fact_dur % 60)
     all_res.append(evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs,
-                                        eval="dynamic"))
-    all_res.append(
-        evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs, eval="sets"))
-    all_res.append(
-        evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs, eval="per_tf"))
+                                        eval="dynamic", duration=fact_dur))
+    all_res.append(evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs,
+                                        eval="sets", duration=fact_dur))
+    all_res.append(evaluate.get_results(ground_truth, fact2.dynamic_coms, "NNTF-Timerank tensor", mutu6.tfs,
+                                        eval="per_tf", duration=fact_dur))
+    duration = time.time() - start_time
+    print("NNTF-Timerank tensor: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     with open('results_hand.txt', 'a') as f:
         f.write("NNTF\n")
         f.write("Error: " + str(fact2.error) + "Seed: " + str(fact2.best_seed) + "\n")
@@ -173,59 +221,99 @@ def run_experiments(data, ground_truth, network_num):
         f.write("C\n")
         pprint.pprint(fact2.C, stream=f, width=150)
         pprint.pprint(fact2.dynamic_coms, stream=f, width=150)
+
+    # NNTF-Overlap
+    start_time = time.time()
+    fact = TensorFact(data.graphs, num_of_coms=len(ground_truth), threshold=1e-4, seeds=1, overlap=True)
+    fact_dur = time.time() - start_time
+    fact_dur = "%d:%d" % (fact_dur // 60, fact_dur % 60)
+    all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF-Overlap", mutu6.tfs, eval="dynamic",
+                                        duration=fact_dur))
+    all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF-Overlap", mutu6.tfs, eval="sets",
+                                        duration=fact_dur))
+    all_res.append(evaluate.get_results(ground_truth, fact.dynamic_coms, "NNTF-Overlap", mutu6.tfs, eval="per_tf",
+                                        duration=fact_dur))
+    duration = time.time() - start_time
+    print("NNTF-Overlap: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
+    with open('results_hand.txt', 'a') as f:
+        f.write("NNTF-Overlap\n")
+        f.write("Error: " + str(fact.error) + "Seed: " + str(fact.best_seed) + "\n")
+        f.write("A\n")
+        pprint.pprint(fact.A, stream=f, width=150)
+        f.write("B\n")
+        pprint.pprint(fact.B, stream=f, width=150)
+        f.write("C\n")
+        pprint.pprint(fact.C, stream=f, width=150)
+        pprint.pprint(fact.dynamic_coms, stream=f, width=150)
+
     # GED
     import sys
     sys.path.insert(0, '../GED/')
-    # import preprocessing, Tracker
     start_time = time.time()
-    from ged import GedLoad, GedWrite, ReadGEDResults
+    from ged import GedWrite, ReadGEDResults
     ged_data = GedWrite(data)
     graphs = preprocessing.getGraphs(ged_data.fileName)
     tracker = Tracker.Tracker(graphs)
     tracker.compare_communities()
-    # outfile = 'tmpfiles/ged_results.csv'
     if not os.path.exists('results'):
         os.makedirs('results')
     outfile = os.path.join('results', 'GED-events-handdrawn' + str(network_num) + '.csv')
-    # outfile = './results/GED-events-handdrawn-' + str(network_num) + '.csv'
+
     with open(outfile, 'w+') as f:
         for hypergraph in tracker.hypergraphs:
             hypergraph.calculateEvents(f)
-    print("--- %s seconds ---" % (time.time() - start_time))
+
     ged = ReadGEDResults.ReadGEDResults(file_coms=ged_data.fileName, file_output=outfile)
+    ged_dur = time.time() - start_time
+    ged_dur = "%d:%d" % (ged_dur // 60, ged_dur % 60)
     with open('results_hand.txt', 'a') as f:
         f.write("GED\n")
         pprint.pprint(ged.dynamic_coms, stream=f, width=150)
-    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED-T", mutu6.tfs, eval="dynamic"))
-    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED-T", mutu6.tfs, eval="sets"))
-    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED-T", mutu6.tfs, eval="per_tf"))
+    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED-T", mutu6.tfs, eval="dynamic",
+                                        duration=ged_dur))
+    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED-T", mutu6.tfs, eval="sets",
+                                        duration=ged_dur))
+    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED-T", mutu6.tfs, eval="per_tf",
+                                        duration=ged_dur))
+    duration = time.time() - start_time
+    print("GED-T: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
     # GED with timerank communities
     # GED
     import sys
     sys.path.insert(0, '../GED/')
-    # import preprocessing, Tracker
     start_time = time.time()
     from ged import GedWrite, ReadGEDResults
     ged_data = GedWrite(Data(mutu1.comms, data.graphs, len(graphs), len(mutu1.dynamic_coms), mutu1.dynamic_coms))
     graphs = preprocessing.getGraphs(ged_data.fileName)
     tracker = Tracker.Tracker(graphs)
     tracker.compare_communities()
-    # outfile = 'tmpfiles/ged_results.csv'
     outfile = './results/GED-events-handdrawn-' + str(network_num) + '.csv'
+
     with open(outfile, 'w') as f:
         for hypergraph in tracker.hypergraphs:
             hypergraph.calculateEvents(f)
-    print("--- %s seconds ---" % (time.time() - start_time))
+
     ged = ReadGEDResults.ReadGEDResults(file_coms=ged_data.fileName, file_output=outfile)
+    ged_dur = time.time() - start_time
+    ged_dur = "%d:%d" % (ged_dur // 60, ged_dur % 60)
     with open('results_hand.txt', 'a') as f:
         f.write("GED\n")
         pprint.pprint(ged.dynamic_coms, stream=f, width=150)
     all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs,
-                                        eval="dynamic"))
-    all_res.append(
-        evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs, eval="sets"))
-    all_res.append(
-        evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs, eval="per_tf"))
+                                        eval="dynamic", duration=ged_dur))
+    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs,
+                                        eval="sets", duration=ged_dur))
+    all_res.append(evaluate.get_results(ground_truth, ged.dynamic_coms, "GED - with Timerank comms", mutu6.tfs,
+                                        eval="per_tf", duration=ged_dur))
+    duration = time.time() - start_time
+    print("GED - with Timerank comms: TIME: %d min, %d sec" % (duration // 60, duration % 60))
+    times.append(duration)
+
+    print("TOTAL TIME: %d min, %d sec" % (sum(times) // 60, sum(times) % 60))
     return all_res
 
 
@@ -253,6 +341,9 @@ if __name__ == "__main__":
 
     with open(path_full, mode='r') as fp:
         hand_drawn = json.load(fp)
+    f = open('results_hand.txt', 'a')
+    f.write('')
+    f.close()
     for i in range(len(hand_drawn)):
         # for i in [2]:
         data = object_decoder(hand_drawn, i)

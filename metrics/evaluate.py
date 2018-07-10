@@ -47,18 +47,30 @@ def remove_duplicate_coms(communities):
 
 
 def evaluate(ground_truth, method, name, eval, duration):
-    ## TEMPORARILY without NMI
-    # nmi = NMI(ground_truth, method).results
-    omega = Omega(ground_truth, method)
-    bcubed = Bcubed(ground_truth, method)
+    if method == {} or method is None:
+        nmi_res = 0
+        omega_res = 0
+        bcubed_p_res = 0
+        bcubed_r_res = 0
+        bcubed_f1_res = 0
+    else:
+        ## TEMPORARILY without NMI
+        nmi = NMI(ground_truth, method).results
+        nmi_res = float("{0:.4f}".format(nmi['NMI<Max>']))
+        omega = Omega(ground_truth, method)
+        omega_res = float("{0:.4f}".format(omega.omega_score))
+        bcubed = Bcubed(ground_truth, method)
+        bcubed_p_res = float("{0:.4f}".format(bcubed.precision))
+        bcubed_r_res = float("{0:.4f}".format(bcubed.recall))
+        bcubed_f1_res = float("{0:.4f}".format(bcubed.fscore))
     results = OrderedDict()
     results["Method"] = [name]
     results["Eval"] = [eval]
-    results['NMI'] = [0]  # ["{0:.4f}".format(nmi['NMI<Max>'])]
-    results['Omega'] = ["{0:.4f}".format(omega.omega_score)]
-    results['Bcubed-Precision'] = ["{0:.4f}".format(bcubed.precision)]
-    results['Bcubed-Recall'] = ["{0:.4f}".format(bcubed.recall)]
-    results['Bcubed-F1'] = ["{0:.4f}".format(bcubed.fscore)]
+    results['NMI'] = [nmi_res]
+    results['Omega'] = [omega_res]
+    results['Bcubed-Precision'] = [bcubed_p_res]
+    results['Bcubed-Recall'] = [bcubed_r_res]
+    results['Bcubed-F1'] = [bcubed_f1_res]
     results['Duration'] = [duration]
     return results
 
@@ -82,13 +94,14 @@ def get_results(ground_truth, method, name, tfs_len, eval="dynamic", duration=0)
         new_comms2 = unravel_tf(method, tfs_len)
         per_tf = []
         for t in range(tfs_len):
-            per_tf.append(Counter_(evaluate(new_comms1[t], new_comms2[t], name, eval, duration)))
+            evaluation = evaluate(new_comms1[t], new_comms2[t], name, eval, duration)
+            per_tf.append(Counter_(evaluation))
         results = sum(per_tf, Counter_())
         for key in results:
             if all(isinstance(x, str) for x in results[key]):
                 results[key] = [results[key][0]]
             else:
-                results[key] = [sum(results[key]) / len(per_tf)]
+                results[key] = [float("{0:.4f}".format(sum(results[key]) / len(per_tf)))]
                 # pprint.pprint(dict(f))
                 # for k, v in res.iteritems():
                 #     print "KEY ", k, " VALUE ", v

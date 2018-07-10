@@ -1,0 +1,6 @@
+Sampling: uniform_p=0.7, min_replies=130, max_replies=16000, max_p=0.1, user_min=8, user_threshold=5, min_replies_week=5,
+ min_degree=1
+
+Combination of previous sampling methods:
+	Uniform sampling -> Removing overly active and inactive subreddits + removing subreddits of a week with less than 5
+	 replies considering them inactive -> Removing inactive users or their noisy activity

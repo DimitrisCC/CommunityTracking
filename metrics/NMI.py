@@ -90,13 +90,17 @@ class NMI:
         onmi = os.path.join(dir, 'nmi', 'onmi')
         f1 = os.path.join(dir, 'nmi', 'file1.txt')
         f2 = os.path.join(dir, 'nmi', 'file2.txt')
-        prun = str(onmi) + ' ' + f1 + ' ' + f2
+        prun = [str(onmi), f1, f2]
         result = sp.check_output(prun)
         result = result.decode('utf-8')
         result = result.splitlines()
         result = list(map(lambda res: res.strip() and res.replace('\t', ' '), result))
         return result
-        # p = Popen([prun], shell=True, stdout=PIPE, stdin=PIPE)
+
+        # from signal import signal, SIGPIPE, SIG_DFL
+        # signal(SIGPIPE, SIG_DFL)
+        # p = Popen([dir + '/nmi/onmi ' + dir + '/nmi/file1.txt ' + dir + '/nmi/file2.txt'], shell=True, stdout=PIPE,
+        #           stdin=PIPE)
         # result = []
         # for ii in range(4):
         #     value = str(ii) + '\n'
@@ -118,8 +122,18 @@ class NMI:
             elif lr[1].strip() == '-1.#IND':
                 res[lr[0]] = 0
             else:
-                res[lr[0]] = float(lr[1].strip())
+                try:
+                    res[lr[0]] = float(lr[1].strip())
+                except ValueError:
+                    res[lr[0]] = 0
         return res
+        # res = {}
+        # for l in results:
+        #     line = l.decode()
+        #     if line.split(":")[1] == "":
+        #         continue
+        #     res[line.split(":")[0]] = float(line.split(":")[1].strip())
+        # return res
 
 
 if __name__ == '__main__':

@@ -51,7 +51,8 @@ class Muturank_new:
         print("Performing clustering on monorelational network...")
         time1 = time.time()
         self.dynamic_coms, self.comms = self.clustering()
-        self.duration = str(datetime.timedelta(seconds=int(time.time() - start)))
+        dur = time.time() - start
+        self.duration = "%d:%d" % (dur // 60, dur % 60)
         print("Performed clustering in ", time.time() - time1, " seconds")
         """print sum(self.p_new)
         print(sum(self.q_new))

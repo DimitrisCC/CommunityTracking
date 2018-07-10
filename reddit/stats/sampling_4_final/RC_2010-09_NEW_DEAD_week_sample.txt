@@ -1,0 +1,23 @@
+RC_2010-09
+----------------
+Sampling: uniform_p=0.7, min_replies=130, max_replies=16000, max_p=0.1, user_min=8, user_threshold=5, min_replies_week=5
+----------------
+
+NEW  Week  1 ||   Num:  5
+Entlantis :  171,  WhatWouldYouRather :  140,  TrueBlood :  110,  Assistance :  23,  BodyAcceptance :  11,
+----
+DEAD  Week  1 ||   Num:  2
+announcements :  26,  RedditCarpool :  5,
+
+NEW  Week  2 ||   Num:  5
+RedditCarpool :  518,  announcements :  163,  PlacetoStay :  122,  craftit :  118,  reachclan :  57,
+----
+DEAD  Week  2 ||   Num:  2
+WhatWouldYouRather :  140,  RedditvFCC :  99,
+
+NEW  Week  3 ||   Num:  1
+playitforward :  357,
+----
+DEAD  Week  3 ||   Num:  6
+announcements :  163,  Techno :  103,  Coffee :  58,  TrueBlood :  32,  Entlantis :  26,  tennis :  6,
+
