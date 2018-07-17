@@ -58,18 +58,19 @@ def create_Data_object_from_graphs(Gs):
     return Data(to_dict(communities), graphs, len(Gs), len(dynamic_communities), to_dict(dynamic_communities))
 
 
-def run_experiments(data, ground_truth, results_file):
+def run_experiments(data, ground_truth, results_file, overlap=False):
     times = []
     all_res = []
+    ov = '-Ov' if overlap else ''
     # Timerank with one connection - default q
     start_time = time.time()
     mutu4 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='one',
-                         clusters=len(ground_truth), default_q=True)
-    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni", mutu4.tfs,
+                         clusters=len(ground_truth), default_q=True, overlap=overlap)
+    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni" + ov, mutu4.tfs,
                                         eval="dynamic", duration=mutu4.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni", mutu4.tfs,
+    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni" + ov, mutu4.tfs,
                                         eval="sets", duration=mutu4.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni", mutu4.tfs,
+    all_res.append(evaluate.get_results(ground_truth, mutu4.dynamic_coms, "Timerank-STC-Uni" + ov, mutu4.tfs,
                                         eval="per_tf", duration=mutu4.duration))
     duration = time.time() - start_time
     print("Timerank with one connection - default q: TIME: %d min, %d sec" % (duration // 60, duration % 60))
@@ -78,12 +79,12 @@ def run_experiments(data, ground_truth, results_file):
     # Timerank with all connections - default q
     start_time = time.time()
     mutu5 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='all',
-                         clusters=len(ground_truth), default_q=True)
-    all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni", mutu5.tfs,
+                         clusters=len(ground_truth), default_q=True, overlap=overlap)
+    all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni" + ov, mutu5.tfs,
                                         eval="dynamic", duration=mutu5.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni", mutu5.tfs,
+    all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni" + ov, mutu5.tfs,
                                         eval="sets", duration=mutu5.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni", mutu5.tfs,
+    all_res.append(evaluate.get_results(ground_truth, mutu5.dynamic_coms, "Timerank-AOC-Uni" + ov, mutu5.tfs,
                                         eval="per_tf", duration=mutu5.duration))
     duration = time.time() - start_time
     print("Timerank with all connection - default q: TIME: %d min, %d sec" % (duration // 60, duration % 60))
@@ -92,12 +93,12 @@ def run_experiments(data, ground_truth, results_file):
     # Timerank with next connection - default q
     start_time = time.time()
     mutu6 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='next',
-                         clusters=len(ground_truth), default_q=True)
-    all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni"
-                                        , mutu6.tfs, eval="dynamic", duration=mutu6.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni",
+                         clusters=len(ground_truth), default_q=True, overlap=overlap)
+    all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni" + ov,
+                                        mutu6.tfs, eval="dynamic", duration=mutu6.duration))
+    all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni" + ov,
                                         mutu6.tfs, eval="sets", duration=mutu6.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni",
+    all_res.append(evaluate.get_results(ground_truth, mutu6.dynamic_coms, "Timerank-NOC-Uni" + ov,
                                         mutu6.tfs, eval="per_tf", duration=mutu6.duration))
     duration = time.time() - start_time
     print("Timerank with next connection - default q: TIME: %d min, %d sec" % (duration // 60, duration % 60))
@@ -106,12 +107,12 @@ def run_experiments(data, ground_truth, results_file):
     # Run Timerank - One connection
     start_time = time.time()
     mutu1 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='one',
-                         clusters=len(ground_truth), default_q=False)
-    all_res.append(evaluate.get_results(ground_truth, mutu1.dynamic_coms, "Timerank-STC", mutu1.tfs,
+                         clusters=len(ground_truth), default_q=False, overlap=overlap)
+    all_res.append(evaluate.get_results(ground_truth, mutu1.dynamic_coms, "Timerank-STC" + ov, mutu1.tfs,
                                         eval="dynamic", duration=mutu1.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu1.dynamic_coms, "Timerank-STC", mutu1.tfs,
+    all_res.append(evaluate.get_results(ground_truth, mutu1.dynamic_coms, "Timerank-STC" + ov, mutu1.tfs,
                                         eval="sets", duration=mutu1.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu1.dynamic_coms, "Timerank-STC", mutu1.tfs,
+    all_res.append(evaluate.get_results(ground_truth, mutu1.dynamic_coms, "Timerank-STC" + ov, mutu1.tfs,
                                         eval="per_tf", duration=mutu1.duration))
     duration = time.time() - start_time
     print("Timerank with one connection: TIME: %d min, %d sec" % (duration // 60, duration % 60))
@@ -131,12 +132,12 @@ def run_experiments(data, ground_truth, results_file):
     # Timerank with all connections
     start_time = time.time()
     mutu2 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='all',
-                         clusters=len(ground_truth), default_q=False)
-    all_res.append(evaluate.get_results(ground_truth, mutu2.dynamic_coms, "Timerank-AOC", mutu2.tfs,
+                         clusters=len(ground_truth), default_q=False, overlap=overlap)
+    all_res.append(evaluate.get_results(ground_truth, mutu2.dynamic_coms, "Timerank-AOC" + ov, mutu2.tfs,
                                         eval="dynamic", duration=mutu2.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu2.dynamic_coms, "Timerank-AOC", mutu2.tfs,
+    all_res.append(evaluate.get_results(ground_truth, mutu2.dynamic_coms, "Timerank-AOC" + ov, mutu2.tfs,
                                         eval="sets", duration=mutu2.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu2.dynamic_coms, "Timerank-AOC", mutu2.tfs,
+    all_res.append(evaluate.get_results(ground_truth, mutu2.dynamic_coms, "Timerank-AOC" + ov, mutu2.tfs,
                                         eval="per_tf", duration=mutu2.duration))
     duration = time.time() - start_time
     print("Timerank with all connection: TIME: %d min, %d sec" % (duration // 60, duration % 60))
@@ -156,12 +157,12 @@ def run_experiments(data, ground_truth, results_file):
     # Timerank with next connection
     start_time = time.time()
     mutu3 = Muturank_new(data.graphs, threshold=1e-6, alpha=0.85, beta=0.85, connection='next',
-                         clusters=len(ground_truth), default_q=False)
-    all_res.append(evaluate.get_results(ground_truth, mutu3.dynamic_coms, "Timerank-NOC", mutu3.tfs,
+                         clusters=len(ground_truth), default_q=False, overlap=overlap)
+    all_res.append(evaluate.get_results(ground_truth, mutu3.dynamic_coms, "Timerank-NOC" + ov, mutu3.tfs,
                                         eval="dynamic", duration=mutu3.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu3.dynamic_coms, "Timerank-NOC", mutu3.tfs,
+    all_res.append(evaluate.get_results(ground_truth, mutu3.dynamic_coms, "Timerank-NOC" + ov, mutu3.tfs,
                                         eval="sets", duration=mutu3.duration))
-    all_res.append(evaluate.get_results(ground_truth, mutu3.dynamic_coms, "Timerank-NOC", mutu3.tfs,
+    all_res.append(evaluate.get_results(ground_truth, mutu3.dynamic_coms, "Timerank-NOC" + ov, mutu3.tfs,
                                         eval="per_tf", duration=mutu3.duration))
     duration = time.time() - start_time
     print("Timerank with next connection: TIME: %d min, %d sec" % (duration // 60, duration % 60))
@@ -350,17 +351,29 @@ if __name__ == "__main__":
     path_full = os.path.dirname(os.path.abspath(__file__))
     path_full = os.path.join(path_full, "reddit")
 
+    #####
+    import sys
+
+    arg_names = ['executable', 'experiment', 'overlap']
+    args = dict(zip(arg_names, sys.argv))
+    exp = int(args['experiment']) if 'experiment' in args else EXPERIMENT
+    overlap = True if 'overlap' in args and args['overlap'] == '--overlap' else False
+
+    reds, exp_string = choose_experiment(exp)
+    data = read_data_from_json((2010, 9), sampled=True, specific_reddits=reds)
+    Gs = create_graph_files(data, year=2010, month=9, min_degree=1)
+    #####
+
     Gs = read_graphs([(2010, 9)])
     data = create_Data_object_from_graphs(Gs)
 
     # from plot import PlotGraphs
     # PlotGraphs(data.graphs, len(data.graphs), 'reddit'+str(i), 500)
-    _, experiment_str = choose_experiment(EXPERIMENT)  # from reddit_parser
-    results_file = os.path.join(path_full, 'results_reddit' + experiment_str + '.txt')
+    results_file = os.path.join(path_full, 'results_reddit' + exp_string + '.txt')
     f = open(results_file, 'w+')
     f.write("\n" + "-" * 80 + "REDDIT NETWORK" + "-" * 80 + "\n")
     f.close()
-    all_res = run_experiments(data, data.dynamic_truth, results_file)
+    all_res = run_experiments(data, data.dynamic_truth, results_file, overlap=overlap)
     results = OrderedDict()
     results["Method"] = []
     results['Eval'] = []

@@ -5,7 +5,7 @@ import pandas as pd
 from sktensor import sptensor
 from copy import deepcopy, copy
 from scipy import sparse
-from sklearn.cluster import spectral_clustering
+from .spectral import spectral_clustering
 import time
 import datetime
 import random
@@ -17,7 +17,8 @@ class Muturank_new:
     mat_type = 'csr'
 
     # @profile
-    def __init__(self, graphs, threshold, alpha, beta, connection, clusters, default_q=False, random_state=0):
+    def __init__(self, graphs, threshold, alpha, beta, connection, clusters, default_q=False, overlap=False,
+                 random_state=0):
         start = time.time()
         self.random_state = random_state
         random.seed(self.random_state)
@@ -27,6 +28,7 @@ class Muturank_new:
         self.tfs = len(self.graphs)
         self.tfs_list = list(self.graphs.keys())
         self.clusters = clusters
+        self.overlap = overlap
         # create a dict with {node_id : tensor_position} to be able to retrieve node_id
         self.node_pos = {node_id: i for i, node_id in enumerate(self.node_ids)}
         # self.a, self.o, self.r, self.sum_cols, self.sum_time = self.create_sptensors()
@@ -438,8 +440,13 @@ class Muturank_new:
         # print np.all(eigs(self.w) > 0)
         # clusters = SpectralClustering(affinity='precomputed',n_clusters=self.clusters,
         #                                random_state=self.random_state, eigen_solver='arpack').fit_predict(self.w)
-        clusters = spectral_clustering(self.w, n_clusters=self.clusters,
-                                       random_state=self.random_state, eigen_solver='arpack')
+        if self.overlap:
+            clusters = spectral_clustering(self.w, n_clusters=self.clusters, assign_labels='fuzzy_cmeans',
+                                           random_state=self.random_state, eigen_solver='arpack')
+        else:
+            clusters = spectral_clustering(self.w, n_clusters=self.clusters, assign_labels='kmeans',
+                                           random_state=self.random_state, eigen_solver='arpack')
+            clusters = [[c] for c in clusters]  # to consider non-overlap the same as overlap in the code
         # from sklearn.cluster import KMeans
         # clusters = KMeans(n_clusters=self.clusters, n_init=10, max_iter=1000).fit_predict(self.w)
         # print clusters
@@ -457,14 +464,16 @@ class Muturank_new:
         comms = {}
         com_time = {tf: {c: [] for c in range(self.clusters)} for tf in range(self.tfs)}
         for n, c in enumerate(clusters):
-            try:
+
                 tf = n // self.num_of_nodes
                 node = n % self.num_of_nodes
                 if self.has_node(tf, node):
-                    com_time[tf][c].append(self.node_ids[node])
-                    comms[c].append(str(self.node_ids[node]) + "-t" + str(tf))
-            except KeyError:
-                comms[c] = [str(self.node_ids[node]) + "-t" + str(tf)]
+                    for comm in c:
+                        try:
+                            com_time[tf][comm].append(self.node_ids[node])
+                            comms[comm].append(str(self.node_ids[node]) + "-t" + str(tf))
+                        except KeyError:
+                            comms[comm] = [str(self.node_ids[node]) + "-t" + str(tf)]
         # delete empty coms
         com_time = dict((k, dict((k1, v1) for k1, v1 in v.items() if v1)) for k, v in com_time.items())
         com_time = dict((k, dict((i, v1) for i, (k1, v1) in enumerate(v.items()) if v1)) for k,

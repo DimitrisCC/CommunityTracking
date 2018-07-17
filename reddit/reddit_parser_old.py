@@ -282,8 +282,7 @@ def create_graph_from_json(date, min_degree=1):
     year = str(date[0])
     month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
     filename = 'RC_' + year + '-' + month + '.json'
-    jsonpath = os.path.join(path, 'data', 'json')
-    with open(os.path.join(jsonpath, filename), 'r') as file:
+    with open('data/json/' + filename, 'r') as file:
         G = nx.Graph()
         data = {}
         for l in file:
@@ -308,11 +307,11 @@ def create_graph_from_json(date, min_degree=1):
 
         # Write graph to GML
         gf = "RC" + "_" + str(year) + "-" + str(month) + ".gml"
-        nx.write_gml(G, os.path.join(path, 'data', 'graphs', gf))
+        nx.write_gml(G, os.path.join('data', 'graphs', gf))
         return G
 
 
-def read_data_from_json(date, days=30, sampled=False, days_overlap=0, specific_reddits=None, specific_users=None):
+def read_data_from_json(date, sampled=False, specific_reddits=None, specific_users=None):
     """
     Reads data from the json files and cleans the [deleted] users.
     :param date:                Date tuple (year, month)
@@ -325,33 +324,20 @@ def read_data_from_json(date, days=30, sampled=False, days_overlap=0, specific_r
     month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
     sampled_str = '_sampled' if sampled else ''
     filename = 'RC_' + year + '-' + month + sampled_str + '.json'
-    ddata = [None for i in range(days)]
-    wdata = [[], [], [], [], [], [], [], []]
-    jsonpath = os.path.join(path, 'data', 'json')
-    with open(os.path.join(jsonpath, filename), 'r') as file:
+    wdata = [[], [], [], []]
+    with open('data/json/' + filename, 'r') as file:
         for l in file:
             data = json.loads(l)
             if data['author'] != '[deleted]':
                 if (specific_reddits and data['subreddit'] in specific_reddits) or not specific_reddits:
                     if (specific_users and data['author'] in specific_users) or not specific_users:
                         day = int(data['created_utc'][-2:])
-                        if not sampled_str:
-                            keep_keys = ['name', 'author', 'subreddit', 'parent_id', 'created_utc']
-                            data = dict((k, data[k]) for k in keep_keys if k in data)
-                        ddata[day - 1] = data
-                        #
                         week = (day - 1) // 7
-                        week_day = day - week * 7
-                        if days_overlap == 0 and week > 4:
-                            continue
-                        try:
+                        if week < 4:
+                            if not sampled_str:
+                                keep_keys = ['name', 'author', 'subreddit', 'parent_id', 'created_utc']
+                                data = dict((k, data[k]) for k in keep_keys if k in data)
                             wdata[week].append(data)
-                        except IndexError:
-                            wdata.append([])
-                            wdata[week].append(data)
-                        if week_day <= days_overlap and week != 0:
-                            wdata[week - 1].append(data)
-    wdata = list(filter(None, wdata))
     return wdata
 
 
@@ -386,7 +372,7 @@ def create_graph_files(data, year, month, min_degree=1):
         # Write graph to GML
         gf = "RC" + "_" + year + "-" + month + "_" + str(tfi) + ".gml"
         G.name = "RC" + "_" + year + "-" + month + "_" + str(tfi)
-        nx.write_gml(G, os.path.join(path, 'data', 'graphs', gf))
+        nx.write_gml(G, os.path.join('data', 'graphs', gf))
         Gs.append(G)
     return Gs
 
@@ -606,21 +592,16 @@ def choose_experiment(experiment_num):
     return experiments[experiment_num]
 
 
-EXPERIMENT = 1
+EXPERIMENT = 4
 
 if __name__ == "__main__":
-    import sys
-
-    if sys.argv is not None or sys.argv != []:
-        reds = sys.argv[0]
-    else:
-        reds, _ = choose_experiment(EXPERIMENT)
+    reds, _ = choose_experiment(EXPERIMENT)
     data = read_data_from_json((2010, 9), sampled=True, specific_reddits=reds)
 
-    # data, sampling_str = sampling(data, uniform_p=0.7, min_replies=130, max_replies=16000, max_p=0.1,
+    # data, sampling_str = RedditParser.sampling(data, uniform_p=0.7, min_replies=130, max_replies=16000, max_p=0.1,
     #                                            user_min=8, user_threshold=5)
-    # write_json_from_sampled(data, date=(2010, 9))
-    # data = read_data_from_json((2010, 9), sampled=True)
-    # get_week_stats_from_data(data, (2010, 9), sampling=True, sampling_str=sampling_str)
+    # RedditParser.write_json_from_sampled(data, date=(2010, 9))
+    # data = RedditParser.read_data_from_json((2010, 9), sampled=True)
+    # RedditParser.get_week_stats_from_data(data, (2010, 9), sampling=True, sampling_str=sampling_str)
     Gs = create_graph_files(data, year=2010, month=9, min_degree=1)
     # write_graph_stats(Gs)

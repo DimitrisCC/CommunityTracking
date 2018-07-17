@@ -277,7 +277,7 @@ if __name__ == '__main__':
     graphs = {}
     for i, edges in edges.items():
         graphs[i] = nx.Graph(edges)
-    fact = TensorFact(graphs, num_of_coms=3, seeds=1, threshold=1e-4, original_graphs=graphs, overlap=False)
+    fact = TensorFact(graphs, num_of_coms=3, seeds=1, threshold=1e-4, original_graphs=graphs, overlap=True)
     from metrics import Omega
 
     print(Omega(fact.dynamic_coms, fact.dynamic_coms).omega_score)
