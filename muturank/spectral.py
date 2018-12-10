@@ -7,12 +7,13 @@ from sklearn.manifold import spectral_embedding
 import sklearn.cluster.spectral as sp
 import skfuzzy as fuzz
 import numpy as np
+import math
 
 
 def spectral_clustering(affinity, n_clusters=8, n_components=None,
                         eigen_solver=None, random_state=None, n_init=10,
                         eigen_tol=0.0, assign_labels='kmeans',
-                        fuzzy_m=2, fuzzy_error=0.005, fuzzy_maxiter=1000,
+                        fuzzy_m=2, fuzzy_error=0.0005, fuzzy_maxiter=10000,
                         fuzzy_label_threshold=None):
     if assign_labels not in ('kmeans', 'fuzzy_cmeans', 'discretize'):
         raise ValueError("The 'assign_labels' parameter should be "
@@ -32,8 +33,13 @@ def spectral_clustering(affinity, n_clusters=8, n_components=None,
     elif assign_labels == 'fuzzy_cmeans':
         if fuzzy_label_threshold is None:
             fuzzy_label_threshold = 1. / n_clusters
-        _, u, _, _, _, _, _ = fuzz.cluster.cmeans(maps.T, n_clusters, seed=random_state, m=fuzzy_m,
+
+        _, u, _, _, _, _, _ = fuzz.cluster.cmeans(np.exp(maps.T), n_clusters, seed=random_state, m=fuzzy_m,
                                                   error=fuzzy_error, maxiter=fuzzy_maxiter)
+        # from sklearn.mixture import GMM
+        # gmm = GMM(n_components=n_clusters, covariance_type='full', random_state=random_state, n_init=n_init).fit(maps)
+        # u = gmm.predict_proba(maps)
+        # u = u.T
         assignments = np.argwhere(u.T >= fuzzy_label_threshold)
         labels = [[] for _ in range(u.shape[1])]
         for row in assignments:

@@ -359,12 +359,19 @@ if __name__ == "__main__":
     exp = int(args['experiment']) if 'experiment' in args else EXPERIMENT
     overlap = True if 'overlap' in args and args['overlap'] == '--overlap' else False
 
-    reds, exp_string = choose_experiment(exp)
-    data = read_data_from_json((2010, 9), sampled=True, specific_reddits=reds)
-    Gs = create_graph_files(data, year=2010, month=9, min_degree=1)
+    choice, exp_string = choose_experiment(exp)
+    if exp == 5:
+        data_ = read_data_from_json((2010, 9), sampled=True, specific_users=choice)
+        data_.extend(read_data_from_json((2010, 10), days=31, sampled=True, specific_users=choice))
+    else:
+        data_ = read_data_from_json((2010, 9), sampled=True, specific_reddits=choice)
+        data_.extend(read_data_from_json((2010, 10), days=31, sampled=True, specific_reddits=choice))
+
+    print(len(data_))
+    Gs = create_graph_files(data_, year=2010, month=9, min_degree=1)
     #####
 
-    Gs = read_graphs([(2010, 9)])
+    Gs = read_graphs([(2010, 9)], tfs=4)
     data = create_Data_object_from_graphs(Gs)
 
     # from plot import PlotGraphs
@@ -372,6 +379,7 @@ if __name__ == "__main__":
     results_file = os.path.join(path_full, 'results_reddit' + exp_string + '.txt')
     f = open(results_file, 'w+')
     f.write("\n" + "-" * 80 + "REDDIT NETWORK" + "-" * 80 + "\n")
+    reddit_overlap_percentage(data_, fwrite=f)
     f.close()
     all_res = run_experiments(data, data.dynamic_truth, results_file, overlap=overlap)
     results = OrderedDict()

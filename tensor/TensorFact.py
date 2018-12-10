@@ -253,10 +253,13 @@ class TensorFact:
         agg_network = self.aggregated_network_matrix()
         # A_init = sparse.dok_matrix((len(self.node_ids),len(self.node_ids)), dtype=np.float32)
         A_init = np.zeros((len(self.node_ids), self.num_of_coms))
-        clusters = spectral_clustering(agg_network, n_clusters=self.num_of_coms, n_init=10, eigen_solver='arpack',
-                                       random_state=seed)
-        for i, t in enumerate(clusters):
-            A_init[i, t] = 1
+        if agg_network.shape[0] != self.num_of_coms:
+            clusters = spectral_clustering(agg_network, n_clusters=self.num_of_coms, n_init=10, eigen_solver='arpack',
+                                           random_state=seed)
+            for i, t in enumerate(clusters):
+                A_init[i, t] = 1
+        else:
+            A_init = np.eye(self.num_of_coms)
         B_init = deepcopy(A_init)
         C_init = np.random.rand(self.tensor.shape[2], self.num_of_coms)
         Finit = [A_init, B_init, C_init]

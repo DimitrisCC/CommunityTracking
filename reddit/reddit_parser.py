@@ -148,6 +148,30 @@ def get_stats_from_json(data):
         print(red.get_group(key), "\n\n")
 
 
+def reddit_overlap_percentage(data, fwrite=None):
+    overlap = defaultdict(float)
+    all = defaultdict(float)
+    for tf in data:
+        for i1 in range(len(tf)):
+            if i1 % 710 == 0:
+                print("\t i1 ", i1)
+            for i2 in range(i1 + 1, len(tf)):
+                red1 = tf[i1]['subreddit']
+                red2 = tf[i2]['subreddit']
+                all[(red1, red2)] += 1
+                if red1 != red2 and tf[i1]['author'] == tf[i2]['author']:
+                    overlap[(red1, red2)] += 1
+    for key in overlap:
+        overlap[key] /= all[key]
+    all = None
+    overlap = sorted(overlap.items(), key=lambda k_v: k_v[1], reverse=True)
+    if fwrite is not None:
+        fwrite.write("Overlapping percentage of subreddits in descending order:\n")
+        for red, ov in overlap:
+            fwrite.write(str(red) + ": " + str(ov) + "%" + "\n")
+    return overlap
+
+
 def get_week_stats_from_data(data, date, distribution=False, sampling=False, sampling_str=None, high_replies=200,
                              low_replies=11):
     """
@@ -316,7 +340,9 @@ def read_data_from_json(date, days=30, sampled=False, days_overlap=0, specific_r
     """
     Reads data from the json files and cleans the [deleted] users.
     :param date:                Date tuple (year, month)
+    :param days:                Number of days in timeframe
     :param sampled:             If True, reads the sampled json
+    :param days_overlap:        Number of days over timeframe overlap
     :param specific_reddits:    List of specific subreddits you want to read.
     :param specific_users:      List of specific users you want to read.
     :return:    data dict
@@ -415,7 +441,7 @@ def write_json_from_sampled(data, date, specific_reddits=None):
             jsondump.write('\n')
 
 
-def read_graphs(dates):
+def read_graphs(dates, tfs=4):
     """
     Read gml graph files into networkx graphs
     :param dates:                   date tuples to read
@@ -425,7 +451,7 @@ def read_graphs(dates):
     for date in dates:
         year = str(date[0])
         month = str(date[1]) if date[1] >= 10 else '0' + str(date[1])
-        for tfi in range(4):
+        for tfi in range(tfs):
             filename = 'RC_' + year + '-' + month + '_' + str(tfi) + '.gml'
             G = nx.read_gml(os.path.join(path, 'data', 'graphs', filename))
             print("Read graph ", G.name)
@@ -601,8 +627,14 @@ def choose_experiment(experiment_num):
           'RedditCarpool', 'PlacetoStay', 'craftit', 'reachclan', 'RedditvFCC', 'playitforward', 'Techno', 'tennis',
           'Coffee', 'women', 'ipad']
     R4 = ['dogs', 'history', 'rpg']
+    R5 = ['AMerrickanGirl', 'Blue Rock', 'matts2', 'ChaosMotor', 'RobotBuddha', 'LGBTerrific', 'anutensil',
+          'insomniac84', 'enkiam', 'SargonOfAkkad', 'adaminc', 'HeathenCyclist', 'dancer101', 'Issachar',
+          'JohnStrangerGalt', 'ieattime20', 'Sommiel', 'drunkentune', 'hotsexgary']
+    R6 = ['NaziHunting', 'Khazar_Pride', 'announcements', 'ideasfortheadmins', 'Conservative', 'Mommit', 'TrueBlood',
+          'conspiratard', 'houston', 'UniversityOfHouston', '911truth', 'climateskeptics', 'DebateAnAtheist',
+          'collapse', 'AskWomen', 'Denver', 'happy', 'Assistance', 'ToolBand', 'software']
 
-    experiments = [(R0, '_R0'), (R1, '_R1'), (R2, '_R2'), (R3, '_R3'), (R4, '_R4')]
+    experiments = [(R0, '_R0'), (R1, '_R1'), (R2, '_R2'), (R3, '_R3'), (R4, '_R4'), (R5, '_R5'), (R6, '_R6')]
     return experiments[experiment_num]
 
 
@@ -611,16 +643,25 @@ EXPERIMENT = 1
 if __name__ == "__main__":
     import sys
 
-    if sys.argv is not None or sys.argv != []:
-        reds = sys.argv[0]
-    else:
-        reds, _ = choose_experiment(EXPERIMENT)
-    data = read_data_from_json((2010, 9), sampled=True, specific_reddits=reds)
-
-    # data, sampling_str = sampling(data, uniform_p=0.7, min_replies=130, max_replies=16000, max_p=0.1,
-    #                                            user_min=8, user_threshold=5)
-    # write_json_from_sampled(data, date=(2010, 9))
+    # if sys.argv is not None or sys.argv != []:
+    #     reds = sys.argv[0]
+    # else:
+    #     reds, _ = choose_experiment(EXPERIMENT)
     # data = read_data_from_json((2010, 9), sampled=True)
-    # get_week_stats_from_data(data, (2010, 9), sampling=True, sampling_str=sampling_str)
-    Gs = create_graph_files(data, year=2010, month=9, min_degree=1)
-    # write_graph_stats(Gs)
+    # # data, sampling_str = sampling(data, uniform_p=0.7, min_replies=130, max_replies=16000, max_p=0.1,
+    # #                               user_min=8, user_threshold=5)
+    # f = open(os.path.join(path, 'stats', 'overlap.txt'), 'w+')
+    # overlap = reddit_overlap_percentage(data)
+    # for r, ov in overlap:
+    #     print(r, ": ", ov, "%")
+    #     f.write(str(r) + ": " + str(ov) + "%")
+    # # write_json_from_sampled(data, date=(2010, 9))
+    # # data = read_data_from_json((2010, 9), sampled=True)
+    # # get_week_stats_from_data(data, (2010, 9), sampling=True, sampling_str=sampling_str)
+    # # Gs = create_graph_files(data, year=2010, month=9, min_degree=1)
+    # # write_graph_stats(Gs)
+
+    data = read_data_from_json((2010, 10), days=31, sampled=False)
+    data, sampling_str = sampling(data, uniform_p=0.7, min_replies=130, max_replies=16000, max_p=0.1,
+                                  user_min=8, user_threshold=5)
+    write_json_from_sampled(data, date=(2010, 10))
